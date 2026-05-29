@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Grace Daily
 
-## Getting Started
+App Next.js untuk renungan harian Kristen, Alkitab online, AI pendeta, jurnal spiritual, komunitas doa, blog, dan membership.
 
-First, run the development server:
+## Jalankan Dev Server
+
+Pastikan terminal berada di folder app, bukan di file `Masterplan_gracedaily` atau root repo.
 
 ```bash
+cd "/Users/tius/Documents/Data Tius/renungan-life/grace-daily"
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Jika Next menulis `Another next dev server is already running`, berarti server lama masih aktif. Buka `http://localhost:3000`, atau hentikan proses lama sesuai PID yang ditampilkan Next.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Firebase
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Isi `.env.local` dari `.env.example`.
 
-## Learn More
+Untuk bootstrap collection dan super-admin pertama, gunakan Firebase service account:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+export GOOGLE_APPLICATION_CREDENTIALS="/absolute/path/service-account.json"
+npm run seed:firestore -- --super-admin-uid=UID_FIREBASE_AUTH_KAMU
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Collection yang dibuat:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `admin_users/{uid}`
+- `plans/{planId}`
+- `daily_devotions/{slug}`
+- `golden_verses/{slug}`
+- `blog_posts/{slug}`
+- `prayer_rooms/{roomId}`
 
-## Deploy on Vercel
+Untuk memasukkan Alkitab AYT ke Firestore:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run seed:bible
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Untuk uji kecil lebih dulu:
+
+```bash
+npm run seed:bible -- --limit-books=1 --limit-chapters=1
+```
+
+## AI
+
+Fitur AI memakai endpoint `/api/ai`. Isi salah satu dari `DEEPSEEK_API_KEY`, `GEMINI_API_KEY`, atau `OPENAI_API_KEY` agar jawaban live aktif. `AI_PROVIDER` boleh diisi `deepseek`, `gemini`, atau `openai` untuk memilih prioritas; jika kosong, app memakai key yang tersedia dan fallback ke provider berikutnya. Tanpa key, app berjalan dalam mode demo.

@@ -1,0 +1,99 @@
+Created At: 2026-05-27T23:46:25Z
+Completed At: 2026-05-27T23:46:25Z
+File Path: `file:///Users/tius/Documents/Data%20Tius/renungan-life/grace-daily/src/app/page.tsx`
+Total Lines: 360
+Total Bytes: 14725
+Showing lines 1 to 360
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: import Image from "next/image";
+2: import Link from "next/link";
+3: import {
+4:   blogCategories as staticBlogCategories,
+5:   features,
+6:   plans,
+7:   testimonials,
+8:   songRecommendations,
+9: } from "@/lib/data";
+10: import { getLatestDevotion } from "@/lib/server/daily-devotion";
+11: import { getAdminDb, reportDbFailure } from "@/lib/server/firebase-admin";
+12: import { DevotionCard } from "@/app/components/DevotionCard";
+13: 
+14: const demoMessages = [
+15:   {
+16:     label: "Kamu",
+17:     text: "Bagaimana saya tetap percaya saat doa belum dijawab?",
+18:   },
+19:   {
+20:     label: "Pendeta",
+21:     text: "Mulailah dari kejujuran di hadapan Tuhan. Mazmur mengajarkan bahwa iman tidak menolak air mata, tetapi membawa air mata itu kepada Allah.",
+22:   },
+23: ];
+24: 
+25: export const dynamic = "force-dynamic";
+26: 
+27: export default async function Home() {
+28:   const devotion = await getLatestDevotion();
+29:   
+30:   let dynamicBlogCategories = staticBlogCategories;
+31:   let dynamicSongs = songRecommendations;
+32:   let bulletin: any = null;
+33:   const adminDb = getAdminDb();
+34:   if (adminDb) {
+35:     try {
+36:       const [blogSnapshot, songSnapshot, bulletinSnap] = await Promise.all([
+37:         adminDb.collection("blog_posts").where("status", "==", "published").select("category").get(),
+38:         adminDb.collection("songs").get(),
+39:         adminDb.collection("settings").doc("bulletin").get(),
+40:       ]);
+41: 
+42:       const catSet = new Set<string>();
+43:       blogSnapshot.forEach(doc => {
+44:         const cat = doc.data().cat
+<truncated 12870 bytes>
+  <section className="bg-white px-5 py-16 sm:px-8">
+317:         <div className="mx-auto max-w-7xl">
+318:           <h2 className="text-3xl font-semibold text-[#14213d]">
+319:             Review pengguna
+320:           </h2>
+321:           <div className="mt-8 grid gap-4 md:grid-cols-3">
+322:             {testimonials.map((item) => (
+323:               <article
+324:                 key={item.name}
+325:                 className="rounded-lg border border-[#dfd8ca] bg-[#f7f4ee] p-5"
+326:               >
+327:                 <p className="leading-7 text-[#334155]">
+328:                   &ldquo;{item.quote}&rdquo;
+329:                 </p>
+330:                 <p className="mt-4 font-semibold text-[#14213d]">
+331:                   {item.name}
+332:                 </p>
+333:                 <p className="text-sm text-[#52606d]">{item.role}</p>
+334:               </article>
+335:             ))}
+336:           </div>
+337:         </div>
+338:       </section>
+339:       <footer className="border-t border-[#dfd8ca] bg-white px-5 py-8 sm:px-8">
+340:         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+341:           <p className="text-sm text-[#52606d]">
+342:             &copy; {new Date().getFullYear()} Grace Daily. All rights reserved.
+343:           </p>
+344:           <div className="flex flex-wrap gap-6 text-sm text-[#52606d]">
+345:             <Link href="/kontak" className="hover:text-[#2a6f6f] hover:underline">
+346:               Hubungi Kami
+347:             </Link>
+348:             <Link href="/tanya-pendeta" className="hover:text-[#2a6f6f] hover:underline">
+349:               Tanya Pendeta
+350:             </Link>
+351:             <Link href="/syarat-dan-ketentuan" className="hover:text-[#2a6f6f] hover:underline">
+352:               Syarat dan Ketentuan
+353:             </Link>
+354:           </div>
+355:         </div>
+356:       </footer>
+357:     </main>
+358:   );
+359: }
+360: 
+The above content shows the entire, complete file contents of the requested file.
+

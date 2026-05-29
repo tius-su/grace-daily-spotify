@@ -1,0 +1,154 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return signedIn()
+        && (
+          exists(/databases/$(database)/documents/admin_users/$(request.auth.uid))
+          || get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "admin"
+          || (
+            exists(/databases/$(database)/documents/settings/app)
+            && request.auth.token.email in get(/databases/$(database)/documents/settings/app).data.adminEmails
+          )
+        );
+    }
+
+    function owns(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
+    match /bible_verses/{verseId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /daily_devotions/{devotionId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /golden_verses/{verseId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /blog_posts/{postId} {
+      allow read: if resource.data.status == "published" || isAdmin();
+      allow create, update, delete: if isAdmin();
+    }
+
+    match /prayer_rooms/{roomId} {
+      allow read: if true;
+      allow write: if isAdmin();
+
+      match /requests/{requestId} {
+        allow read: if true;
+        allow create: if signedIn()
+          && request.resource.data.name.size() <= 50
+          && request.resource.data.content.size() <= 1000;
+        allow update, delete: if isAdmin();
+      }
+    }
+
+    match /pastoral_questions/{questionId} {
+      allow read: if true;
+      allow create: if signedIn()
+        && request.resource.data.authorId == request.auth.uid
+        && request.resource.data.question.size() <= 2000;
+      allow update, delete: if isAdmin();
+    }
+
+    match /devotion_groups/{groupId} {
+      allow read: if true;
+      allow create: if signedIn();
+      allow update, delete: if isAdmin() || (signedIn() && resource.data.creatorId == request.auth.uid);
+
+      match /members/{memberId} {
+        allow read: if true;
+        allow create, update, delete: if isAdmin()
+          || (signedIn() && (request.auth.uid == memberId || get(/databases/$(database)/documents/devotion_groups/$(groupId)).data.creatorId == request.auth.uid));
+      }
+
+      match /posts/{postId} {
+        allow read: if true;
+        allow create: if signedIn()
+          && request.resource.data.authorId == request.auth.uid
+          && request.resource.data.content.size() <= 1500;
+        allow update, delete: if isAdmin() || (signedIn() && resource.data.authorId == request.auth.uid);
+
+        match /comments/{commentId} {
+          allow read: if true;
+          allow create: if signedIn()
+            && request.resource.data.content.size() <= 800;
+          allow update, delete: if isAdmin();
+        }
+      }
+    }
+
+    match /users/{userId} {
+      allow read: if signedIn();
+      allow update: if owns(userId) || isAdmin();
+      allow create: if owns(userId) || isAdmin();
+      allow delete: if isAdmin();
+
+      match /journals/{journalId} {
+        allow read, delete: if owns(userId) || isAdmin();
+        allow create, update: if (owns(userId) || isAdmin())
+          && request.resource.data.title.size() <= 100
+          && request.resource.data.content.size() <= 3000;
+      }
+
+      match /prayers/{prayerId} {
+        allow read, create, update, delete: if owns(userId) || isAdmin();
+      }
+
+      match /bible_plan_notes/{noteId} {
+        allow read, create, update, delete: if owns(userId) || isAdmin();
+      }
+
+      match /activities/{activityId} {
+        allow read, create, update, delete: if owns(userId) || isAdmin();
+      }
+    }
+
+    match /settings/{settingId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /songs/{songId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /plans/{planId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /subscriptions/{subscriptionId} {
+      allow read: if isAdmin()
+        || (signedIn() && resource.data.userId == request.auth.uid);
+      allow create, update, delete: if isAdmin();
+    }
+
+    match /ai_requests/{requestId} {
+      allow create: if signedIn()
+        && request.resource.data.userId == request.auth.uid;
+      allow read: if isAdmin()
+        || (signedIn() && resource.data.userId == request.auth.uid);
+      allow update, delete: if isAdmin()
+        || (signedIn() && resource.data.userId == request.auth.uid);
+    }
+
+    match /admin_users/{adminId} {
+      allow read: if owns(adminId) || isAdmin();
+      allow write: if isAdmin();
+    }
+  }
+}

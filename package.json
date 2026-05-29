@@ -6,16 +6,28 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed:firestore": "node scripts/seed-firestore.mjs",
+    "seed:bible": "node scripts/seed-bible.mjs",
+    "seed:bible:local": "node scripts/seeder-local.mjs",
+    "check:bible": "node scripts/check-bible-progress.mjs"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1053.0",
+    "@tinymce/tinymce-react": "^6.3.0",
+    "firebase": "^12.13.0",
+    "firebase-admin": "^13.10.0",
+    "free-use-bible-api": "^0.2.0",
     "next": "16.2.6",
+    "nodemailer": "^8.0.9",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/nodemailer": "^8.0.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
