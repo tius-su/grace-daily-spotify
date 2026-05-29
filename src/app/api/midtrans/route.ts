@@ -1,3 +1,5 @@
+import { getAdminDb } from "@/lib/server/firebase-admin";
+
 type MidtransRequest = {
   orderId?: string;
   grossAmount?: number;
@@ -84,5 +86,28 @@ export async function POST(request: Request) {
       { status: response.status },
     );
   }
+
+  // Save pending subscription in Firestore
+  const db = getAdminDb();
+  if (db) {
+    try {
+      const parts = body.orderId.split("-");
+      const userId = parts.length >= 2 ? parts[1] : "";
+      
+      await db.collection("subscriptions").doc(body.orderId).set({
+        userId: userId,
+        planName: body.planName ?? "Premium",
+        amount: body.grossAmount,
+        status: "pending",
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, { merge: true });
+      
+      console.log(`[Midtrans API] Saved pending subscription for order ${body.orderId}`);
+    } catch (e) {
+      console.error("[Midtrans API] Failed to save pending subscription:", e);
+    }
+  }
+
   return Response.json({ ...data, isProduction }, { status: response.status });
 }
