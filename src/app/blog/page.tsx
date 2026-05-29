@@ -24,42 +24,8 @@ export default async function BlogIndexPage() {
   const adminDb = getAdminDb();
   let fetchedSuccessfully = false;
 
-  // 1. Prioritize cached REST API fetch
-  try {
-    const restCats = await fetchDocFromRest("settings", "blog_categories");
-    if (restCats && Array.isArray(restCats.list) && restCats.list.length > 0) {
-      allCategories = restCats.list;
-    }
-
-    const restPosts = await fetchPublishedBlogsFromRest();
-    const loadedPosts: any[] = [];
-    
-    restPosts.forEach((data) => {
-      loadedPosts.push({
-        id: data.id,
-        title: data.title ?? "",
-        excerpt: data.excerpt ?? "",
-        imageUrl: data.imageUrl ?? "",
-        category: data.category ?? "",
-        createdAt: data.createdAt
-          ? (typeof data.createdAt.toDate === "function"
-            ? data.createdAt.toDate().getTime()
-            : (typeof data.createdAt === "string" || typeof data.createdAt === "number"
-              ? new Date(data.createdAt).getTime()
-              : null))
-          : null,
-      });
-    });
-
-    posts = loadedPosts;
-    posts.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
-    fetchedSuccessfully = true;
-  } catch (error) {
-    console.error("Gagal memuat artikel blog dari Firestore REST:", error);
-  }
-
-  // 2. Fallback to Admin SDK if REST query failed
-  if (!fetchedSuccessfully && adminDb) {
+  // 1. Prioritize live Admin SDK (real-time)
+  if (adminDb) {
     try {
       const blogCatsSnap = await adminDb.collection("settings").doc("blog_categories").get();
       if (blogCatsSnap.exists) {
@@ -71,7 +37,7 @@ export default async function BlogIndexPage() {
 
       const snapshot = await adminDb.collection("blog_posts").get();
       const loadedPosts: any[] = [];
-      
+
       snapshot.docs.forEach((doc) => {
         const data = doc.data();
         if (data.status === "published") {
@@ -98,6 +64,42 @@ export default async function BlogIndexPage() {
     } catch (error) {
       console.error("Gagal memuat artikel blog dari Firestore (Admin SDK):", error);
       reportDbFailure();
+    }
+  }
+
+  // 2. Fallback to cached REST API if Admin SDK is null or failed
+  if (!fetchedSuccessfully) {
+    try {
+      const restCats = await fetchDocFromRest("settings", "blog_categories");
+      if (restCats && Array.isArray(restCats.list) && restCats.list.length > 0) {
+        allCategories = restCats.list;
+      }
+
+      const restPosts = await fetchPublishedBlogsFromRest();
+      const loadedPosts: any[] = [];
+
+      restPosts.forEach((data) => {
+        loadedPosts.push({
+          id: data.id,
+          title: data.title ?? "",
+          excerpt: data.excerpt ?? "",
+          imageUrl: data.imageUrl ?? "",
+          category: data.category ?? "",
+          createdAt: data.createdAt
+            ? (typeof data.createdAt.toDate === "function"
+              ? data.createdAt.toDate().getTime()
+              : (typeof data.createdAt === "string" || typeof data.createdAt === "number"
+                ? new Date(data.createdAt).getTime()
+                : null))
+            : null,
+        });
+      });
+
+      posts = loadedPosts;
+      posts.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+      fetchedSuccessfully = true;
+    } catch (error) {
+      console.error("Gagal memuat artikel blog dari Firestore REST:", error);
     }
   }
 

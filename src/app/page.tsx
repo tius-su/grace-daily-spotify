@@ -40,41 +40,7 @@ export default async function Home() {
 
   // 1. Fetch Blog categories and latest articles
   let blogFetched = false;
-  try {
-    const restCats = await fetchDocFromRest("settings", "blog_categories");
-    if (restCats && Array.isArray(restCats.list) && restCats.list.length > 0) {
-      dynamicBlogCategories = restCats.list;
-    }
-
-    const restPosts = await fetchPublishedBlogsFromRest();
-    if (restPosts.length > 0) {
-      const loadedPosts: any[] = [];
-      restPosts.forEach(data => {
-        loadedPosts.push({
-          id: data.id,
-          title: data.title ?? "",
-          excerpt: data.excerpt ?? "",
-          imageUrl: data.imageUrl ?? "",
-          category: data.category ?? "",
-          createdAt: data.createdAt,
-        });
-      });
-
-      // Sort posts in memory (newest first)
-      loadedPosts.sort((a, b) => {
-        const timeA = a.createdAt?.toDate ? a.createdAt.toDate().getTime() : 0;
-        const timeB = b.createdAt?.toDate ? b.createdAt.toDate().getTime() : 0;
-        return timeB - timeA;
-      });
-
-      dynamicPosts = loadedPosts.slice(0, 3);
-      blogFetched = true;
-    }
-  } catch (e) {
-    console.error("Failed to fetch blog categories & posts via REST:", e);
-  }
-
-  if (!blogFetched && adminDb) {
+  if (adminDb) {
     try {
       const blogCatsSnap = await adminDb.collection("settings").doc("blog_categories").get();
       if (blogCatsSnap.exists) {
@@ -113,6 +79,42 @@ export default async function Home() {
     } catch (e) {
       console.error("Failed to fetch blog categories & posts via Admin SDK:", e);
       reportDbFailure();
+    }
+  }
+
+  if (!blogFetched) {
+    try {
+      const restCats = await fetchDocFromRest("settings", "blog_categories");
+      if (restCats && Array.isArray(restCats.list) && restCats.list.length > 0) {
+        dynamicBlogCategories = restCats.list;
+      }
+
+      const restPosts = await fetchPublishedBlogsFromRest();
+      if (restPosts.length > 0) {
+        const loadedPosts: any[] = [];
+        restPosts.forEach(data => {
+          loadedPosts.push({
+            id: data.id,
+            title: data.title ?? "",
+            excerpt: data.excerpt ?? "",
+            imageUrl: data.imageUrl ?? "",
+            category: data.category ?? "",
+            createdAt: data.createdAt,
+          });
+        });
+
+        // Sort posts in memory (newest first)
+        loadedPosts.sort((a, b) => {
+          const timeA = a.createdAt?.toDate ? a.createdAt.toDate().getTime() : 0;
+          const timeB = b.createdAt?.toDate ? b.createdAt.toDate().getTime() : 0;
+          return timeB - timeA;
+        });
+
+        dynamicPosts = loadedPosts.slice(0, 3);
+      }
+      blogFetched = true;
+    } catch (e) {
+      console.error("Failed to fetch blog categories & posts via REST:", e);
     }
   }
 
@@ -176,26 +178,7 @@ export default async function Home() {
 
   // 4. Fetch Plans (Packages)
   let plansFetched = false;
-  try {
-    const restPlans = await fetchCollectionFromRest("plans");
-    if (restPlans.length > 0) {
-      dynamicPlans = restPlans.map(data => {
-        return {
-          name: data.name ?? "",
-          price: typeof data.price === 'number' ? `Rp${data.price.toLocaleString("id-ID")}` : (data.price ?? ""),
-          durationDays: Number(data.durationDays) || 0,
-          aiRequests: Number(data.aiRequests) || 0,
-          features: Array.isArray(data.features) ? data.features : (data.features ? String(data.features).split(",").map(f => f.trim()) : []),
-          allowedModes: data.allowedModes || [],
-        };
-      });
-      plansFetched = true;
-    }
-  } catch (e) {
-    console.error("Failed to fetch plans via REST:", e);
-  }
-
-  if (!plansFetched && adminDb) {
+  if (adminDb) {
     try {
       const planSnapshot = await adminDb.collection("plans").get();
       if (!planSnapshot.empty) {
@@ -215,6 +198,27 @@ export default async function Home() {
     } catch (e) {
       console.error("Failed to fetch plans via Admin SDK:", e);
       reportDbFailure();
+    }
+  }
+
+  if (!plansFetched) {
+    try {
+      const restPlans = await fetchCollectionFromRest("plans");
+      if (restPlans.length > 0) {
+        dynamicPlans = restPlans.map(data => {
+          return {
+            name: data.name ?? "",
+            price: typeof data.price === 'number' ? `Rp${data.price.toLocaleString("id-ID")}` : (data.price ?? ""),
+            durationDays: Number(data.durationDays) || 0,
+            aiRequests: Number(data.aiRequests) || 0,
+            features: Array.isArray(data.features) ? data.features : (data.features ? String(data.features).split(",").map(f => f.trim()) : []),
+            allowedModes: data.allowedModes || [],
+          };
+        });
+        plansFetched = true;
+      }
+    } catch (e) {
+      console.error("Failed to fetch plans via REST:", e);
     }
   }
 

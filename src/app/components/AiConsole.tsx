@@ -76,6 +76,19 @@ const tools: Array<{
 
 const HISTORY_ITEMS_PER_PAGE = 6;
 
+function toDate(value: any) {
+  if (!value) return null;
+  if (typeof value.toDate === "function") return value.toDate();
+  if (typeof value.toMillis === "function") return new Date(value.toMillis());
+  if (value.seconds) return new Date(value.seconds * 1000);
+  if (value._seconds) return new Date(value._seconds * 1000);
+  if (typeof value === "string" || typeof value === "number" || value instanceof Date) {
+    const date = new Date(value);
+    return Number.isNaN(date.getTime()) ? null : date;
+  }
+  return null;
+}
+
 export function AiConsole() {
   const searchParams = useSearchParams();
   const [userAllowedModes, setUserAllowedModes] = useState<string[] | null>(null);
@@ -91,6 +104,9 @@ export function AiConsole() {
   const [editPromptValue, setEditPromptValue] = useState("");
   const [editAnswerValue, setEditAnswerValue] = useState("");
   const [isSavingEdit, setIsSavingEdit] = useState(false);
+  const [aiQuota, setAiQuota] = useState(0);
+  const [aiRemaining, setAiRemaining] = useState<number | null>(null);
+  const [isAdminUser, setIsAdminUser] = useState(false);
 
   const visibleTools = userAllowedModes
     ? tools.filter(t => userAllowedModes.includes(t.mode))
@@ -132,6 +148,9 @@ export function AiConsole() {
       if (!currentUser) {
         setUserAllowedModes(["devotional"]); 
         setCanExportPdf(false);
+        setIsAdminUser(false);
+        setAiQuota(0);
+        setAiRemaining(null);
         setMode("devotional");
         setStatus("Mode gratis. Login untuk fitur lebih.");
         return;
@@ -159,16 +178,50 @@ export function AiConsole() {
             const allModes = tools.map((t) => t.mode);
             setUserAllowedModes(allModes);
             setCanExportPdf(true);
+            setIsAdminUser(true);
+            setAiQuota(0);
+            setAiRemaining(null);
             setStatus("Admin: Akses penuh terbuka.");
             return;
           }
+
+          setIsAdminUser(false);
 
           const selectedPlanName = userData.selectedPlan;
           if (selectedPlanName) {
             const planSnap = await getDocs(query(collection(db, "plans")));
             const planDoc = planSnap.docs.find(d => d.data().name === selectedPlanName);
             if (planDoc) {
-              const allowed = planDoc.data().allowedModes || ["devotional"];
+              const planData = planDoc.data();
+              const expiresAt = toDate(userData.premiumExpiresAt);
+              const isExpired = Boolean(expiresAt && expiresAt.getTime() < Date.now());
+
+              if (isExpired) {
+                setUserAllowedModes(["devotional"]);
+                setCanExportPdf(false);
+                setAiQuota(0);
+                setAiRemaining(0);
+                setMode("devotional");
+                setStatus("Paket sudah kedaluwarsa. Silakan perpanjang dari halaman login/profil.");
+                return;
+              }
+
+              const allowed = planData.allowedModes || ["devotional"];
+              const quota = Number(userData.aiRequestsQuota ?? planData.aiRequests ?? 0);
+              const activatedAt = toDate(userData.premiumActivatedAt);
+              const startMs = activatedAt?.getTime() ?? 0;
+              const usedThisPeriod = historyData.filter((item: any) => {
+                const createdAt = toDate(item.createdAt);
+                return createdAt ? createdAt.getTime() >= startMs : false;
+              }).length;
+              const storedRemaining = Number(userData.aiRequestsRemaining);
+              const calculatedRemaining = Math.max(0, quota - usedThisPeriod);
+              const remaining = Number.isFinite(storedRemaining) && storedRemaining >= 0
+                ? Math.min(storedRemaining, calculatedRemaining)
+                : calculatedRemaining;
+
+              setAiQuota(quota);
+              setAiRemaining(remaining);
               setUserAllowedModes(allowed);
               setCanExportPdf(allowed.includes("export_pdf"));
               
@@ -178,13 +231,15 @@ export function AiConsole() {
                 setMode(nextMode);
                 setPrompt(nextTool.prompt);
               }
-              setStatus("Siap membuat respons.");
+              setStatus(remaining <= 0 ? "Kuota AI paket ini sudah habis." : "Siap membuat respons.");
               return;
             }
           }
         }
         setUserAllowedModes(["devotional"]);
         setCanExportPdf(false);
+        setAiQuota(0);
+        setAiRemaining(null);
         setStatus("Paket tidak ditemukan. Mode gratis aktif.");
       } catch (err) {
         console.error("Gagal memuat batas paket:", err);
@@ -231,15 +286,25 @@ export function AiConsole() {
     setStatus("Memproses...");
     setAnswer("");
 
+    if (user && !isAdminUser && aiRemaining !== null && aiRemaining <= 0) {
+      setStatus("Kuota AI kamu sudah habis. Silakan perpanjang atau upgrade paket.");
+      return;
+    }
+
+    const token = user ? await user.getIdToken().catch(() => null) : null;
     const response = await fetch("/api/ai", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        ...(token ? { Authorization: `Bearer ${token}` } : {}),
+      },
       body: JSON.stringify({ mode, prompt }),
     });
     const data = (await response.json()) as {
       answer?: string;
       provider?: string;
       error?: string;
+      aiRequestsRemaining?: number | null;
     };
 
     if (!response.ok) {
@@ -310,6 +375,15 @@ export function AiConsole() {
           description: prompt.slice(0, 160),
           createdAt: serverTimestamp(),
         });
+        if (!isAdminUser && aiRemaining !== null) {
+          const nextRemaining = typeof data.aiRequestsRemaining === "number"
+            ? data.aiRequestsRemaining
+            : Math.max(0, aiRemaining - 1);
+          setAiRemaining(nextRemaining);
+          if (aiQuota > 0 && nextRemaining <= 0) {
+            setStatus("Jawaban selesai. Kuota AI kamu sekarang habis.");
+          }
+        }
       } catch (err) {
         console.error("Gagal menyimpan riwayat", err);
       }

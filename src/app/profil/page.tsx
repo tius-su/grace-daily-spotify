@@ -3,16 +3,31 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { onAuthStateChanged, type User } from "firebase/auth";
-import { collection, doc, getDoc, getDocs, limit, orderBy, query } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs, limit, orderBy, query, where } from "firebase/firestore";
 import { auth, db } from "@/lib/firebase";
+import { plans as defaultPlans } from "@/lib/data";
 
 const ITEMS_PER_PAGE = 8;
+
+function toDate(value: any) {
+  if (!value) return null;
+  if (typeof value.toDate === "function") return value.toDate();
+  if (typeof value.toMillis === "function") return new Date(value.toMillis());
+  if (value.seconds) return new Date(value.seconds * 1000);
+  if (value._seconds) return new Date(value._seconds * 1000);
+  if (typeof value === "string" || typeof value === "number" || value instanceof Date) {
+    const date = new Date(value);
+    return Number.isNaN(date.getTime()) ? null : date;
+  }
+  return null;
+}
 
 export default function ProfilePage() {
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<any>(null);
   const [activities, setActivities] = useState<any[]>([]);
   const [notes, setNotes] = useState<any[]>([]);
+  const [aiCount, setAiCount] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [activitySearch, setActivitySearch] = useState("");
@@ -41,19 +56,53 @@ export default function ProfilePage() {
           if (!response.ok) {
             throw new Error(data.error ?? "Profil gagal dimuat.");
           }
-          setProfile(data.profile ?? null);
+          const loadedProfile = data.profile ?? null;
+          setProfile(loadedProfile);
           setActivities(data.activities ?? []);
           setNotes(data.biblePlanNotes ?? []);
-        } catch (err) {
+
+          // Fetch AI Requests Count
           if (db) {
-            const [userDoc, activitySnap, notesSnap] = await Promise.all([
+            const aiSnap = await getDocs(query(
+              collection(db, "ai_requests"),
+              where("userId", "==", currentUser.uid)
+            )).catch(() => null);
+
+            if (aiSnap) {
+              const activatedAt = toDate(loadedProfile?.premiumActivatedAt);
+              const startMs = activatedAt?.getTime() ?? 0;
+
+              const count = aiSnap.docs.filter((d) => {
+                const createdAt = toDate(d.data().createdAt);
+                return createdAt ? createdAt.getTime() >= startMs : false;
+              }).length;
+              setAiCount(count);
+            }
+          }
+        } catch (err) {
+          let loadedProfile = null;
+          if (db) {
+            const [userDoc, activitySnap, notesSnap, aiSnap] = await Promise.all([
               getDoc(doc(db, "users", currentUser.uid)).catch(() => null),
               getDocs(query(collection(db, "users", currentUser.uid, "activities"), orderBy("createdAt", "desc"), limit(100))).catch(() => null),
               getDocs(query(collection(db, "users", currentUser.uid, "bible_plan_notes"), orderBy("updatedAt", "desc"), limit(100))).catch(() => null),
+              getDocs(query(collection(db, "ai_requests"), where("userId", "==", currentUser.uid))).catch(() => null),
             ]);
-            setProfile(userDoc?.exists() ? userDoc.data() : null);
+            loadedProfile = userDoc?.exists() ? userDoc.data() : null;
+            setProfile(loadedProfile);
             setActivities(activitySnap?.docs.map((item) => ({ id: item.id, ...item.data() })) ?? []);
             setNotes(notesSnap?.docs.map((item) => ({ id: item.id, ...item.data() })) ?? []);
+
+            if (aiSnap) {
+              const activatedAt = toDate(loadedProfile?.premiumActivatedAt);
+              const startMs = activatedAt?.getTime() ?? 0;
+
+              const count = aiSnap.docs.filter((d) => {
+                const createdAt = toDate(d.data().createdAt);
+                return createdAt ? createdAt.getTime() >= startMs : false;
+              }).length;
+              setAiCount(count);
+            }
           }
           setError(err instanceof Error ? err.message : "Profil dimuat dengan data terbatas.");
         }
@@ -63,16 +112,43 @@ export default function ProfilePage() {
   }, []);
 
   function formatDate(value: any) {
-    const date =
-      typeof value?.toDate === "function"
-        ? value.toDate()
-        : value?._seconds
-          ? new Date(value._seconds * 1000)
-          : null;
+    const date = toDate(value);
     return date
       ? new Intl.DateTimeFormat("id-ID", { dateStyle: "medium", timeStyle: "short" }).format(date)
       : "Tanggal belum tersedia";
   }
+
+  const activatedDate = useMemo(() => {
+    return toDate(profile?.premiumActivatedAt);
+  }, [profile]);
+
+  const expiryDate = useMemo(() => {
+    const storedExpiry = toDate(profile?.premiumExpiresAt);
+    if (storedExpiry) return storedExpiry;
+    if (!activatedDate) return null;
+    const plan = defaultPlans.find((item) => item.name === (profile?.selectedPlan || "Free"));
+    const days = Number(plan?.durationDays || 0);
+    if (!days) return null;
+    return new Date(activatedDate.getTime() + days * 24 * 60 * 60 * 1000);
+  }, [activatedDate, profile]);
+
+  const aiQuota = useMemo(() => {
+    const storedQuota = Number(profile?.aiRequestsQuota);
+    if (Number.isFinite(storedQuota) && storedQuota > 0) return storedQuota;
+    const legacyRemaining = Number(profile?.aiRequestsRemaining);
+    if (Number.isFinite(legacyRemaining) && legacyRemaining > 0) return legacyRemaining + aiCount;
+    const plan = defaultPlans.find((item) => item.name === (profile?.selectedPlan || "Free"));
+    return plan?.aiRequests ?? 0;
+  }, [aiCount, profile]);
+
+  const aiRemaining = useMemo(() => {
+    const calculatedRemaining = Math.max(0, aiQuota - aiCount);
+    const storedRemaining = Number(profile?.aiRequestsRemaining);
+    if (Number.isFinite(storedRemaining) && storedRemaining >= 0) {
+      return Math.min(storedRemaining, calculatedRemaining);
+    }
+    return calculatedRemaining;
+  }, [aiCount, aiQuota, profile]);
 
   const filteredActivities = useMemo(() => {
     const keyword = activitySearch.toLowerCase().trim();
@@ -162,6 +238,28 @@ export default function ProfilePage() {
                 <div className="rounded-md bg-[#f7f4ee] p-3">
                   <dt className="font-semibold text-[#2a6f6f]">Paket</dt>
                   <dd className="mt-1">{profile?.selectedPlan ?? "Free"}</dd>
+                </div>
+                {activatedDate && (
+                  <>
+                    <div className="rounded-md bg-[#f7f4ee] p-3">
+                      <dt className="font-semibold text-[#2a6f6f]">Mulai Langganan</dt>
+                      <dd className="mt-1">
+                        {new Intl.DateTimeFormat("id-ID", { dateStyle: "long" }).format(activatedDate)}
+                      </dd>
+                    </div>
+                    <div className="rounded-md bg-[#f7f4ee] p-3">
+                      <dt className="font-semibold text-[#2a6f6f]">Berlaku Hingga</dt>
+                      <dd className="mt-1">
+                        {expiryDate ? new Intl.DateTimeFormat("id-ID", { dateStyle: "long" }).format(expiryDate) : "-"}
+                      </dd>
+                    </div>
+                  </>
+                )}
+                <div className="rounded-md bg-[#f7f4ee] p-3">
+                  <dt className="font-semibold text-[#2a6f6f]">Kuota Tanya AI</dt>
+                  <dd className="mt-1">
+                    {aiCount} / {aiQuota} interaksi digunakan (Sisa: {aiRemaining} kali)
+                  </dd>
                 </div>
                 <div className="rounded-md bg-[#f7f4ee] p-3">
                   <dt className="font-semibold text-[#2a6f6f]">Rencana baca</dt>

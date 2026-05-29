@@ -800,6 +800,7 @@ export function AdminConsole() {
       await setDoc(doc(db, "users", targetUser.uid), {
         selectedPlan: plan.name,
         role: nextRole,
+        aiRequestsQuota: plan.aiRequests,
         aiRequestsRemaining: plan.aiRequests,
         premiumActivatedAt: serverTimestamp(),
         premiumExpiresAt: expiresAt,

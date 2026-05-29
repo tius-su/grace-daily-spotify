@@ -6,6 +6,8 @@ type MidtransRequest = {
   customerName?: string;
   customerEmail?: string;
   planName?: string;
+  durationDays?: number;
+  aiRequests?: number;
 };
 
 export const runtime = "nodejs";
@@ -98,6 +100,8 @@ export async function POST(request: Request) {
         userId: userId,
         planName: body.planName ?? "Premium",
         amount: body.grossAmount,
+        durationDays: Number(body.durationDays) || 30,
+        aiRequests: Number(body.aiRequests) || 0,
         status: "pending",
         createdAt: new Date(),
         updatedAt: new Date()

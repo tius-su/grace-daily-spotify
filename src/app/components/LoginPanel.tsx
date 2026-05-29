@@ -36,6 +36,13 @@ function isPlanUnavailable(plan: Plan & { remainingSlots?: number }) {
   return typeof plan.remainingSlots === "number" && plan.remainingSlots <= 0;
 }
 
+function buildSubscriptionWindow(plan: Plan) {
+  const activatedAt = new Date();
+  const expiresAt = new Date(activatedAt);
+  expiresAt.setDate(expiresAt.getDate() + Number(plan.durationDays || 0));
+  return { activatedAt, expiresAt };
+}
+
 export function LoginPanel() {
   const [mode, setMode] = useState<Mode>("login");
   const [user, setUser] = useState<User | null>(null);
@@ -233,6 +240,8 @@ export function LoginPanel() {
           customerName: currentUser.email?.split("@")[0],
           customerEmail: currentUser.email,
           planName: plan.name,
+          durationDays: plan.durationDays,
+          aiRequests: plan.aiRequests,
         }),
       });
 
@@ -260,10 +269,14 @@ export function LoginPanel() {
           onSuccess: async function (result: any) {
             setStatus("Pembayaran berhasil! Mengaktifkan paket...");
             if (db) {
+              const { activatedAt, expiresAt } = buildSubscriptionWindow(plan);
               await setDoc(doc(db, "users", currentUser.uid), {
                 role: plan.name.toLowerCase() === "komunitas" ? "admin" : "premium",
                 selectedPlan: plan.name,
-                premiumActivatedAt: serverTimestamp(),
+                premiumActivatedAt: activatedAt,
+                premiumExpiresAt: expiresAt,
+                aiRequestsQuota: plan.aiRequests,
+                aiRequestsRemaining: plan.aiRequests,
                 premiumLastOrder: result?.order_id ?? null,
                 updatedAt: serverTimestamp(),
               }, { merge: true });

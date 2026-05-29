@@ -35,11 +35,15 @@ export async function POST(request: Request) {
     
     let userId = "";
     let planName = "Premium";
+    let durationDays = 30;
+    let aiRequests = 0;
 
     if (subDoc.exists) {
       const subData = subDoc.data();
       userId = subData?.userId || "";
       planName = subData?.planName || "Premium";
+      durationDays = Number(subData?.durationDays) || 30;
+      aiRequests = Number(subData?.aiRequests) || 0;
     } else {
       // Fallback: parse userId from order_id if document doesn't exist yet
       // format: ORDER-uid-timestamp
@@ -82,12 +86,25 @@ export async function POST(request: Request) {
 
     // If payment is successful, activate premium/role for the user
     if (isSuccess && userId) {
+      const activatedAt = new Date();
+      const expiresAt = new Date(activatedAt);
+      expiresAt.setDate(expiresAt.getDate() + durationDays);
+
       await db.collection("users").doc(userId).set({
         role: planName.toLowerCase() === "komunitas" ? "admin" : "premium",
         selectedPlan: planName,
-        premiumActivatedAt: new Date(),
+        premiumActivatedAt: activatedAt,
+        premiumExpiresAt: expiresAt,
+        aiRequestsQuota: aiRequests,
+        aiRequestsRemaining: aiRequests,
         premiumLastOrder: order_id,
-        updatedAt: new Date()
+        updatedAt: activatedAt
+      }, { merge: true });
+
+      await subRef.set({
+        startedAt: activatedAt,
+        expiresAt,
+        aiRequests,
       }, { merge: true });
       
       console.log(`[Midtrans Webhook] Successfully activated ${planName} for user ${userId}`);
