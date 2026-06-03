@@ -4,22 +4,46 @@ import { getAdminDb } from "@/lib/server/firebase-admin";
 
 export const dynamic = "force-dynamic";
 
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json();
+    const { devotionId, verseRef, verseText } = body;
+
+    if (!devotionId || !verseRef || !verseText) {
+      return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    }
+
+    const imageUrl = await generateDailyImage(devotionId, verseRef, verseText);
+
+    return NextResponse.json({ imageUrl });
+  } catch (error: any) {
+    console.error("Daily image POST endpoint error:", error);
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+}
+
 export async function GET(request: NextRequest) {
   try {
+    // Terima query param devotionId untuk validasi — client mengirim ID renungan yang sedang ditampilkan
+    const { searchParams } = new URL(request.url);
+    const requestedDevotionId = searchParams.get("devotionId");
+
     const devotion = await getLatestDevotion();
     if (!devotion) {
       return NextResponse.json({ error: "Devotion not found" }, { status: 404 });
     }
 
-    const db = getAdminDb();
-    
-    // Check if illustration URL already exists in Firestore
-    if (db && (devotion as any).illustrationUrl) {
-      return responseWithCache((devotion as any).illustrationUrl);
+    // Jika client meminta devotionId yang berbeda dari renungan terbaru,
+    // kembalikan null — jangan tampilkan gambar renungan lama/kemarin.
+    if (requestedDevotionId && requestedDevotionId !== devotion.id) {
+      return NextResponse.json({ url: null });
     }
 
+    const db = getAdminDb();
+
     if (db) {
-      // Re-fetch document directly to ensure we have the latest cached illustrationUrl
+      // Selalu re-fetch dari Firestore untuk mendapatkan illustrationUrl terbaru
+      // (tidak pakai prop devotion.illustrationUrl yang mungkin sudah stale)
       const docSnap = await db.collection("daily_devotions").doc(devotion.id).get();
       if (docSnap.exists) {
         const data = docSnap.data();
@@ -29,10 +53,10 @@ export async function GET(request: NextRequest) {
       }
     }
 
-    // Generate illustration image URL using the shared utility helper
+    // Gambar belum ada — generate baru
     const imageUrl = await generateDailyImage(devotion.id, devotion.verseRef, devotion.verseText);
 
-    // Save URL to Firestore for caching
+    // Simpan ke Firestore untuk di-cache
     if (db) {
       try {
         await db.collection("daily_devotions").doc(devotion.id).set(
