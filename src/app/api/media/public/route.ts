@@ -16,8 +16,8 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const keyParam = searchParams.get("key");
 
-    if (!key) {
-      return NextResponse.json({ error: "Key file wajib disertakan." }, { status: 400 });
+    if (!keyParam) {
+      return NextResponse.json({ error: "Key file wajib disertakan." }, { status: 400, headers: { 'Access-Control-Allow-Origin': allowOrigin } });
     }
 
     // decode key and remove any cache-busting query string
