@@ -14,23 +14,38 @@ export async function GET(request: Request) {
 
   try {
     const { searchParams } = new URL(request.url);
-    const key = searchParams.get("key");
+    const keyParam = searchParams.get("key");
 
     if (!key) {
       return NextResponse.json({ error: "Key file wajib disertakan." }, { status: 400 });
     }
 
+    // decode key and remove any cache-busting query string
+    const decoded = decodeURIComponent(keyParam);
+    const s3Key = decoded.split("?")[0];
+
     const command = new GetObjectCommand({
       Bucket: R2_BUCKET_NAME,
-      Key: key,
+      Key: s3Key,
     });
 
-    const result = await s3Client.send(command as any);
+    let result: any;
+    try {
+      result = await s3Client.send(command as any);
+    } catch (err: any) {
+      // translate not-found errors to 404 for clients
+      const msg = err?.message || String(err);
+      console.error(`R2 get object failed for key=${s3Key}:`, msg);
+      if (err?.$metadata?.httpStatusCode === 404 || err?.name === "NotFound") {
+        return new NextResponse("Not found", { status: 404, headers: { 'Access-Control-Allow-Origin': allowOrigin } });
+      }
+      throw err;
+    }
 
     // `result.Body` is a stream (Readable) — return it directly
-    const body = result.Body as unknown as ReadableStream || result.Body as any;
+    const body = result.Body as ReadableStream | any;
 
-    const contentType = (result as any).ContentType || "application/octet-stream";
+    const contentType = result.ContentType || "application/octet-stream";
 
     return new NextResponse(body, {
       headers: {
