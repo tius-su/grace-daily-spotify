@@ -36,7 +36,8 @@ export async function GET(request: Request) {
       // translate not-found errors to 404 for clients
       const msg = err?.message || String(err);
       console.error(`R2 get object failed for key=${s3Key}:`, msg);
-      if (err?.$metadata?.httpStatusCode === 404 || err?.name === "NotFound") {
+      const notFound = err?.$metadata?.httpStatusCode === 404 || err?.name === "NotFound" || /specified key does not exist|nosuchkey/i.test(msg);
+      if (notFound) {
         return new NextResponse("Not found", { status: 404, headers: { 'Access-Control-Allow-Origin': allowOrigin } });
       }
       throw err;
