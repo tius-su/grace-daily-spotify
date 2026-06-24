@@ -3,6 +3,64 @@
     {
       "path": "/api/cron/daily-devotion",
       "schedule": "0 22 * * *"
+    },
+    {
+      "path": "/api/cron/daily-devotion",
+      "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/generate-blog",
+      "schedule": "0 22 * * *"
+    },
+    {
+      "path": "/api/cron/generate-encyclopedia",
+      "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/cleanup-subscriptions",
+      "schedule": "0 19 * * *"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/manifest.json",
+      "has": [
+        {
+          "type": "host",
+          "value": "app.gracedaily.my.id"
+        }
+      ],
+      "destination": "/miniapp-manifest.json"
+    },
+    {
+      "source": "/manifest.webmanifest",
+      "has": [
+        {
+          "type": "host",
+          "value": "app.gracedaily.my.id"
+        }
+      ],
+      "destination": "/miniapp-manifest.json"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "app.gracedaily.my.id"
+        }
+      ],
+      "destination": "/telegram-miniapp"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "app.gracedaily.my.id"
+        }
+      ],
+      "destination": "/telegram-miniapp/:path*"
     }
   ]
 }
