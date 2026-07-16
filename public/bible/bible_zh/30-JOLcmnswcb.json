@@ -1,0 +1,2385 @@
+{
+    "type": "USJ",
+    "version": "3.1",
+    "content": [
+        {
+            "type": "book",
+            "marker": "id",
+            "code": "JOL",
+            "content": []
+        },
+        {
+            "type": "para",
+            "marker": "h",
+            "content": [
+                "约珥 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc1",
+            "content": [
+                "约珥书 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc2",
+            "content": [
+                "约珥 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc3",
+            "content": [
+                "珥 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt2",
+            "content": [
+                "约珥  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt1",
+            "content": [
+                "书  \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "1",
+            "sid": "JOL 1"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "JOL 1:1"
+                },
+                "耶和华",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:1 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "当“LORD”或“GOD”用全大写表示时，是上帝专有之名的译法（希伯来文“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "יהוה"
+                                    ]
+                                },
+                                "”，通常读作雅威）。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "的话临到毗土珥的儿子约珥。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "JOL 1:2"
+                },
+                "长老们哪，要听这话；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "地上所有的居民哪，要侧耳听！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "这样的事在你们的日子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "或在你们列祖的日子发生过吗？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "JOL 1:3"
+                },
+                "要把这事告诉你们的儿女，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "让你们的儿女告诉他们的儿女，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们的儿女又告诉下一代。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "JOL 1:4"
+                },
+                "群蝗剩下的，大蝗吃了；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "大蝗剩下的，蚱蜢吃了；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "蚱蜢剩下的，毛虫吃了。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "JOL 1:5"
+                },
+                "醉酒的人哪，醒来哭泣吧！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "所有喝酒的人哪，要为甜酒哀号，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为它已经从你们口中断绝了。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "JOL 1:6"
+                },
+                "因为有一国上来侵犯我的土地，强盛而数不胜数；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它的牙齿是狮子的牙齿，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它有母狮的大牙。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "JOL 1:7"
+                },
+                "它毁坏了我的葡萄树，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "剥光了我的无花果树；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它剥去树皮，丢弃一旁，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使枝条露白。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "JOL 1:8"
+                },
+                "要哀哭，如同披着麻衣的处女，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "为她年轻时的丈夫哀哭！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "JOL 1:9"
+                },
+                "素祭和奠祭从耶和华的殿中断绝了；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祭司，就是服侍耶和华的人，都哀哭。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "JOL 1:10"
+                },
+                "田地荒废，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "土地悲哀，因为五谷毁坏；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "新酒干涸，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "油也衰败。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "JOL 1:11"
+                },
+                "农夫啊，要羞愧惊惶！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "葡萄园丁啊，要哀号，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "为小麦和大麦哀号；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为田间的收成已经灭没。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "JOL 1:12"
+                },
+                "葡萄树干枯，无花果树凋残；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "石榴树、棕树、苹果树，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "田野所有的树木都枯萎；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为喜乐已经从世人中枯萎了。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "JOL 1:13"
+                },
+                "祭司啊，要披麻哀哭！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "服侍祭坛的人哪，要哀号。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "服侍我上帝",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:13 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "译为“上帝”的希伯来词是“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "אֱלֹהִ֑ים"
+                                    ]
+                                },
+                                "”（Elohim）。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "的人哪，来吧，披着麻衣整夜躺卧，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为素祭和奠祭已经从你们上帝的殿中止住了。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "JOL 1:14"
+                },
+                "要把禁食分别为圣；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "召集庄严的聚会；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "召集长老和地上所有的居民到耶和华你们上帝的殿，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "向耶和华呼求。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "JOL 1:15"
+                },
+                "哀哉，那日！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为耶和华的日子近了，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它必像从全能者而来的毁灭临到。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "JOL 1:16"
+                },
+                "粮食岂不是在我们眼前断绝了吗？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "欢喜和快乐岂不是从我们上帝的殿中断绝了吗？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "JOL 1:17"
+                },
+                "种子在土块下腐烂；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "粮仓荒废；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "仓房破败，因为谷物已经枯干。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "JOL 1:18"
+                },
+                "牲畜何等哀鸣！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "牛群彷徨无措，因为没有草场；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "羊群也荒凉了。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "JOL 1:19"
+                },
+                "耶和华啊，我向你呼求，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为火吞灭了旷野的草场，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "火焰烧尽了田野所有的树木。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "JOL 1:20"
+                },
+                "是的，田野的走兽也向你喘息，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为溪水干涸，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "火也吞灭了旷野的草场。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "2",
+            "sid": "JOL 2"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "JOL 2:1"
+                },
+                "要在锡安吹角，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在我的圣山吹响警报！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "要让这地所有的居民战兢，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为耶和华的日子要来了，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为它近在眼前：   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "JOL 2:2"
+                },
+                "那是黑暗幽冥的日子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是密云浓暗的日子。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "像晨光铺展在群山上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "有一支强大有力的民；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从来没有像他们的，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在他们以后也必不再有，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "直到万代之年。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "JOL 2:3"
+                },
+                "在他们前面，火焰吞噬；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在他们后面，烈焰焚烧。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "在他们前面，土地好像伊甸园；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在他们后面，却成了荒凉的旷野。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "是的，没有人能逃脱他们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "JOL 2:4"
+                },
+                "他们的样貌如马的样貌，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "奔跑好像骑兵。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "JOL 2:5"
+                },
+                "他们在山顶上跳跃，声音像战车的响声，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又像火焰吞噬碎秸的响声，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "好像强大的民摆开阵势作战。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "JOL 2:6"
+                },
+                "在他们面前，万民痛苦不安；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "所有人的脸都变得苍白。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "JOL 2:7"
+                },
+                "他们奔跑如勇士，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "攀上城墙如战士。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们各按自己的行列前进，不偏离道路。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "JOL 2:8"
+                },
+                "彼此不推挤；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "各走自己的路径。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们冲破防线，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "却不乱队列。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "JOL 2:9"
+                },
+                "他们猛冲进城，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "奔跑在城墙上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "爬进房屋，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "像贼一样从窗户进去。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "JOL 2:10"
+                },
+                "大地在他们面前震动，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "诸天战兢。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "日月昏暗，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "星辰收回光辉。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "JOL 2:11"
+                },
+                "耶和华在祂的军队前发声如雷，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为祂的队伍极其强大；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "执行祂命令的是强大的；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为耶和华的日子伟大，极其可畏，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "谁能承受呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "JOL 2:12"
+                },
+                "耶和华说：“然而，即使现在，你们也要全心转向我，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "要禁食、哭泣、悲哀。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "JOL 2:13"
+                },
+                "你们要撕裂的是心，不是衣服；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "要转向耶和华你们的上帝；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为祂有恩典，有怜悯，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不轻易发怒，且有丰盛的慈爱，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "并且转意不降灾祸。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "JOL 2:14"
+                },
+                "谁知道呢？祂也许会转意回心，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在祂身后留下祝福，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "就是给耶和华你们上帝的素祭和奠祭。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "JOL 2:15"
+                },
+                "要在锡安吹角！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "将禁食分别为圣。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "召集严肃会。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "JOL 2:16"
+                },
+                "聚集百姓。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使会众成圣。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "招聚长老。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "聚集孩童和吃奶的婴儿。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "让新郎从他的房间出来，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "新娘从她的内室出来。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "JOL 2:17"
+                },
+                "让祭司，就是事奉耶和华的人，在殿廊和祭坛之间哭泣，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "让他们说：“耶和华啊，求你顾惜你的子民，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不要使你的产业受羞辱，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "以致列国辖制他们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "为什么让人在列民中说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "‘他们的上帝在哪里呢？’”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "JOL 2:18"
+                },
+                "于是耶和华为祂的地发热心，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "并怜惜祂的子民。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "JOL 2:19"
+                },
+                "耶和华应允祂的子民说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“看哪，",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "2:19 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "“看哪”源自“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "הִנֵּה"
+                                    ]
+                                },
+                                "”，意思是看、留意、观察、看见或凝视。它常用作感叹词。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "我必赐给你们五谷、新酒和油，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们必因这些而满足；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我不再使你们在列国中受羞辱。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "JOL 2:20"
+                },
+                "我必使北方来的军队远离你们，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "把它赶到干旱荒凉之地；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它的前队进入东海，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它的后队进入西海；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它的臭气必上升，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它的恶臭必腾起。”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "它确实行了大事。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "JOL 2:21"
+                },
+                "地啊，不要害怕；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "要欢喜快乐，因为耶和华行了大事。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "JOL 2:22"
+                },
+                "田野的走兽啊，不要害怕；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为旷野的草场发青，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "树木结果。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "无花果树和葡萄树都尽其力量出产。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "23",
+                    "sid": "JOL 2:23"
+                },
+                "“所以，锡安的儿女啊，要欢喜，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "要因耶和华你们的上帝快乐；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为祂按适量赐给你们早雨，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又为你们降下雨水，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "像从前一样，有早雨和晚雨。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "24",
+                    "sid": "JOL 2:24"
+                },
+                "打谷场必满了麦子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "榨池必满溢新酒和油。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "25",
+                    "sid": "JOL 2:25"
+                },
+                "我必补还给你们那些年岁，就是成群的蝗虫所吃掉的，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "大蝗虫、蚱蜢和毛虫所吃掉的；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "这是我派到你们中间的我的大军队。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "26",
+                    "sid": "JOL 2:26"
+                },
+                "你们必吃得丰足而满足，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "并赞美耶和华你们上帝的名；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂为你们行了奇妙的事；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的子民必永不再蒙羞。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "27",
+                    "sid": "JOL 2:27"
+                },
+                "你们必知道我在以色列中间，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又知道我是耶和华你们的上帝，并没有别的；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的子民必永不再蒙羞。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "28",
+                    "sid": "JOL 2:28"
+                },
+                "“以后必有这样的事：我要将我的灵浇灌在凡有血肉的人身上；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们的儿女要说预言。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们的老人要做梦。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们的少年人要见异象。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "29",
+                    "sid": "JOL 2:29"
+                },
+                "在那些日子，我也要将我的灵  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "浇灌在仆人和婢女身上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "30",
+                    "sid": "JOL 2:30"
+                },
+                "我要在天上和地上显出奇事：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "有血、火和烟柱。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "31",
+                    "sid": "JOL 2:31"
+                },
+                "在耶和华那伟大而可畏的日子来到以前，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "太阳要变为黑暗，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "月亮要变为血。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "32",
+                    "sid": "JOL 2:32"
+                },
+                "到那时，凡呼求耶和华之名的，必得救；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为在锡安山和耶路撒冷必有逃脱的人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "正如耶和华所说的；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在余民中，必有耶和华所召的人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "3",
+            "sid": "JOL 3"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "JOL 3:1"
+                },
+                "“因为，看哪，在那些日子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在那个时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "当我使犹大和耶路撒冷恢复景况时，   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "JOL 3:2"
+                },
+                "我必聚集列国，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "带他们下到约沙法谷；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我要在那里为了我的百姓，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "为了我的产业以色列，审判他们；他们曾把以色列分散在列国中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又瓜分了我的地，   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "JOL 3:3"
+                },
+                "为我的百姓抽签，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "用男孩换妓女，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又卖女孩买酒喝。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "JOL 3:4"
+                },
+                "“推罗、西顿和非利士全境啊，你们与我有什么相干？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "你们要报复我吗？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "如果你们要报复我，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必迅速而急速地把你们的报应归到你们头上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "JOL 3:5"
+                },
+                "因为你们夺取了我的银子和金子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又把我最珍贵的宝物带进你们的庙宇，   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "JOL 3:6"
+                },
+                "并且把犹大的儿女和耶路撒冷的儿女卖给希腊人的子孙，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使他们远离自己的疆界。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "JOL 3:7"
+                },
+                "看哪，我必使他们从你们卖他们去的地方起来，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又把你们的报应归到你们头上；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "JOL 3:8"
+                },
+                "我必把你们的儿女卖在犹大儿女的手中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们必把他们卖给示巴人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "卖给远方的民族，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为耶和华已经说了。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "JOL 3:9"
+                },
+                "你们要在列国中宣告这事：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“预备战争！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "激动勇士。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "让所有战士近前来。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "让他们上来。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "JOL 3:10"
+                },
+                "要把你们的犁头打成刀剑，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "把你们的修枝镰打成长矛。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "让软弱的说：『我是强壮的。』   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "JOL 3:11"
+                },
+                "四围的列国啊，你们都要赶快前来，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "聚集在一起。”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "耶和华啊，求你使你的勇士降临在那里。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "JOL 3:12"
+                },
+                "“让列国奋起，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "上到约沙法谷；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为在那里我要坐下，审判四围的列国。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "JOL 3:13"
+                },
+                "下镰刀吧，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为庄稼熟了。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "来踩踏吧，因为酒榨满了，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "酒池盈溢，因为他们的罪恶甚大。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "JOL 3:14"
+                },
+                "许多许多的人在裁决谷！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为耶和华的日子在裁决谷临近了。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "JOL 3:15"
+                },
+                "太阳和月亮都昏暗，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "星辰也收回光辉。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "JOL 3:16"
+                },
+                "耶和华必从锡安吼叫，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从耶路撒冷发出雷声；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "天地都必震动；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "但耶和华必作祂百姓的避难所，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "作以色列儿女的坚固保障。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "JOL 3:17"
+                },
+                "“这样，你们就知道我是耶和华你们的上帝，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "住在锡安我的圣山。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "那时耶路撒冷必成为圣，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "再也没有外族人从其中经过。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "JOL 3:18"
+                },
+                "到那日，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "群山必滴下甜酒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "丘陵必流出奶，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "犹大所有的溪流必有水流淌；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "必有泉水从耶和华的殿中流出，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "浇灌什亭谷。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "JOL 3:19"
+                },
+                "埃及必成为荒凉，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "以东必成为荒凉的旷野，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "这是因为他们对犹大的儿女施暴，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又在他们的地上流了无辜人的血。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "JOL 3:20"
+                },
+                "但犹大必永远有人居住，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶路撒冷必世世代代有人居住。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "JOL 3:21"
+                },
+                "我必洁净他们尚未被我洁净的血，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为耶和华住在锡安。”   "
+            ]
+        }
+    ]
+}

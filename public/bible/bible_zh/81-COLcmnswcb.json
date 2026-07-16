@@ -1,0 +1,1003 @@
+{
+    "type": "USJ",
+    "version": "3.1",
+    "content": [
+        {
+            "type": "book",
+            "marker": "id",
+            "code": "COL",
+            "content": []
+        },
+        {
+            "type": "para",
+            "marker": "ide",
+            "content": [
+                " UTF-8\n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "h",
+            "content": [
+                "歌罗西书 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc1",
+            "content": [
+                "保罗写给歌罗西人的信 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc2",
+            "content": [
+                "歌罗西书 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc3",
+            "content": [
+                "西 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt1",
+            "content": [
+                "保罗写给歌罗西人的信  \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "1",
+            "sid": "COL 1"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "COL 1:1"
+                },
+                "奉上帝旨意作基督",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:1 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "“基督”的意思是“受膏者”。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "耶稣使徒的保罗，和我们的弟兄提摩太，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "COL 1:2"
+                },
+                "写信给在歌罗西、在基督里的圣徒和忠信的弟兄",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:2 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "这里译作“弟兄”的词，在上下文允许的地方，也可正确译为“弟兄姊妹”或“手足”。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "：愿恩典、平安从我们的父上帝和主耶稣基督临到你们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "COL 1:3"
+                },
+                "我们常常为你们祷告，感谢上帝，就是我们主耶稣基督的父，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "COL 1:4"
+                },
+                "因为听说你们在基督耶稣里的信心，以及你们对众圣徒所有的爱，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "COL 1:5"
+                },
+                "这是因那为你们存留在天上的盼望；这盼望是你们从前在福音真理的话语中所听见的。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "COL 1:6"
+                },
+                "这福音已经传到你们那里，正如在全世界一样，不断结果、增长；自从你们听见，并真实认识上帝恩典的那一天起，它在你们中间也是这样。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "COL 1:7"
+                },
+                "这正如你们从我们亲爱的同作仆人的以巴弗那里所学的；他是替你们",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:7 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "NU作“我们”"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "忠心服侍基督的人，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "COL 1:8"
+                },
+                "也把你们在圣灵里的爱告诉了我们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "COL 1:9"
+                },
+                "因此，我们自从听见这事的那一天起，也就不住地为你们祷告、祈求，愿你们在一切属灵的智慧和悟性上，充满对祂旨意的认识，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "COL 1:10"
+                },
+                "好使你们行事为人配得上主，凡事蒙祂喜悦，在一切善工上结果子，并且在认识上帝上不断增长；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "COL 1:11"
+                },
+                "照着祂荣耀的大能，得着一切能力的加力量，使你们凡事忍耐、恒忍，并且喜乐；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "COL 1:12"
+                },
+                "又感谢父，祂使我们有资格在光明中与圣徒同得基业。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "COL 1:13"
+                },
+                "祂救我们脱离黑暗的权势，把我们迁入祂爱子的国里；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "COL 1:14"
+                },
+                "我们在祂里面有救赎，",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:14 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "TR加上“借着祂的血，”"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "就是罪得赦免。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "COL 1:15"
+                },
+                "祂是那不能看见之上帝的形像，是一切受造之物的首生者。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "COL 1:16"
+                },
+                "因为万有都是借着祂造的，无论是在天上的、在地上的，能看见的、不能看见的，或是宝座，或是统治，或是执政的，或是掌权的；万有都是借着祂并为祂造的。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "COL 1:17"
+                },
+                "祂在万有之先；万有也在祂里面维系。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "COL 1:18"
+                },
+                "祂是身体，就是教会的头；祂是元始，是从死人中复活的首生者，好使祂在凡事上居首位。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "COL 1:19"
+                },
+                "因为一切的丰盛都乐意住在祂里面，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "COL 1:20"
+                },
+                "并且借着祂，既借着祂十字架上的血成就了和平，就借着祂使万有与自己和好；无论是地上的，还是天上的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "COL 1:21"
+                },
+                "你们从前与上帝隔绝，在心思上因恶行成为仇敌，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "COL 1:22"
+                },
+                "如今祂却借着祂肉身的身体，经过死亡，使你们和好，好把你们圣洁、没有瑕疵、无可责备地呈献在祂面前；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "23",
+                    "sid": "COL 1:23"
+                },
+                "只要你们继续持守信心，根基稳固，坚定不移，不离开你们所听见的福音的盼望。这福音已经传给天下一切受造之物；我保罗也作了这福音的仆人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "24",
+                    "sid": "COL 1:24"
+                },
+                "现在我为你们受苦，倒觉得喜乐；并且为了祂的身体，就是教会，在我的肉身上补满基督患难中尚缺少的部分。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "25",
+                    "sid": "COL 1:25"
+                },
+                "我照着上帝为你们赐给我的管家职分，作了教会的仆人，为要成全上帝的话语，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "26",
+                    "sid": "COL 1:26"
+                },
+                "就是历世历代以来隐藏的奥秘；但如今已经向祂的圣徒显明了。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "27",
+                    "sid": "COL 1:27"
+                },
+                "上帝乐意让他们知道，这奥秘在外邦人中有何等荣耀的丰富；这奥秘就是基督在你们里面，成了荣耀的盼望。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "28",
+                    "sid": "COL 1:28"
+                },
+                "我们传扬祂，用一切智慧劝诫各人、教导各人，为要把各人在基督耶稣里成熟完全地呈献出来；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "29",
+                    "sid": "COL 1:29"
+                },
+                "我也为此劳苦，照着祂在我里面大有能力运行的功用竭力奋斗。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "2",
+            "sid": "COL 2"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "COL 2:1"
+                },
+                "我愿意你们知道，我为你们、为老底嘉的人，以及所有没有亲眼见过我肉身面貌的人，是何等竭力奋斗；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "COL 2:2"
+                },
+                "为要使他们的心得着安慰，在爱中联结，并且得到悟性所带来充足确信的一切丰富，好认识上帝的奥秘，就是父和基督；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "COL 2:3"
+                },
+                "在祂里面，智慧和知识的一切宝藏都隐藏着。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "COL 2:4"
+                },
+                "我说这话，是免得有人用花言巧语迷惑你们。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "COL 2:5"
+                },
+                "因为我虽然肉身不在你们那里，灵里却与你们同在；我欢喜看见你们的秩序，以及你们对基督信心的坚定。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "COL 2:6"
+                },
+                "所以，你们既然接受了主基督耶稣，就当在祂里面行事为人；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "COL 2:7"
+                },
+                "在祂里面扎根、建造，并且照着你们所受的教导，在信心上得以坚固，满有感谢。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "COL 2:8"
+                },
+                "你们要谨慎，免得有人用哲学和虚空的欺骗，照着人的传统，照着世上的基本灵力，而不是照着基督，把你们掳去。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "COL 2:9"
+                },
+                "因为上帝本性一切的丰盛，都有形有体地住在祂里面；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "COL 2:10"
+                },
+                "你们在祂里面也得了丰盛。祂是一切执政的和掌权者的元首。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "COL 2:11"
+                },
+                "你们在祂里面也受了不是人手所行的割礼，就是脱去肉体罪恶之身体的割礼，乃是基督的割礼；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "COL 2:12"
+                },
+                "你们在洗礼中已经与祂一同埋葬，也在其中借着信上帝的作为，与祂一同复活；这上帝使祂从死人中复活。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "COL 2:13"
+                },
+                "你们从前因自己的过犯和肉体未受割礼而死，上帝却使你们与祂一同活过来，赦免了我们一切的过犯；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "COL 2:14"
+                },
+                "又涂抹了那用规条写成、抵挡我们的字据，把它撤去，钉在十字架上。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "COL 2:15"
+                },
+                "祂既解除了执政的和掌权者的武装，就公开展示他们，借着十字架胜过了他们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "COL 2:16"
+                },
+                "所以，不要让任何人在饮食上，或在节期、月朔、安息日方面论断你们；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "COL 2:17"
+                },
+                "这些原是将来之事的影子，实体却属于基督。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "COL 2:18"
+                },
+                "不要让任何人凭着自我贬抑和敬拜天使夺去你们的奖赏；这样的人拘泥于自己没有见过的事，凭着属肉体的心思徒然自高自大，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "COL 2:19"
+                },
+                "不紧紧持定元首；全身本是靠着祂，借着关节和筋络得供应并联结在一起，就以上帝所赐的增长而增长。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "COL 2:20"
+                },
+                "你们若是与基督一同死了，脱离了世上的基本灵力，为什么还像活在世上一样，受规条约束，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "COL 2:21"
+                },
+                "“不可拿，不可尝，不可摸”  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "COL 2:22"
+                },
+                "（这一切一经使用就都败坏），照着人的命令和教训呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "23",
+                    "sid": "COL 2:23"
+                },
+                "这些事在自立的敬拜、谦卑和苦待身体上，确实有智慧的名声，却对于克制肉体的放纵毫无价值。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "3",
+            "sid": "COL 3"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "COL 3:1"
+                },
+                "所以，你们若与基督一同复活了，就要寻求上面的事；在那里，基督坐在上帝的右边。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "COL 3:2"
+                },
+                "你们要思念上面的事，不要思念地上的事。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "COL 3:3"
+                },
+                "因为你们已经死了，你们的生命与基督一同藏在上帝里面。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "COL 3:4"
+                },
+                "当基督——我们的生命——显现的时候，你们也要与祂一同在荣耀中显现。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "COL 3:5"
+                },
+                "所以，要治死你们在地上的肢体：淫乱、污秽、邪情、恶欲，以及贪婪；贪婪就是拜偶像。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "COL 3:6"
+                },
+                "因这些事，上帝的愤怒临到悖逆之子。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "COL 3:7"
+                },
+                "你们从前活在这些事中的时候，也曾在其中行事。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "COL 3:8"
+                },
+                "但现在，你们必须把这一切都除掉：恼怒、愤怒、恶意、毁谤，以及你们口中的羞耻言语。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "COL 3:9"
+                },
+                "不要彼此说谎，因为你们已经脱去了旧人和旧人的行为，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "COL 3:10"
+                },
+                "并且穿上了新人；这新人照着创造他的那位的形象，在知识上不断更新。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "COL 3:11"
+                },
+                "在这新人里，并没有希腊人和犹太人、受割礼的和未受割礼的、蛮族人、西古提人、奴仆或自由人；基督却是一切，又在一切之中。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "COL 3:12"
+                },
+                "所以，你们既是上帝所拣选、圣洁蒙爱的人，就要穿上怜悯的心、仁慈、谦卑、温柔和忍耐；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "COL 3:13"
+                },
+                "要彼此包容，互相饶恕；若有人对别人有怨言，正如基督饶恕了你们，你们也要这样做。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "COL 3:14"
+                },
+                "最重要的是，要行在爱中；这爱是完全的纽带。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "COL 3:15"
+                },
+                "又要让上帝的平安在你们心里作主；你们也是为此在一个身体里蒙召。你们要存感谢的心。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "COL 3:16"
+                },
+                "要让基督的话丰丰富富地住在你们里面；用各样智慧，以诗篇、赞美诗和属灵的歌彼此教导、劝戒，心中带着恩典向主歌唱。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "COL 3:17"
+                },
+                "无论你们做什么，或说话，或行事，都要奉主耶稣的名而做，借着祂感谢父上帝。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "COL 3:18"
+                },
+                "作妻子的，要顺服自己的丈夫，这在主里是合宜的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "COL 3:19"
+                },
+                "作丈夫的，要爱你们的妻子，不可苦待她们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "COL 3:20"
+                },
+                "作儿女的，凡事要听从父母，因为这是主所喜悦的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "COL 3:21"
+                },
+                "作父亲的，不要激怒你们的儿女，免得他们灰心。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "COL 3:22"
+                },
+                "作奴仆的，凡事要听从你们肉身上的主人；不要只在他们眼前服事，像讨人喜欢的人，而要存单纯的心，敬畏上帝。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "23",
+                    "sid": "COL 3:23"
+                },
+                "无论你们做什么，都要从心里做，像是为主做，不是为人做；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "24",
+                    "sid": "COL 3:24"
+                },
+                "因为你们知道，你们必从主那里得到产业作为赏赐；因为你们服事的是主基督。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "25",
+                    "sid": "COL 3:25"
+                },
+                "但行不义的人必按他所行的不义受报应，并没有偏待人的事。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "4",
+            "sid": "COL 4"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "COL 4:1"
+                },
+                "作主人的，要把公正公平的待遇给你们的仆人，因为知道你们也有一位主在天上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "COL 4:2"
+                },
+                "你们要恒切祷告，在祷告中警醒感恩；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "COL 4:3"
+                },
+                "也要同时为我们祷告，求上帝给我们开传道的门，使我们能讲说基督的奥秘；我也正是为此被捆锁，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "COL 4:4"
+                },
+                "好使我按着所应当说的，把这奥秘显明出来。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "COL 4:5"
+                },
+                "你们对外人要以智慧行事，把握时机。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "COL 4:6"
+                },
+                "你们的话语要常常带着恩典，用盐调和，好叫你们知道该怎样回答各人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "COL 4:7"
+                },
+                "关于我的一切事，有亲爱的弟兄、忠心的仆人、在主里的同作奴仆推基古，会告诉你们。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "COL 4:8"
+                },
+                "我差他到你们那里，正是为这事，好让他知道你们的情况，并安慰你们的心；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "COL 4:9"
+                },
+                "同去的还有阿尼西母，他是忠心、亲爱的弟兄，是你们中的一位。他们会把这里所发生的一切事都告诉你们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "COL 4:10"
+                },
+                "与我一同被囚的亚里达古问候你们；巴拿巴的表弟马可也问候你们——关于他，你们已经领受了指示：“如果他到你们那里，要接待他”——  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "COL 4:11"
+                },
+                "还有称为犹士都的耶数也问候你们。在受割礼的人中，只有这些人是我为上帝的国度同工的；他们成了我的安慰。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "COL 4:12"
+                },
+                "以巴弗问候你们；他是你们中的一位，是基督的仆人，常常在祷告中为你们竭力，使你们在上帝一切旨意中站立得稳，成熟而完全。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "COL 4:13"
+                },
+                "我可以为他作证：他为你们，为老底嘉的人，也为希拉波立的人，有极大的热心。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "COL 4:14"
+                },
+                "亲爱的医生路加和底马问候你们。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "COL 4:15"
+                },
+                "请问候在老底嘉的弟兄们，以及宁法和在他家里的教会。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "COL 4:16"
+                },
+                "这封信在你们中间宣读以后，也要使它在老底嘉人的教会中宣读；你们也要读那封从老底嘉来的信。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "COL 4:17"
+                },
+                "要告诉亚基布：“你要留心你在主里所领受的职事，务要完成它。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "COL 4:18"
+                },
+                "我保罗亲手写这问安的话。要记念我的锁链。愿恩典与你们同在。阿们。   "
+            ]
+        }
+    ]
+}

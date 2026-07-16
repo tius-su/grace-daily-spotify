@@ -8,6 +8,7 @@ import {
 } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import type { Verse } from "@/lib/data";
+import storageConfig from "../../storage-config.json";
 
 export type BibleVerse = Verse & {
   id: string;
@@ -27,61 +28,119 @@ export type BibleChapterReading = {
   }>;
 };
 
-export const defaultBibleTranslation = {
-  id: "ind_ayt",
-  name: "Alkitab Yang Terbuka",
-  language: "Indonesia",
-};
+export const USE_WEB_BIBLE = process.env.NEXT_PUBLIC_USE_WEB_BIBLE === "true";
 
-export const bsbBibleTranslation = {
-  id: "BSB",
-  name: "Berean Standard Bible",
-  language: "English",
-};
+export const defaultBibleTranslation = USE_WEB_BIBLE
+  ? {
+    id: "ind_web" as const,
+    name: "World English Bible Terjemahan AI",
+    language: "Indonesia",
+  }
+  : {
+    id: "ind_ayt" as const,
+    name: "Alkitab Yang Terbuka",
+    language: "Indonesia",
+  };
 
-export const sampleBibleVerses: BibleVerse[] = [
-  {
-    id: "ind_ayt-JHN-3-16",
-    book: "Yohanes",
-    bookShort: "JHN",
-    chapter: 3,
-    verse: 16,
-    translation: "AYT",
-    reference: "Yohanes 3:16",
-    text: "Karena Allah sangat mengasihi dunia ini, Ia memberikan Anak-Nya yang tunggal supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan memperoleh hidup yang kekal.",
-    themes: ["kasih", "iman", "keselamatan"],
-    normalizedText:
-      "karena allah sangat mengasihi dunia ini ia memberikan anak nya yang tunggal supaya setiap orang yang percaya kepada nya tidak binasa melainkan memperoleh hidup yang kekal",
-    keywords: ["allah", "kasih", "dunia", "percaya", "hidup", "kekal"],
-  },
-  {
-    id: "ind_ayt-PSA-23-1",
-    book: "Mazmur",
-    bookShort: "PSA",
-    chapter: 23,
-    verse: 1,
-    translation: "AYT",
-    reference: "Mazmur 23:1",
-    text: "TUHAN adalah gembalaku, aku tidak akan kekurangan.",
-    themes: ["penghiburan", "pemeliharaan"],
-    normalizedText: "tuhan adalah gembalaku aku tidak akan kekurangan",
-    keywords: ["tuhan", "gembala", "kekurangan"],
-  },
-  {
-    id: "ind_ayt-PHP-4-6",
-    book: "Filipi",
-    bookShort: "PHP",
-    chapter: 4,
-    verse: 6,
-    translation: "AYT",
-    reference: "Filipi 4:6",
-    text: "Janganlah khawatir tentang apa pun juga. Namun, dalam segala sesuatu, nyatakan keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur.",
-    themes: ["doa", "damai", "syukur"],
-    normalizedText:
-      "janganlah khawatir tentang apa pun juga namun dalam segala sesuatu nyatakan keinginanmu kepada allah dalam doa dan permohonan dengan ucapan syukur",
-    keywords: ["khawatir", "allah", "doa", "permohonan", "syukur"],
-  },
-];
+export const bsbBibleTranslation = USE_WEB_BIBLE
+  ? {
+    id: "web" as const,
+    name: "World English Bible",
+    language: "English",
+  }
+  : {
+    id: "BSB" as const,
+    name: "Berean Standard Bible",
+    language: "English",
+  };
+
+export const sampleBibleVerses: BibleVerse[] = USE_WEB_BIBLE
+  ? [
+    {
+      id: "ind_web-JHN-3-16",
+      book: "Yohanes",
+      bookShort: "JHN",
+      chapter: 3,
+      verse: 16,
+      translation: "WEB-AI",
+      reference: "Yohanes 3:16",
+      text: "Karena Allah sangat mengasihi dunia ini, sehingga Ia memberikan Anak Tunggal-Nya, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan memperoleh hidup yang kekal.",
+      themes: ["kasih", "iman", "keselamatan"],
+      normalizedText:
+        "karena allah sangat mengasihi dunia ini sehingga ia memberikan anak tunggal nya supaya setiap orang yang percaya kepada nya tidak binasa melainkan memperoleh hidup yang kekal",
+      keywords: ["allah", "kasih", "dunia", "percaya", "hidup", "kekal"],
+    },
+    {
+      id: "ind_web-PSA-23-1",
+      book: "Mazmur",
+      bookShort: "PSA",
+      chapter: 23,
+      verse: 1,
+      translation: "WEB-AI",
+      reference: "Mazmur 23:1",
+      text: "Tuhan adalah gembalaku. Aku tidak akan kekurangan.",
+      themes: ["penghiburan", "pemeliharaan"],
+      normalizedText: "yahweh adalah gembalaku aku tidak akan kekurangan",
+      keywords: ["yahweh", "gembala", "kekurangan"],
+    },
+    {
+      id: "ind_web-PHP-4-6",
+      book: "Filipi",
+      bookShort: "PHP",
+      chapter: 4,
+      verse: 6,
+      translation: "WEB-AI",
+      reference: "Filipi 4:6",
+      text: "Jangan khawatir tentang apa pun, tetapi dalam segala hal, melalui doa dan permohonan dengan ucapan syukur, nyatakan keinginanmu kepada Allah.",
+      themes: ["doa", "damai", "syukur"],
+      normalizedText:
+        "jangan khawatir tentang apa pun tetapi dalam segala hal melalui doa dan permohonan dengan ucapan syukur nyatakan keinginanmu kepada allah",
+      keywords: ["khawatir", "allah", "doa", "permohonan", "syukur"],
+    },
+  ]
+  : [
+    {
+      id: "ind_ayt-JHN-3-16",
+      book: "Yohanes",
+      bookShort: "JHN",
+      chapter: 3,
+      verse: 16,
+      translation: "AYT",
+      reference: "Yohanes 3:16",
+      text: "Karena Allah sangat mengasihi dunia ini, Ia memberikan Anak-Nya yang tunggal supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan memperoleh hidup yang kekal.",
+      themes: ["kasih", "iman", "keselamatan"],
+      normalizedText:
+        "karena allah sangat mengasihi dunia ini ia memberikan anak nya yang tunggal supaya setiap orang yang percaya kepada nya tidak binasa melainkan memperoleh hidup yang kekal",
+      keywords: ["allah", "kasih", "dunia", "percaya", "hidup", "kekal"],
+    },
+    {
+      id: "ind_ayt-PSA-23-1",
+      book: "Mazmur",
+      bookShort: "PSA",
+      chapter: 23,
+      verse: 1,
+      translation: "AYT",
+      reference: "Mazmur 23:1",
+      text: "TUHAN adalah gembalaku, aku tidak akan kekurangan.",
+      themes: ["penghiburan", "pemeliharaan"],
+      normalizedText: "tuhan adalah gembalaku aku tidak akan kekurangan",
+      keywords: ["tuhan", "gembala", "kekurangan"],
+    },
+    {
+      id: "ind_ayt-PHP-4-6",
+      book: "Filipi",
+      bookShort: "PHP",
+      chapter: 4,
+      verse: 6,
+      translation: "AYT",
+      reference: "Filipi 4:6",
+      text: "Janganlah khawatir tentang apa pun juga. Namun, dalam segala sesuatu, nyatakan keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur.",
+      themes: ["doa", "damai", "syukur"],
+      normalizedText:
+        "janganlah khawatir tentang apa pun juga namun dalam segala sesuatu nyatakan keinginanmu kepada allah dalam doa dan permohonan dengan ucapan syukur",
+      keywords: ["khawatir", "allah", "doa", "permohonan", "syukur"],
+    },
+  ];
 
 export const BIBLE_BOOKS = [
   { id: "GEN", name: "Kejadian", chapters: 50 },
@@ -156,13 +215,13 @@ const bookAliases: Record<string, { id: string; name: string }> = {};
 for (const book of BIBLE_BOOKS) {
   const lower = book.name.toLowerCase();
   bookAliases[lower] = { id: book.id, name: book.name };
-  
+
   // Normalized query name (e.g. replace hyphens/symbols with space)
   const norm = lower.replace(/[^a-z0-9\s:]/g, " ").replace(/\s+/g, " ").trim();
   if (norm !== lower) {
     bookAliases[norm] = { id: book.id, name: book.name };
   }
-  
+
   // Stripped (alphanumeric only)
   const stripped = lower.replace(/[^a-z0-9]/g, "");
   if (stripped !== lower && stripped !== norm) {
@@ -206,11 +265,48 @@ export function extractBibleText(content: unknown): string {
   return "";
 }
 
-const CHAPTERS_CACHE_NAME = "bible-chapters-cache-v1";
+const CHAPTERS_CACHE_NAME = "bible-chapters-cache-v2";
+
+export async function cleanOldBibleCaches(): Promise<void> {
+  if (typeof window === "undefined" || !window.caches) return;
+  try {
+    const keys = await caches.keys();
+    for (const key of keys) {
+      if (key.startsWith("bible-chapters-cache-") && key !== CHAPTERS_CACHE_NAME) {
+        await caches.delete(key);
+        console.log(`[bible] Deleted old bible cache: ${key}`);
+      }
+    }
+  } catch (error) {
+    console.warn("[bible] Failed to clear old bible caches:", error);
+  }
+}
 
 async function fetchWithCache(url: string): Promise<Response> {
   if (typeof window === "undefined") {
-    return fetch(url);
+    let serverUrl = url;
+    if (url.startsWith("/")) {
+      const appUrl = process.env.NEXT_PUBLIC_APP_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+      serverUrl = `${appUrl}${url}`;
+    }
+    try {
+      let response = await fetch(serverUrl);
+      if (!response.ok && url.startsWith("/bible/")) {
+        const r2Url = `${process.env.NEXT_PUBLIC_R2_PUBLIC_URL || "https://pub-9ba2247ba0854484a764b2a32e6b6ef1.r2.dev"}${url}`;
+        console.log(`[bible server] Local fetch failed for ${url}. Falling back to R2: ${r2Url}`);
+        const r2Response = await fetch(r2Url);
+        if (r2Response.ok) {
+          response = r2Response;
+        }
+      }
+      return response;
+    } catch (e) {
+      if (url.startsWith("/bible/")) {
+        const r2Url = `${process.env.NEXT_PUBLIC_R2_PUBLIC_URL || "https://pub-9ba2247ba0854484a764b2a32e6b6ef1.r2.dev"}${url}`;
+        return fetch(r2Url);
+      }
+      throw e;
+    }
   }
   try {
     const cache = await caches.open(CHAPTERS_CACHE_NAME);
@@ -218,7 +314,15 @@ async function fetchWithCache(url: string): Promise<Response> {
     if (cachedResponse) {
       return cachedResponse;
     }
-    const response = await fetch(url);
+    let response = await fetch(url);
+    if (!response.ok && response.status === 404 && url.startsWith("/bible/")) {
+      const backupUrl = `/api/backup?file=${encodeURIComponent(url.substring(1))}`;
+      console.log(`[bible] Local file not found: ${url}. Falling back to R2: ${backupUrl}`);
+      const backupResponse = await fetch(backupUrl);
+      if (backupResponse.ok) {
+        response = backupResponse;
+      }
+    }
     if (response.ok) {
       cache.put(url, response.clone());
     }
@@ -229,12 +333,91 @@ async function fetchWithCache(url: string): Promise<Response> {
   }
 }
 
+export const BIBLE_BOOK_TRANSLATIONS: Record<string, { id: string; idName: string; en: string; zh: string }> = {
+  GEN: { id: "GEN", idName: "Kejadian", en: "Genesis", zh: "创世记" },
+  EXO: { id: "EXO", idName: "Keluaran", en: "Exodus", zh: "出埃及记" },
+  LEV: { id: "LEV", idName: "Imamat", en: "Leviticus", zh: "利未记" },
+  NUM: { id: "NUM", idName: "Bilangan", en: "Numbers", zh: "民数记" },
+  DEU: { id: "DEU", idName: "Ulangan", en: "Deuteronomy", zh: "申命记" },
+  JOS: { id: "JOS", idName: "Yosua", en: "Joshua", zh: "约书亚记" },
+  JDG: { id: "JDG", idName: "Hakim-Hakim", en: "Judges", zh: "士师记" },
+  RUT: { id: "RUT", idName: "Rut", en: "Ruth", zh: "路得记" },
+  "1SA": { id: "1SA", idName: "1 Samuel", en: "1 Samuel", zh: "撒母耳记上" },
+  "2SA": { id: "2SA", idName: "2 Samuel", en: "2 Samuel", zh: "撒母耳记下" },
+  "1KI": { id: "1KI", idName: "1 Raja-Raja", en: "1 Kings", zh: "列王纪上" },
+  "2KI": { id: "2KI", idName: "2 Raja-Raja", en: "2 Kings", zh: "列王纪下" },
+  "1CH": { id: "1CH", idName: "1 Tawarikh", en: "1 Chronicles", zh: "历代志上" },
+  "2CH": { id: "2CH", idName: "2 Tawarikh", en: "2 Chronicles", zh: "历代志下" },
+  EZR: { id: "EZR", idName: "Ezra", en: "Ezra", zh: "以斯拉记" },
+  NEH: { id: "NEH", idName: "Nehemia", en: "Nehemiah", zh: "尼希米记" },
+  EST: { id: "EST", idName: "Ester", en: "Esther", zh: "以斯帖记" },
+  JOB: { id: "JOB", idName: "Ayub", en: "Job", zh: "约伯记" },
+  PSA: { id: "PSA", idName: "Mazmur", en: "Psalms", zh: "诗篇" },
+  PRO: { id: "PRO", idName: "Amsal", en: "Proverbs", zh: "箴言" },
+  ECC: { id: "ECC", idName: "Pengkhotbah", en: "Ecclesiastes", zh: "传道书" },
+  SNG: { id: "SNG", idName: "Kidung Agung", en: "Song of Songs", zh: "雅歌" },
+  ISA: { id: "ISA", idName: "Yesaya", en: "Isaiah", zh: "以赛亚书" },
+  JER: { id: "JER", idName: "Yeremia", en: "Jeremiah", zh: "耶利米书" },
+  LAM: { id: "LAM", idName: "Ratapan", en: "Lamentations", zh: "耶利米哀歌" },
+  EZK: { id: "EZK", idName: "Yehezkiel", en: "Ezekiel", zh: "以西结书" },
+  DAN: { id: "DAN", idName: "Daniel", en: "Daniel", zh: "但以理书" },
+  HOS: { id: "HOS", idName: "Hosea", en: "Hosea", zh: "何西阿书" },
+  JOL: { id: "JOL", idName: "Yoel", en: "Joel", zh: "约珥书" },
+  AMO: { id: "AMO", idName: "Amos", en: "Amos", zh: "阿摩司书" },
+  OBA: { id: "OBA", idName: "Obaja", en: "Obadiah", zh: "俄巴底亚书" },
+  JON: { id: "JON", idName: "Yunus", en: "Jonah", zh: "约拿书" },
+  MIC: { id: "MIC", idName: "Mikha", en: "Micah", zh: "弥迦书" },
+  NAM: { id: "NAM", idName: "Nahum", en: "Nahum", zh: "那鸿书" },
+  HAB: { id: "HAB", idName: "Habakuk", en: "Habakkuk", zh: "哈巴谷书" },
+  ZEP: { id: "ZEP", idName: "Zefanya", en: "Zephaniah", zh: "西番雅书" },
+  HAG: { id: "HAG", idName: "Hagai", en: "Haggai", zh: "哈该书" },
+  ZEC: { id: "ZEC", idName: "Zakharia", en: "Zechariah", zh: "撒迦利亚书" },
+  MAL: { id: "MAL", idName: "Maleakhi", en: "Malachi", zh: "玛拉基书" },
+  MAT: { id: "MAT", idName: "Matius", en: "Matthew", zh: "马太福音" },
+  MRK: { id: "MRK", idName: "Markus", en: "Mark", zh: "马可福音" },
+  LUK: { id: "LUK", idName: "Lukas", en: "Luke", zh: "路加福音" },
+  JHN: { id: "JHN", idName: "Yohanes", en: "John", zh: "约翰福音" },
+  ACT: { id: "ACT", idName: "Kisah Para Rasul", en: "Acts", zh: "使徒行传" },
+  ROM: { id: "ROM", idName: "Roma", en: "Romans", zh: "罗马书" },
+  "1CO": { id: "1CO", idName: "1 Korintus", en: "1 Corinthians", zh: "哥林多前书" },
+  "2CO": { id: "2CO", idName: "2 Korintus", en: "2 Corinthians", zh: "哥林多后书" },
+  GAL: { id: "GAL", idName: "Galatia", en: "Galatians", zh: "加拉太书" },
+  EPH: { id: "EPH", idName: "Efesus", en: "Ephesians", zh: "以弗所书" },
+  PHP: { id: "PHP", idName: "Filipi", en: "Philippians", zh: "腓立比书" },
+  COL: { id: "COL", idName: "Kolose", en: "Colossians", zh: "歌罗西书" },
+  "1TH": { id: "1TH", idName: "1 Tesalonika", en: "1 Thessalonians", zh: "帖撒罗尼迦前书" },
+  "2TH": { id: "2TH", idName: "2 Tesalonika", en: "2 Thessalonians", zh: "帖撒罗尼迦后书" },
+  "1TI": { id: "1TI", idName: "1 Timotius", en: "1 Timothy", zh: "提摩太前书" },
+  "2TI": { id: "2TI", idName: "2 Timotius", en: "2 Timothy", zh: "提摩太后书" },
+  TIT: { id: "TIT", idName: "Titus", en: "Titus", zh: "提多书" },
+  PHM: { id: "PHM", idName: "Filemon", en: "Philemon", zh: "腓利门书" },
+  HEB: { id: "HEB", idName: "Ibrani", en: "Hebrews", zh: "希伯来书" },
+  JAS: { id: "JAS", idName: "Yakobus", en: "James", zh: "雅各书" },
+  "1PE": { id: "1PE", idName: "1 Petrus", en: "1 Peter", zh: "彼得前书" },
+  "2PE": { id: "2PE", idName: "2 Petrus", en: "2 Peter", zh: "彼得后书" },
+  "1JN": { id: "1JN", idName: "1 Yohanes", en: "1 John", zh: "约翰一书" },
+  "2JN": { id: "2JN", idName: "2 Yohanes", en: "2 John", zh: "约翰二书" },
+  "3JN": { id: "3JN", idName: "3 Yohanes", en: "3 John", zh: "约翰三书" },
+  JUD: { id: "JUD", idName: "Yudas", en: "Jude", zh: "犹大书" },
+  REV: { id: "REV", idName: "Wahyu", en: "Revelation", zh: "启示录" }
+};
+
+export function getBookName(nameOrId: string, lang: string): string {
+  const book = findBook(nameOrId);
+  if (!book) return nameOrId;
+  const translation = BIBLE_BOOK_TRANSLATIONS[book.id];
+  if (!translation) return book.name;
+  if (lang === "zh") return translation.zh;
+  if (lang === "en") return translation.en;
+  return translation.idName;
+}
+
 export function findBook(searchBook: string) {
   const clean = searchBook.toLowerCase().replace(/[^a-z0-9]/g, "");
-  
+
   // 1. Direct lookup
   if (bookAliases[clean]) return bookAliases[clean];
-  
+
   // 2. Check common abbreviations and prefix matches
   if (clean.startsWith("mat")) return { id: "MAT", name: "Matius" };
   if (clean.startsWith("mar") || clean.startsWith("mrk")) return { id: "MRK", name: "Markus" };
@@ -287,7 +470,27 @@ export function findBook(searchBook: string) {
   if (clean.startsWith("mik") || clean.startsWith("mic")) return { id: "MIC", name: "Mikha" };
   if (clean.startsWith("nah") || clean.startsWith("nam")) return { id: "NAM", name: "Nahum" };
   if (clean.startsWith("hab")) return { id: "HAB", name: "Habakuk" };
-  
+
+  // 3. Check Chinese/English full name and abbreviation matches
+  const cleanLower = searchBook.toLowerCase().trim();
+  for (const b of Object.values(BIBLE_BOOK_TRANSLATIONS)) {
+    const zhClean = b.zh.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]/g, "");
+    const enClean = b.en.toLowerCase().replace(/[^a-z0-9]/g, "");
+    const idClean = b.idName.toLowerCase().replace(/[^a-z0-9]/g, "");
+    const searchClean = cleanLower.replace(/[^a-z0-9\u4e00-\u9fa5]/g, "");
+
+    if (
+      searchClean === zhClean ||
+      searchClean === enClean ||
+      searchClean === idClean ||
+      zhClean.startsWith(searchClean) ||
+      enClean.startsWith(searchClean) ||
+      idClean.startsWith(searchClean)
+    ) {
+      return { id: b.id, name: b.idName };
+    }
+  }
+
   for (const book of BIBLE_BOOKS) {
     if (book.name.toLowerCase().startsWith(clean)) {
       return { id: book.id, name: book.name };
@@ -367,7 +570,7 @@ function parseReference(search: string) {
   };
 }
 
-async function fetchBibleReference(search: string, translationId: "ind_ayt" | "BSB"): Promise<BibleVerse[]> {
+async function fetchBibleReference(search: string, translationId: "ind_ayt" | "BSB" | "ind_web" | "web" | "zh_web"): Promise<BibleVerse[]> {
   const refs = parseMultipleReferences(search);
   if (refs.length === 0) {
     return [];
@@ -385,7 +588,15 @@ async function fetchBibleReference(search: string, translationId: "ind_ayt" | "B
 
       const chapterData = await res.json();
       const verses = chapterData.chapter.content.filter((item: any) => item.type === "verse");
-      const translationName = translationId === "ind_ayt" ? "AYT" : "BSB";
+      const translationName = translationId === "ind_ayt"
+        ? "AYT"
+        : translationId === "ind_web"
+          ? "WEB-AI"
+          : translationId === "BSB"
+            ? "BSB"
+            : translationId === "zh_web"
+              ? "CUV"
+              : "WEB";
 
       let matchesVerse = (num: number) => true;
 
@@ -445,7 +656,7 @@ async function fetchBibleReference(search: string, translationId: "ind_ayt" | "B
 export async function fetchBibleChapterReading(
   bookShort: string,
   chapter: number,
-  translationId: "ind_ayt" | "BSB" = "BSB",
+  translationId: "ind_ayt" | "BSB" | "ind_web" | "web" | "zh_web" = "BSB",
 ): Promise<BibleChapterReading | null> {
   const book = BIBLE_BOOKS.find((item) => item.id === bookShort);
 
@@ -470,7 +681,15 @@ export async function fetchBibleChapterReading(
       book: book.name,
       bookShort,
       chapter,
-      translation: translationId === "ind_ayt" ? "AYT" : "BSB",
+      translation: translationId === "ind_ayt"
+        ? "AYT"
+        : translationId === "ind_web"
+          ? "WEB-AI"
+          : translationId === "BSB"
+            ? "BSB"
+            : translationId === "zh_web"
+              ? "CUV"
+              : "WEB",
       verses,
     };
   } catch (error) {
@@ -481,7 +700,10 @@ export async function fetchBibleChapterReading(
 
 const searchCache = new Map<string, BibleVerse[]>();
 
-export async function searchBibleVerses(search: string, translationId: "ind_ayt" | "BSB" = "ind_ayt"): Promise<BibleVerse[]> {
+export async function searchBibleVerses(
+  search: string,
+  translationId: "ind_ayt" | "BSB" | "ind_web" | "web" | "zh_web" = defaultBibleTranslation.id as any,
+): Promise<BibleVerse[]> {
   const normalized = normalizeBibleQuery(search);
 
   if (!normalized) {
@@ -498,7 +720,7 @@ export async function searchBibleVerses(search: string, translationId: "ind_ayt"
   return results;
 }
 
-async function _executeBibleSearch(search: string, normalized: string, translationId: "ind_ayt" | "BSB"): Promise<BibleVerse[]> {
+async function _executeBibleSearch(search: string, normalized: string, translationId: "ind_ayt" | "BSB" | "ind_web" | "web" | "zh_web"): Promise<BibleVerse[]> {
   const fallback = sampleBibleVerses.filter((verse) =>
     [verse.reference, verse.normalizedText, verse.themes.join(" ")]
       .join(" ")
@@ -514,7 +736,7 @@ async function _executeBibleSearch(search: string, normalized: string, translati
     if (localResults.length > 0) return localResults;
   }
 
-  if (!db) {
+  if (!db || storageConfig.bibleVerse === "vercel") {
     const apiResults = await fetchBibleReference(search, translationId);
     return apiResults.length
       ? apiResults
@@ -550,7 +772,7 @@ async function _executeBibleSearch(search: string, normalized: string, translati
       .filter((verse) => (verse.score ?? 0) > 0)
       .sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
       .slice(0, 100);
-      
+
     // Filter to requested translation if applicable. 
     // If Firestore only has 'ind_ayt', BSB searches will return empty, which is intended since it's unseeded.
     if (results.length > 0 && results[0].translation) {

@@ -1,0 +1,317 @@
+{
+    "type": "USJ",
+    "version": "3.1",
+    "content": [
+        {
+            "type": "book",
+            "marker": "id",
+            "code": "OBA",
+            "content": []
+        },
+        {
+            "type": "para",
+            "marker": "ide",
+            "content": [
+                " UTF-8\n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "h",
+            "content": [
+                "俄巴底亚 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc1",
+            "content": [
+                "俄巴底亚书 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc2",
+            "content": [
+                "俄巴底亚 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc3",
+            "content": [
+                "俄巴 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt2",
+            "content": [
+                "俄巴底亚  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt1",
+            "content": [
+                "书  \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "1",
+            "sid": "OBA 1"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "OBA 1:1"
+                },
+                "俄巴底亚的异象。主",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:1 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "译作“主”的词是“Adonai”（阿多奈）。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "耶和华",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:1 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "当以全大写字母写作“LORD”或“GOD”时，是上帝专有名（希伯来文“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "יהוה"
+                                    ]
+                                },
+                                "”，通常读作 Yahweh）的翻译。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "论以东这样说：我们从耶和华那里听见消息，有使者被差到列国中，说：“起来吧！让我们起来与她争战。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "OBA 1:2"
+                },
+                "看哪，",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:2 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "“看哪”来自“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "הִנֵּה"
+                                    ]
+                                },
+                                "”，意思是看、注意、观察、观看或凝视。它常用作感叹词。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "我已使你在列国中为小；你大大被藐视。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "OBA 1:3"
+                },
+                "你这住在磐石裂缝中、居所高高在上的人，你心中的骄傲欺骗了你；你心里说：‘谁能把我拉下到地上呢？’  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "OBA 1:4"
+                },
+                "你虽像鹰高飞，虽把巢筑在星辰之间，我也必从那里把你拉下来。”耶和华说。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "OBA 1:5"
+                },
+                "“若有盗贼来到你那里，若有强盗夜间来——你将遭何等灾祸啊——他们岂不只偷到够了为止吗？若有摘葡萄的人来到你那里，岂不留下一些可拾取的葡萄吗？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "OBA 1:6"
+                },
+                "以扫何等被搜掠！他隐藏的宝物何等被搜寻出来！  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "OBA 1:7"
+                },
+                "所有与你结盟的人都把你送到边界；与你和好的人欺骗了你，胜过了你。吃你饭的朋友在你脚下设下网罗；他毫无明辨。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "OBA 1:8"
+                },
+                "“到那日，”耶和华说，“我岂不从以东除灭智慧人，从以扫山除灭聪明吗？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "OBA 1:9"
+                },
+                "提幔哪，你的勇士必惊惶，使所有人都因杀戮从以扫山被剪除。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "OBA 1:10"
+                },
+                "因你向兄弟雅各施暴，羞愧必遮盖你，你必永远被剪除。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "OBA 1:11"
+                },
+                "在你站在旁边的日子，在陌生人掳走他的财物、外族人进入他的城门、为耶路撒冷拈阄的日子，你也像他们中的一个。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "OBA 1:12"
+                },
+                "但在你兄弟遭灾的日子，不要轻看他；在犹大子民灭亡的日子，不要因他们欢喜；在困苦的日子，不要口出狂傲的话。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "OBA 1:13"
+                },
+                "在我子民遭祸的日子，不要进入他们的城门；在他们遭祸的日子，不要轻看他们的苦难，也不要在他们遭祸的日子夺取他们的财富。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "OBA 1:14"
+                },
+                "不要站在岔路口剪除他逃脱的人；在困苦的日子，不要交出他剩下的人。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "OBA 1:15"
+                },
+                "因为耶和华的日子临近，要临到万国！你怎样行，也必照样向你行；你的行为必归到你自己头上。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "OBA 1:16"
+                },
+                "你们怎样在我的圣山上喝了，万国也必照样不断地喝。是的，他们必喝，必吞下去，成为好像从未存在过一样。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "OBA 1:17"
+                },
+                "但在锡安山必有逃脱的人，那里必成为圣；雅各家必得他们的产业。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "OBA 1:18"
+                },
+                "雅各家必成为火，约瑟家成为火焰，以扫家成为碎秸；他们必在他们中间燃烧，吞灭他们。以扫家必没有剩余的人。”耶和华确实已经说了。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "OBA 1:19"
+                },
+                "南地的人必得以扫山；低地的人必得非利士人之地。他们必得以法莲的田野和撒玛利亚的田野；便雅悯必得基列。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "OBA 1:20"
+                },
+                "在迦南人中间的这支以色列子民军队中的被掳者，必得地直到撒勒法；在西法拉的耶路撒冷被掳者，必得南地的城邑。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "OBA 1:21"
+                },
+                "拯救者必登上锡安山，审判以扫的众山；国度就必属耶和华。   "
+            ]
+        }
+    ]
+}

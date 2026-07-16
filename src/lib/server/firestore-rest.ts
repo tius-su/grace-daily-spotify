@@ -53,6 +53,10 @@ export async function fetchCollectionFromRest(collectionName: string): Promise<a
     const res = await fetch(`${BASE_URL}/${collectionName}`, {
       next: { revalidate: 300 },
     });
+    if (res.status === 429) {
+      console.warn(`[Firestore REST] Rate-limited (429) for collection '${collectionName}'. Skipping.`);
+      return [];
+    }
     if (!res.ok) {
       throw new Error(`REST fetch failed with status ${res.status}`);
     }
@@ -73,6 +77,10 @@ export async function fetchDocFromRest(collectionName: string, docId: string): P
     const res = await fetch(`${BASE_URL}/${collectionName}/${docId}`, {
       next: { revalidate: 300 },
     });
+    if (res.status === 429) {
+      console.warn(`[Firestore REST] Rate-limited (429) for document '${collectionName}/${docId}'. Skipping.`);
+      return null;
+    }
     if (!res.ok) {
       if (res.status === 404) return null;
       throw new Error(`REST fetch failed with status ${res.status}`);

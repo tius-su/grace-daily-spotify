@@ -9,22 +9,25 @@
   "background_color": "#0f172a",
   "theme_color": "#0d9488",
   "lang": "id",
-  "categories": ["lifestyle", "education"],
+  "categories": [
+    "lifestyle",
+    "education"
+  ],
   "icons": [
     {
-      "src": "/logo1.jpg",
+      "src": "/graced-logo.png",
       "sizes": "192x192",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "/logo1.jpg",
+      "src": "/graced-logo.png",
       "sizes": "512x512",
-      "type": "image/jpeg",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/Grace-Daily_logo.png",
+      "src": "/graced-logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

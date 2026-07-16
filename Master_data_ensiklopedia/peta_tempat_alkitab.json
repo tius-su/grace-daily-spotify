@@ -1,0 +1,182 @@
+[
+  {
+    "tempat_id": "heaven_1",
+    "nama_tempat": "surga",
+    "koordinat": {
+      "lat": 51.507865,
+      "lng": -0.1245597
+    },
+    "lokasi_modern": "United Kingdom"
+  },
+  {
+    "tempat_id": "Earth_1",
+    "nama_tempat": "Bumi",
+    "koordinat": {
+      "lat": 34.2331373,
+      "lng": -102.4107493
+    },
+    "lokasi_modern": "United States"
+  },
+  {
+    "tempat_id": "waters_1",
+    "nama_tempat": "perairan",
+    "koordinat": {
+      "lat": 44.8797358,
+      "lng": -84.698641
+    },
+    "lokasi_modern": "United States"
+  },
+  {
+    "tempat_id": "heaven_2",
+    "nama_tempat": "bentangan",
+    "koordinat": {
+      "lat": 51.507865,
+      "lng": -0.1245597
+    },
+    "lokasi_modern": "United Kingdom"
+  },
+  {
+    "tempat_id": "earth_2",
+    "nama_tempat": "lahan kering",
+    "koordinat": {
+      "lat": 34.2331373,
+      "lng": -102.4107493
+    },
+    "lokasi_modern": "United States"
+  },
+  {
+    "tempat_id": "The Garden_1",
+    "nama_tempat": "kebun",
+    "koordinat": {
+      "lat": 40.7505129,
+      "lng": -73.9935159
+    },
+    "lokasi_modern": "United States"
+  },
+  {
+    "tempat_id": "Eden_1",
+    "nama_tempat": "Eden",
+    "koordinat": {
+      "lat": 36.4884715,
+      "lng": -79.7667026
+    },
+    "lokasi_modern": "United States"
+  },
+  {
+    "tempat_id": "Pishon_1",
+    "nama_tempat": "Pison",
+    "koordinat": {
+      "lat": -33.8745592,
+      "lng": 151.0935801
+    },
+    "lokasi_modern": "Australia"
+  },
+  {
+    "tempat_id": "Havilah_1",
+    "nama_tempat": "Havilah",
+    "koordinat": {
+      "lat": 35.5177324,
+      "lng": -118.5186972
+    },
+    "lokasi_modern": "United States"
+  },
+  {
+    "tempat_id": "Gihon_1",
+    "nama_tempat": "Gihon",
+    "koordinat": {
+      "lat": -33.9664001,
+      "lng": 18.8592349
+    },
+    "lokasi_modern": "South Africa"
+  },
+  {
+    "tempat_id": "Cush_1",
+    "nama_tempat": "Kus",
+    "koordinat": {
+      "lat": 52.3877176,
+      "lng": -8.1558782
+    },
+    "lokasi_modern": "Éire / Ireland"
+  },
+  {
+    "tempat_id": "Tigris_1",
+    "nama_tempat": "harimau",
+    "koordinat": {
+      "lat": 34.9983593,
+      "lng": 43.5712969
+    },
+    "lokasi_modern": "العراق"
+  },
+  {
+    "tempat_id": "Assyria_1",
+    "nama_tempat": "Asiria",
+    "koordinat": {
+      "lat": 42.464482,
+      "lng": -85.1313852
+    },
+    "lokasi_modern": "United States"
+  },
+  {
+    "tempat_id": "Euphrates_1",
+    "nama_tempat": "Efrat",
+    "koordinat": {
+      "lat": 34.7312616,
+      "lng": 40.8079031
+    },
+    "lokasi_modern": "سوريا"
+  },
+  {
+    "tempat_id": "Nod_1",
+    "nama_tempat": "Mengangguk",
+    "koordinat": {
+      "lat": 53.6342302,
+      "lng": 7.189858
+    },
+    "lokasi_modern": "Deutschland"
+  },
+  {
+    "tempat_id": "Enoch_1",
+    "nama_tempat": "Henokh",
+    "koordinat": {
+      "lat": 37.7645078,
+      "lng": -113.0443515
+    },
+    "lokasi_modern": "United States"
+  },
+  {
+    "tempat_id": "Ararat_1",
+    "nama_tempat": "Ararat",
+    "koordinat": {
+      "lat": 39.7019346,
+      "lng": 44.2983964
+    },
+    "lokasi_modern": "Türkiye"
+  },
+  {
+    "tempat_id": "Babel_1",
+    "nama_tempat": "Babel",
+    "koordinat": {
+      "lat": -2.7052886,
+      "lng": 106.3585607
+    },
+    "lokasi_modern": "Indonesia"
+  },
+  {
+    "tempat_id": "Erech_1",
+    "nama_tempat": "Erech",
+    "koordinat": {
+      "lat": 14.1,
+      "lng": 39.18333
+    },
+    "lokasi_modern": "ኢትዮጵያ"
+  },
+  {
+    "tempat_id": "Accad_1",
+    "nama_tempat": "Accad",
+    "koordinat": {
+      "lat": 31.7683,
+      "lng": 35.2137
+    },
+    "lokasi_modern": "Lokasi Kuno (Estimasi Timur Tengah)"
+  }
+]

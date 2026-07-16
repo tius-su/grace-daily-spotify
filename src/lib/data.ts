@@ -67,28 +67,34 @@ export const features = [
 
 export const plans: Plan[] = [
   {
-    name: "Free",
+    name: "Sahabat Grace Daily",
     price: "Rp0",
-    durationDays: 7,
-    aiRequests: 10,
-    features: ["Ayat harian", "Renungan dasar", "Jurnal pribadi"],
-    allowedModes: ["daily-devotion"],
+    durationDays: 36500,
+    aiRequests: 5,
+    features: [
+      "Akses Alkitab & Renungan Online",
+      "5 Kuota Tanya Pendeta AI / hari",
+      "Fitur Dasar"
+    ],
+    allowedModes: ["daily-devotion", "bible-encyclopedia", "pastor"],
   },
   {
-    name: "Premium",
-    price: "Rp50.000",
+    name: "Mitra Sukarela",
+    price: "Bebas",
     durationDays: 30,
-    aiRequests: 100,
-    features: ["Pendeta", "Konseling rohani", "Export PDF", "Musik rohani"],
-    allowedModes: ["daily-devotion", "devotional", "devotional_pdf", "pastor", "bible-study", "song_recommendation", "sermon_guide", "export_pdf"],
-  },
-  {
-    name: "Komunitas",
-    price: "Rp249.000",
-    durationDays: 30,
-    aiRequests: 300,
-    features: ["Admin komunitas", "Paket manual", "Blog kategori", "Dashboard user"],
-    allowedModes: ["daily-devotion", "devotional", "devotional_pdf", "pastor", "bible-study", "song_recommendation", "sermon_guide", "export_pdf"],
+    aiRequests: 50,
+    features: [
+      "Semua fitur Sahabat",
+      "Akses Konseling Rohani AI mendalam",
+      "Musik Rohani & Jurnal Spiritual",
+      "Ekspor PDF",
+      "Otomatis mensubsidi kuota untuk jemaat yang membutuhkan"
+    ],
+    allowedModes: [
+      "daily-devotion", "devotional", "devotional_pdf", "pastor",
+      "bible-study", "bible-encyclopedia", "song_recommendation",
+      "sermon_guide", "export_pdf"
+    ],
   },
 ];
 

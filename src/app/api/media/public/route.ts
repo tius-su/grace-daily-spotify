@@ -6,7 +6,8 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
-  const allowOrigin = process.env.NEXT_PUBLIC_APP_URL || "*";
+  const requestOrigin = request.headers.get("origin");
+  const allowOrigin = requestOrigin || "*";
 
   if (!R2_BUCKET_NAME) {
     return NextResponse.json({ error: "Bucket R2 belum dikonfigurasi." }, { status: 500, headers: { 'Access-Control-Allow-Origin': allowOrigin } });
@@ -22,7 +23,13 @@ export async function GET(request: Request) {
 
     // decode key and remove any cache-busting query string
     const decoded = decodeURIComponent(keyParam);
-    const s3Key = decoded.split("?")[0];
+    let s3Key = decoded.split("?")[0];
+
+    // ─── KODE PENYELAMAT: BELOKKAN .PNG KE .WEBP UTK ENCYCLOPEDIA ───
+    if (s3Key.startsWith("encyclopedia-banners/") && s3Key.endsWith(".png")) {
+      s3Key = s3Key.replace(".png", ".webp");
+    }
+    // ─────────────────────────────────────────────────────────────
 
     const command = new GetObjectCommand({
       Bucket: R2_BUCKET_NAME,
@@ -46,7 +53,11 @@ export async function GET(request: Request) {
     // `result.Body` is a stream (Readable) — return it directly
     const body = result.Body as ReadableStream | any;
 
-    const contentType = result.ContentType || "application/octet-stream";
+    // Koreksi Content-Type jika mendeteksi file dibelokkan ke webp
+    let contentType = result.ContentType || "application/octet-stream";
+    if (s3Key.endsWith(".webp")) {
+      contentType = "image/webp";
+    }
 
     return new NextResponse(body, {
       headers: {

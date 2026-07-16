@@ -1,5 +1,4 @@
-import { getAdminDb } from "@/lib/server/firebase-admin";
-import { fetchDocFromRest } from "@/lib/server/firestore-rest";
+import { getDocWithFallback } from "@/lib/server/db-fallback";
 import { notFound } from "next/navigation";
 import BlogPostClient from "@/app/components/BlogPostClient";
 import { cache } from "react";
@@ -12,28 +11,13 @@ type BlogDetailProps = {
 };
 
 const getBlogPost = cache(async (id: string) => {
-  const adminDb = getAdminDb();
-  let post: any = null;
-  if (adminDb) {
-    try {
-      const docSnap = await adminDb.collection("blog_posts").doc(id).get();
-      if (docSnap.exists) {
-        post = { id: docSnap.id, ...docSnap.data() };
-      }
-    } catch (error) {
-      console.error("Gagal memuat detail artikel:", error);
-    }
-  } else {
-    try {
-      const restDoc = await fetchDocFromRest("blog_posts", id);
-      if (restDoc) {
-        post = restDoc;
-      }
-    } catch (error) {
-      console.error("Gagal memuat detail artikel via REST:", error);
-    }
+  try {
+    const post = await getDocWithFallback<any>("blog_posts", id, "blog_posts.json");
+    return post;
+  } catch (error) {
+    console.error("Gagal memuat detail artikel dengan fallback:", error);
+    return null;
   }
-  return post;
 });
 
 export async function generateMetadata({ params }: BlogDetailProps): Promise<Metadata> {
@@ -46,13 +30,16 @@ export async function generateMetadata({ params }: BlogDetailProps): Promise<Met
     };
   }
 
-  const title = post.title ?? "Artikel";
-  const description = post.excerpt ?? "Baca artikel selengkapnya di Grace Daily.";
-  const imageUrl = post.imageUrl || "/logo.jpg";
+  const seo = post.seo;
+  const title = seo?.title || (post.title ?? "Artikel");
+  const description = seo?.description || post.excerpt || "Baca artikel selengkapnya di Grace Daily.";
+  const imageUrl = seo?.image || post.imageUrl || "/logo.png";
+  const keywords = seo?.keywords || [title, post.category, "blog rohani", "Grace Daily"];
 
   return {
     title,
     description,
+    keywords,
     openGraph: {
       title,
       description,
@@ -86,25 +73,40 @@ export default async function BlogPostDetailPage({ params }: BlogDetailProps) {
     return notFound();
   }
 
-  const publishDate = post.createdAt?.toDate 
-    ? new Intl.DateTimeFormat("id-ID", { dateStyle: "long" }).format(post.createdAt.toDate())
-    : "Baru saja";
+  const toDate = (value: any) => {
+    if (!value) return null;
+    if (typeof value.toDate === "function") return value.toDate();
+    if (typeof value.toMillis === "function") return new Date(value.toMillis());
+    if (value.seconds) return new Date(value.seconds * 1000);
+    if (value._seconds) return new Date(value._seconds * 1000);
+    if (typeof value === "string" || typeof value === "number" || value instanceof Date) {
+      const date = new Date(value);
+      return Number.isNaN(date.getTime()) ? null : date;
+    }
+    return null;
+  };
+
+  const dateObj = toDate(post.createdAt) || new Date();
+
+  const publishDate = new Intl.DateTimeFormat("id-ID", { dateStyle: "long", timeZone: "Asia/Jakarta" }).format(dateObj);
 
   const serializablePost = {
     id: post.id,
     title: post.title ?? "",
+    title_en: post.title_en ?? "",
+    title_zh: post.title_zh ?? "",
     category: post.category ?? "",
     status: post.status ?? "",
     authorName: post.authorName ?? "Tim Grace Daily",
     imageUrl: post.imageUrl ?? "",
     excerpt: post.excerpt ?? "",
+    excerpt_en: post.excerpt_en ?? "",
+    excerpt_zh: post.excerpt_zh ?? "",
     body: post.body ?? "",
+    body_en: post.body_en ?? "",
+    body_zh: post.body_zh ?? "",
   };
 
-  return (
-    <main className="min-h-screen bg-[#f7f4ee] px-5 py-12 text-[#1f2933] sm:px-8">
-      <BlogPostClient post={serializablePost} publishDate={publishDate} />
-    </main>
-  );
+  return <BlogPostClient post={serializablePost} publishDate={publishDate} />;
 }
 

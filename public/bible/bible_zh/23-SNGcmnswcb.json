@@ -1,0 +1,3776 @@
+{
+    "type": "USJ",
+    "version": "3.1",
+    "content": [
+        {
+            "type": "book",
+            "marker": "id",
+            "code": "SNG",
+            "content": []
+        },
+        {
+            "type": "para",
+            "marker": "ide",
+            "content": [
+                " UTF-8\n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "h",
+            "content": [
+                "雅歌 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc1",
+            "content": [
+                "所罗门之歌 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc2",
+            "content": [
+                "雅歌 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc3",
+            "content": [
+                "歌 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt1",
+            "content": [
+                "所罗门之歌  \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "1",
+            "sid": "SNG 1"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "SNG 1:1"
+                },
+                "所罗门的歌，是歌中之歌。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "SNG 1:2"
+                },
+                "愿他用口亲吻我；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为你的爱情比酒更美。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "SNG 1:3"
+                },
+                "你的膏油馨香怡人。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的名如同倾倒出来的膏油，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因此童女们爱你。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "SNG 1:4"
+                },
+                "带我随你而去。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "让我们快跑。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "王把我带进他的内室。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "朋友们  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我们要因你欢喜快乐。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们要称赞你的爱情，胜过称赞美酒！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "她们爱你是理所当然的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "SNG 1:5"
+                },
+                "耶路撒冷的女子们啊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我虽然黝黑，却秀美，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "如同基达的帐棚，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又如所罗门的幔子。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "SNG 1:6"
+                },
+                "不要因我黝黑就盯着我看，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为太阳把我晒黑了。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我母亲的儿子们向我发怒。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们派我看守葡萄园，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我自己的葡萄园却没有看守。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "SNG 1:7"
+                },
+                "我心所爱的啊，请告诉我，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你在哪里牧放羊群，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "中午在哪里使羊群歇卧；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我何必像蒙着脸的女人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在你同伴的羊群旁边呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "良人  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "SNG 1:8"
+                },
+                "女子中最美丽的啊，你若不知道，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "就跟随羊群的脚踪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在牧人的帐棚旁边牧放你的小山羊。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "SNG 1:9"
+                },
+                "我的佳偶啊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我把你比作法老战车中的骏马。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "SNG 1:10"
+                },
+                "你的两腮因耳环而秀美，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的颈项因珠串而秀美。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "朋友们  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "SNG 1:11"
+                },
+                "我们要为你做金耳环，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "镶上银钉。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "SNG 1:12"
+                },
+                "王坐席的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的香膏发出芬芳。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "SNG 1:13"
+                },
+                "我的良人对我如一袋没药，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "夜宿在我两乳之间。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "SNG 1:14"
+                },
+                "我的良人对我如一簇指甲花，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "来自隐基底的葡萄园。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "良人  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "SNG 1:15"
+                },
+                "看哪，",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:15 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "“看哪”源自“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "הִנֵּה"
+                                    ]
+                                },
+                                "”，意思是看、留意、观察、观看或凝视。它常用作感叹词。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "我的佳偶，你是美丽的。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "看哪，你是美丽的。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的眼睛像鸽子。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "SNG 1:16"
+                },
+                "看哪，我的良人，你是俊美的，是的，令人喜悦；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们的床榻青翠。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "良人  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "SNG 1:17"
+                },
+                "我们房屋的栋梁是香柏木。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们的椽子是松木。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "2",
+            "sid": "SNG 2"
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "SNG 2:1"
+                },
+                "我是沙仑的玫瑰，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是谷中的百合花。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "良人  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "SNG 2:2"
+                },
+                "我的爱人在女子中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "好像百合花在荆棘中。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "SNG 2:3"
+                },
+                "我的良人在男子中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "好像苹果树在树林中。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我极其喜悦地坐在他的荫下，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他的果子在我口中甘甜。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "SNG 2:4"
+                },
+                "他带我进入宴会厅。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他在我身上的旗帜是爱。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "SNG 2:5"
+                },
+                "求你们用葡萄干补养我，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "用苹果使我恢复精神；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为我因爱而昏眩。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "SNG 2:6"
+                },
+                "他的左手在我头下，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他的右手拥抱我。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "SNG 2:7"
+                },
+                "耶路撒冷的女子啊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我指着羚羊，或指着田野的母鹿嘱咐你们：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不要惊动，不要唤醒爱情，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "等它自己愿意。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "SNG 2:8"
+                },
+                "是我良人的声音！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "看哪，他来了，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在群山上跳跃，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在丘陵上蹦跳。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "SNG 2:9"
+                },
+                "我的良人好像羚羊，或像小鹿。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "看哪，他站在我们的墙后！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他从窗户往里看，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从窗棂往里窥望。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "SNG 2:10"
+                },
+                "我的良人开口对我说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“起来吧，我的爱人，我的美人，跟我来。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "SNG 2:11"
+                },
+                "因为看哪，冬天已过，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "雨水止住，也已经过去。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "SNG 2:12"
+                },
+                "地上百花开放，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "歌唱的时候已经来到，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "斑鸠的声音在我们的境内听见。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "SNG 2:13"
+                },
+                "无花果树使青果成熟，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "葡萄树正在开花，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "散发芬芳。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "起来吧，我的爱人，我的美人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "跟我来。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "良人  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "SNG 2:14"
+                },
+                "我的鸽子啊，你在磐石缝中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在山崖隐密处，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "让我看见你的容颜；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "让我听见你的声音；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为你的声音甜美，你的容颜秀丽。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "SNG 2:15"
+                },
+                "要为我们捉住狐狸，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "就是毁坏葡萄园的小狐狸；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为我们的葡萄园正在开花。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "SNG 2:16"
+                },
+                "我的良人属我，我也属他。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他在百合花间牧放。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "SNG 2:17"
+                },
+                "直到天起凉风，影儿飞去，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的良人啊，转回来吧，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "要像羚羊，或像小鹿在比特山上。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "3",
+            "sid": "SNG 3"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "SNG 3:1"
+                },
+                "夜间我在床上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "寻找我心所爱的；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我寻找他，却没有找到。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "SNG 3:2"
+                },
+                "我说：“现在我要起来，走遍城中；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在街道上，在广场上，寻找我心所爱的。”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我寻找他，却没有找到。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "SNG 3:3"
+                },
+                "城中巡逻的守望者遇见我；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我问：“你们看见我心所爱的没有？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "SNG 3:4"
+                },
+                "我刚离开他们，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "就找到了我心所爱的。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我拉住他，不让他走，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "直到把他带进我母亲的家，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "带进那怀我者的内室。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "SNG 3:5"
+                },
+                "耶路撒冷的女子们啊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我指着羚羊，或田野的母鹿嘱咐你们：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不要激动，也不要唤醒爱情，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "等它自己愿意。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "SNG 3:6"
+                },
+                "那从旷野上来、  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "形状如烟柱、  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "熏着没药和乳香，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "并商人各样香料的是谁呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "SNG 3:7"
+                },
+                "看哪，这是所罗门的轿！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "四围有六十个勇士，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "都是以色列的勇士。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "SNG 3:8"
+                },
+                "他们全都手持刀剑，善于争战；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "人人腰间佩剑，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "为防夜间的惊恐。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "SNG 3:9"
+                },
+                "所罗门王为自己造了一乘轿，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "用的是黎巴嫩的木材。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "SNG 3:10"
+                },
+                "他造轿柱用银，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "轿底用金，座位用紫色布；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "轿中铺着爱，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是来自耶路撒冷众女子的爱。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "SNG 3:11"
+                },
+                "锡安的女子们哪，出去观看所罗门王，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "看他戴着他母亲给他戴上的冠冕，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "就是在他婚礼的日子、  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在他心中欢喜的日子。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "4",
+            "sid": "SNG 4"
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "良人  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "SNG 4:1"
+                },
+                "看哪，你很美，我的佳偶！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "看哪，你很美！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "你的眼在面纱后面，如同鸽子；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的头发像一群山羊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从基列山下来。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "SNG 4:2"
+                },
+                "你的牙齿像刚剪过毛的羊群，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从洗濯处上来；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "只只都有双生的羊羔，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "其中没有一只丧失幼崽。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "SNG 4:3"
+                },
+                "你的嘴唇像朱红线；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的口秀美可爱。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的两鬓在面纱后面，如同一片石榴。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "SNG 4:4"
+                },
+                "你的颈项像大卫的塔，为收藏军械而建；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "其上悬挂一千面盾牌，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "都是勇士的盾牌。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "SNG 4:5"
+                },
+                "你的两乳像两只小鹿，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是母鹿双生的幼崽，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在百合花中吃草。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "SNG 4:6"
+                },
+                "直到天凉、黑影飞去，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我要往没药山去，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "往乳香冈去。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "SNG 4:7"
+                },
+                "我的佳偶，你全然美丽；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你毫无瑕疵。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "SNG 4:8"
+                },
+                "我的新娘，从黎巴嫩与我一同来，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从黎巴嫩与我一同来。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从亚玛拿顶上观看，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从西尼珥和黑门顶上观看，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从狮子的洞穴，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从豹子的山岭观看。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "SNG 4:9"
+                },
+                "我的姊妹，我的新娘，你夺了我的心；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你眼中的一瞥夺了我的心，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你颈上的一条项链也夺了我的心。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "SNG 4:10"
+                },
+                "我的姊妹，我的新娘，你的爱情何等美好！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的爱情比酒更美，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你膏油的香气胜过各样香料！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "SNG 4:11"
+                },
+                "我的新娘，你的嘴唇滴下蜂房的蜜；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "蜜和奶在你的舌下。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你衣服的香气像黎巴嫩的香气。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "SNG 4:12"
+                },
+                "我的姊妹，我的新娘，是上了锁的园；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是上了锁的泉源，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是封闭的水泉。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "SNG 4:13"
+                },
+                "你的嫩枝是石榴园，结着珍贵的果子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "有凤仙花和哪哒草，   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "SNG 4:14"
+                },
+                "哪哒和番红花，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "菖蒲和肉桂，并各样乳香树；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "没药和沉香，并一切上等的香料；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "SNG 4:15"
+                },
+                "是园中的泉源，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是活水的井，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是从黎巴嫩流下的溪水。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "SNG 4:16"
+                },
+                "北风啊，醒起！南风啊，吹来！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "吹在我的园中，使其中的香气散发出来。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "愿我的良人进入他的园，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "品尝其中珍贵的果子。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "5",
+            "sid": "SNG 5"
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "良人  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "SNG 5:1"
+                },
+                "我进了我的园中，我的妹子，我的新娘。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我采了我的没药和香料；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我吃了我的蜂房和蜂蜜；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我喝了我的酒和奶。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "朋友们  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "朋友们，吃吧！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "喝吧，是的，所爱的啊，尽情地喝吧！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "SNG 5:2"
+                },
+                "我睡着了，我的心却醒着。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是我良人的声音，他正在敲门：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“给我开门吧，我的妹子，我的爱人，我的鸽子，我无瑕的；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为我的头满了露水，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的头发满了夜露。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "SNG 5:3"
+                },
+                "我已经脱了外袍，难道还要再穿上吗？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我已经洗了脚，难道还要再弄脏吗？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "SNG 5:4"
+                },
+                "我的良人从门闩孔伸进手来。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的心为他怦然跳动。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "SNG 5:5"
+                },
+                "我起来，要给我的良人开门。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的手滴下没药，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的手指滴下没药汁，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "滴在门锁的把手上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "SNG 5:6"
+                },
+                "我给我的良人开了门；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "可是我的良人已经转身离去。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他一说话，我的心就为他消融。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我寻找他，却没有找到。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我呼唤他，他却没有回答。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "SNG 5:7"
+                },
+                "城中巡逻的守望者遇见我。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们打我，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使我受伤。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "守城墙的人夺去了我的披风。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "SNG 5:8"
+                },
+                "耶路撒冷的女子们，我郑重嘱咐你们：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "如果你们遇见我的良人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "要告诉他，我因爱成病。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "朋友们  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "SNG 5:9"
+                },
+                "你这女子中最美丽的啊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的良人比别人的良人强在哪里？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "你的良人比别人的良人强在哪里，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "以致你这样郑重嘱咐我们？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "SNG 5:10"
+                },
+                "我的良人白皙红润，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "超越万人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "SNG 5:11"
+                },
+                "他的头像最纯的金子。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他的头发浓密，黑如乌鸦。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "SNG 5:12"
+                },
+                "他的眼睛像溪水旁的鸽子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "用奶洗净，像宝石般镶嵌。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "SNG 5:13"
+                },
+                "他的两腮像香料畦，有香膏的高台。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他的嘴唇像百合花，滴下没药汁。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "SNG 5:14"
+                },
+                "他的双手像镶嵌水苍玉的金环。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他的身体像象牙雕刻，镶嵌蓝宝石。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "SNG 5:15"
+                },
+                "他的双腿像大理石柱，安在精金座上。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他的容貌如黎巴嫩，卓越如香柏树。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "SNG 5:16"
+                },
+                "他的口满是甘甜；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是的，他全然可爱。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "这就是我的良人，这就是我的朋友，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶路撒冷的女子们。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "6",
+            "sid": "SNG 6"
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "朋友们  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "SNG 6:1"
+                },
+                "女子中最美丽的啊，你的良人往哪里去了？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的良人转向哪里去了，好让我们与你一同寻找他？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "SNG 6:2"
+                },
+                "我的良人下到他的园中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "到香料畦那里，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在园中牧放他的羊群，并采集百合花。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "SNG 6:3"
+                },
+                "我属我的良人，我的良人也属我。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他在百合花中吃草。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "良人  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "SNG 6:4"
+                },
+                "我的爱人啊，你美丽如得撒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "秀美如耶路撒冷，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "威严如展开旌旗的军队。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "SNG 6:5"
+                },
+                "请把你的眼目从我身上转开，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为它们使我无法承受。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "你的头发如同一群山羊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "卧在基列山坡上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "SNG 6:6"
+                },
+                "你的牙齿如同一群母羊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "刚从洗涤处上来；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "只只都有双生，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "其中没有一只丧掉幼崽。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "SNG 6:7"
+                },
+                "你的两颊在面纱后，如同一片石榴。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "SNG 6:8"
+                },
+                "有六十王后，八十妃嫔，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "还有无数童女。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "SNG 6:9"
+                },
+                "我的鸽子，我纯全的人，是独一的。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她是她母亲唯一的女儿，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是生她之人所宠爱的。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "众女子看见她，就称她有福。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "王后和妃嫔看见她，也称赞她。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "SNG 6:10"
+                },
+                "那向外观看如晨曦，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "美丽如月亮，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "皎洁如太阳，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "威严如展开旌旗的军队的是谁呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "SNG 6:11"
+                },
+                "我下到核桃树林，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "要看谷中的青绿植物，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "要看葡萄树是否发芽，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "石榴是否开花。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "SNG 6:12"
+                },
+                "不知不觉中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的愿望把我置于我尊贵族人的车中。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "朋友们  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "SNG 6:13"
+                },
+                "回来，回来，书拉密女啊！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "回来，回来，好让我们凝视你。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "良人  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "你们为什么要凝视书拉密女，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "像观看玛哈念的舞蹈呢？   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "7",
+            "sid": "SNG 7"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "SNG 7:1"
+                },
+                "王侯的女儿啊，你穿凉鞋的脚何等美丽！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你大腿的曲线如同珠宝，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是巧匠之手的作品。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "SNG 7:2"
+                },
+                "你的身体像圆杯，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不缺调和的酒。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "你的腰身像一堆麦子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "周围有百合花环绕。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "SNG 7:3"
+                },
+                "你的双乳像两只小鹿，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是母鹿所生的一对孪生子。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "SNG 7:4"
+                },
+                "你的颈项像象牙塔。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的眼睛像希实本、巴特拉宾门旁的水池。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的鼻子像朝向大马士革的黎巴嫩塔。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "SNG 7:5"
+                },
+                "你头在你身上如迦密山。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你头上的发如紫色绸缎。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "王被它的发绺俘获了。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "SNG 7:6"
+                },
+                "爱情啊，为着种种欢悦，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你何等美丽，何等可爱！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "SNG 7:7"
+                },
+                "你的身量像棕榈树，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的双乳像树上的果子。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "SNG 7:8"
+                },
+                "我说：“我要爬上棕榈树，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我要抓住它的果子。”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "愿你的双乳像葡萄串，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你气息的香味像苹果。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "SNG 7:9"
+                },
+                "你的口像上好的酒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "为我的良人顺畅流下，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "滑过沉睡之人的嘴唇。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "SNG 7:10"
+                },
+                "我属于我的良人。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他恋慕我。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "SNG 7:11"
+                },
+                "我的良人啊，来吧！让我们往田野去。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "让我们在村庄住宿。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "SNG 7:12"
+                },
+                "让我们清早往葡萄园去。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "让我们看看葡萄树是否发芽，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "花是否开放，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "石榴是否开花。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在那里，我要把我的爱情给你。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "SNG 7:13"
+                },
+                "风茄散发香气。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在我们的门前有各样珍贵的果子，新的旧的都有，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是我为你珍藏的，我的良人。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "8",
+            "sid": "SNG 8"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "SNG 8:1"
+                },
+                "巴不得你像我的兄弟，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "曾吃我母亲的奶！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我若在外面遇见你，就可以亲吻你；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也没有人会轻看我。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "SNG 8:2"
+                },
+                "我要引导你，带你进我母亲的家；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她会教导我。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我要给你喝调香的酒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "喝我石榴的汁。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "SNG 8:3"
+                },
+                "他的左手会在我头下；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他的右手会拥抱我。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "SNG 8:4"
+                },
+                "耶路撒冷的众女子啊，我嘱咐你们：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不要激动，不要唤醒爱情，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "等它自己愿意。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "朋友们  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "SNG 8:5"
+                },
+                "那从旷野上来，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "倚靠着她良人的是谁呢？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "在苹果树下，我唤醒了你。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在那里，你母亲怀了你；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在那里，她经历产痛，生下了你。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "SNG 8:6"
+                },
+                "求你将我放在你心上如印记，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "放在你臂上如印记；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为爱情如死亡一样坚强，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "嫉妒如阴间一样残酷。",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "8:6 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "阴间是死人所在之处。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它的闪光是火的闪光，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是耶和华的烈焰。",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "8:6 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "希伯来文：יה，Yah"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "SNG 8:7"
+                },
+                "众水不能熄灭爱情，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "洪流也不能淹没它。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "若有人拿家中所有财富来换爱情，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他必被人全然轻视。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "兄弟们  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "SNG 8:8"
+                },
+                "我们有一个小妹妹，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她还没有乳房。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "在有人来为她提亲的日子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们该为我们的妹妹做什么呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "SNG 8:9"
+                },
+                "她若是一道墙，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们就要在她上面建一座银塔；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "她若是一道门，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们就要用香柏木板把她围护起来。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "SNG 8:10"
+                },
+                "我是一道墙，我的乳房像塔；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "那时我在他眼中，就像寻得平安的人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "SNG 8:11"
+                },
+                "所罗门在巴力·哈们有一个葡萄园；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他把葡萄园租给看守的人。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "每人要为园中的果子交一千舍客勒",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "8:11 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "一舍客勒约为10克，或约0.35盎司；所以1000舍客勒约为10千克，或约22磅。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "银子。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "SNG 8:12"
+                },
+                "我自己的葡萄园就在我面前。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "所罗门哪，一千归你；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "二百归那些照看园中果子的人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "良人  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "SNG 8:13"
+                },
+                "你这住在园中的啊，有朋友陪伴在旁，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "让我听见你的声音！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "sp",
+            "content": [
+                "佳偶  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "SNG 8:14"
+                },
+                "我的良人哪，快来吧！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "愿你像羚羊或小公鹿在香料山上！   "
+            ]
+        }
+    ]
+}

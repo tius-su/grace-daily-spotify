@@ -1,0 +1,368 @@
+{
+    "translation": {
+        "id": "ind_web",
+        "name": "World English Bible Terjemahan AI",
+        "shortName": "WEB-AI",
+        "englishName": "Indonesian AI Translated WEB",
+        "language": "ind",
+        "languageName": "Indonesia"
+    },
+    "book": {
+        "id": "NUM",
+        "translationId": "ind_web",
+        "name": "BILANGAN",
+        "commonName": "BILANGAN",
+        "title": "Bilangan",
+        "order": 4,
+        "numberOfChapters": 36
+    },
+    "chapter": {
+        "number": 4,
+        "content": [
+            {
+                "type": "verse",
+                "number": 1,
+                "content": [
+                    "TUHAN berbicara kepada Musa dan Harun, bersabda,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 2,
+                "content": [
+                    "“Catatlah bani Kehat dari antara bani Lewi, menurut kaum-kaum mereka, menurut kaum leluhur mereka,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 3,
+                "content": [
+                    "yang berumur tiga puluh tahun ke atas bahkan sampai yang berumur lima puluh tahun, setiap orang yang masuk dinas, harus melakukan pekerjaan di Kemah Pertemuan."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 4,
+                "content": [
+                    "“Inilah ibadah bani Kehat di Kemah Pertemuan, tempat maha suci."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 5,
+                "content": [
+                    "Ketika perkemahan sudah maju, Harun dan anak-anaknya harus masuk ke dalam, lalu mereka harus membuka tabir tirai dan menutupnya dengan tabir Kesaksian,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 6,
+                "content": [
+                    "lalu haruslah dikenakannya penutup dari kulit anjing laut, dan di atasnya harus dibentangkan kain biru tua, dan harus dipasang pada kayu pengusungnya."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 7,
+                "content": [
+                    "“Di atas meja roti sajian mereka harus membentangkan kain biru, dan di atasnya diletakkan piring-piring, sendok-sendok, mangkuk-mangkuk, dan cangkir-cangkir yang akan digunakan untuk menuang; dan roti yang tetap harus ada di atasnya."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 8,
+                "content": [
+                    "Mereka harus membentangkan kain kirmizi di atasnya, dan menutupinya dengan penutup dari kulit anjing laut, dan memasang kayu pengusungnya."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 9,
+                "content": [
+                    "“Mereka harus mengambil kain biru dan menutupi tempat lampu itu, dan lampu-lampunya, dan alat tembakaunya, dan piring tembakaunya, dan segala bejana minyaknya, yang mereka gunakan untuk melayaninya."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 10,
+                "content": [
+                    "Mereka harus menaruhnya dan segala perkakasnya di dalam penutup dari kulit anjing laut, dan memasangnya pada rangkanya."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 11,
+                "content": [
+                    "“Di atas mezbah emas mereka harus membentangkan kain biru, dan menutupinya dengan penutup dari kulit anjing laut, dan harus memasang kayu pengusungnya."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 12,
+                "content": [
+                    "“Mereka harus mengambil semua perkakas pelayanan yang mereka pakai untuk beribadah di tempat kudus, lalu membungkusnya dengan kain biru dan menutupinya dengan tudung dari kulit anjing laut, lalu memasangnya pada bingkainya."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 13,
+                "content": [
+                    "“Mereka harus mengambil abunya dari mezbah dan membentangkan kain ungu di atasnya."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 14,
+                "content": [
+                    "Di atasnya mereka harus meletakkan segala perkakas yang mereka gunakan untuk beribadah, yaitu panci api, pengait daging, sekop dan baskom; semua perlengkapan mezbah; dan di atasnya mereka harus membentangkan penutup dari kulit anjing laut dan memasang kayu pengusungnya."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 15,
+                "content": [
+                    "“Setelah Harun dan anak-anaknya selesai menutup tempat kudus dan segala perabotan tempat suci itu, sementara perkemahan itu bergerak maju; setelah itu, anak-anak Kehat harus datang untuk mengangkatnya, tetapi mereka tidak boleh menyentuh tempat suci itu, supaya mereka tidak mati. Itulah yang menjadi tanggungan anak-anak Kehat di dalam Kemah Pertemuan."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 16,
+                "content": [
+                    "“Tugas Eleazar bin Imam Harun adalah minyak penerangan, dupa manis, korban sajian tetap, dan minyak urapan, kebutuhan seluruh Kemah Suci dan seluruh isinya, tempat kudus dan perabotannya.”"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 17,
+                "content": [
+                    "TUHAN berbicara kepada Musa dan Harun, bersabda,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 18,
+                "content": [
+                    "“Janganlah kamu melenyapkan suku kaum keluarga Kehat dari antara orang Lewi;"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 19,
+                "content": [
+                    "tetapi lakukanlah demikian terhadap mereka, supaya mereka hidup dan tidak mati, ketika mereka mendekati tempat maha kudus: Harun dan anak-anaknya harus masuk, dan mengangkat mereka masing-masing untuk bekerja dan memikul bebannya;"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 20,
+                "content": [
+                    "tetapi mereka tidak boleh masuk untuk melihat tempat suci itu walaupun hanya sesaat saja, supaya mereka tidak mati.”"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 21,
+                "content": [
+                    "Tuhan berbicara kepada Musa, mengatakan,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 22,
+                "content": [
+                    "“Catatlah juga anak-anak Gerson menurut kaum leluhur mereka, menurut kaum keluarga mereka;"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 23,
+                "content": [
+                    "kamu harus menghitung mereka yang berumur tiga puluh tahun ke atas sampai berumur lima puluh tahun; semua yang masuk untuk melayani kebaktian, untuk melakukan pekerjaan di Kemah Pertemuan."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 24,
+                "content": [
+                    "Inilah pelayanan kaum keluarga Gerson dalam melayani dan memikul beban:"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 25,
+                "content": [
+                    "mereka harus membawa tirai Kemah Suci dan Kemah Pertemuan serta penutupnya dan penutup dari kulit anjing laut yang ada di atasnya serta tirai pintu Kemah Pertemuan."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 26,
+                "content": [
+                    "dan tirai pelataran, dan tirai pada pintu gerbang pelataran, yang ada di dekat Kemah Suci dan sekeliling mezbah, serta tali-talinya, dan segala perlengkapan ibadahnya, dan segala sesuatu yang harus dilakukan dengannya. Mereka akan bertugas di sana."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 27,
+                "content": [
+                    "Atas perintah Harun dan anak-anaknya haruslah seluruh pekerjaan bani Gerson dilakukan, dalam segala beban mereka, dan dalam segala pekerjaan mereka; dan Anda harus menunjuk tugas mereka dalam semua tanggung jawab mereka."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 28,
+                "content": [
+                    "Inilah tugas kaum-kaum keluarga keturunan Gerson di Kemah Pertemuan, dan tugas mereka berada di bawah pengawasan Itamar bin Imam Harun."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 29,
+                "content": [
+                    "“Adapun bani Merari, haruslah kamu hitung menurut kaum-kaum mereka, menurut kaum keluarga bapak mereka;"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 30,
+                "content": [
+                    "haruslah kamu menghitung mereka yang berumur tiga puluh tahun ke atas sampai yang berumur lima puluh tahun, yaitu setiap orang yang masuk dalam dinas untuk melakukan pekerjaan Kemah Pertemuan."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 31,
+                "content": [
+                    "Inilah tugas beban mereka sesuai dengan seluruh tugas mereka dalam Kemah Pertemuan: papan-papan Kemah Suci, kayu-kayu pengusungnya, tiang-tiangnya, alas-alasnya,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 32,
+                "content": [
+                    "dan tiang-tiang pelataran sekelilingnya, alas-alasnya, pin-pinnya, tali-talinya, serta segala perkakasnya dan segala kegunaannya;"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 33,
+                "content": [
+                    "Itulah pelayanan kaum keluarga bani Merari, sesuai dengan seluruh pelayanan mereka, di dalam Kemah Pertemuan, di bawah pengawasan Itamar bin Imam Harun.”"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 34,
+                "content": [
+                    "Musa dan Harun serta pemuka-pemuka jemaat itu menghitung anak-anak keturunan Kehat menurut kaum mereka dan menurut kaum keluarga bapak mereka,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 35,
+                "content": [
+                    "yang berumur tiga puluh tahun ke atas bahkan sampai yang berumur lima puluh tahun, setiap orang yang masuk dinas, untuk bekerja di Kemah Pertemuan."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 36,
+                "content": [
+                    "Yang dihitung menurut kaum mereka ada dua ribu tujuh ratus lima puluh orang."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 37,
+                "content": [
+                    "Itulah orang-orang yang terhitung dari kaum Kehat, yaitu semua orang yang bertugas di Kemah Pertemuan, yang dihitung oleh Musa dan Harun menurut perintah TUHAN melalui Musa."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 38,
+                "content": [
+                    "Mereka yang dicatat dari keturunan Gerson, kaum-kaum mereka, dan menurut kaum leluhur mereka,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 39,
+                "content": [
+                    "yang berumur tiga puluh tahun ke atas bahkan sampai yang berumur lima puluh tahun, yaitu setiap orang yang masuk dinas untuk bekerja di Kemah Pertemuan,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 40,
+                "content": [
+                    "yang dihitung di antara mereka, menurut kaum-kaum mereka, menurut kaum bapak mereka, ada dua ribu enam ratus tiga puluh orang."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 41,
+                "content": [
+                    "Itulah orang-orang yang dicatat dari kaum keturunan Gerson, yaitu semua orang yang bertugas di Kemah Pertemuan, yang dihitung oleh Musa dan Harun menurut perintah TUHAN."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 42,
+                "content": [
+                    "Mereka yang dicatat dari kaum-kaum bani Merari, menurut kaum-kaum mereka, menurut kaum keluarga bapak-bapak mereka,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 43,
+                "content": [
+                    "yang berumur tiga puluh tahun ke atas bahkan sampai yang berumur lima puluh tahun, yaitu setiap orang yang masuk dinas untuk bekerja di Kemah Pertemuan,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 44,
+                "content": [
+                    "Bahkan yang dihitung menurut kaum-kaum mereka ada tiga ribu dua ratus orang."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 45,
+                "content": [
+                    "Itulah orang-orang yang dicatat dari kaum bani Merari, yang dihitung oleh Musa dan Harun menurut perintah TUHAN melalui Musa."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 46,
+                "content": [
+                    "Semua orang yang dicatat dari orang-orang Lewi, yang dihitung oleh Musa, Harun, dan para pembesar Israel, menurut kaum-kaum mereka dan menurut kaum leluhur mereka,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 47,
+                "content": [
+                    "yang berumur tiga puluh tahun ke atas bahkan sampai yang berumur lima puluh tahun, yaitu setiap orang yang masuk untuk melakukan pekerjaan dinas dan pekerjaan memikul beban di Kemah Pertemuan,"
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 48,
+                "content": [
+                    "bahkan yang terhitung di antara mereka ada delapan ribu lima ratus delapan puluh."
+                ]
+            },
+            {
+                "type": "verse",
+                "number": 49,
+                "content": [
+                    "Sesuai dengan perintah TUHAN, mereka dihitung oleh Musa, masing-masing menurut pelayanannya dan menurut bebannya. Demikianlah mereka dihitung olehnya, seperti yang diperintahkan TUHAN kepada Musa."
+                ]
+            }
+        ]
+    },
+    "numberOfVerses": 49
+}

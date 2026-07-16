@@ -43,29 +43,59 @@ export function AdPopup({ adConfig }: { adConfig: AdConfig | null }) {
           </svg>
         </button>
 
-        {adConfig.targetUrl ? (
-          <a
-            href={adConfig.targetUrl}
-            target="_blank"
-            rel="noreferrer"
-            onClick={handleClose}
-            className="block cursor-pointer overflow-hidden"
-          >
-            <img
-              src={adConfig.imageUrl}
-              alt={adConfig.title || "Promosi"}
-              className="h-auto w-full object-contain transition duration-300 hover:scale-[1.02]"
-            />
-          </a>
-        ) : (
-          <div className="overflow-hidden">
-            <img
-              src={adConfig.imageUrl}
-              alt={adConfig.title || "Promosi"}
-              className="h-auto w-full object-contain"
-            />
-          </div>
-        )}
+        {(() => {
+          const isVideo = adConfig.imageUrl.toLowerCase().match(/\.(mp4|webm|ogg|mov)($|\?)/);
+          
+          if (adConfig.targetUrl) {
+            return (
+              <a
+                href={adConfig.targetUrl}
+                target="_blank"
+                rel="noreferrer"
+                onClick={handleClose}
+                className="block cursor-pointer overflow-hidden"
+              >
+                {isVideo ? (
+                  <video
+                    src={adConfig.imageUrl}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="h-auto w-full object-contain transition duration-300 hover:scale-[1.02]"
+                  />
+                ) : (
+                  <img
+                    src={adConfig.imageUrl}
+                    alt={adConfig.title || "Promosi"}
+                    className="h-auto w-full object-contain transition duration-300 hover:scale-[1.02]"
+                  />
+                )}
+              </a>
+            );
+          }
+          
+          return (
+            <div className="overflow-hidden">
+              {isVideo ? (
+                <video
+                  src={adConfig.imageUrl}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-auto w-full object-contain"
+                />
+              ) : (
+                <img
+                  src={adConfig.imageUrl}
+                  alt={adConfig.title || "Promosi"}
+                  className="h-auto w-full object-contain"
+                />
+              )}
+            </div>
+          );
+        })()}
       </div>
     </div>
   );

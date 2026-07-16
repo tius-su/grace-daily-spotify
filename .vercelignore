@@ -1,0 +1,27 @@
+# Ignore local Next.js builds
+.next/
+.next-build/
+.next-prod/
+
+# Ignore dependencies and cache
+node_modules/
+.yarn/
+.pnp
+.pnp.*
+
+# Ignore Vercel metadata
+.vercel/
+
+# Ignore debug logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore OS files
+.DS_Store
+
+# Ignore miscellaneous
+untitled folder/
+tmp/
+temp/

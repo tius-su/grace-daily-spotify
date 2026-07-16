@@ -1,0 +1,4006 @@
+[
+  {
+    "event_id": "Creation",
+    "peristiwa": "Penciptaan",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Adam_1",
+    "peristiwa": "Kelahiran Adam 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Seth_1",
+    "peristiwa": "Kelahiran Seth 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Enosh_1",
+    "peristiwa": "Kelahiran Enosh 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Kenan_1",
+    "peristiwa": "Kelahiran Kenan 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Mahalalel_1",
+    "peristiwa": "Kelahiran Mahalalel 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Jared_1",
+    "peristiwa": "Kelahiran Jared 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Enoch_2",
+    "peristiwa": "Kelahiran Enoch 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Methuselah_1",
+    "peristiwa": "Kelahiran Methuselah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Lamech_2",
+    "peristiwa": "Kelahiran Lamech 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Adam_1",
+    "peristiwa": "Kematian Adam 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Enoch_2",
+    "peristiwa": "Kematian Enoch 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Seth_1",
+    "peristiwa": "Kematian Seth 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Noah_1",
+    "peristiwa": "Kelahiran Noah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Enosh_1",
+    "peristiwa": "Kematian Enosh 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Kenan_1",
+    "peristiwa": "Kematian Kenan 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Mahalalel_1",
+    "peristiwa": "Kematian Mahalalel 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Jared_1",
+    "peristiwa": "Kematian Jared 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Shem_1",
+    "peristiwa": "Kelahiran Shem 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Lamech_2",
+    "peristiwa": "Kematian Lamech 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Methuselah_1",
+    "peristiwa": "Kematian Methuselah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Flood",
+    "peristiwa": "Mulai Banjir",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Flood",
+    "peristiwa": "Akhiri Banjir",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Covenant_with_Noah",
+    "peristiwa": "Perjanjian dengan Nuh",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Arpachshad_1",
+    "peristiwa": "Kelahiran Arpachshad 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Shelah_1",
+    "peristiwa": "Kelahiran Shelah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Eber_1",
+    "peristiwa": "Kelahiran Eber 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Peleg_1",
+    "peristiwa": "Kelahiran Peleg 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Reu_1",
+    "peristiwa": "Kelahiran Reu 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Serug_1",
+    "peristiwa": "Kelahiran Serug 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Nahor_1",
+    "peristiwa": "Kelahiran Nahor 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Terah_1",
+    "peristiwa": "Kelahiran Terah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Haran_1",
+    "peristiwa": "Kelahiran Haran 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Peleg_1",
+    "peristiwa": "Kematian Peleg 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Tower_of_Babel",
+    "peristiwa": "Menara Babel",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Nahor_1",
+    "peristiwa": "Kematian Nahor 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Noah_1",
+    "peristiwa": "Kematian Noah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Abram_1",
+    "peristiwa": "Kelahiran Abram 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Sarai_1",
+    "peristiwa": "Kelahiran Sarai 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Reu_1",
+    "peristiwa": "Kematian Reu 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Serug_1",
+    "peristiwa": "Kematian Serug 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Haran_1",
+    "peristiwa": "Kematian Haran 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Abram_departed_Ur",
+    "peristiwa": "Abram meninggalkan Ur",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Abram_met_Melchizedek",
+    "peristiwa": "Abram bertemu Melkisedek",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Terah_1",
+    "peristiwa": "Kematian Terah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Abram_departed_Haran",
+    "peristiwa": "Abram meninggalkan Haran",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Promise_to_Abram_1",
+    "peristiwa": "Janji kepada Abram 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_430_years_promise_to_covenant",
+    "peristiwa": "Mulailah 430 tahun janji perjanjian",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Abram_married_Hagar",
+    "peristiwa": "Abram menikah dengan Hagar",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Ishmael_1",
+    "peristiwa": "Kelahiran Ishmael 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Arpachshad_1",
+    "peristiwa": "Kematian Arpachshad 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Covenant_with_Abram",
+    "peristiwa": "Perjanjian dengan Abram",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Abraham_circumcised",
+    "peristiwa": "Abraham disunat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Sodom_destroyed",
+    "peristiwa": "Sodom dihancurkan",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Moab_1",
+    "peristiwa": "Kelahiran Moab 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Ben-ammi_1",
+    "peristiwa": "Kelahiran Ben-ammi 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Isaac_1",
+    "peristiwa": "Kelahiran Isaac 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_400_years_of_oppression",
+    "peristiwa": "Mulailah penindasan selama 400 tahun",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Shelah_1",
+    "peristiwa": "Kematian Shelah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Sarai_1",
+    "peristiwa": "Kematian Sarai 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Sacrifice_of_Isaac",
+    "peristiwa": "Pengorbanan Ishak",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Isaac_married_Rebekah",
+    "peristiwa": "Ishak menikah dengan Ribka",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Shem_1",
+    "peristiwa": "Kematian Shem 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Esau_1",
+    "peristiwa": "Kelahiran Esau 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Jacob_1",
+    "peristiwa": "Kelahiran Jacob 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Abram_1",
+    "peristiwa": "Kematian Abram 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Eber_1",
+    "peristiwa": "Kematian Eber 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Covenant_with_Isaac",
+    "peristiwa": "Perjanjian dengan Ishak",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Esau_married_Judith_and_Basemath",
+    "peristiwa": "Esau menikah dengan Judit dan Basmat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Ishmael_1",
+    "peristiwa": "Kematian Ishmael 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jacob_deception",
+    "peristiwa": "penipuan Yakub",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jacob_departed_to_Paddan-aram",
+    "peristiwa": "Yakub berangkat ke Padan-aram",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Esau_married_Mahalath",
+    "peristiwa": "Esau menikah dengan Mahalat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jacob_married_Leah",
+    "peristiwa": "Yakub menikah dengan Lea",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jacob_married_Rachel",
+    "peristiwa": "Yakub menikah dengan Rahel",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Reuben_1",
+    "peristiwa": "Kelahiran Reuben 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Simeon_1",
+    "peristiwa": "Kelahiran Simeon 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Levi_1",
+    "peristiwa": "Kelahiran Levi 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Judah_1",
+    "peristiwa": "Kelahiran Judah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Dan_1",
+    "peristiwa": "Kelahiran Dan 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Naphtali_1",
+    "peristiwa": "Kelahiran Naphtali 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Gad_1",
+    "peristiwa": "Kelahiran Gad 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Asher_1",
+    "peristiwa": "Kelahiran Asher 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Issachar_1",
+    "peristiwa": "Kelahiran Issachar 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Zebulun_1",
+    "peristiwa": "Kelahiran Zebulun 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Dinah_1",
+    "peristiwa": "Kelahiran Dinah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Joseph_1",
+    "peristiwa": "Kelahiran Joseph 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jacob_returned_to_Canaan",
+    "peristiwa": "Yakub kembali ke Kanaan",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jacob_wrestles_with_the_angel",
+    "peristiwa": "Yakub bergumul dengan malaikat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Deborah_1",
+    "peristiwa": "Kematian Deborah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Rachel_1",
+    "peristiwa": "Kematian Rachel 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Benjamin_1",
+    "peristiwa": "Kelahiran Benjamin 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Josephs_dream",
+    "peristiwa": "mimpi Yusuf",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Isaac_1",
+    "peristiwa": "Kematian Isaac 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Joseph_made_viceroy",
+    "peristiwa": "Yusuf diangkat menjadi raja muda",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Seven_Years_Plenty_Egypt",
+    "peristiwa": "Mulailah Tujuh Tahun Banyak Mesir",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Manasseh_1",
+    "peristiwa": "Kelahiran Manasseh 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Ephraim_1",
+    "peristiwa": "Kelahiran Ephraim 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Seven_Years_Plenty_Egypt",
+    "peristiwa": "Akhiri Tujuh Tahun Banyak Mesir",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Seven_Years_Famine_Egypt",
+    "peristiwa": "Mulailah Kelaparan Tujuh Tahun di Mesir",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Kohath_1",
+    "peristiwa": "Kelahiran Kohath 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jacob_went_to_Egypt",
+    "peristiwa": "Yakub pergi ke Mesir",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Seven_Years_Famine_Egypt",
+    "peristiwa": "Akhiri Kelaparan Tujuh Tahun di Mesir",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Jacob_1",
+    "peristiwa": "Kematian Jacob 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Amram_1",
+    "peristiwa": "Kelahiran Amram 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Joseph_1",
+    "peristiwa": "Kematian Joseph 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Levi_1",
+    "peristiwa": "Kematian Levi 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Aaron_1",
+    "peristiwa": "Kelahiran Aaron 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Kohath_1",
+    "peristiwa": "Kematian Kohath 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Moses_1",
+    "peristiwa": "Kelahiran Moses 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Amram_1",
+    "peristiwa": "Kematian Amram 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Joshua_1",
+    "peristiwa": "Kelahiran Joshua 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Moses_fled_from_Pharaoh",
+    "peristiwa": "Musa melarikan diri dari Firaun",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Caleb_1",
+    "peristiwa": "Kelahiran Caleb 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_400_years_of_oppression",
+    "peristiwa": "Akhiri penindasan selama 400 tahun",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "The_Exodus",
+    "peristiwa": "Eksodus",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_wandering_wilderness",
+    "peristiwa": "Mulailah mengembara di hutan belantara",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_480_years_to_the_Temple",
+    "peristiwa": "Mulailah 480 tahun ke Bait Suci",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Covenant_at_Sinai",
+    "peristiwa": "Perjanjian di Sinai",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_430_years_promise_to_covenant",
+    "peristiwa": "Akhir 430 tahun janji perjanjian",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Seventy_four_Israelites_see_G-d",
+    "peristiwa": "Tujuh puluh empat orang Israel melihat Tuhan",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Tabernacle_construction",
+    "peristiwa": "Mulailah pembangunan Tabernakel",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Tabernacle_construction",
+    "peristiwa": "Selesainya pembangunan Tabernakel",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Israel_departed_Sinai",
+    "peristiwa": "Israel meninggalkan Sinai",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Twelve_spies",
+    "peristiwa": "Dua belas mata-mata",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Deuteronomy_delivered",
+    "peristiwa": "Ulangan disampaikan",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Renewed_covenant",
+    "peristiwa": "Perjanjian yang diperbarui",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Covenant_at_Moab",
+    "peristiwa": "Perjanjian di Moab",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Aaron_1",
+    "peristiwa": "Kematian Aaron 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Moses_1",
+    "peristiwa": "Kematian Moses 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Joshua_rule",
+    "peristiwa": "Mulailah pemerintahan Yosua",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Rahab_protected_spies_in_Jericho",
+    "peristiwa": "Rahab melindungi mata-mata di Yerikho",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_wandering_wilderness",
+    "peristiwa": "Akhiri pengembaraan di hutan belantara",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Israel_entered_the_Land",
+    "peristiwa": "Israel memasuki Tanah itu",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jephthahs_300_Years",
+    "peristiwa": "Mulailah Yefta 300 Tahun",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Tabernacle_set_up_at_Gilgal",
+    "peristiwa": "Kemah Suci didirikan di Gilgal",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_conquest_of_the_Land",
+    "peristiwa": "Mulailah penaklukan Tanah",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Battle_of_Jericho",
+    "peristiwa": "Pertempuran Yerikho",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Destruction_of_Jericho",
+    "peristiwa": "Penghancuran Yerikho",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_conquest_of_the_Land",
+    "peristiwa": "Akhiri penaklukan Tanah",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_apportioning_of_the_Land",
+    "peristiwa": "Mulailah membagi Tanah",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Tabernacle_moved_to_Shiloh",
+    "peristiwa": "Tabernakel dipindahkan ke Silo",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_apportioning_of_the_Land",
+    "peristiwa": "Mengakhiri pembagian Tanah",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jubilee_counting",
+    "peristiwa": "Begin Tahun Yobel counting",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Caleb_1",
+    "peristiwa": "Kematian Caleb 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Joshua_rule",
+    "peristiwa": "Akhiri pemerintahan Yosua",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Joshua_1",
+    "peristiwa": "Kematian Joshua 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Joshua_to_judges",
+    "peristiwa": "Mulailah Yosua menjadi hakim",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Cushan-rishathaim_oppression",
+    "peristiwa": "Mulailah penindasan Cushan-rishathaim",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Joshua_to_judges",
+    "peristiwa": "Akhiri Joshua menjadi hakim",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Cushan-rishathaim_oppression",
+    "peristiwa": "Akhiri penindasan Cushan-rishathaim",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_era_of_the_judges",
+    "peristiwa": "Mulailah era para hakim",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Othniel_judge",
+    "peristiwa": "Mulailah hakim Otniel",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_1",
+    "peristiwa": "Tahun Yobel 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Othniel_judge",
+    "peristiwa": "Akhiri hakim Otniel",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Othniel_1",
+    "peristiwa": "Kematian Othniel 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Eglon_oppression",
+    "peristiwa": "Mulailah penindasan Eglon",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jabin_oppression",
+    "peristiwa": "Mulailah penindasan Jabin",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Eglon_oppression",
+    "peristiwa": "Akhiri penindasan Eglon",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ehud_judge",
+    "peristiwa": "Mulailah hakim Ehud",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_2",
+    "peristiwa": "Tahun Yobel 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_3",
+    "peristiwa": "Tahun Yobel 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ehud_judge",
+    "peristiwa": "Akhir Ehud hakim",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Shamgar_judge",
+    "peristiwa": "Mulailah hakim Shamgar",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Shamgar_judge",
+    "peristiwa": "Akhiri hakim Shamgar",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Deborah_judge",
+    "peristiwa": "Mulailah hakim Debora",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jabin_oppression",
+    "peristiwa": "Akhiri penindasan Jabin",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_4",
+    "peristiwa": "Tahun Yobel 4",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Deborah_judge",
+    "peristiwa": "Akhiri hakim Debora",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Midian_oppression",
+    "peristiwa": "Mulailah penindasan Midian",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Gideon_judge",
+    "peristiwa": "Mulailah hakim Gideon",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Midian_oppression",
+    "peristiwa": "Akhiri penindasan Midian",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_5",
+    "peristiwa": "Tahun Yobel 5",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Eli_1",
+    "peristiwa": "Kelahiran Eli 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Gideon_judge",
+    "peristiwa": "Akhiri hakim Gideon",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Abimelech_rule",
+    "peristiwa": "Mulailah pemerintahan Abimelekh",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Abimelech_rule",
+    "peristiwa": "Akhiri pemerintahan Abimelekh",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Tola_judge",
+    "peristiwa": "Mulailah hakim Tola",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jair_judge",
+    "peristiwa": "Mulailah Hakim Jair",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jephthah_judge",
+    "peristiwa": "Mulailah hakim Yefta",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jephthahs_300_Years",
+    "peristiwa": "Akhiri 300 Tahun Yefta",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Philistine_and_Ammonite_oppression",
+    "peristiwa": "Mulailah penindasan orang Filistin dan orang Amon",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jephthah_judge",
+    "peristiwa": "Akhiri hakim Yefta",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ibzan_judge",
+    "peristiwa": "Mulailah hakim Ibzan",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Tola_judge",
+    "peristiwa": "Akhiri hakim Tola",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ibzan_judge",
+    "peristiwa": "Akhiri hakim Ibzan",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Elon_judge",
+    "peristiwa": "Mulailah hakim Elon",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_6",
+    "peristiwa": "Tahun Yobel 6",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jair_judge",
+    "peristiwa": "Akhiri hakim Jair",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Philistine_and_Ammonite_oppression",
+    "peristiwa": "Akhiri penindasan Filistin dan Amon",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Elon_judge",
+    "peristiwa": "Akhiri hakim Elon",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Abdon_judge",
+    "peristiwa": "Mulailah hakim Abdon",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Abdon_judge",
+    "peristiwa": "Akhiri hakim Abdon",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Samson_judge",
+    "peristiwa": "Mulailah hakim Simson",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Saul_1",
+    "peristiwa": "Kelahiran Saul 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Eli_judge",
+    "peristiwa": "Mulailah Eli menilai",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_40-year_Philistine_oppression",
+    "peristiwa": "Mulailah penindasan Filistin selama 40 tahun",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Barzillai_1",
+    "peristiwa": "Kelahiran Barzillai 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Samson_judge",
+    "peristiwa": "Akhiri hakim Samson",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Jonathan_2",
+    "peristiwa": "Kelahiran Jonathan 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Ishvi_2",
+    "peristiwa": "Kelahiran Ishvi 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Malchi-shua_1",
+    "peristiwa": "Kelahiran Malchi-shua 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Merab_1",
+    "peristiwa": "Kelahiran Merab 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Michal_1",
+    "peristiwa": "Kelahiran Michal 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Ish-bosheth_1",
+    "peristiwa": "Kelahiran Ish-bosheth 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Samuel_judge",
+    "peristiwa": "Mulailah Samuel menilai",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_7",
+    "peristiwa": "Tahun Yobel 7",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_David_1",
+    "peristiwa": "Kelahiran David 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Eli_judge",
+    "peristiwa": "Akhiri hakim Eli",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Philistines_capture_the_Ark",
+    "peristiwa": "Orang Filistin merebut Tabut itu",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Philistines_have_the_Ark",
+    "peristiwa": "Mulailah bangsa Filistin mempunyai Tabut itu",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Eli_1",
+    "peristiwa": "Kematian Eli 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Philistines_have_the_Ark",
+    "peristiwa": "Akhir orang Filistin memiliki Tabut",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_40-year_Philistine_oppression",
+    "peristiwa": "Akhiri penindasan Filistin selama 40 tahun",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "The_Ark_in_Beth-shemesh",
+    "peristiwa": "Tabut di Bet-Semes",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "David_slays_Goliath",
+    "peristiwa": "Daud membunuh Goliat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ark_at_Kiriath-jearim",
+    "peristiwa": "Mulailah Ark di Kiriath-jearim",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Saul_1_reign",
+    "peristiwa": "Mulailah pemerintahan Saul 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Mephibosheth_1",
+    "peristiwa": "Kelahiran Mephibosheth 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Samuel_judge",
+    "peristiwa": "Akhiri Samuel hakim",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Saul_1_reign",
+    "peristiwa": "Akhiri pemerintahan Saul 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Saul_1",
+    "peristiwa": "Kematian Saul 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Jonathan_2",
+    "peristiwa": "Kematian Jonathan 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_David_1_reign",
+    "peristiwa": "Mulailah pemerintahan Daud 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_David_reign_Hebron",
+    "peristiwa": "Mulailah Daud memerintah Hebron",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Amnon_1",
+    "peristiwa": "Kelahiran Amnon 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Chileab_1",
+    "peristiwa": "Kelahiran Chileab 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Absalom_1",
+    "peristiwa": "Kelahiran Absalom 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Adonijah_1",
+    "peristiwa": "Kelahiran Adonijah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Shephatiah_1",
+    "peristiwa": "Kelahiran Shephatiah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ish-bosheth_reign",
+    "peristiwa": "Mulailah pemerintahan Isy-boset",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Ithream_1",
+    "peristiwa": "Kelahiran Ithream 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ish-bosheth_reign",
+    "peristiwa": "Akhiri pemerintahan Isy-boset",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_David_reign_Hebron",
+    "peristiwa": "Akhir pemerintahan Daud di Hebron",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_David_reign_Jerusalem",
+    "peristiwa": "Mulailah Daud memerintah Yerusalem",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ark_at_Kiriath-jearim",
+    "peristiwa": "Akhiri Tabut di Kiriath-jearim",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Uzzah_1",
+    "peristiwa": "Kematian Uzzah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Covenant_with_David",
+    "peristiwa": "Perjanjian dengan Daud",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Amnon_violated_Tamar",
+    "peristiwa": "Amnon melanggar Tamar",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_8",
+    "peristiwa": "Tahun Yobel 8",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Amnon_1",
+    "peristiwa": "Kematian Amnon 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Absalom_fled_to_Geshur",
+    "peristiwa": "Absalom melarikan diri ke Gesur",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Solomon_1",
+    "peristiwa": "Kelahiran Solomon 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Nathan_1",
+    "peristiwa": "Kelahiran Nathan 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Shobab_1",
+    "peristiwa": "Kelahiran Shobab 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Absalom_brought_back_from_Geshur",
+    "peristiwa": "Absalom dibawa kembali dari Geshur",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Absalom_denied_Davids_countenance_begin",
+    "peristiwa": "Absalom menyangkal raut wajah Daud mulai",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Shammua_2",
+    "peristiwa": "Kelahiran Shammua 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Absalom_denied_Davids_countenance_end",
+    "peristiwa": "Absalom menyangkal raut muka Daud",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Absaloms_rebellion",
+    "peristiwa": "pemberontakan Absalom",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "David_fled_Jerusalem",
+    "peristiwa": "Daud melarikan diri dari Yerusalem",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Battle_of_the_forest_of_Ephraim",
+    "peristiwa": "Pertempuran di hutan Efraim",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Absalom_1",
+    "peristiwa": "Kematian Absalom 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "David_returned_to_Jerusalem",
+    "peristiwa": "Daud kembali ke Yerusalem",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Rehoboam_1",
+    "peristiwa": "Kelahiran Rehoboam 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_David_reign_Jerusalem",
+    "peristiwa": "Akhir Daud memerintah Yerusalem",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_David_1_reign",
+    "peristiwa": "Akhiri pemerintahan Daud 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_David_1",
+    "peristiwa": "Kematian David 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Solomon_1_reign",
+    "peristiwa": "Mulai pemerintahan Salomo 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_480_years_to_the_Temple",
+    "peristiwa": "Akhiri 480 tahun Bait Suci",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_first_Temple_construction",
+    "peristiwa": "Mulailah pembangunan Bait Suci yang pertama",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_first_Temple_construction",
+    "peristiwa": "Akhiri pembangunan Bait Suci yang pertama",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Promise_to_Solomon_1",
+    "peristiwa": "Janji kepada Salomo 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_9",
+    "peristiwa": "Tahun Yobel 9",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ahijah_1_prophesying",
+    "peristiwa": "Mulailah Ahia 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Solomon_1",
+    "peristiwa": "Kematian Solomon 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Solomon_1_reign",
+    "peristiwa": "Akhiri pemerintahan Salomo 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Rehoboam_1_reign",
+    "peristiwa": "Mulailah pemerintahan Rehabeam 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jeroboam_1_reign",
+    "peristiwa": "Mulailah pemerintahan Yerobeam 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Judah_walks_way_David_Solomon_begin",
+    "peristiwa": "Yehuda mengikuti cara David Salomo memulai",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Judah_walks_way_David_Solomon_end",
+    "peristiwa": "Yehuda berjalan di jalan akhir David Solomon",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ahijah_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Ahia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Shishak_attacks_Jerusalem",
+    "peristiwa": "Shishak menyerang Yerusalem",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Rehoboam_1",
+    "peristiwa": "Kematian Rehoboam 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Rehoboam_1_reign",
+    "peristiwa": "Akhiri pemerintahan Rehabeam 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Abijam_1_reign",
+    "peristiwa": "Mulailah pemerintahan Abijam 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Abijam_1_reign",
+    "peristiwa": "Akhir pemerintahan Abijam 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jeroboam_1_reign",
+    "peristiwa": "Akhiri pemerintahan Yerobeam 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Asa_1_reign",
+    "peristiwa": "Mulailah pemerintahan Asa 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Nadab_2_reign",
+    "peristiwa": "Mulailah pemerintahan Nadab 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Nadab_2_reign",
+    "peristiwa": "Akhiri pemerintahan Nadab 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Baasha_1_reign",
+    "peristiwa": "Mulai pemerintahan Baasha 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Jehoshaphat_3",
+    "peristiwa": "Kelahiran Jehoshaphat 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Azariahs_Prophecy",
+    "peristiwa": "Nubuat Azariah",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Asas_Covenant",
+    "peristiwa": "Perjanjian Asas",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_10",
+    "peristiwa": "Tahun Yobel 10",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jehu_1_prophesying",
+    "peristiwa": "Mulailah Yehu 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jehu_prophecy_against_Baasha",
+    "peristiwa": "Nubuatan Yehu terhadap Baasya",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Baasha_1_reign",
+    "peristiwa": "Akhiri pemerintahan Baasha 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Elah_2_reign",
+    "peristiwa": "Mulailah pemerintahan Elah 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Jehoram_1",
+    "peristiwa": "Kelahiran Jehoram 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Elah_2_reign",
+    "peristiwa": "Akhiri pemerintahan Elah 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Zimri_2_reign",
+    "peristiwa": "Mulailah pemerintahan Zimri 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Zimri_2_reign",
+    "peristiwa": "Akhiri pemerintahan Zimri 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Tibni_1_reign",
+    "peristiwa": "Mulailah pemerintahan Tibni 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Omri_1_disputed_reign",
+    "peristiwa": "Mulailah pemerintahan Omri 1 yang disengketakan",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Tibni_1_reign",
+    "peristiwa": "Akhiri pemerintahan Tibni 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Omri_1_disputed_reign",
+    "peristiwa": "Akhir pemerintahan Omri 1 yang disengketakan",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Omri_1_reign",
+    "peristiwa": "Mulailah pemerintahan Omri 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Omri_1_reign",
+    "peristiwa": "Akhiri pemerintahan Omri 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Baasha_fortifies_Ramah",
+    "peristiwa": "Baasha membentengi Rama",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ahab_1_reign",
+    "peristiwa": "Mulailah pemerintahan Ahab 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Elijah_1_prophesying",
+    "peristiwa": "Mulailah Elia 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jehoshaphat_3_regency",
+    "peristiwa": "Mulailah Kabupaten Yosafat 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Asas_feet_diseased",
+    "peristiwa": "Kaki Asa sakit",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Asa_1_reign",
+    "peristiwa": "Akhiri pemerintahan Asa 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jehoshaphat_3_regency",
+    "peristiwa": "Akhiri Kabupaten Yosafat 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jehoshaphat_3_reign",
+    "peristiwa": "Mulailah pemerintahan Yosafat 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jehoshaphat_sent_teachers",
+    "peristiwa": "Yosafat mengutus guru",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Ahaziah_2",
+    "peristiwa": "Kelahiran Ahaziah 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Hiel_rebuilds_Jericho",
+    "peristiwa": "Hiel membangun kembali Yerikho",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Micaiah_1_prophesying",
+    "peristiwa": "Mulailah Mikha 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jehoram_1_regency",
+    "peristiwa": "Mulai Kabupaten Yoram 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Micaiah_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Mikha 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Battle_at_Ramoth-gilead",
+    "peristiwa": "Pertempuran di Ramot-gilead",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Ahab_1",
+    "peristiwa": "Kematian Ahab 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ahab_1_reign",
+    "peristiwa": "Akhiri pemerintahan Ahab 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jehu_prophecy_to_Jeshoshaphat",
+    "peristiwa": "Nubuatan Yehu kepada Yosafat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jehu_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Yehu 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ahaziah_1_reign",
+    "peristiwa": "Mulailah pemerintahan Ahazia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ahaziah_1_reign",
+    "peristiwa": "Akhir pemerintahan Ahazia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jehoram_2_reign",
+    "peristiwa": "Mulailah pemerintahan Yoram 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Elisha_1_prophesying",
+    "peristiwa": "Mulailah Elisa 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Elijah_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Elia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Elisha_prophesies_success_against_Moab",
+    "peristiwa": "Elisa menubuatkan kesuksesan melawan Moab",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jehoram_and_Jehoshaphat_battle_Moab",
+    "peristiwa": "Yoram dan Yosafat berperang melawan Moab",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Jehoshaphat_3",
+    "peristiwa": "Kematian Jehoshaphat 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jehoshaphat_3_reign",
+    "peristiwa": "Akhiri pemerintahan Yosafat 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jehoram_1_regency",
+    "peristiwa": "Akhiri Kabupaten Yoram 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jehoram_1_reign",
+    "peristiwa": "Mulailah pemerintahan Yoram 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_11",
+    "peristiwa": "Tahun Yobel 11",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Elijahs_letter",
+    "peristiwa": "Surat Elia",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jehoram_1_reign",
+    "peristiwa": "Akhiri pemerintahan Yoram 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ahaziah_2_reign",
+    "peristiwa": "Mulailah pemerintahan Ahazia 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Jehoram_1",
+    "peristiwa": "Kematian Jehoram 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jehoram_2_reign",
+    "peristiwa": "Akhiri pemerintahan Yoram 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jehu_2_reign",
+    "peristiwa": "Mulailah pemerintahan Yehu 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ahaziah_2_reign",
+    "peristiwa": "Akhir pemerintahan Ahazia 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Ahaziah_2",
+    "peristiwa": "Kematian Ahaziah 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Athaliah_1_reign",
+    "peristiwa": "Mulai pemerintahan Atalya 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Athaliah_1_reign",
+    "peristiwa": "Akhir pemerintahan Atalya 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Joash_3_reign",
+    "peristiwa": "Mulailah pemerintahan Yoas 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Amaziah_1",
+    "peristiwa": "Kelahiran Amaziah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jehu_2_reign",
+    "peristiwa": "Akhiri pemerintahan Yehu 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jehoahaz_1_reign",
+    "peristiwa": "Mulailah pemerintahan Yoahaz 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Joash_3_repairs_the_Temple",
+    "peristiwa": "Yoas 3 memperbaiki Bait Suci",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Azariah_3",
+    "peristiwa": "Kelahiran Azariah 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jehoahaz_1_reign",
+    "peristiwa": "Akhiri pemerintahan Yoahaz 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Joash_4_reign",
+    "peristiwa": "Mulailah pemerintahan Yoas 4",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Elisha_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Elisa 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Joash_3_reign",
+    "peristiwa": "Akhiri pemerintahan Yoas 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Amaziah_1_reign",
+    "peristiwa": "Mulailah pemerintahan Amazia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_12",
+    "peristiwa": "Tahun Yobel 12",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jonah_1_prophesying",
+    "peristiwa": "Mulailah Yunus 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jeroboam_2_coreign with Jehoash",
+    "peristiwa": "Mulailah Yerobeam 2 memerintah bersama Yehoas",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jehoash_captures_Amaziah",
+    "peristiwa": "Yoas menangkap Amazia",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Azariah_3_coreign with Amaziah",
+    "peristiwa": "Mulailah Azariah 3 bersama dengan Amazia",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Joash_4_reign",
+    "peristiwa": "Akhiri pemerintahan Yoas 4",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jeroboam_2_coreign with Jehoash",
+    "peristiwa": "Akhiri pemerintahan Yerobeam 2 bersama Yehoas",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jeroboam_2_reign",
+    "peristiwa": "Mulailah pemerintahan Yerobeam 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Hosea_1_prophesying",
+    "peristiwa": "Mulailah Hosea 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Jotham_2",
+    "peristiwa": "Kelahiran Jotham 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Amaziah_1",
+    "peristiwa": "Kematian Amaziah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Amaziah_1_reign",
+    "peristiwa": "Akhiri pemerintahan Amazia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Azariah_3_coreign with Amaziah",
+    "peristiwa": "Akhiri Azariah 3 bersama dengan Amazia",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Azariah_3_reign",
+    "peristiwa": "Mulailah pemerintahan Azariah 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Amos_1_prophesying",
+    "peristiwa": "Mulailah Amos 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Amos_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Amos 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Ahaz_1",
+    "peristiwa": "Kelahiran Ahaz 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jeroboam_2_reign",
+    "peristiwa": "Akhiri pemerintahan Yerobeam 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jonah_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Yunus 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Zechariah_1_reign",
+    "peristiwa": "Mulailah pemerintahan Zakharia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Zechariah_1_reign",
+    "peristiwa": "Akhir pemerintahan Zakharia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Shallum_1_reign",
+    "peristiwa": "Mulailah pemerintahan Salum 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Shallum_1_reign",
+    "peristiwa": "Akhir pemerintahan Salum 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Menachem_1_reign",
+    "peristiwa": "Mulai pemerintahan Menachem 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Pekah_1_rival_reign_w_Menachem",
+    "peristiwa": "Mulailah pemerintahan saingan Pekah 1 dengan Menachem",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jotham_2_co-regency_with_Azariah",
+    "peristiwa": "Mulailah pemerintahan bersama Jotham 2 dengan Azariah",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_13",
+    "peristiwa": "Tahun Yobel 13",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Hezekiah_1",
+    "peristiwa": "Kelahiran Hezekiah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Menachem_1_reign",
+    "peristiwa": "Akhiri pemerintahan Menachem 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Pekah_1_rival_reign_w_Menachem",
+    "peristiwa": "Akhiri pemerintahan saingan Pekah 1 dengan Menachem",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Pekahiah_1_reign",
+    "peristiwa": "Mulai pemerintahan Pekahiah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Pekah_1_rival_reign_w_Pekahiah",
+    "peristiwa": "Mulailah pemerintahan saingan Pekah 1 dengan Pekahiah",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Pekahiah_1_reign",
+    "peristiwa": "Akhir pemerintahan Pekahiah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Pekah_1_rival_reign_w_Pekahiah",
+    "peristiwa": "Akhiri pemerintahan saingan Pekah 1 dengan Pekahiah",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Pekah_1_sole_reign",
+    "peristiwa": "Mulailah pemerintahan tunggal Pekah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Isaiah_1_prophesying",
+    "peristiwa": "Mulailah Yesaya 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Joel_11_prophesying",
+    "peristiwa": "Mulailah Yoel 11 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Azariah_3",
+    "peristiwa": "Kematian Azariah 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Azariah_3_reign",
+    "peristiwa": "Akhir pemerintahan Azariah 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jotham_2_co-regency_with_Azariah",
+    "peristiwa": "Akhiri pemerintahan bersama Jotham 2 dengan Azariah",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jotham_2_sole_reign",
+    "peristiwa": "Mulailah pemerintahan tunggal Jotham 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Micah_4_prophesying",
+    "peristiwa": "Mulailah Mikha 4 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Joel_11_prophesying",
+    "peristiwa": "Akhiri nubuatan Yoel 11",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jotham_2_sole_reign",
+    "peristiwa": "Akhiri pemerintahan tunggal Jotham 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jotham_2_co-regency_with_Ahaz",
+    "peristiwa": "Mulailah pemerintahan bersama Jotham 2 dengan Ahas",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ahaz_1_co-regency_with_Jotham",
+    "peristiwa": "Mulailah pemerintahan bersama Ahaz 1 dengan Yotham",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Pekah_1_reign",
+    "peristiwa": "Akhir pemerintahan Pekah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Hoshea_1_reign",
+    "peristiwa": "Mulailah pemerintahan Hosea 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Jotham_2",
+    "peristiwa": "Kematian Jotham 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jotham_2_co-regency_with_Ahaz",
+    "peristiwa": "Akhiri pemerintahan bersama Jotham 2 dengan Ahas",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ahaz_1_co-regency_with_Jotham",
+    "peristiwa": "Akhiri pemerintahan bersama Ahaz 1 dengan Jotham",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ahaz_1_reign",
+    "peristiwa": "Mulailah pemerintahan Ahas 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Hezekiah_1_co-regency with Ahaz",
+    "peristiwa": "Mulailah Hizkia 1 pemerintahan bersama dengan Ahas",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Hosea_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Hosea 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Assyrian_Invasion",
+    "peristiwa": "Mulailah Invasi Asiria",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Hoshea_1_reign",
+    "peristiwa": "Akhiri pemerintahan Hosea 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Assyrian_Invasion",
+    "peristiwa": "Akhiri Invasi Asiria",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "The_Assyrian_Captivity_of_Israel",
+    "peristiwa": "Penawanan Israel oleh Asiria",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ahaz_1_reign",
+    "peristiwa": "Akhir pemerintahan Ahas 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Ahaz_1",
+    "peristiwa": "Kematian Ahaz 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Hezekiah_1_co-regency with Ahaz",
+    "peristiwa": "Akhiri pemerintahan bersama Hizkia 1 dengan Ahas",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Hezekiah_1_reign",
+    "peristiwa": "Mulai pemerintahan Hizkia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Manasseh_3",
+    "peristiwa": "Kelahiran Manasseh 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Assyria_Besieges_Jerusalem",
+    "peristiwa": "Asyur Mengepung Yerusalem",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Hezekiahs_Affliction_and_Repentance",
+    "peristiwa": "Penderitaan dan Pertobatan Hizkia",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Manasseh_3_co-regency",
+    "peristiwa": "Mulailah Manasye 3 kabupaten bersama",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_14",
+    "peristiwa": "Tahun Yobel 14",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Hezekiah_1_reign",
+    "peristiwa": "Akhir pemerintahan Hizkia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Micah_4_prophesying",
+    "peristiwa": "Akhiri Mikha 4 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Manasseh_3_co-regency",
+    "peristiwa": "Akhiri Pemkab Manasye 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Manasseh_3_reign",
+    "peristiwa": "Mulailah pemerintahan Manasye 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Isaiah_1_prophesying",
+    "peristiwa": "Akhir dari nubuatan Yesaya 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Amon_2",
+    "peristiwa": "Kelahiran Amon 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Nahum_1_prophesying",
+    "peristiwa": "Mulailah Nahum 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Josiah_1",
+    "peristiwa": "Kelahiran Josiah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_15",
+    "peristiwa": "Tahun Yobel 15",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Manasseh_3_reign",
+    "peristiwa": "Akhiri pemerintahan Manasye 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Manasseh_3",
+    "peristiwa": "Kematian Manasseh 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Amon_2_reign",
+    "peristiwa": "Mulailah pemerintahan Amon 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Amon_2_reign",
+    "peristiwa": "Akhiri pemerintahan Amon 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Amon_2",
+    "peristiwa": "Kematian Amon 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Josiah_1_reign",
+    "peristiwa": "Mulailah pemerintahan Yosia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Zephaniah_3_prophesying",
+    "peristiwa": "Mulailah Zefanya 3 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Eliakim_2",
+    "peristiwa": "Kelahiran Eliakim 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Jehoahaz_2",
+    "peristiwa": "Kelahiran Jehoahaz 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jeremiah_6_prophesying",
+    "peristiwa": "Mulailah Yeremia 6 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Josiah_1_repairs_the_Temple",
+    "peristiwa": "Yosia 1 memperbaiki Bait Suci",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Josiahs_Passover",
+    "peristiwa": "Paskah Yosia",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Mattaniah_1",
+    "peristiwa": "Kelahiran Mattaniah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Birth_Jehoiachin_1",
+    "peristiwa": "Kelahiran Jehoiachin 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Nahum_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Nahum 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Zephaniah_3_prophesying",
+    "peristiwa": "Akhiri nubuatan Zefanya 3",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Josiah_1_reign",
+    "peristiwa": "Akhiri pemerintahan Yosia 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Josiah_1",
+    "peristiwa": "Kematian Josiah 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jehoahaz_2_reign",
+    "peristiwa": "Mulailah pemerintahan Yoahaz 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jehoahaz_2_reign",
+    "peristiwa": "Akhiri pemerintahan Yoahaz 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Eliakim_2_reign",
+    "peristiwa": "Mulai pemerintahan Eliakim 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Habakkuk_1_prophesying",
+    "peristiwa": "Mulailah Habakuk 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Nebuchadnezzar_1_reign",
+    "peristiwa": "Mulailah pemerintahan Nebukadnezar 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Daniel_2_captivity",
+    "peristiwa": "Mulailah penawanan Daniel 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jeremiah_prophesies_about_Nebuchadnezzar",
+    "peristiwa": "Yeremia bernubuat tentang Nebukadnezar",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Baruch_records_Jeremiah_31_scroll",
+    "peristiwa": "Barukh mencatat gulungan Yeremia 31",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Judahs_fast_during_Av",
+    "peristiwa": "Yehuda berpuasa selama Av",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Nebuchadnezzar_dream",
+    "peristiwa": "Mimpi Nebukadnezar",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Eliakim_2_vassal",
+    "peristiwa": "Mulailah Eliakim 2 pengikut",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Eliakim_2_reign",
+    "peristiwa": "Akhiri pemerintahan Eliakim 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Death_Eliakim_2",
+    "peristiwa": "Kematian Eliakim 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jehoiachin_1_reign",
+    "peristiwa": "Mulailah pemerintahan Yoyakhin 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jehoiachin_1_reign",
+    "peristiwa": "Akhiri pemerintahan Yoyakhin 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Jehoiachin_1_exile",
+    "peristiwa": "Mulailah pengasingan Yoyakhin 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Mattaniah_1_reign",
+    "peristiwa": "Mulai pemerintahan Matania 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_16",
+    "peristiwa": "Tahun Yobel 16",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ezekiel_1_prophesying",
+    "peristiwa": "Mulailah Yehezkiel 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Ezekiel_vision",
+    "peristiwa": "Penglihatan Yehezkiel",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Nebuchadnezzar_1_seige",
+    "peristiwa": "Mulailah pengepungan Nebukadnezar 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Mattaniah_1_reign",
+    "peristiwa": "Akhir pemerintahan Matania 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Nebuchadnezzar_1_seige",
+    "peristiwa": "Akhiri pengepungan Nebukadnezar 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Destruction_of_Solomons_Temple",
+    "peristiwa": "Penghancuran Kuil Sulaiman",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Habakkuk_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Habakuk 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ezekiel_1_prophesying",
+    "peristiwa": "Akhir Yehezkiel 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jeremiah_6_prophesying",
+    "peristiwa": "Akhiri nubuatan Yeremia 6",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_seventy_year_exile_in_Babylon",
+    "peristiwa": "Mulailah tujuh puluh tahun pengasingan di Babel",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Obadiah_12_prophesying",
+    "peristiwa": "Mulailah Obaja 12 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Obadiah_12_prophesying",
+    "peristiwa": "Akhiri nubuatan Obaja 12",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Nebuchadnezzar_1_reign",
+    "peristiwa": "Akhir pemerintahan Nebukadnezar 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Evil-merodach_1_reign",
+    "peristiwa": "Mulailah pemerintahan Evil-merodach 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Jehoiachin_1_imprisonment",
+    "peristiwa": "Akhiri pemenjaraan Yoyakhin 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Cyrus_1_reign_over_Persia",
+    "peristiwa": "Mulailah pemerintahan Cyrus 1 atas Persia",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Evil-merodach_1_reign",
+    "peristiwa": "Akhiri pemerintahan Evil-merodach 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Belshazzar_1_reign",
+    "peristiwa": "Mulailah pemerintahan Belsyazar 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Angelic_message_to_Daniel",
+    "peristiwa": "Pesan malaikat untuk Daniel",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Daniel_first_dream",
+    "peristiwa": "Daniel mimpi pertama",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Daniel_second_vision",
+    "peristiwa": "Daniel penglihatan kedua",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_17",
+    "peristiwa": "Tahun Yobel 17",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Belshazzar_1_reign",
+    "peristiwa": "Akhir dari pemerintahan Belsyazar 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Cyrus_1_reign_over_Babylon",
+    "peristiwa": "Mulailah pemerintahan Cyrus 1 atas Babilonia",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Daniel_2_captivity",
+    "peristiwa": "Akhiri penawanan Daniel 2",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Cyrus_Decree",
+    "peristiwa": "Keputusan Cyrus",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_second_Temple_foundation",
+    "peristiwa": "Mulailah fondasi Bait Suci yang kedua",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Cyrus_1_reign",
+    "peristiwa": "Akhiri pemerintahan Cyrus 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Cyrus_1_reign_over_Persia",
+    "peristiwa": "Akhir pemerintahan Cyrus 1 atas Persia",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Darius_1_reign",
+    "peristiwa": "Mulai pemerintahan Darius 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Temple_reconstruction_stopped",
+    "peristiwa": "Rekonstruksi kuil terhenti",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Gabriel_message_to_Daniel",
+    "peristiwa": "Pesan Jibril kepada Daniel",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Darius_Decree",
+    "peristiwa": "Keputusan Darius",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Haggai_1_prophesying",
+    "peristiwa": "Mulailah Hagai 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "The_Word_to_Haggai",
+    "peristiwa": "Firman kepada Hagai",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Resume_second_Temple_construction",
+    "peristiwa": "Lanjutkan pembangunan Bait Suci kedua",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "The_Word_to_Zechariah",
+    "peristiwa": "Firman kepada Zakharia",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Zechariah_13_prophesying",
+    "peristiwa": "Mulailah Zakharia 13 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Zechariah_13_prophesying",
+    "peristiwa": "Akhiri Zakharia 13 dengan bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Haggai_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Hagai 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_second_Temple_construction",
+    "peristiwa": "Akhiri pembangunan Bait Suci kedua",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_seventy_year_exile_in_Babylon",
+    "peristiwa": "Mengakhiri tujuh puluh tahun pengasingan di Babel",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Nehemiah_first_return",
+    "peristiwa": "Nehemia pertama kembali",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_18",
+    "peristiwa": "Tahun Yobel 18",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Nehemiah_second_return",
+    "peristiwa": "Kembalinya Nehemia yang kedua",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Malachi_1_prophesying",
+    "peristiwa": "Mulailah Maleakhi 1 bernubuat",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Darius_1_reign",
+    "peristiwa": "Akhir dari pemerintahan Darius 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Ahasuerus_1_reign",
+    "peristiwa": "Mulailah pemerintahan Ahasuerus 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Vashti_banished",
+    "peristiwa": "Wasti diusir",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Esther_chosen_as_queen",
+    "peristiwa": "Ester terpilih sebagai ratu",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Malachi_1_prophesying",
+    "peristiwa": "Akhiri nubuatan Maleakhi 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Ahasuerus_married_Esther",
+    "peristiwa": "Ahasyweros menikah dengan Ester",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Purim_deliverance",
+    "peristiwa": "Pembebasan Purim",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Ahasuerus_1_reign",
+    "peristiwa": "Akhir pemerintahan Ahasuerus 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Begin_Artaxerxes_1_reign",
+    "peristiwa": "Mulai pemerintahan Artaxerxes 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_19",
+    "peristiwa": "Tahun Yobel 19",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "End_Artaxerxes_1_reign",
+    "peristiwa": "Akhiri pemerintahan Artaxerxes 1",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_20",
+    "peristiwa": "Tahun Yobel 20",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_21",
+    "peristiwa": "Tahun Yobel 21",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_22",
+    "peristiwa": "Tahun Yobel 22",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_23",
+    "peristiwa": "Tahun Yobel 23",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_24",
+    "peristiwa": "Tahun Yobel 24",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_25",
+    "peristiwa": "Tahun Yobel 25",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_26",
+    "peristiwa": "Tahun Yobel 26",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_27",
+    "peristiwa": "Tahun Yobel 27",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_28",
+    "peristiwa": "Tahun Yobel 28",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_29",
+    "peristiwa": "Tahun Yobel 29",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_30",
+    "peristiwa": "Tahun Yobel 30",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_31",
+    "peristiwa": "Tahun Yobel 31",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_32",
+    "peristiwa": "Tahun Yobel 32",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_33",
+    "peristiwa": "Tahun Yobel 33",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_34",
+    "peristiwa": "Tahun Yobel 34",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_35",
+    "peristiwa": "Tahun Yobel 35",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_36",
+    "peristiwa": "Tahun Yobel 36",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_37",
+    "peristiwa": "Tahun Yobel 37",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_38",
+    "peristiwa": "Tahun Yobel 38",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_39",
+    "peristiwa": "Tahun Yobel 39",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_40",
+    "peristiwa": "Tahun Yobel 40",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_41",
+    "peristiwa": "Tahun Yobel 41",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_42",
+    "peristiwa": "Tahun Yobel 42",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_43",
+    "peristiwa": "Tahun Yobel 43",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_44",
+    "peristiwa": "Tahun Yobel 44",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_45",
+    "peristiwa": "Tahun Yobel 45",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_46",
+    "peristiwa": "Tahun Yobel 46",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_47",
+    "peristiwa": "Tahun Yobel 47",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_48",
+    "peristiwa": "Tahun Yobel 48",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_49",
+    "peristiwa": "Tahun Yobel 49",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_50",
+    "peristiwa": "Tahun Yobel 50",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_51",
+    "peristiwa": "Tahun Yobel 51",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_52",
+    "peristiwa": "Tahun Yobel 52",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_53",
+    "peristiwa": "Tahun Yobel 53",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_54",
+    "peristiwa": "Tahun Yobel 54",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_55",
+    "peristiwa": "Tahun Yobel 55",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_56",
+    "peristiwa": "Tahun Yobel 56",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_57",
+    "peristiwa": "Tahun Yobel 57",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_58",
+    "peristiwa": "Tahun Yobel 58",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_59",
+    "peristiwa": "Tahun Yobel 59",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_60",
+    "peristiwa": "Tahun Yobel 60",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_61",
+    "peristiwa": "Tahun Yobel 61",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_62",
+    "peristiwa": "Tahun Yobel 62",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_63",
+    "peristiwa": "Tahun Yobel 63",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_64",
+    "peristiwa": "Tahun Yobel 64",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_65",
+    "peristiwa": "Tahun Yobel 65",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_66",
+    "peristiwa": "Tahun Yobel 66",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_67",
+    "peristiwa": "Tahun Yobel 67",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_68",
+    "peristiwa": "Tahun Yobel 68",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_69",
+    "peristiwa": "Tahun Yobel 69",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  },
+  {
+    "event_id": "Jubilee_70",
+    "peristiwa": "Tahun Yobel 70",
+    "deskripsi_id": "Gagal memuat deskripsi otomatis.",
+    "ayat": "",
+    "kategori": "peristiwa"
+  }
+]

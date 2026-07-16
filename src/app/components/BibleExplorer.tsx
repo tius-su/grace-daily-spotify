@@ -1,7 +1,10 @@
 "use client";
 
-import { FormEvent, useMemo, useState, useEffect } from "react";
+import { FormEvent, useMemo, useState, useEffect, useRef } from "react";
+import { useSearchParams } from "next/navigation";
 import ReactMarkdown from "react-markdown";
+import { buildSearchFromParams } from "@/lib/bible-deeplink";
+import { useLanguage } from "@/lib/i18n";
 import {
   defaultBibleTranslation,
   bsbBibleTranslation,
@@ -9,10 +12,76 @@ import {
   searchBibleVerses,
   BIBLE_BOOKS,
   type BibleVerse,
+  type BibleChapterReading,
+  fetchBibleChapterReading,
+  cleanOldBibleCaches,
+  USE_WEB_BIBLE,
 } from "@/lib/bible";
 import { toggleAudio, stopAudio } from "@/lib/audio";
 
-const tabs = ["Cari Ayat", "Baca Pasal", "Ayat Tematik", "Favorit & Catatan"] as const;
+const tabs = ["Cari Ayat", "Baca Pasal", "Rencana Baca", "Ayat Tematik", "Favorit & Catatan"] as const;
+
+const AiDisclaimer = ({ t }: { t: (key: string) => string }) => (
+  <div className="mb-6 rounded-lg border border-[#ffd166]/20 bg-[#ffd166]/5 p-4 text-sm text-white/90 leading-relaxed shadow-sm">
+    <div className="flex items-start gap-3">
+      <span className="text-[#ffd166] text-lg mt-0.5">⚠️</span>
+      <div>
+        <p className="font-bold text-[#ffd166] mb-1">{t("bible.disclaimer_title")}</p>
+        <p className="text-xs text-white/70 whitespace-pre-line">
+          {t("bible.disclaimer_text")}
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
+function getStandardReadingPlanDay(dayNum: number): Array<{ bookShort: string; bookName: string; chapter: number }> {
+  const allChapters: Array<{ bookShort: string; bookName: string; chapter: number }> = [];
+  BIBLE_BOOKS.forEach(book => {
+    for (let c = 1; c <= book.chapters; c++) {
+      allChapters.push({ bookShort: book.id, bookName: book.name, chapter: c });
+    }
+  });
+
+  const totalDays = 365;
+  const totalChapters = allChapters.length;
+  const baseChaptersPerDay = Math.floor(totalChapters / totalDays);
+  const extraChaptersDays = totalChapters % totalDays;
+
+  let startIndex = 0;
+  for (let i = 0; i < dayNum - 1; i++) {
+    const chaptersToday = baseChaptersPerDay + (i < extraChaptersDays ? 1 : 0);
+    startIndex += chaptersToday;
+  }
+  
+  const chaptersToday = baseChaptersPerDay + ((dayNum - 1) < extraChaptersDays ? 1 : 0);
+  return allChapters.slice(startIndex, startIndex + chaptersToday);
+}
+
+function getCustomReadingPlanDay(bookId: string, durationDays: number, dayNum: number): Array<{ bookShort: string; bookName: string; chapter: number }> | null {
+  const book = BIBLE_BOOKS.find(b => b.id === bookId);
+  if (!book) return null;
+
+  const totalChapters = book.chapters;
+  const baseChaptersPerDay = Math.floor(totalChapters / durationDays);
+  const extraChaptersDays = totalChapters % durationDays;
+
+  let startIndex = 0;
+  for (let i = 0; i < dayNum - 1; i++) {
+    const chaptersToday = baseChaptersPerDay + (i < extraChaptersDays ? 1 : 0);
+    startIndex += chaptersToday;
+  }
+
+  const chaptersToday = baseChaptersPerDay + ((dayNum - 1) < extraChaptersDays ? 1 : 0);
+  
+  const result: Array<{ bookShort: string; bookName: string; chapter: number }> = [];
+  for (let c = startIndex + 1; c <= startIndex + chaptersToday; c++) {
+    if (c <= totalChapters) {
+      result.push({ bookShort: book.id, bookName: book.name, chapter: c });
+    }
+  }
+  return result;
+}
 
 const NEW_TESTAMENT_BOOKS = [
   "MAT", "MRK", "LUK", "JHN", "ACT", "ROM", "1CO", "2CO", "GAL", "EPH", "PHP",
@@ -40,11 +109,117 @@ const HIGHLIGHT_COLORS = [
 ];
 
 export function BibleExplorer() {
+  const { language, t } = useLanguage();
+  const searchParams = useSearchParams();
   const [activeTab, setActiveTab] = useState<(typeof tabs)[number]>("Cari Ayat");
   const [search, setSearch] = useState("Yohanes 3:16");
   const [status, setStatus] = useState("Siap mencari ayat.");
+  const [isListening, setIsListening] = useState(false);
+
+  const startVoiceSearch = () => {
+    const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert(language === "zh" ? "您的浏览器不支持语音识别。" : language === "en" ? "Your browser does not support speech recognition." : "Browser Anda tidak mendukung perekaman suara (Speech Recognition).");
+      return;
+    }
+    const recognition = new SpeechRecognition();
+    recognition.lang = "id-ID";
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.onstart = () => {
+      setIsListening(true);
+    };
+
+    recognition.onresult = async (event: any) => {
+      let text = event.results[0][0].transcript.trim();
+      if (!text) return;
+
+      text = text.toLowerCase()
+        .replace(/\bpasal\b/g, "")
+        .replace(/\bayat\b/g, ":")
+        .replace(/\bsampai\b/g, "-")
+        .replace(/\bhingga\b/g, "-")
+        .replace(/\bsatu\b/g, "1")
+        .replace(/\bdua\b/g, "2")
+        .replace(/\btiga\b/g, "3")
+        .replace(/\bempat\b/g, "4")
+        .replace(/\blima\b/g, "5")
+        .replace(/\benam\b/g, "6")
+        .replace(/\btujuh\b/g, "7")
+        .replace(/\bdelapan\b/g, "8")
+        .replace(/\bsembilan\b/g, "9")
+        .replace(/\bsepuluh\b/g, "10");
+
+      let detectedBook = "";
+      let foundIndex = -1;
+
+      const normalizedText = text.toLowerCase();
+      for (const b of BIBLE_BOOKS) {
+        const bookLower = b.name.toLowerCase();
+        if (normalizedText.includes(bookLower)) {
+          detectedBook = b.name;
+          foundIndex = normalizedText.indexOf(bookLower);
+          break;
+        }
+      }
+
+      if (detectedBook) {
+        const afterBook = text.substring(foundIndex + detectedBook.length).trim();
+        const numRegex = /^(\d+)(?:\s*[:\s]\s*(\d+)(?:\s*-\s*(\d+))?)/;
+        const match = afterBook.match(numRegex);
+        
+        let parsedChapter = "1";
+        let parsedVerse = "";
+        
+        if (match) {
+          parsedChapter = match[1];
+          if (match[2]) {
+            parsedVerse = match[2];
+            if (match[3]) {
+              parsedVerse += `-${match[3]}`;
+            }
+          }
+        }
+        
+        const finalQuery = `${detectedBook} ${parsedChapter}${parsedVerse ? `:${parsedVerse}` : ""}`;
+        setSearch(finalQuery);
+        setStatus("Mencari ayat di Alkitab...");
+        const verses = await searchBibleVerses(finalQuery, translationId);
+        setResults(verses);
+        setCurrentPage(1);
+        setStatus(verses.length ? `${verses.length} ayat ditemukan.` : "Belum ada hasil.");
+      } else {
+        setSearch(event.results[0][0].transcript);
+      }
+    };
+
+    recognition.onerror = (event: any) => {
+      console.error("Speech recognition error:", event.error);
+    };
+
+    recognition.onend = () => {
+      setIsListening(false);
+    };
+
+    recognition.start();
+  };
+
+  // Deep link: target verse to highlight
+  const [targetVerse, setTargetVerse] = useState<number | null>(null);
+  const highlightTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [results, setResults] = useState<BibleVerse[]>(sampleBibleVerses);
-  const [translationId, setTranslationId] = useState<"ind_ayt" | "BSB">("ind_ayt");
+  const [translationId, setTranslationId] = useState<"ind_ayt" | "BSB" | "ind_web" | "web" | "zh_web">(defaultBibleTranslation.id as any);
+
+  useEffect(() => {
+    if (language === "zh") {
+      setTranslationId("zh_web");
+    } else if (language === "en") {
+      setTranslationId(USE_WEB_BIBLE ? "web" : "BSB");
+    } else {
+      setTranslationId(USE_WEB_BIBLE ? "ind_web" : "ind_ayt");
+    }
+  }, [language]);
 
   const [testament, setTestament] = useState<"Semua" | "PL" | "PB">("Semua");
   const [category, setCategory] = useState<string>("Semua Kategori");
@@ -71,6 +246,70 @@ export function BibleExplorer() {
 
   // State untuk Panduan Alkitab
   const [showGuide, setShowGuide] = useState(false);
+
+  // Rencana Baca States
+  const [planMode, setPlanMode] = useState<"standard" | "custom">("standard");
+  const [standardDay, setStandardDay] = useState(1);
+  
+  const [customBook, setCustomBook] = useState("MAT");
+  const [customDuration, setCustomDuration] = useState(7);
+  const [customDay, setCustomDay] = useState(1);
+  const [customActive, setCustomActive] = useState(false);
+
+  const [chapterReadings, setChapterReadings] = useState<BibleChapterReading[]>([]);
+  const [loadingReadings, setLoadingReadings] = useState(false);
+  const [dailyNote, setDailyNote] = useState("");
+  const [planNotes, setPlanNotes] = useState<Record<string, string>>({});
+
+  const noteKey = useMemo(() => {
+    if (planMode === "standard") {
+      return `standard-day-${standardDay}`;
+    } else {
+      return `custom-${customBook}-${customDuration}-day-${customDay}`;
+    }
+  }, [planMode, standardDay, customBook, customDuration, customDay]);
+
+  useEffect(() => {
+    setDailyNote(planNotes[noteKey] || "");
+  }, [noteKey, planNotes]);
+
+  // Load and cache chapter readings for Rencana Baca
+  useEffect(() => {
+    if (activeTab !== "Rencana Baca") return;
+    
+    let targets: Array<{ bookShort: string; bookName: string; chapter: number }> = [];
+    if (planMode === "standard") {
+      targets = getStandardReadingPlanDay(standardDay);
+    } else {
+      if (customActive) {
+        const list = getCustomReadingPlanDay(customBook, customDuration, customDay);
+        if (list) targets = list;
+      }
+    }
+    
+    if (targets.length === 0) {
+      setChapterReadings([]);
+      return;
+    }
+    
+    let active = true;
+    setLoadingReadings(true);
+    
+    Promise.all(
+      targets.map(t => fetchBibleChapterReading(t.bookShort, t.chapter, translationId))
+    ).then(results => {
+      if (!active) return;
+      setChapterReadings(results.filter((r): r is BibleChapterReading => r !== null));
+      setLoadingReadings(false);
+    }).catch(err => {
+      console.error(err);
+      if (active) setLoadingReadings(false);
+    });
+    
+    return () => {
+      active = false;
+    };
+  }, [activeTab, planMode, standardDay, customBook, customDuration, customDay, customActive, translationId]);
   
   // Load offline data on mount
   useEffect(() => {
@@ -83,10 +322,85 @@ export function BibleExplorer() {
 
       const storedNotes = localStorage.getItem("bible_notes");
       if (storedNotes) setNotes(JSON.parse(storedNotes));
+
+      const storedActiveType = localStorage.getItem("bible_plan_active_type");
+      if (storedActiveType) setPlanMode(storedActiveType as "standard" | "custom");
+
+      const storedStandardDay = localStorage.getItem("bible_plan_standard_day");
+      if (storedStandardDay) setStandardDay(Number(storedStandardDay));
+
+      const storedCustomBook = localStorage.getItem("bible_plan_custom_book");
+      if (storedCustomBook) setCustomBook(storedCustomBook);
+
+      const storedCustomDuration = localStorage.getItem("bible_plan_custom_duration");
+      if (storedCustomDuration) setCustomDuration(Number(storedCustomDuration));
+
+      const storedCustomDay = localStorage.getItem("bible_plan_custom_day");
+      if (storedCustomDay) setCustomDay(Number(storedCustomDay));
+
+      const storedCustomActive = localStorage.getItem("bible_plan_custom_active");
+      if (storedCustomActive) setCustomActive(storedCustomActive === "true");
+
+      const storedPlanNotes = localStorage.getItem("bible_plan_notes_content");
+      if (storedPlanNotes) setPlanNotes(JSON.parse(storedPlanNotes));
+
+      // Clean old cache versions automatically on client side
+      cleanOldBibleCaches();
     } catch (e) {
       console.error("Gagal memuat data offline dari LocalStorage", e);
     }
   }, []);
+
+  // Deep link: on mount read URL params and load the referenced chapter
+  useEffect(() => {
+    const bookSlug = searchParams.get("book");
+    const chapterParam = searchParams.get("chapter");
+    const verseParam = searchParams.get("verse");
+
+    if (!bookSlug || !chapterParam) return;
+
+    const chapter = parseInt(chapterParam, 10);
+    const verse = verseParam ? parseInt(verseParam, 10) : null;
+
+    if (isNaN(chapter)) return;
+
+    const searchStr = buildSearchFromParams(bookSlug, chapter, verse ?? undefined);
+    if (!searchStr) return;
+
+    // Switch to "Cari Ayat" tab and load the chapter
+    setActiveTab("Cari Ayat");
+    setSearch(searchStr);
+
+    // After a tick, run the search so state is settled
+    const t = setTimeout(async () => {
+      try {
+        const { searchBibleVerses } = await import("@/lib/bible");
+        const verses = await searchBibleVerses(searchStr, translationId);
+        setResults(verses);
+        setCurrentPage(1);
+        setStatus(verses.length ? `${verses.length} ayat ditemukan.` : "Belum ada hasil.");
+
+        if (verse && verse > 0) {
+          setTargetVerse(verse);
+          // Allow DOM to render, then scroll
+          setTimeout(() => {
+            const el = document.getElementById(`verse-${verse}`);
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+            // Remove highlight after 4 seconds
+            if (highlightTimerRef.current) clearTimeout(highlightTimerRef.current);
+            highlightTimerRef.current = setTimeout(() => setTargetVerse(null), 4000);
+          }, 600);
+        }
+      } catch (err) {
+        console.warn("[deep-link] Failed to load chapter:", err);
+      }
+    }, 100);
+
+    return () => clearTimeout(t);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams]);
 
   // Save changes helper functions
   const saveBookmarks = (newBookmarks: BibleVerse[]) => {
@@ -105,10 +419,16 @@ export function BibleExplorer() {
   };
 
   const helperText = useMemo(() => {
-    if (translationId === "BSB") {
-      if (activeTab === "Baca Pasal") return "Enter example: Psalm 23, John 3, Romans 8.";
-      if (activeTab === "Ayat Tematik") return "Search themes like love, prayer, peace, faith.";
-      return "Search references or keywords: John 3:16, love, peace.";
+    if (translationId === "BSB" || translationId === "web") {
+      if (activeTab === "Baca Pasal") return language === "zh" ? "输入示例：诗篇 23，约翰福音 3，罗马书 8。" : "Enter example: Psalm 23, John 3, Romans 8.";
+      if (activeTab === "Ayat Tematik") return language === "zh" ? "搜索主题，如：爱、祷告、平安、信心。" : "Search themes like love, prayer, peace, faith.";
+      return language === "zh" ? "搜索经文或关键词：约翰福音 3:16，爱，平安。" : "Search references or keywords: John 3:16, love, peace.";
+    }
+
+    if (language === "zh") {
+      if (activeTab === "Baca Pasal") return "输入示例：诗篇 23，约翰福音 3，罗马书 8。";
+      if (activeTab === "Ayat Tematik") return "搜索主题，如：爱、祷告、平安、信心。";
+      return "搜索经文或关键词：约翰福音 3:16，爱，平安。";
     }
 
     if (activeTab === "Baca Pasal") {
@@ -120,7 +440,7 @@ export function BibleExplorer() {
     }
 
     return "Cari referensi atau kata kunci: Yohanes 3:16, kasih, khawatir.";
-  }, [activeTab, translationId]);
+  }, [activeTab, translationId, language]);
 
   const parsedSearch = useMemo(() => {
     const defaultVal = { book: "Kejadian", chapter: 1, verse: null };
@@ -282,9 +602,9 @@ export function BibleExplorer() {
 
     try {
       await navigator.clipboard.writeText(textToShare);
-      alert("Teks ayat telah disalin ke clipboard! Silakan paste (tempel) langsung di Instagram Stories, Facebook, atau media sosial lainnya.");
+      alert(language === "zh" ? "经文文本已复制到剪贴板！可以直接粘贴到社交媒体中。" : language === "en" ? "Verse text copied to clipboard! You can paste it directly into social media." : "Teks ayat telah disalin ke clipboard! Silakan paste (tempel) langsung di Instagram Stories, Facebook, atau media sosial lainnya.");
     } catch (err) {
-      alert("Gagal menyalin ayat secara otomatis. Silakan salin manual.");
+      alert(language === "zh" ? "自动复制经文失败。请手动复制。" : language === "en" ? "Failed to automatically copy the verse. Please copy it manually." : "Gagal menyalin ayat secara otomatis. Silakan salin manual.");
     }
   }
 
@@ -316,7 +636,7 @@ export function BibleExplorer() {
       newNotes[verseId] = activeNoteText;
     }
     saveNotes(newNotes);
-    alert("Catatan refleksi ayat berhasil disimpan secara lokal.");
+    alert(language === "zh" ? "反思笔记已成功保存在本地。" : language === "en" ? "Reflection note successfully saved locally." : "Catatan refleksi ayat berhasil disimpan secara lokal.");
   };
 
   // AI explanations & Commentary trigger
@@ -338,14 +658,52 @@ export function BibleExplorer() {
       if (response.ok && data.answer) {
         setAiContent(data.answer);
       } else {
-        setAiContent(data.error || "Gagal memperoleh penjelasan AI saat ini.");
+        setAiContent("server sibuk");
       }
     } catch (e) {
-      setAiContent("Koneksi gagal. Pastikan Anda online untuk menggunakan penjelasan AI.");
+      setAiContent("server sibuk");
     } finally {
       setAiLoading(false);
     }
   }
+
+  const handleSavePlanNote = () => {
+    const updated = { ...planNotes, [noteKey]: dailyNote };
+    setPlanNotes(updated);
+    localStorage.setItem("bible_plan_notes_content", JSON.stringify(updated));
+  };
+
+  const handleCompleteDay = () => {
+    handleSavePlanNote();
+
+    if (planMode === "standard") {
+      const nextDay = Math.min(365, standardDay + 1);
+      setStandardDay(nextDay);
+      localStorage.setItem("bible_plan_standard_day", String(nextDay));
+      if (nextDay === 365) {
+        alert(language === "zh" ? "太棒了！您正在进行365天读经计划的最后一天！" : language === "en" ? "Amazing! You are on the last day of the 365-Day Reading Plan!" : "Luar biasa! Anda berada di hari terakhir Rencana Baca 365 Hari!");
+      } else {
+        alert(language === "zh" ? `恭喜！您已完成第 ${standardDay} 天的阅读。继续进入第 ${nextDay} 天。` : language === "en" ? `Congratulations! You finished Day ${standardDay} reading. Continuing to Day ${nextDay}.` : `Selamat! Anda telah menyelesaikan bacaan Hari ${standardDay}. Berlanjut ke Hari ${nextDay}.`);
+      }
+    } else {
+      if (customDay >= customDuration) {
+        alert(language === "zh" ? `恭喜！您已完成 ${BIBLE_BOOKS.find(b => b.id === customBook)?.name} 自定义读经计划！` : language === "en" ? `Congratulations! You finished the custom reading plan of the Book of ${BIBLE_BOOKS.find(b => b.id === customBook)?.name}!` : `Selamat! Anda telah menyelesaikan Rencana Baca Kustom Kitab ${BIBLE_BOOKS.find(b => b.id === customBook)?.name}!`);
+        setCustomActive(false);
+        setCustomDay(1);
+        localStorage.setItem("bible_plan_custom_active", "false");
+        localStorage.setItem("bible_plan_custom_day", "1");
+      } else {
+        const nextDay = customDay + 1;
+        setCustomDay(nextDay);
+        localStorage.setItem("bible_plan_custom_day", String(nextDay));
+        alert(language === "zh" ? `恭喜！您已完成第 ${customDay} 天的阅读。继续进入第 ${nextDay} 天。` : language === "en" ? `Congratulations! You finished Day ${customDay} reading. Continuing to Day ${nextDay}.` : `Selamat! Anda telah menyelesaikan bacaan Hari ${customDay}. Berlanjut ke Hari ${nextDay}.`);
+      }
+    }
+    const element = document.getElementById("rencana-baca-viewer");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   // Open verse menu modal
   const openVerseMenu = (verse: BibleVerse) => {
@@ -362,17 +720,22 @@ export function BibleExplorer() {
         <div className="flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#ffd166]">
-              {translationId === "ind_ayt" ? "Alkitab bahasa Indonesia" : "English Bible"}
+              {translationId === "zh_web"
+                ? (language === "zh" ? "中文圣经" : language === "en" ? "Chinese Bible" : "Alkitab bahasa Mandarin")
+                : (translationId === "BSB" || translationId === "web")
+                  ? (language === "zh" ? "英文圣经" : language === "en" ? "English Bible" : "Alkitab bahasa Inggris")
+                  : (language === "zh" ? "印尼语圣经" : language === "en" ? "Indonesian Bible" : "Alkitab bahasa Indonesia")
+              }
             </p>
             <h2 className="mt-3 text-3xl font-semibold sm:text-4xl flex items-center flex-wrap gap-2">
               <span>
-                {translationId === "ind_ayt" ? "Cari ayat, baca pasal, dan jelajahi tema rohani." : "Search verses, read chapters, and explore themes."}
+                {t("bible.subtitle")}
               </span>
               <button
                 type="button"
                 onClick={() => setShowGuide(true)}
                 className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-[#ffd166] transition cursor-pointer"
-                title="Panduan Lengkap Fitur Alkitab"
+                title={language === "zh" ? "完整功能指南" : language === "en" ? "Complete Features Guide" : "Panduan Lengkap Fitur Alkitab"}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
@@ -381,19 +744,30 @@ export function BibleExplorer() {
             </h2>
           </div>
           <div className="rounded-lg border border-white/15 bg-white/10 px-4 py-3 text-sm text-white/82 flex items-center gap-3">
-            <span>Translation:</span>
+            <span>{t("bible.translation")}:</span>
             <select
               value={translationId}
               onChange={(e) => {
-                const newId = e.target.value as "ind_ayt" | "BSB";
+                const newId = e.target.value as "ind_ayt" | "BSB" | "ind_web" | "web" | "zh_web";
                 setTranslationId(newId);
-                if (newId === "BSB" && search === "Yohanes 3:16") setSearch("John 3:16");
-                if (newId === "ind_ayt" && search === "John 3:16") setSearch("Yohanes 3:16");
+                if ((newId === "BSB" || newId === "web") && search === "Yohanes 3:16") setSearch("John 3:16");
+                if ((newId === "ind_ayt" || newId === "ind_web") && search === "John 3:16") setSearch("Yohanes 3:16");
               }}
               className="bg-transparent text-[#ffd166] outline-none border-b border-[#ffd166]/50 pb-0.5 cursor-pointer"
             >
-              <option value="ind_ayt" className="bg-[#102c3a] text-white">Indonesia (AYT)</option>
-              <option value="BSB" className="bg-[#102c3a] text-white">English (BSB)</option>
+              {USE_WEB_BIBLE ? (
+                <>
+                  <option value="ind_web" className="bg-[#102c3a] text-white">Indonesia (WEB-AI)</option>
+                  <option value="web" className="bg-[#102c3a] text-white">English (WEB)</option>
+                  <option value="zh_web" className="bg-[#102c3a] text-white">Chinese (CUV)</option>
+                </>
+              ) : (
+                <>
+                  <option value="ind_ayt" className="bg-[#102c3a] text-white">Indonesia (AYT)</option>
+                  <option value="BSB" className="bg-[#102c3a] text-white">English (BSB)</option>
+                  <option value="zh_web" className="bg-[#102c3a] text-white">Chinese (CUV)</option>
+                </>
+              )}
             </select>
           </div>
         </div>
@@ -401,162 +775,609 @@ export function BibleExplorer() {
         {/* Tab Menu Bar */}
         <div className="mt-8 overflow-x-auto">
           <div className="flex min-w-max gap-2">
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                type="button"
-                onClick={() => setActiveTab(tab)}
-                className={`rounded-md px-4 py-2 text-sm font-semibold transition ${
-                  activeTab === tab
-                    ? "bg-[#ffd166] text-[#102c3a]"
-                    : "border border-white/20 bg-white/8 text-white"
-                }`}
-              >
-                {tab}
-              </button>
-            ))}
+            {tabs.map((tab) => {
+              let tabLabel = tab as string;
+              if (tab === "Cari Ayat") tabLabel = t("bible.search") === "Search" ? "Search" : (language === "zh" ? "搜索" : "Cari Ayat");
+              else if (tab === "Baca Pasal") tabLabel = t("bible.read_chapter") === "Read Chapter" ? "Read Chapter" : (language === "zh" ? "阅读章节" : "Baca Pasal");
+              else if (tab === "Rencana Baca") tabLabel = t("nav.reading_plan") === "Reading Plan" ? "Reading Plan" : (language === "zh" ? "读经计划" : "Rencana Baca");
+              else if (tab === "Ayat Tematik") tabLabel = t("bible.themes") === "Thematic Verses" ? "Themes" : (language === "zh" ? "主题金句" : "Ayat Tematik");
+              else if (tab === "Favorit & Catatan") tabLabel = t("bible.favorites") === "Favorites & Notes" ? "Favorites & Notes" : (language === "zh" ? "收藏与笔记" : "Favorit & Catatan");
+
+              return (
+                <button
+                  key={tab}
+                  type="button"
+                  onClick={() => setActiveTab(tab)}
+                  className={`rounded-md px-4 py-2 text-sm font-semibold transition ${
+                    activeTab === tab
+                      ? "bg-[#ffd166] text-[#102c3a]"
+                      : "border border-white/20 bg-white/8 text-white"
+                  }`}
+                >
+                  {tabLabel}
+                </button>
+              );
+            })}
           </div>
         </div>
 
-        {activeTab !== "Favorit & Catatan" ? (
+        {activeTab === "Rencana Baca" ? (
+          <div id="rencana-baca-viewer" className="mt-6 rounded-lg border border-white/10 bg-white/5 p-6 animate-in fade-in">
+            <div className="flex flex-col justify-between gap-4 border-b border-white/10 pb-4 md:flex-row md:items-center">
+              <div>
+                <h3 className="text-xl font-bold text-white">Rencana Baca Alkitab</h3>
+                <p className="text-xs text-white/70 mt-1">Tingkatkan kedisiplinan membaca Firman Tuhan setiap hari secara konsisten.</p>
+              </div>
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setPlanMode("standard");
+                    localStorage.setItem("bible_plan_active_type", "standard");
+                  }}
+                  className={`rounded-md px-4 py-1.5 text-xs font-semibold transition cursor-pointer ${
+                    planMode === "standard" ? "bg-[#ffd166] text-[#102c3a]" : "bg-white/10 text-white/80 hover:bg-white/20"
+                  }`}
+                >
+                  Tantangan 365 Hari
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setPlanMode("custom");
+                    localStorage.setItem("bible_plan_active_type", "custom");
+                  }}
+                  className={`rounded-md px-4 py-1.5 text-xs font-semibold transition cursor-pointer ${
+                    planMode === "custom" ? "bg-[#ffd166] text-[#102c3a]" : "bg-white/10 text-white/80 hover:bg-white/20"
+                  }`}
+                >
+                  Rencana Kustom (Offline)
+                </button>
+              </div>
+            </div>
+
+            {planMode === "standard" ? (
+              <div className="mt-6 space-y-6">
+                {/* Progress bar */}
+                <div className="rounded-lg bg-white/5 p-5 border border-white/10">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-sm font-semibold text-[#ffd166]">Tantangan Baca Alkitab Setahun</span>
+                    <span className="text-sm font-bold text-white">{Math.round(((standardDay - 1) / 365) * 100)}% Selesai</span>
+                  </div>
+                  <div className="w-full bg-white/10 rounded-full h-3 mb-3">
+                    <div className="bg-[#f4a261] h-3 rounded-full transition-all duration-300" style={{ width: `${Math.round(((standardDay - 1) / 365) * 100)}%` }}></div>
+                  </div>
+                  <div className="flex justify-between items-center text-xs text-white/60">
+                    <span>Hari ke-{standardDay} dari 365 Hari</span>
+                    <button
+                      onClick={() => {
+                        if (confirm(language === "zh" ? "您确定要将365天挑战进度重置为第一天吗？" : language === "en" ? "Are you sure you want to reset your 365-Day challenge progress back to Day 1?" : "Apakah Anda ingin mereset progres 365 Hari Anda kembali ke Hari 1?")) {
+                          setStandardDay(1);
+                          localStorage.setItem("bible_plan_standard_day", "1");
+                        }
+                      }}
+                      className="text-[#ffd166] hover:underline cursor-pointer bg-transparent border-none outline-none"
+                    >
+                      Reset Progres
+                    </button>
+                  </div>
+                </div>
+
+                {/* Chapters list to read */}
+                <div>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-[#ffd166] mb-4">
+                    Target Bacaan Hari ini: {getStandardReadingPlanDay(standardDay).map(t => `${t.bookName} ${t.chapter}`).join(", ")}
+                  </h4>
+
+                  {loadingReadings ? (
+                    <div className="flex items-center gap-3 text-white/70 py-10 justify-center">
+                      <svg className="animate-spin h-6 w-6 text-[#ffd166]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                      <span>Memuat ayat-ayat bacaan...</span>
+                    </div>
+                  ) : chapterReadings.length === 0 ? (
+                    <p className="text-white/60 italic text-center py-6">Pasal tidak dapat ditemukan. Coba ganti terjemahan atau periksa koneksi Anda.</p>
+                  ) : (
+                    <div className="space-y-6">
+                      {translationId === "ind_web" && <AiDisclaimer t={t} />}
+                      {chapterReadings.map((reading) => (
+                        <div key={`${reading.bookShort}-${reading.chapter}`} className="rounded-lg bg-black/25 p-5 border border-white/5">
+                          <div className="flex justify-between items-center mb-4 border-b border-white/10 pb-2">
+                            <h5 className="font-bold text-lg text-white">{reading.book} Pasal {reading.chapter}</h5>
+                            <button
+                              onClick={() => {
+                                const chapterText = reading.verses.map(v => v.text).join(" ");
+                                const isPlaying = playingVerseId === `${reading.bookShort}-${reading.chapter}-all`;
+                                toggleAudio(chapterText, isPlaying, (status) => {
+                                  setPlayingVerseId(status ? `${reading.bookShort}-${reading.chapter}-all` : null);
+                                }, translationId === "BSB" ? "en-US" : "id-ID");
+                              }}
+                              className="inline-flex items-center gap-1.5 rounded bg-[#2a6f6f] px-3 py-1 text-xs font-semibold hover:bg-[#1f5252] text-white cursor-pointer"
+                            >
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+                              </svg>
+                              {playingVerseId === `${reading.bookShort}-${reading.chapter}-all` ? "Stop" : "Dengarkan"}
+                            </button>
+                          </div>
+                          <div className="space-y-3">
+                            {reading.verses.map((verse) => {
+                              const verseId = `${translationId}-${reading.bookShort}-${reading.chapter}-${verse.number}`;
+                              const hColorValue = highlights[verseId];
+                              const highlightStyle = hColorValue
+                                ? HIGHLIGHT_COLORS.find(c => c.value === hColorValue)?.class
+                                : "text-white/90 hover:bg-white/5";
+                              
+                              const mappedVerse: BibleVerse = {
+                                id: verseId,
+                                book: reading.book,
+                                bookShort: reading.bookShort,
+                                chapter: reading.chapter,
+                                verse: verse.number,
+                                translation: reading.translation,
+                                reference: `${reading.book} ${reading.chapter}:${verse.number}`,
+                                text: verse.text,
+                                themes: ["rencana-baca"],
+                                normalizedText: "",
+                                keywords: [],
+                              };
+
+                              return (
+                                <p
+                                  key={verse.number}
+                                  onClick={() => openVerseMenu(mappedVerse)}
+                                  className={`rounded px-2 py-1 leading-relaxed text-base cursor-pointer transition ${highlightStyle}`}
+                                >
+                                  <sup className="text-[10px] font-bold text-[#ffd166] mr-1.5">{verse.number}</sup>
+                                  {verse.text}
+                                </p>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Reflection Notes */}
+                <div className="rounded-lg bg-black/20 p-5 border border-white/10 space-y-3">
+                  <label className="text-sm font-semibold text-[#ffd166] block" htmlFor="ref-notes-365">
+                    {language === "zh" ? "今日反思与承诺" : language === "en" ? "Reflection Notes & Today's Commitment" : "Catatan Refleksi & Komitmen Hari Ini"}
+                  </label>
+                  <textarea
+                    id="ref-notes-365"
+                    value={dailyNote}
+                    onChange={(e) => setDailyNote(e.target.value)}
+                    placeholder={language === "zh" ? "写下今天上帝通过阅读圣经对您说的话..." : language === "en" ? "Write down what God spoke to you through today's Bible reading..." : "Tuliskan apa yang Tuhan bicarakan lewat pembacaan Alkitab hari ini..."}
+                    className="w-full min-h-[100px] rounded border border-white/20 bg-[#102c3a] p-3 text-sm text-white outline-none focus:border-[#ffd166]"
+                  />
+                  <div className="flex justify-end gap-2">
+                    <button
+                      type="button"
+                      onClick={handleSavePlanNote}
+                      className="rounded border border-white/20 bg-white/5 px-4 py-2 text-xs font-semibold hover:bg-white/10 cursor-pointer"
+                    >
+                      {language === "zh" ? "仅保存笔记" : language === "en" ? "Save Notes Only" : "Simpan Catatan Saja"}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleCompleteDay}
+                      className="rounded bg-[#ffd166] px-5 py-2 text-xs font-bold text-[#102c3a] hover:bg-[#ffe094] transition cursor-pointer"
+                    >
+                      {language === "zh" ? "完成阅读并进入下一天" : language === "en" ? "Done & Next Day" : "Selesai Baca & Lanjut Hari Berikutnya"}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              /* Custom Plan view */
+              <div className="mt-6 space-y-6">
+                {!customActive ? (
+                  <div className="rounded-lg bg-white/5 p-6 border border-white/10 max-w-lg mx-auto space-y-4">
+                    <h4 className="font-bold text-white text-base text-center">{language === "zh" ? "创建您的自定义读经计划" : language === "en" ? "Create Your Custom Reading Plan" : "Buat Rencana Baca Kustom Anda"}</h4>
+                    <p className="text-xs text-white/70 text-center">{language === "zh" ? "在您选择的时间内集中阅读特定经卷。" : language === "en" ? "Intensive reading of a specific book within your chosen timeframe." : "Membaca kitab tertentu secara intensif dalam jangka waktu pilihan Anda."}</p>
+                    
+                    <div className="space-y-3 pt-2">
+                      <div>
+                        <label className="text-xs text-white/80 block mb-1">{language === "zh" ? "选择书卷：" : language === "en" ? "Select Book:" : "Pilih Kitab:"}</label>
+                        <select
+                          value={customBook}
+                          onChange={(e) => setCustomBook(e.target.value)}
+                          className="w-full rounded border border-white/20 bg-[#102c3a] px-3 py-2 text-sm text-white outline-none"
+                        >
+                          {BIBLE_BOOKS.map((b) => (
+                            <option key={b.id} value={b.id}>{b.name} ({b.chapters} {language === "zh" ? "章" : language === "en" ? "Chapters" : "Pasal"})</option>
+                          ))}
+                        </select>
+                      </div>
+                      <div>
+                        <label className="text-xs text-white/80 block mb-1">{language === "zh" ? "阅读天数：" : language === "en" ? "Reading Duration:" : "Durasi Membaca:"}</label>
+                        <select
+                          value={customDuration}
+                          onChange={(e) => setCustomDuration(Number(e.target.value))}
+                          className="w-full rounded border border-white/20 bg-[#102c3a] px-3 py-2 text-sm text-white outline-none"
+                        >
+                          <option value={7}>{language === "zh" ? "7 天" : language === "en" ? "7 Days" : "7 Hari"}</option>
+                          <option value={10}>{language === "zh" ? "10 天" : language === "en" ? "10 Days" : "10 Hari"}</option>
+                          <option value={14}>{language === "zh" ? "14 天" : language === "en" ? "14 Days" : "14 Hari"}</option>
+                          <option value={21}>{language === "zh" ? "21 天" : language === "en" ? "21 Days" : "21 Hari"}</option>
+                          <option value={30}>{language === "zh" ? "30 天" : language === "en" ? "30 Days" : "30 Hari"}</option>
+                        </select>
+                      </div>
+                      
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setCustomActive(true);
+                          setCustomDay(1);
+                          localStorage.setItem("bible_plan_custom_active", "true");
+                          localStorage.setItem("bible_plan_custom_book", customBook);
+                          localStorage.setItem("bible_plan_custom_duration", String(customDuration));
+                          localStorage.setItem("bible_plan_custom_day", "1");
+                          alert(language === "zh" ? `新自定义计划已启动！您将阅读 ${BIBLE_BOOKS.find(b => b.id === customBook)?.name}，共 ${customDuration} 天。` : language === "en" ? `New custom plan has started! You will read the Book of ${BIBLE_BOOKS.find(b => b.id === customBook)?.name} for ${customDuration} Days.` : `Rencana Kustom baru telah dimulai! Anda akan membaca Kitab ${BIBLE_BOOKS.find(b => b.id === customBook)?.name} selama ${customDuration} Hari.`);
+                        }}
+                        className="w-full rounded bg-[#f4a261] py-2 text-sm font-bold text-[#102c3a] hover:bg-[#ffd166] transition cursor-pointer text-center"
+                      >
+                        {language === "zh" ? "开始自定义计划" : language === "en" ? "Start Custom Plan" : "Mulai Rencana Kustom"}
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <>
+                    {/* Active Custom Plan progress */}
+                    <div className="rounded-lg bg-white/5 p-5 border border-white/10">
+                      <div className="flex justify-between items-center mb-2">
+                        <div>
+                          <span className="text-sm font-semibold text-[#ffd166] block">{language === "zh" ? "书卷" : language === "en" ? "Book" : "Kitab"} {BIBLE_BOOKS.find(b => b.id === customBook)?.name || customBook}</span>
+                          <span className="text-[10px] text-white/60">{language === "zh" ? `目标：${customDuration} 天` : language === "en" ? `Target: ${customDuration} Days` : `Target: ${customDuration} Hari`}</span>
+                        </div>
+                        <span className="text-sm font-bold text-white">{Math.round(((customDay - 1) / customDuration) * 100)}% {language === "zh" ? "完成" : language === "en" ? "Done" : "Selesai"}</span>
+                      </div>
+                      <div className="w-full bg-white/10 rounded-full h-3 mb-3">
+                        <div className="bg-[#f4a261] h-3 rounded-full transition-all duration-300" style={{ width: `${Math.round(((customDay - 1) / customDuration) * 100)}%` }}></div>
+                      </div>
+                      <div className="flex justify-between items-center text-xs text-white/60">
+                        <span>{language === "zh" ? `第 ${customDay} 天，共 ${customDuration} 天` : language === "en" ? `Day ${customDay} of ${customDuration} Days` : `Hari ke-${customDay} dari ${customDuration} Hari`}</span>
+                        <button
+                          onClick={() => {
+                            if (confirm(language === "zh" ? "您确定要取消/停止此自定义计划吗？当前进度将丢失。" : language === "en" ? "Are you sure you want to cancel/stop this custom plan? Current progress will be lost." : "Apakah Anda ingin membatalkan/menghentikan Rencana Kustom ini? Progres rencana kustom saat ini akan hilang.")) {
+                              setCustomActive(false);
+                              setCustomDay(1);
+                              localStorage.setItem("bible_plan_custom_active", "false");
+                              localStorage.setItem("bible_plan_custom_day", "1");
+                            }
+                          }}
+                          className="text-red-400 hover:text-red-300 cursor-pointer bg-transparent border-none outline-none"
+                        >
+                          {language === "zh" ? "停止计划" : language === "en" ? "Stop Plan" : "Hentikan Rencana"}
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Target Custom Chapters */}
+                    <div>
+                      <h4 className="text-sm font-bold uppercase tracking-wider text-[#ffd166] mb-4">
+                        {language === "zh" ? "今日读经：" : language === "en" ? "Today's Reading:" : "Target Bacaan Hari ini:"} {getCustomReadingPlanDay(customBook, customDuration, customDay)?.map(t => `${t.bookName} ${t.chapter}`).join(", ")}
+                      </h4>
+
+                      {loadingReadings ? (
+                        <div className="flex items-center gap-3 text-white/70 py-10 justify-center">
+                          <svg className="animate-spin h-6 w-6 text-[#ffd166]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                          <span>{language === "zh" ? "正在加载经文..." : language === "en" ? "Loading verses..." : "Memuat ayat-ayat bacaan..."}</span>
+                        </div>
+                      ) : chapterReadings.length === 0 ? (
+                        <p className="text-white/60 italic text-center py-6">{language === "zh" ? "未找到章节。" : language === "en" ? "Chapter not found." : "Pasal tidak dapat ditemukan."}</p>
+                      ) : (
+                        <div className="space-y-6">
+                          {translationId === "ind_web" && <AiDisclaimer t={t} />}
+                          {chapterReadings.map((reading) => (
+                            <div key={`${reading.bookShort}-${reading.chapter}`} className="rounded-lg bg-black/25 p-5 border border-white/5">
+                              <div className="flex justify-between items-center mb-4 border-b border-white/10 pb-2">
+                                <h5 className="font-bold text-lg text-white">{reading.book} {language === "zh" ? "第" : ""} {reading.chapter} {language === "zh" ? "章" : "Pasal"}</h5>
+                                <button
+                                  onClick={() => {
+                                    const chapterText = reading.verses.map(v => v.text).join(" ");
+                                    const isPlaying = playingVerseId === `${reading.bookShort}-${reading.chapter}-all`;
+                                    toggleAudio(chapterText, isPlaying, (status) => {
+                                      setPlayingVerseId(status ? `${reading.bookShort}-${reading.chapter}-all` : null);
+                                    }, translationId === "BSB" ? "en-US" : "id-ID");
+                                  }}
+                                  className="inline-flex items-center gap-1.5 rounded bg-[#2a6f6f] px-3 py-1 text-xs font-semibold hover:bg-[#1f5252] text-white cursor-pointer"
+                                >
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+                                  </svg>
+                                  {playingVerseId === `${reading.bookShort}-${reading.chapter}-all` ? (language === "zh" ? "停止" : "Stop") : (language === "zh" ? "收听" : "Dengarkan")}
+                                </button>
+                              </div>
+                              <div className="space-y-3">
+                                {reading.verses.map((verse) => {
+                                  const verseId = `${translationId}-${reading.bookShort}-${reading.chapter}-${verse.number}`;
+                                  const hColorValue = highlights[verseId];
+                                  const highlightStyle = hColorValue
+                                    ? HIGHLIGHT_COLORS.find(c => c.value === hColorValue)?.class
+                                    : "text-white/90 hover:bg-white/5";
+
+                                  const mappedVerse: BibleVerse = {
+                                    id: verseId,
+                                    book: reading.book,
+                                    bookShort: reading.bookShort,
+                                    chapter: reading.chapter,
+                                    verse: verse.number,
+                                    translation: reading.translation,
+                                    reference: `${reading.book} ${reading.chapter}:${verse.number}`,
+                                    text: verse.text,
+                                    themes: ["rencana-baca"],
+                                    normalizedText: "",
+                                    keywords: [],
+                                  };
+
+                                  return (
+                                    <p
+                                      key={verse.number}
+                                      onClick={() => openVerseMenu(mappedVerse)}
+                                      className={`rounded px-2 py-1 leading-relaxed text-base cursor-pointer transition ${highlightStyle}`}
+                                    >
+                                      <sup className="text-[10px] font-bold text-[#ffd166] mr-1.5">{verse.number}</sup>
+                                      {verse.text}
+                                    </p>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Reflection input */}
+                    <div className="rounded-lg bg-black/20 p-5 border border-white/10 space-y-3">
+                      <label className="text-sm font-semibold text-[#ffd166] block" htmlFor="ref-notes-custom">
+                        {language === "zh" ? "今日反思与承诺" : language === "en" ? "Reflection Notes & Today's Commitment" : "Catatan Refleksi & Komitmen Hari Ini"}
+                      </label>
+                      <textarea
+                        id="ref-notes-custom"
+                        value={dailyNote}
+                        onChange={(e) => setDailyNote(e.target.value)}
+                        placeholder={language === "zh" ? "写下今天上帝通过阅读圣经对您说的话..." : language === "en" ? "Write down what God spoke to you through today's Bible reading..." : "Tuliskan refleksi pribadi Anda untuk bacaan hari ini..."}
+                        className="w-full min-h-[100px] rounded border border-white/20 bg-[#102c3a] p-3 text-sm text-white outline-none focus:border-[#ffd166]"
+                      />
+                      <div className="flex justify-end gap-2">
+                        <button
+                          type="button"
+                          onClick={handleSavePlanNote}
+                          className="rounded border border-white/20 bg-white/5 px-4 py-2 text-xs font-semibold hover:bg-white/10 cursor-pointer"
+                        >
+                          Simpan Catatan Saja
+                        </button>
+                        <button
+                          type="button"
+                          onClick={handleCompleteDay}
+                          className="rounded bg-[#ffd166] px-5 py-2 text-xs font-bold text-[#102c3a] hover:bg-[#ffe094] transition cursor-pointer"
+                        >
+                          {customDay >= customDuration ? (language === "zh" ? "完成阅读并结束计划" : language === "en" ? "Finish Reading & Complete Plan" : "Selesai Membaca & Selesaikan Rencana") : (language === "zh" ? "完成阅读并进入下一天" : language === "en" ? "Done & Next Day" : "Selesai Baca & Lanjut Hari Berikutnya")}
+                        </button>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            )}
+          </div>
+        ) : activeTab !== "Favorit & Catatan" ? (
           <>
             {/* Search/Query Form */}
             <form
               onSubmit={onSubmit}
-              className="mt-6 grid gap-3 rounded-lg border border-white/15 bg-white/10 p-4 md:grid-cols-[1fr_auto]"
+              className="mt-6 flex flex-col gap-3 rounded-lg border border-white/15 bg-white/10 p-4 sm:grid sm:grid-cols-[1fr_auto]"
             >
               <label className="grid gap-2">
-                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                  <span className="text-sm text-white/72">{helperText}</span>
-                  {activeTab !== "Ayat Tematik" && (
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs text-white/50">Pilih cepat:</span>
-                      <select
-                        className="cursor-pointer rounded border border-white/20 bg-[#102c3a] px-2 py-1 text-xs text-white outline-none"
-                        onChange={(e) => {
-                          const bookName = e.target.value;
-                          handleDropdownSelect(`${bookName} 1`);
-                        }}
-                        value={parsedSearch.book}
-                      >
-                        {BIBLE_BOOKS.map((b) => (
-                          <option key={b.id} value={b.name}>{b.name}</option>
-                        ))}
-                      </select>
-                      <select
-                        className="cursor-pointer rounded border border-white/20 bg-[#102c3a] px-2 py-1 text-xs text-white outline-none"
-                        onChange={(e) => {
-                          const chap = e.target.value;
-                          handleDropdownSelect(`${parsedSearch.book} ${chap}`);
-                        }}
-                        value={parsedSearch.chapter}
-                      >
-                        {Array.from({ length: currentBookObj.chapters }).map((_, i) => (
-                          <option key={i + 1} value={i + 1}>Pasal {i + 1}</option>
-                        ))}
-                      </select>
-                      <select
-                        className="cursor-pointer rounded border border-white/20 bg-[#102c3a] px-2 py-1 text-xs text-white outline-none"
-                        onChange={(e) => {
-                          const v = e.target.value;
-                          handleDropdownSelect(v ? `${parsedSearch.book} ${parsedSearch.chapter}:${v}` : `${parsedSearch.book} ${parsedSearch.chapter}`);
-                        }}
-                        value={parsedSearch.verse || ""}
-                      >
-                        <option value="">Semua Ayat</option>
-                        {Array.from({ length: chapterVersesCount }).map((_, i) => (
-                          <option key={i + 1} value={i + 1}>Ayat {i + 1}</option>
-                        ))}
-                      </select>
-                    </div>
-                  )}
+                <span className="text-sm text-white/72">{helperText}</span>
+                {activeTab !== "Ayat Tematik" && (
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-xs text-white/50">{language === "zh" ? "快速选择：" : language === "en" ? "Quick select:" : "Pilih cepat:"}</span>
+                    <select
+                      className="cursor-pointer rounded border border-white/20 bg-[#102c3a] px-2 py-1 text-xs text-white outline-none min-w-0 flex-shrink"
+                      onChange={(e) => {
+                        const bookName = e.target.value;
+                        handleDropdownSelect(`${bookName} 1`);
+                      }}
+                      value={parsedSearch.book}
+                    >
+                      {BIBLE_BOOKS.map((b) => (
+                        <option key={b.id} value={b.name}>{b.name}</option>
+                      ))}
+                    </select>
+                    <select
+                      className="cursor-pointer rounded border border-white/20 bg-[#102c3a] px-2 py-1 text-xs text-white outline-none min-w-0 flex-shrink"
+                      onChange={(e) => {
+                        const chap = e.target.value;
+                        handleDropdownSelect(`${parsedSearch.book} ${chap}`);
+                      }}
+                      value={parsedSearch.chapter}
+                    >
+                      {Array.from({ length: currentBookObj.chapters }).map((_, i) => (
+                        <option key={i + 1} value={i + 1}>Pasal {i + 1}</option>
+                      ))}
+                    </select>
+                    <select
+                      className="cursor-pointer rounded border border-white/20 bg-[#102c3a] px-2 py-1 text-xs text-white outline-none min-w-0 flex-shrink"
+                      onChange={(e) => {
+                        const v = e.target.value;
+                        handleDropdownSelect(v ? `${parsedSearch.book} ${parsedSearch.chapter}:${v}` : `${parsedSearch.book} ${parsedSearch.chapter}`);
+                      }}
+                      value={parsedSearch.verse || ""}
+                    >
+                      <option value="">{language === "zh" ? "所有节" : language === "en" ? "All Verses" : "Semua Ayat"}</option>
+                      {Array.from({ length: chapterVersesCount }).map((_, i) => (
+                        <option key={i + 1} value={i + 1}>{language === "zh" ? `第 ${i + 1} 节` : language === "en" ? `Verse ${i + 1}` : `Ayat ${i + 1}`}</option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+                <div className="relative">
+                  <input
+                    value={search}
+                    onChange={(event) => setSearch(event.target.value)}
+                    className="w-full rounded-md border border-white/15 bg-white pl-4 pr-11 py-3 text-[#1f2933] outline-none ring-[#ffd166] focus:ring-2"
+                    placeholder="Yohanes 3:16"
+                  />
+                  <button
+                    type="button"
+                    onClick={startVoiceSearch}
+                    className={`absolute inset-y-0 right-0 pr-3 flex items-center transition-all duration-300 hover:scale-110 active:scale-95 ${
+                      isListening 
+                        ? "text-red-500 animate-pulse" 
+                        : "text-slate-400 hover:text-teal-650"
+                    }`}
+                    title="Cari menggunakan suara (Voice to Text)"
+                  >
+                    {isListening ? (
+                      <span className="w-5 h-5 flex items-center justify-center bg-red-500/20 rounded-full text-xs">🔴</span>
+                    ) : (
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-5 h-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                      </svg>
+                    )}
+                  </button>
                 </div>
-                <input
-                  value={search}
-                  onChange={(event) => setSearch(event.target.value)}
-                  className="rounded-md border border-white/15 bg-white px-4 py-3 text-[#1f2933] outline-none ring-[#ffd166] focus:ring-2"
-                  placeholder="Yohanes 3:16"
-                />
               </label>
               <button
                 type="submit"
-                className="self-end rounded-md bg-[#f4a261] px-5 py-3 font-semibold text-[#102c3a] transition hover:bg-[#ffd166]"
+                className="w-full sm:w-auto self-end rounded-md bg-[#f4a261] px-5 py-3 font-semibold text-[#102c3a] transition hover:bg-[#ffd166]"
               >
-                Cari Ayat
+                {language === "zh" ? "搜索经文" : language === "en" ? "Search Verse" : "Cari Ayat"}
               </button>
             </form>
 
             <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
               <div className="flex flex-wrap items-center gap-4">
                 <div className="flex flex-wrap gap-2">
-                  {["Semua", "PL", "PB"].map((t) => (
+                  {["Semua", "PL", "PB"].map((testamentKey) => (
                     <button
-                      key={t}
+                      key={testamentKey}
                       type="button"
                       onClick={() => {
-                        setTestament(t as any);
+                        setTestament(testamentKey as any);
                         setCurrentPage(1);
                       }}
                       className={`rounded-md px-3 py-1.5 text-sm font-semibold transition ${
-                        testament === t
+                        testament === testamentKey
                           ? "bg-[#2a6f6f] text-white"
                           : "border border-white/20 bg-transparent text-white/70 hover:bg-white/10 hover:text-white"
                       }`}
                     >
-                      {t === "PL"
-                        ? "Perjanjian Lama"
-                        : t === "PB"
-                          ? "Perjanjian Baru"
-                          : "Semua Kitab"}
+                      {testamentKey === "PL"
+                        ? (language === "zh" ? "旧约" : language === "en" ? "Old Testament" : "Perjanjian Lama")
+                        : testamentKey === "PB"
+                          ? (language === "zh" ? "新约" : language === "en" ? "New Testament" : "Perjanjian Baru")
+                          : (language === "zh" ? "全部书卷" : language === "en" ? "All Books" : "Semua Kitab")}
                     </button>
                   ))}
                 </div>
 
                 <select
                   value={category}
-                  onChange={(e) => {
-                    setCategory(e.target.value);
-                    if (e.target.value !== "Semua Kategori") {
-                      setSearch(e.target.value);
-                    }
+                  onChange={async (e) => {
+                    const selectedCat = e.target.value;
+                    setCategory(selectedCat);
                     setCurrentPage(1);
+
+                    if (selectedCat === "Semua Kategori") {
+                      // Reset to current search results
+                      setStatus("Menampilkan semua hasil.");
+                      return;
+                    }
+
+                    // Fetch chapter 1 of ALL books in this category so the filter has data
+                    const bookIds = BOOK_CATEGORIES[selectedCat] ?? [];
+                    if (bookIds.length === 0) return;
+
+                    setStatus("Memuat ayat kategori...");
+                    try {
+                      // Batch-fetch chapter 1 from each book in the category
+                      const readings = await Promise.all(
+                        bookIds.map(id => fetchBibleChapterReading(id, 1, translationId))
+                      );
+
+                      const aggregated: BibleVerse[] = [];
+                      readings.forEach(reading => {
+                        if (!reading) return;
+                        reading.verses.forEach(v => {
+                          aggregated.push({
+                            id: `${translationId}-${reading.bookShort}-${reading.chapter}-${v.number}`,
+                            book: reading.book,
+                            bookShort: reading.bookShort,
+                            chapter: reading.chapter,
+                            verse: v.number,
+                            translation: reading.translation,
+                            reference: `${reading.book} ${reading.chapter}:${v.number}`,
+                            text: v.text,
+                            themes: [selectedCat.toLowerCase()],
+                            normalizedText: v.text.toLowerCase(),
+                            keywords: [],
+                          });
+                        });
+                      });
+
+                      setResults(aggregated);
+                      setSearch(selectedCat);
+                      setStatus(
+                        aggregated.length > 0
+                          ? `${aggregated.length} ayat dari kategori "${selectedCat}".`
+                          : "Belum ada hasil."
+                      );
+                    } catch {
+                      setStatus("Gagal memuat ayat kategori.");
+                    }
                   }}
                   className="rounded-md border border-white/20 bg-[#102c3a] px-3 py-1.5 text-sm font-semibold text-white/80 outline-none transition focus:ring-2 focus:ring-[#ffd166]"
                 >
-                  {Object.keys(BOOK_CATEGORIES).map((cat) => (
-                    <option key={cat} value={cat}>
-                      {cat}
-                    </option>
-                  ))}
+                  {Object.keys(BOOK_CATEGORIES).map((cat) => {
+                    const catLabel: Record<string, Record<string, string>> = {
+                      "Semua Kategori": { id: "Semua Kategori", en: "All Categories", zh: "所有分类" },
+                      "Taurat": { id: "Taurat", en: "Torah", zh: "摩西五经" },
+                      "Sejarah PL": { id: "Sejarah PL", en: "OT History", zh: "旧约历史" },
+                      "Puisi & Hikmat": { id: "Puisi & Hikmat", en: "Poetry & Wisdom", zh: "诗歌与智慧" },
+                      "Nabi-Nabi": { id: "Nabi-Nabi", en: "Prophets", zh: "先知书" },
+                      "Injil": { id: "Injil", en: "Gospels", zh: "福音书" },
+                      "Sejarah PB": { id: "Sejarah PB", en: "NT History", zh: "新约历史" },
+                      "Surat-Surat": { id: "Surat-Surat", en: "Epistles", zh: "书信" },
+                      "Wahyu": { id: "Wahyu", en: "Revelation", zh: "启示录" },
+                    };
+                    const label = catLabel[cat]?.[language] || cat;
+                    return (
+                      <option key={cat} value={cat}>
+                        {label}
+                      </option>
+                    );
+                  })}
                 </select>
-                {category !== "Semua Kategori" && (
-                  <button
-                    type="button"
-                    onClick={runSearch}
-                    className="rounded-md bg-[#ffd166] px-3 py-1.5 text-sm font-semibold text-[#102c3a]"
-                  >
-                    Cari kategori ini
-                  </button>
-                )}
               </div>
               <p className="text-sm text-white/68">{status}</p>
             </div>
+
+            {translationId === "ind_web" && <AiDisclaimer t={t} />}
 
             {/* Verse grid rendering */}
             <div className="mt-6 grid gap-4 md:grid-cols-2">
               {paginatedResults.map((verse) => {
                 const hColorValue = highlights[verse.id];
-                const highlightStyle = hColorValue
-                  ? HIGHLIGHT_COLORS.find(c => c.value === hColorValue)?.class
-                  : "bg-white text-[#1f2933]";
+                const isTargetVerse = targetVerse !== null && verse.verse === targetVerse;
+                const highlightStyle = isTargetVerse
+                  ? "bg-[#ffd166] text-[#102c3a] ring-2 ring-[#ffd166] shadow-lg animate-pulse"
+                  : hColorValue
+                    ? HIGHLIGHT_COLORS.find(c => c.value === hColorValue)?.class
+                    : "bg-white text-[#1f2933]";
                 const isBookmarked = bookmarks.some(b => b.id === verse.id);
                 const hasNote = !!notes[verse.id];
 
                 return (
                   <article
                     key={verse.id}
+                    id={`verse-${verse.verse}`}
                     onClick={() => openVerseMenu(verse)}
-                    className={`rounded-lg border border-white/12 p-5 cursor-pointer transition hover:shadow-lg ${highlightStyle}`}
+                    className={`rounded-lg border border-white/12 p-5 cursor-pointer transition hover:shadow-lg scroll-mt-24 ${highlightStyle}`}
                   >
                     <div className="flex items-center justify-between">
                       <p className={`text-sm font-bold uppercase tracking-[0.18em] ${hColorValue ? 'text-black/70' : 'text-[#2a6f6f]'}`}>
@@ -719,6 +1540,11 @@ export function BibleExplorer() {
               <p className="mt-3 text-lg leading-relaxed italic bg-black/20 p-3 rounded border border-white/5">
                 &ldquo;{selectedVerse.text}&rdquo;
               </p>
+              {selectedVerse.translation === "WEB-AI" && (
+                <p className="mt-2 text-xs text-white/50 italic">
+                  * Terjemahan Bahasa Indonesia di atas merupakan hasil terjemahan otomatis menggunakan AI.
+                </p>
+              )}
             </div>
 
             {/* Grid Options */}

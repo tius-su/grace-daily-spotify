@@ -25,11 +25,47 @@ export function AuthNav() {
             headers: { Authorization: `Bearer ${token}` },
             cache: "no-store",
           });
-          const data = await response.json();
-          setIsAdmin(Boolean(response.ok && data.isAdmin));
+          
+          let isUserAdmin = false;
+          if (response.ok) {
+            const data = await response.json();
+            isUserAdmin = Boolean(data.isAdmin);
+          }
+
+          // Fallback check client-side firestore if /api/me didn't confirm admin
+          // This is useful if server-side hits a quota limit
+          if (!isUserAdmin) {
+            const { getDoc, doc } = await import("firebase/firestore");
+            const { db } = await import("@/lib/firebase");
+            if (db) {
+              try {
+                const userDoc = await getDoc(doc(db, "users", currentUser.uid));
+                if (userDoc.exists() && userDoc.data().role === "admin") {
+                  isUserAdmin = true;
+                }
+              } catch (e) {
+                console.error("Client side firestore admin check failed:", e);
+              }
+            }
+          }
+
+          setIsAdmin(isUserAdmin);
         } catch (error) {
           console.error("Gagal verifikasi admin:", error);
-          setIsAdmin(false);
+          
+          // Fallback if fetch completely fails
+          try {
+            const { getDoc, doc } = await import("firebase/firestore");
+            const { db } = await import("@/lib/firebase");
+            if (db) {
+              const userDoc = await getDoc(doc(db, "users", currentUser.uid));
+              setIsAdmin(userDoc.exists() && userDoc.data().role === "admin");
+            } else {
+              setIsAdmin(false);
+            }
+          } catch (e) {
+            setIsAdmin(false);
+          }
         }
       } else {
         setIsAdmin(false);

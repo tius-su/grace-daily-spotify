@@ -1,0 +1,14 @@
+{
+    "gracedaily.my.id": {
+        "show_ads": false,
+        "banner_id": "",
+        "interstitial_id": "",
+        "ad_slots": []
+    },
+    "app.gracedaily.my.id": {
+        "show_ads": false,
+        "banner_id": "",
+        "interstitial_id": "",
+        "ad_slots": []
+    }
+}

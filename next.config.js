@@ -55,6 +55,8 @@ const nextConfig = {
       "https://*.b3mny.com",
       "https://rtmark.net",
       "https://*.rtmark.net",
+      "https://nap5k.com",              // TAMBAHAN: Monetag In-Page Push
+      "https://*.nap5k.com",
     ];
     const scriptSrc = `${baseScriptSrc}${devEval} ${allowedScriptDomains.join(" ")}`;
 
@@ -104,6 +106,8 @@ const nextConfig = {
       "https://*.b3mny.com",
       "https://rtmark.net",
       "https://*.rtmark.net",
+      "https://nap5k.com",
+      "https://*.nap5k.com",
       "http://localhost:3000",
       "http://localhost:3001",
       "ws://localhost:3000",
@@ -138,6 +142,8 @@ const nextConfig = {
       "https://*.b3mny.com",
       "https://rtmark.net",
       "https://*.rtmark.net",
+      "https://nap5k.com",
+      "https://*.nap5k.com",
     ].join(" ");
 
     const workerSrc = [
@@ -155,6 +161,8 @@ const nextConfig = {
       "https://*.b3mny.com",
       "https://rtmark.net",
       "https://*.rtmark.net",
+      "https://nap5k.com",
+      "https://*.nap5k.com",
     ].join(" ");
 
     const csp = [

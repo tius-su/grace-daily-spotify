@@ -1,0 +1,4671 @@
+{
+    "type": "USJ",
+    "version": "3.1",
+    "content": [
+        {
+            "type": "book",
+            "marker": "id",
+            "code": "LAM",
+            "content": []
+        },
+        {
+            "type": "para",
+            "marker": "ide",
+            "content": [
+                " UTF-8\n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "h",
+            "content": [
+                "耶利米哀歌 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc1",
+            "content": [
+                "耶利米哀歌 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc2",
+            "content": [
+                "哀歌 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc3",
+            "content": [
+                "哀 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt2",
+            "content": [
+                "耶利米的  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt1",
+            "content": [
+                "哀歌  \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "1",
+            "sid": "LAM 1"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "LAM 1:1"
+                },
+                "那从前满有人民的城，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "如今竟孤独而坐！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "她从前在列国中为大，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "如今竟像寡妇！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "她从前在各省中作公主，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "如今竟成了奴仆！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "LAM 1:2"
+                },
+                "她夜间痛哭，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "泪流满腮。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "在她一切所爱的人中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "没有一个安慰她。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "她所有的朋友都以诡诈待她，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "成了她的仇敌。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "LAM 1:3"
+                },
+                "犹大因遭受苦难，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又因服沉重的劳役，已被掳去。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "她住在列国中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "找不到安息。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她所有追逼她的人，都在她困厄中追上了她。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "LAM 1:4"
+                },
+                "通往锡安的道路悲哀，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为无人来赴严肃会。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "她所有的城门荒凉；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她的祭司叹息。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "她的处女受苦，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她自己也满有苦楚。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "LAM 1:5"
+                },
+                "她的敌人成了首领；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她的仇敌亨通；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "因为耶和华",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:5 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "当英文以全大写字母译为“LORD”或“GOD”时，是上帝专有名（希伯来文“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "יהוה"
+                                    ]
+                                },
+                                "”，通常读作 Yahweh）的翻译。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "因她许多的过犯使她受苦。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她的幼儿在敌人面前被掳去。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "LAM 1:6"
+                },
+                "锡安女子所有的威荣都离她而去。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她的首领像找不到草场的鹿；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们在追赶者面前无力地走了。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "LAM 1:7"
+                },
+                "耶路撒冷在受苦和困苦的日子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "追想她从古以来一切美好的事物；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "当她的百姓落在敌人手中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "无人帮助她时，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "敌人看见她，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "就讥笑她的荒凉。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "LAM 1:8"
+                },
+                "耶路撒冷犯了重罪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因此成了污秽。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "凡尊敬她的都轻看她，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为他们看见了她的赤裸。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是的，她叹息，转身退后。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "LAM 1:9"
+                },
+                "她的污秽在她的衣裙上；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她不思想自己的结局。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "因此她惊人地败落；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "没有人安慰她。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“耶和华啊，求你看我的苦难；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为仇敌自高自大。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "LAM 1:10"
+                },
+                "敌人伸手夺取她一切美好的事物；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为她看见列国进了她的圣所，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "论到这些人，你曾吩咐不可进入你的会中。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "LAM 1:11"
+                },
+                "她所有的百姓都叹息，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "寻找食物；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们用自己美好的事物换食物，好使生命恢复。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“耶和华啊，求你观看，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为我已经成了被藐视的。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "LAM 1:12"
+                },
+                "“所有过路的人哪，这与你们无关吗？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们要观看，看有没有痛苦像我的痛苦，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "就是临到我身上的痛苦，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是耶和华在祂烈怒的日子使我受的苦。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "LAM 1:13"
+                },
+                "“祂从高天差火进入我的骨中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "胜过了它们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂为我的脚张网，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使我转回。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂使我荒凉，终日发昏。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "LAM 1:14"
+                },
+                "“我过犯的轭由祂的手捆绑；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它们交织在一起，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "压在我的颈项上。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂使我的力量衰败。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "主",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:14 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "译为“主”的词是“Adonai”。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "把我交在那些人的手中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是我不能抵挡的人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "LAM 1:15"
+                },
+                "“主轻弃我中间所有的勇士。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂召集严肃会来攻击我，要压碎我的壮丁。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "主把犹大的处女像在酒榨中践踏。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "LAM 1:16"
+                },
+                "“为这些事我哭泣；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的眼，我的眼泪如水流下，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为那本该使我生命恢复的安慰者离我甚远。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我的儿女荒凉，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为仇敌得胜了。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "LAM 1:17"
+                },
+                "锡安伸出双手；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "没有人安慰她。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "耶和华已吩咐关于雅各的事，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使他四围的人作他的敌人。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶路撒冷在他们中间成了污秽之物。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "LAM 1:18"
+                },
+                "“耶和华是公义的，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为我违背了祂的命令。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "万民哪，请听，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "看我的痛苦。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的处女和壮丁都被掳去。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "LAM 1:19"
+                },
+                "“我呼唤我所爱的人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们却欺骗我。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我的祭司和长老在城中气绝，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "那时他们为自己寻找食物，好使生命恢复。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "LAM 1:20"
+                },
+                "“耶和华啊，求你观看；因为我在困厄中。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的心烦乱；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我的心在我里面翻转，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为我大大悖逆。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "在外，刀剑使人丧子；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在家，就像死亡。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "LAM 1:21"
+                },
+                "“他们听见我叹息；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "没有人安慰我。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我所有的仇敌都听见我的患难；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们因你做了这事而欢喜。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "你必使你所宣告的日子来到，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们就要像我一样。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "LAM 1:22"
+                },
+                "“愿他们一切的恶都来到你面前。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "求你照你因我一切过犯向我所行的向他们行。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "因为我的叹息甚多，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的心发昏。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "2",
+            "sid": "LAM 2"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "LAM 2:1"
+                },
+                "主何竟在怒中用乌云遮蔽锡安女子！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂把以色列的荣美从天上摔到地上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在祂发怒的日子，不记念祂的脚凳。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "LAM 2:2"
+                },
+                "主吞灭了雅各的一切住处，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "毫不怜惜。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂在烈怒中拆毁犹大女子的堡垒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使它们倒塌在地。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂玷污了国度和其中的首领。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "LAM 2:3"
+                },
+                "祂在猛烈的怒中砍断了以色列所有的角。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂在仇敌面前收回自己的右手。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂像熊熊烈火焚烧雅各，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "吞噬四围的一切。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "LAM 2:4"
+                },
+                "祂张弓如仇敌，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂站立，举右手如敌人。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂杀尽一切悦人眼目的。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在锡安女子的帐棚中，祂倾倒烈怒如火。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "LAM 2:5"
+                },
+                "主成了仇敌一般，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂吞灭以色列。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂吞灭她所有的宫殿，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "毁坏祂自己的堡垒。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂使犹大女子哀伤悲叹，大大增加。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "LAM 2:6"
+                },
+                "祂强暴地夺去祂的帐幕，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "好像拆毁园子一样。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂毁坏祂聚会的地方。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶和华使锡安中的严肃会和安息日被遗忘。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂在怒气的愤慨中藐视君王和祭司。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "LAM 2:7"
+                },
+                "主丢弃祂的祭坛，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "厌弃祂的圣所。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂把她宫殿的墙垣交在仇敌手中。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们在耶和华的殿中喧嚷，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "好像在严肃会的日子一样。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "LAM 2:8"
+                },
+                "耶和华定意要毁坏锡安女子的城墙。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂拉了准绳，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不收回祂毁灭的手；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂使外郭和城墙哀哭，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它们一同衰败。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "LAM 2:9"
+                },
+                "她的城门陷入地下。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂毁坏并折断她的门闩。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "她的王和首领在没有律法的列国中。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是的，她的先知也得不到从耶和华来的异象。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "LAM 2:10"
+                },
+                "锡安女子的长老坐在地上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "默默无声。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他们把尘土扬在头上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "身穿麻衣。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶路撒冷的处女把头垂到地上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "LAM 2:11"
+                },
+                "我的眼因流泪而昏花。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的心烦乱。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我的胆汁倾倒在地上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因我民女子遭毁灭，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因孩童和吃奶的婴孩在城中的街道上昏倒。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "LAM 2:12"
+                },
+                "他们对自己的母亲说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“谷物和酒在哪里？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "那时他们像受伤的人在城中的街道上昏倒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们的生命倾倒在母亲的怀里。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "LAM 2:13"
+                },
+                "我该向你作什么见证呢？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶路撒冷女子啊，我该把什么与你相比呢？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "锡安处女啊，我该拿什么与你相较，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "好安慰你呢？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "因为你的破口大如海。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "谁能医治你呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "LAM 2:14"
+                },
+                "你的先知为你看见虚假愚昧的异象。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们没有揭露你的罪孽，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "好扭转你的被掳；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "却为你看见虚假的启示和使你被放逐的缘由。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "LAM 2:15"
+                },
+                "所有路过的人都向你拍手。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们向耶路撒冷女子嗤笑摇头，说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“这就是人所称为‘美丽的极致、  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "全地的喜乐’的城吗？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "LAM 2:16"
+                },
+                "你所有的仇敌都向你张大口。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们嗤笑，咬牙切齿。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们说：“我们吞灭她了。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "这正是我们所盼望的日子。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们找到了。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们看见了。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "LAM 2:17"
+                },
+                "耶和华成就了祂所计划的。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂实现了祂在古时所吩咐的话。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂拆毁，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "并不怜惜。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂使仇敌因你欢喜，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "高举你敌人的角。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "LAM 2:18"
+                },
+                "他们的心向主呼喊。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "锡安女子的城墙啊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "愿眼泪昼夜如河流下。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "不要让自己松懈。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不要让你的眼睛休息。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "LAM 2:19"
+                },
+                "起来，在夜间呼喊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在更次开始的时候！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "在主面前倾心如水。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "为你孩童的生命向祂举手，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们在各街口因饥饿昏厥。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "LAM 2:20"
+                },
+                "“耶和华啊，求你观看，看你向谁这样行！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "妇人岂可吃自己的后代，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "吃她们怀抱、在膝上摇逗的孩子吗？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祭司和先知岂可在主的圣所中被杀吗？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "LAM 2:21"
+                },
+                "“少年人和老年人都躺在街上的地上。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的处女和青年都倒在刀下。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "你在发怒的日子杀了他们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你屠杀，毫不怜惜。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "LAM 2:22"
+                },
+                "“你召集我四围的惊恐，像在严肃会的日子一样。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在耶和华发怒的日子，没有一人逃脱或存留。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我所照顾养育的，都被我的仇敌吞灭了。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "3",
+            "sid": "LAM 3"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "LAM 3:1"
+                },
+                "我就是那见过苦难的人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是在祂烈怒的杖下受苦的人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "LAM 3:2"
+                },
+                "祂引导我，使我行在黑暗中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "而不是行在光明里。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "LAM 3:3"
+                },
+                "祂实在终日一次又一次  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "转手攻击我。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "LAM 3:4"
+                },
+                "祂使我的皮肉衰老，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "折断了我的骨头。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "LAM 3:5"
+                },
+                "祂筑垒攻击我，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "用苦胆和艰难围困我。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "LAM 3:6"
+                },
+                "祂使我住在黑暗之处，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "像久已死去的人一样。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "LAM 3:7"
+                },
+                "祂筑墙围住我，使我不能出去；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂使我的锁链沉重。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "LAM 3:8"
+                },
+                "即使我呼喊求救，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂也阻挡我的祷告。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "LAM 3:9"
+                },
+                "祂用凿好的石头堵住我的道路，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使我的路径弯曲。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "LAM 3:10"
+                },
+                "祂对我像埋伏的熊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "像隐藏的狮子。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "LAM 3:11"
+                },
+                "祂使我偏离道路，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "将我撕碎；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂使我荒凉。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "LAM 3:12"
+                },
+                "祂张开祂的弓，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "把我立为箭靶。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "LAM 3:13"
+                },
+                "祂使祂箭袋中的箭射入我的腰肾。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "LAM 3:14"
+                },
+                "我成了我众民讥笑的对象，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "成了他们终日所唱的歌。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "LAM 3:15"
+                },
+                "祂使我饱尝苦胆，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使我饮足茵陈。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "LAM 3:16"
+                },
+                "祂又用砂砾硌断我的牙齿，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "用灰尘覆盖我。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "LAM 3:17"
+                },
+                "你使我的灵魂远离平安；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我忘记了福乐。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "LAM 3:18"
+                },
+                "我说：“我的力量已经消失，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我从耶和华而来的盼望也没有了。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "LAM 3:19"
+                },
+                "求你记念我的苦难和我的困苦，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "记念茵陈和苦胆。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "LAM 3:20"
+                },
+                "我的灵魂仍然记得这些，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在我里面低沉下去。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "LAM 3:21"
+                },
+                "我把这事回想在心；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因此我就有盼望。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "LAM 3:22"
+                },
+                "因着耶和华的慈爱，我们没有灭绝；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为祂的怜悯永不止息。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "23",
+                    "sid": "LAM 3:23"
+                },
+                "每早晨都是新的；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的信实何等广大！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "24",
+                    "sid": "LAM 3:24"
+                },
+                "“耶和华是我的产业，”我的灵魂说，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“因此我要仰望祂。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "25",
+                    "sid": "LAM 3:25"
+                },
+                "耶和华善待等候祂的人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "善待寻求祂的灵魂。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "26",
+                    "sid": "LAM 3:26"
+                },
+                "人仰望并安静等候  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶和华的拯救，这是好的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "27",
+                    "sid": "LAM 3:27"
+                },
+                "人在年幼时负轭，这是好的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "28",
+                    "sid": "LAM 3:28"
+                },
+                "愿他独自坐着，保持静默，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为这是主加在他身上的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "29",
+                    "sid": "LAM 3:29"
+                },
+                "愿他把口贴在尘土中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "或许还有盼望。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "30",
+                    "sid": "LAM 3:30"
+                },
+                "愿他把脸颊给打他的人；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "愿他饱受羞辱。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "31",
+                    "sid": "LAM 3:31"
+                },
+                "因为主必不永远丢弃人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "32",
+                    "sid": "LAM 3:32"
+                },
+                "祂虽然使人忧伤，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "却必照祂丰盛的慈爱施怜悯。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "33",
+                    "sid": "LAM 3:33"
+                },
+                "因为祂并非甘心使人受苦，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也并非甘心使世人忧伤。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "34",
+                    "sid": "LAM 3:34"
+                },
+                "把地上一切囚犯踩在脚下，   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "35",
+                    "sid": "LAM 3:35"
+                },
+                "在至高者面前屈枉人的权利，   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "36",
+                    "sid": "LAM 3:36"
+                },
+                "在人的案件上颠倒是非，主并不赞许。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "37",
+                    "sid": "LAM 3:37"
+                },
+                "若不是主命定，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "谁说了就能成就呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "38",
+                    "sid": "LAM 3:38"
+                },
+                "祸与福岂不是出于至高者的口吗？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "39",
+                    "sid": "LAM 3:39"
+                },
+                "活人为什么抱怨？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "人因自己的罪受罚，为什么抱怨呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "40",
+                    "sid": "LAM 3:40"
+                },
+                "让我们省察并查验自己的道路，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "归向耶和华。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "41",
+                    "sid": "LAM 3:41"
+                },
+                "让我们向天上的上帝",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "3:41 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "译为“上帝”的希伯来词是“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "אֱלֹהִ֑ים"
+                                    ]
+                                },
+                                "”（Elohim）。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "举起我们的心和双手。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "42",
+                    "sid": "LAM 3:42"
+                },
+                "“我们犯了过犯，悖逆了；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你没有赦免。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "43",
+                    "sid": "LAM 3:43"
+                },
+                "“你以怒气遮蔽自己，追赶我们；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你杀戮，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你没有怜惜。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "44",
+                    "sid": "LAM 3:44"
+                },
+                "你用云彩遮蔽自己，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使祷告不能通过。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "45",
+                    "sid": "LAM 3:45"
+                },
+                "你使我们在万民中  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "成了渣滓和废物。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "46",
+                    "sid": "LAM 3:46"
+                },
+                "“我们所有的仇敌都向我们大大张口。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "47",
+                    "sid": "LAM 3:47"
+                },
+                "恐惧和陷坑临到我们，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "荒废和毁灭临到我们。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "48",
+                    "sid": "LAM 3:48"
+                },
+                "因我百姓之女遭毁灭，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的眼流下泪河。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "49",
+                    "sid": "LAM 3:49"
+                },
+                "我的眼泪倾流，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不止息，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "毫不停歇，   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "50",
+                    "sid": "LAM 3:50"
+                },
+                "直到耶和华从天上  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "垂看、察看。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "51",
+                    "sid": "LAM 3:51"
+                },
+                "因我城中所有女子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我的眼使我的灵魂受苦。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "52",
+                    "sid": "LAM 3:52"
+                },
+                "那些无故与我为敌的人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "像追捕鸟一样不停追赶我。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "53",
+                    "sid": "LAM 3:53"
+                },
+                "他们在坑牢中断绝我的性命，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又把石头投在我身上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "54",
+                    "sid": "LAM 3:54"
+                },
+                "众水漫过我的头；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我说：“我被剪除了。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "55",
+                    "sid": "LAM 3:55"
+                },
+                "耶和华啊，我从极深的坑牢中  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "呼求你的名。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "56",
+                    "sid": "LAM 3:56"
+                },
+                "你听见了我的声音：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“不要掩耳不听我的叹息  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "和我的呼求。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "57",
+                    "sid": "LAM 3:57"
+                },
+                "我呼求你的日子，你临近我；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你说：“不要惧怕。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "58",
+                    "sid": "LAM 3:58"
+                },
+                "主啊，你为我的灵魂申诉；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你救赎了我的生命。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "59",
+                    "sid": "LAM 3:59"
+                },
+                "耶和华啊，你看见了我的冤屈；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "求你审判我的案件。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "60",
+                    "sid": "LAM 3:60"
+                },
+                "你看见了他们一切的报复，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "和他们攻击我的一切计谋。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "61",
+                    "sid": "LAM 3:61"
+                },
+                "耶和华啊，你听见了他们的羞辱，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "和他们攻击我的一切计谋，   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "62",
+                    "sid": "LAM 3:62"
+                },
+                "就是那些起来攻击我的人的嘴唇，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "以及他们终日攻击我的谋划。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "63",
+                    "sid": "LAM 3:63"
+                },
+                "他们坐下和起来，你都看见；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我成了他们所唱的歌。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "64",
+                    "sid": "LAM 3:64"
+                },
+                "耶和华啊，你必照他们手所做的  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "报应他们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "65",
+                    "sid": "LAM 3:65"
+                },
+                "你必使他们心里刚硬；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的咒诅必临到他们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "66",
+                    "sid": "LAM 3:66"
+                },
+                "你必在怒中追赶他们，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从耶和华的诸天之下毁灭他们。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "4",
+            "sid": "LAM 4"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "LAM 4:1"
+                },
+                "金子何竟失去光泽！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "至纯的金子何竟变色！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "圣所的石头被倾倒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在各条街的街头。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "LAM 4:2"
+                },
+                "锡安宝贵的众子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "曾可与精金相比，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "如今何竟被看作瓦瓶，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是窑匠手所造的！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "LAM 4:3"
+                },
+                "连胡狼也把乳房给幼崽，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "哺养它们的幼子；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "但我百姓的女儿变得残忍，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "像旷野中的鸵鸟。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "LAM 4:4"
+                },
+                "吃奶婴孩的舌头因干渴贴住上膛；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "孩童求饼，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "却无人擘给他们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "LAM 4:5"
+                },
+                "素来吃珍馐美味的人，在街上凄凉；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "素来在紫衣中养大的人，抱住粪堆。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "LAM 4:6"
+                },
+                "因为我百姓女儿的罪孽，大过所多玛的罪；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "所多玛转瞬之间被倾覆，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "没有人手加在她身上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "LAM 4:7"
+                },
+                "她的贵族比雪更纯净，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "比奶更洁白；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他们的身体比红宝石更红润；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们的光泽如蓝宝石。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "LAM 4:8"
+                },
+                "如今他们的面貌比煤炭更黑；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在街上无人认得他们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他们的皮肤紧贴骨头；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "枯干了，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "变得像木头。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "LAM 4:9"
+                },
+                "被刀杀的人，胜过被饥饿杀的人；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为后者因缺少田间的出产，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "渐渐消瘦，如被刺透。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "LAM 4:10"
+                },
+                "素有怜悯之心的妇人，竟亲手煮自己的儿女；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在我百姓女儿遭毁灭的时候，他们成了她们的食物。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "LAM 4:11"
+                },
+                "耶和华成就了祂的忿怒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "倾倒了祂的烈怒；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂在锡安点燃火焰，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "吞灭了锡安的根基。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "LAM 4:12"
+                },
+                "地上的君王不信，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "世上所有的居民也不信，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "敌对者和仇敌竟会进入耶路撒冷的城门。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "LAM 4:13"
+                },
+                "这是因她先知的罪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "和她祭司的罪孽；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们在她中间流了义人的血。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "LAM 4:14"
+                },
+                "他们像瞎子在街上徘徊；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们被血玷污，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "以致人不能触摸他们的衣服。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "LAM 4:15"
+                },
+                "“走开！”人向他们喊叫，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“不洁净！走开！走开！不要触摸！”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他们逃走流离的时候，列国中有人说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“他们不可再住在这里。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "LAM 4:16"
+                },
+                "耶和华的怒气驱散了他们；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂不再眷顾他们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "人不尊重祭司的面，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也不恩待长老。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "LAM 4:17"
+                },
+                "我们的眼目仍然衰竭，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "徒然仰望我们的帮助。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在我们的守望中，我们守望一个不能拯救的国家。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "LAM 4:18"
+                },
+                "他们追踪我们的脚步，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使我们不能在自己的街上行走。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我们的结局近了；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们的日子满了，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为我们的结局已经来到。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "LAM 4:19"
+                },
+                "追赶我们的人比天上的鹰更快；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们在山上追赶我们，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在旷野设埋伏等候我们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "LAM 4:20"
+                },
+                "我们鼻中的气息，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶和华的受膏者，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "被抓在他们的坑中；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "论到他，我们曾说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“我们要在他的荫下，在列国中存活。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "LAM 4:21"
+                },
+                "居住在乌斯地的以东女子啊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你只管欢喜快乐吧！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "这杯也必传到你那里；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你必喝醉，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "并使自己赤身露体。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "LAM 4:22"
+                },
+                "锡安女子啊，你罪孽的刑罚已经满了；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂不再使你被掳迁徙。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "以东女子啊，祂必追讨你的罪孽；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂必揭露你的罪。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "5",
+            "sid": "LAM 5"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "LAM 5:1"
+                },
+                "耶和华啊，求你记念临到我们的事。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "求你观看，察看我们的羞辱。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "LAM 5:2"
+                },
+                "我们的产业已经转交给陌生人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们的房屋归给外族人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "LAM 5:3"
+                },
+                "我们成了孤儿，无父无依。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们的母亲好像寡妇。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "LAM 5:4"
+                },
+                "我们喝水必须付钱。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们用的柴也要买来。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "LAM 5:5"
+                },
+                "追赶我们的人逼在我们的颈项上。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们疲乏，没有安息。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "LAM 5:6"
+                },
+                "我们向埃及人伸手，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也向亚述人伸手，为要吃饱。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "LAM 5:7"
+                },
+                "我们的祖先犯了罪，如今不在了。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们却担当他们的罪孽。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "LAM 5:8"
+                },
+                "仆人辖制我们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "没有人救我们脱离他们的手。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "LAM 5:9"
+                },
+                "因旷野有刀剑，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们冒着生命危险取得食物。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "LAM 5:10"
+                },
+                "因饥荒的灼热，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们的皮肤黑得像炉子。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "LAM 5:11"
+                },
+                "他们在锡安强暴妇女，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在犹大的城镇强暴处女。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "LAM 5:12"
+                },
+                "首领被吊起，手被悬挂。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "长老的脸面无人尊重。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "LAM 5:13"
+                },
+                "青年人扛着磨石。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "孩童在柴捆下绊跌。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "LAM 5:14"
+                },
+                "长老不再坐在城门口，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "青年人也不再奏乐。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "LAM 5:15"
+                },
+                "我们心中的喜乐止息了。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们的舞蹈变为哀哭。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "LAM 5:16"
+                },
+                "冠冕从我们头上落下。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我们有祸了，因为我们犯了罪！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "LAM 5:17"
+                },
+                "因此我们的心发昏。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因这些事，我们的眼睛昏花：   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "LAM 5:18"
+                },
+                "因为锡安山荒凉，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "狐狸行走其上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "LAM 5:19"
+                },
+                "耶和华啊，你永远长存。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的宝座存到万代。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "LAM 5:20"
+                },
+                "你为什么永远忘记我们，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "长久离弃我们？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "LAM 5:21"
+                },
+                "耶和华啊，求你使我们归向你，我们就必归回。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "求你更新我们的日子，像古时一样。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "LAM 5:22"
+                },
+                "但你已经全然弃绝我们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你向我们大发烈怒。   "
+            ]
+        }
+    ]
+}

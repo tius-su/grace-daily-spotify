@@ -1,0 +1,2739 @@
+{
+    "type": "USJ",
+    "version": "3.1",
+    "content": [
+        {
+            "type": "book",
+            "marker": "id",
+            "code": "ECC",
+            "content": []
+        },
+        {
+            "type": "para",
+            "marker": "ide",
+            "content": [
+                " UTF-8\n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "h",
+            "content": [
+                "传道书 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc1",
+            "content": [
+                "传道书，或《传道者》 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc2",
+            "content": [
+                "传道书 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc3",
+            "content": [
+                "传 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt1",
+            "content": [
+                "传道书  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt2",
+            "content": [
+                "或《传道者》  \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "1",
+            "sid": "ECC 1"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 1:1"
+                },
+                "在耶路撒冷作王、大卫的儿子传道者的话：   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 1:2"
+                },
+                "传道者说：“虚空的虚空，虚空的虚空，一切都是虚空。”  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 1:3"
+                },
+                "人在日光之下劳碌的一切劳碌，有什么益处呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 1:4"
+                },
+                "一代过去，一代又来；地却永远长存。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 1:5"
+                },
+                "太阳升起，太阳落下，又赶往它升起的地方。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 1:6"
+                },
+                "风往南吹，又转向北；它不断旋转而行，风又返回它的循环。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 1:7"
+                },
+                "所有江河都流入海，海却不满；江河流向何处，仍然再流向何处。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 1:8"
+                },
+                "万事都充满疲乏，难以言说。眼看，看不满足；耳听，听不充满。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 1:9"
+                },
+                "已有的事，还要再有；已做的事，还要再做；日光之下并无新事。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 1:10"
+                },
+                "岂有一件事可以说：“看哪，",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:10 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "“看哪”源自“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "הִנֵּה"
+                                    ]
+                                },
+                                "”，意思是看、注意、观察、观看或凝视。它常用作感叹词。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "这是新的”吗？它早已存在，在我们以前的世代就有了。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ECC 1:11"
+                },
+                "先前的事无人记念；将来要有的事，后来的人也不会记念。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ECC 1:12"
+                },
+                "我，传道者，曾在耶路撒冷作以色列的王。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ECC 1:13"
+                },
+                "我专心用智慧寻求、查究天下所做的一切事。这是上帝",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:13 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "译为“上帝”的希伯来词是“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "אֱלֹהִ֑ים"
+                                    ]
+                                },
+                                "”（Elohim）。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "给世人的沉重担子，使他们在其中受苦。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ECC 1:14"
+                },
+                "我看见日光之下所做的一切事；看哪，一切都是虚空，都是捕风。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ECC 1:15"
+                },
+                "弯曲的不能变直；缺少的不能计数。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ECC 1:16"
+                },
+                "我心里说：“看哪，我为自己取得大智慧，胜过所有在我以前在耶路撒冷的人。是的，我的心多多经历了智慧和知识。”  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ECC 1:17"
+                },
+                "我专心要认识智慧，也要认识疯狂和愚昧。我察觉这也是捕风。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "ECC 1:18"
+                },
+                "因为智慧多，愁烦也多；加增知识的，也加增忧伤。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "2",
+            "sid": "ECC 2"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 2:1"
+                },
+                "我心里说：“来吧，我要用欢笑试验你；所以你要享受快乐。”看哪，这也是虚空。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 2:2"
+                },
+                "我论笑声说：“这是愚妄”；论欢笑说：“这有什么成就呢？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 2:3"
+                },
+                "我心里寻索，怎样用酒使我的身体畅快，而我的心仍用智慧引导我；又怎样抓住愚昧，直到我看明世人一生在天下该做什么才是好的。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 2:4"
+                },
+                "我为自己兴建大工程。我为自己建造房屋，栽种葡萄园。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 2:5"
+                },
+                "我为自己建造园囿和花园，又在其中栽种各样果树。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 2:6"
+                },
+                "我为自己开凿水池，用来浇灌长满树木的林园。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 2:7"
+                },
+                "我买了仆人和婢女，也有生在我家中的仆人。我又拥有许多牛群羊群，超过所有在我以前住在耶路撒冷的人。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 2:8"
+                },
+                "我又为自己积聚金银，以及列王和各省的财宝。我为自己得了男歌手和女歌手，以及世人所喜爱的：各样乐器。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 2:9"
+                },
+                "于是我昌盛起来，超过所有在我以前住在耶路撒冷的人。我的智慧也仍然与我同在。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 2:10"
+                },
+                "凡我眼睛所想要的，我没有一样不给它们；凡我心所喜乐的，我没有一样不享受；因为我的心因我一切劳碌而喜乐，这就是我从一切劳碌中所得的分。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ECC 2:11"
+                },
+                "后来，我察看我双手所做的一切工，以及我劳碌所成就的辛劳；看哪，全是虚空，是捕风，在日光之下毫无益处。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ECC 2:12"
+                },
+                "我转而考察智慧、狂妄和愚昧；因为继承王位的人还能做什么呢？不过是做早已做过的事。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ECC 2:13"
+                },
+                "于是我看出智慧胜过愚昧，正如光明胜过黑暗。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ECC 2:14"
+                },
+                "智慧人的眼睛在他头上，愚昧人却在黑暗中行走——然而我也明白，同一遭遇临到他们众人。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ECC 2:15"
+                },
+                "我心里说：“愚昧人所遭遇的，我也照样会遭遇；那我为什么更有智慧呢？”我心里又说，这也是虚空。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ECC 2:16"
+                },
+                "因为智慧人和愚昧人一样，都不能永远被记念；在将来的日子，一切早已被遗忘。确实，智慧人也必须像愚昧人一样死去！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ECC 2:17"
+                },
+                "所以我恨恶生命，因为在日光之下所做的工使我愁烦；因为一切都是虚空，是捕风。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "ECC 2:18"
+                },
+                "我恨恶我在日光之下所劳碌的一切劳碌，因为我必须把它留给我以后来的人。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "ECC 2:19"
+                },
+                "谁知道他是智慧人还是愚昧人呢？然而他必掌管我在日光之下劳碌、并显出自己有智慧所得的一切劳碌。这也是虚空。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "ECC 2:20"
+                },
+                "因此，我开始使我的心对我在日光之下所劳碌的一切劳碌感到绝望。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "ECC 2:21"
+                },
+                "因为有人以智慧、知识和技能劳碌；然而他所得的分却要留给一个没有为此劳碌的人。这也是虚空，是大祸患。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "ECC 2:22"
+                },
+                "人在日光之下劳碌所得的一切劳碌，以及他心中的竭力，究竟有什么呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "23",
+                    "sid": "ECC 2:23"
+                },
+                "因为他一生的日子都是痛苦，他的劳苦都是忧伤；即使在夜间，他的心也不得安息。这也是虚空。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "24",
+                    "sid": "ECC 2:24"
+                },
+                "人莫如吃喝，并使自己的灵魂在劳碌中享福。我看出，这也是出于上帝的手。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "25",
+                    "sid": "ECC 2:25"
+                },
+                "因为谁能比我更能吃，谁能比我更能享受呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "26",
+                    "sid": "ECC 2:26"
+                },
+                "因为上帝赐智慧、知识和喜乐给蒙祂喜悦的人；却赐辛劳给罪人，使他收聚、堆积，好把所得给蒙上帝喜悦的人。这也是虚空，是捕风。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "3",
+            "sid": "ECC 3"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 3:1"
+                },
+                "凡事都有时节，天底下每一件事都有定时：   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 3:2"
+                },
+                "有出生的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有死亡的时候；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "有栽种的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有拔出所栽种之物的时候；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 3:3"
+                },
+                "有杀戮的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有医治的时候；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "有拆毁的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有建造的时候；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 3:4"
+                },
+                "有哭泣的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有欢笑的时候；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "有哀恸的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有跳舞的时候；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 3:5"
+                },
+                "有抛弃石头的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有聚集石头的时候；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "有拥抱的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有避免拥抱的时候；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 3:6"
+                },
+                "有寻找的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有失落的时候；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "有保存的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有丢弃的时候；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 3:7"
+                },
+                "有撕裂的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有缝补的时候；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "有沉默的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有说话的时候；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 3:8"
+                },
+                "有爱的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有恨的时候；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "有战争的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也有和平的时候。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 3:9"
+                },
+                "做工的人在自己劳碌的事上有什么益处呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 3:10"
+                },
+                "我见上帝把重担给世人，使他们为此劳苦。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ECC 3:11"
+                },
+                "祂使万物各按其时成为美好；祂又把永恒放在人的心里。然而，人不能测透上帝从起初到末了所做的工。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ECC 3:12"
+                },
+                "我知道，对他们来说，没有什么比一生喜乐、行善更好。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ECC 3:13"
+                },
+                "并且人人都应当吃喝，在自己一切劳碌中享福；这是上帝的恩赐。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ECC 3:14"
+                },
+                "我知道，上帝所做的一切都必永存；无可增添，也无可减少。上帝这样做，是要人们在祂面前敬畏。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ECC 3:15"
+                },
+                "现有的，早已存在；将有的，也早已存在。上帝又寻回那已经过去的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ECC 3:16"
+                },
+                "此外，我在日光之下又见：在公正之处有邪恶；在公义之处也有邪恶。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ECC 3:17"
+                },
+                "我心里说：“上帝必审判义人和恶人，因为在那里，每一件事、每一项行为都有定时。”  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "ECC 3:18"
+                },
+                "我心里说：“至于世人，上帝试验他们，为要使他们看明自己就像动物一样。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "ECC 3:19"
+                },
+                "因为世人所遭遇的，动物也遭遇；同一件事临到他们。这个怎样死，那个也怎样死。是的，他们都有同一个气息；人并不胜过动物，因为一切都是虚空。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "ECC 3:20"
+                },
+                "都归于一处；都出于尘土，也都归回尘土。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "ECC 3:21"
+                },
+                "谁知道人的灵是否上升，动物的灵是否下到地里呢？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "ECC 3:22"
+                },
+                "因此我见：人没有什么比在自己的工作中喜乐更好，因为这是他的份；谁能带他去看他以后将发生的事呢？   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "4",
+            "sid": "ECC 4"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 4:1"
+                },
+                "我又转而观看日光之下所行的一切欺压：看哪，受欺压者流泪，却无人安慰；欺压他们的人手中有权势，他们却无人安慰。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 4:2"
+                },
+                "因此，我称赞那早已死去的死人，胜过那仍然活着的活人。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 4:3"
+                },
+                "然而，比这两者都好的是那还未曾存在的人，他没有看见日光之下所行的恶事。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 4:4"
+                },
+                "我又看见一切劳碌和一切成就，都是人受邻舍嫉妒所驱使。这也是虚空，也是追风。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 4:5"
+                },
+                "愚昧人抱着双手，毁了自己。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 4:6"
+                },
+                "满一把安宁，胜过满两把劳碌和追风。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 4:7"
+                },
+                "我又转而观看日光之下的虚空。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 4:8"
+                },
+                "有一个人孤单无伴，既没有儿子，也没有兄弟；他的一切劳碌没有止境，他的眼睛也不以财富为满足。他说：“那么，我为谁劳碌，使自己不得享乐呢？”这也是虚空，实在是一件悲惨的事。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 4:9"
+                },
+                "两个人胜过一个人，因为他们的劳碌有美好的报酬。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 4:10"
+                },
+                "如果他们跌倒，这一个可以扶起他的同伴；但那孤单的人跌倒，没有别人扶起他，他就有祸了。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ECC 4:11"
+                },
+                "再者，两个人同睡，就会暖和；一个人独自怎能暖和呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ECC 4:12"
+                },
+                "如果有人能胜过孤单一人，两个人就能抵挡他；三股合成的绳子不容易折断。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ECC 4:13"
+                },
+                "贫穷而有智慧的少年，胜过年老而愚昧、不再知道怎样接受劝戒的王。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ECC 4:14"
+                },
+                "因为他从监牢出来作王；是的，即使在自己的国中，他也生来贫穷。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ECC 4:15"
+                },
+                "我看见日光之下行走的一切活人，都跟随那接替他的另一个少年。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ECC 4:16"
+                },
+                "众民，就是他所治理的一切人，多得无穷；然而后来的人并不因他欢喜。诚然，这也是虚空，也是追风。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "5",
+            "sid": "ECC 5"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 5:1"
+                },
+                "你到上帝的殿去时，要谨慎你的脚步；近前聆听，胜过献愚昧人的祭，因为他们不知道自己是在作恶。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 5:2"
+                },
+                "不要用口冒失发言，也不要让你的心在上帝面前急于说什么；因为上帝在天上，你在地上。所以，你的话要少。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 5:3"
+                },
+                "事务繁多就生梦；言语众多就显出愚昧人的声音。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 5:4"
+                },
+                "你向上帝许愿，偿还不可迟延；因为祂不喜悦愚昧人。你所许的愿，要偿还。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 5:5"
+                },
+                "你不许愿，胜过许愿而不偿还。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 5:6"
+                },
+                "不要让你的口使你陷入罪中。不要在使者面前辩称这是失误。为什么要让上帝因你的声音发怒，毁坏你手所做的工呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 5:7"
+                },
+                "因为梦多有虚空，话多也是如此；但你必须敬畏上帝。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 5:8"
+                },
+                "你若在一个地区看见穷人受欺压，公正和公义被强夺，不要因这事惊奇；因为有高过官员的在监察，在他们以上还有更高的官员。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 5:9"
+                },
+                "而且，土地的益处是为众人的；君王也靠田地得益。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 5:10"
+                },
+                "喜爱银子的，不会因银子满足；喜爱丰裕的，也不会因增益满足。这也是虚空。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ECC 5:11"
+                },
+                "财物增多，吃用的人也增多；物主除了用眼睛饱看以外，还有什么益处呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ECC 5:12"
+                },
+                "劳碌人的睡眠香甜，无论他吃得少或多；富人的丰裕却不容他睡觉。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ECC 5:13"
+                },
+                "我在日光之下看见一件严重的祸患：财富由主人保守，反而害了自己。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ECC 5:14"
+                },
+                "那些财富因灾祸灭失；若他生了儿子，他手中也一无所有。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ECC 5:15"
+                },
+                "他怎样从母腹赤身而出，也必照样赤身而去；他劳碌所得的，手中一样也不能带走。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ECC 5:16"
+                },
+                "这也是一件严重的祸患：他怎样来，也照样去。他为风劳碌，有什么益处呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ECC 5:17"
+                },
+                "他终日也在黑暗中吃喝，满有烦恼、疾病和愤怒。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "ECC 5:18"
+                },
+                "看哪，我所看为美善合宜的是：人在上帝所赐的一生中，在日光之下，在他一切劳碌中吃喝，并享受美好；因为这是他的份。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "ECC 5:19"
+                },
+                "凡上帝赐给他资财和财富，并赐他能力可以享用、取得自己的份、在劳碌中喜乐的人——这就是上帝的恩赐。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "ECC 5:20"
+                },
+                "因为他不常思念自己一生的日子，因为上帝使他专注于心中的喜乐。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "6",
+            "sid": "ECC 6"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 6:1"
+                },
+                "我在日光之下见过一件恶事，重压在人身上：  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 6:2"
+                },
+                "有人蒙上帝赐给他资财、财富和尊荣，使他心里所愿的一无所缺；然而上帝却不给他能力享用，反倒有外人享用。这是虚空，也是恶疾。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 6:3"
+                },
+                "人若生了一百个儿女，又活了许多年，年日众多，可是他的心没有被福乐满足，并且也没有埋葬；我说，死胎比他更好。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 6:4"
+                },
+                "因为死胎虚空而来，黑暗而去，它的名字也被黑暗遮盖。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 6:5"
+                },
+                "况且它没有见过日光，也不知道日光；它比那人更得安息。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 6:6"
+                },
+                "是的，即使那人活了两个一千年，却没有享受福乐，岂不是都归到同一个地方吗？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 6:7"
+                },
+                "人一切的劳碌都是为口腹，然而食欲却不得满足。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 6:8"
+                },
+                "智慧人比愚昧人有什么长处呢？穷人知道怎样在活人面前行事，又有什么益处呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 6:9"
+                },
+                "眼睛所见的，胜过欲望的游荡。这也是虚空，也是追风。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 6:10"
+                },
+                "凡已经存在的，早已被命名；人是什么，也已为人所知；他也不能与比他更强大的争辩。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ECC 6:11"
+                },
+                "因为话语越多，虚空也越多；这对人有什么益处呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ECC 6:12"
+                },
+                "人虚空的一生如影儿度过；在这一生的日子里，谁知道什么对人有益呢？人在日光之下身后要发生什么，谁能告诉他呢？   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "7",
+            "sid": "ECC 7"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 7:1"
+                },
+                "美名胜过珍贵的香膏；死的日子胜过出生的日子。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 7:2"
+                },
+                "往哀悼之家去，胜过往宴乐之家去；因为这是所有人的结局，活着的人应当把这事放在心上。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 7:3"
+                },
+                "忧愁胜过喜笑；因为脸上的愁容能使心变好。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 7:4"
+                },
+                "智慧人的心在哀悼之家；愚昧人的心在欢乐之家。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 7:5"
+                },
+                "听智慧人的责备，胜过听愚昧人的歌声。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 7:6"
+                },
+                "愚昧人的笑声，好像锅底下荆棘的爆响。这也是虚空。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 7:7"
+                },
+                "勒索确实使智慧人变为愚妄；贿赂败坏人的悟性。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 7:8"
+                },
+                "一件事的结局胜过它的开端。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "存心忍耐的，胜过心里骄傲的。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 7:9"
+                },
+                "你心里不要急躁发怒，因为怒气停留在愚昧人的怀中。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 7:10"
+                },
+                "不要说：“为什么从前的日子比现在好呢？”因为你这样问并不是出于智慧。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ECC 7:11"
+                },
+                "智慧和产业一样美好；对见日光的人更有益处。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ECC 7:12"
+                },
+                "因为智慧作庇护，金钱也作庇护；但知识的优越之处在于：智慧能保全拥有它之人的生命。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ECC 7:13"
+                },
+                "你要察看上帝的作为，因为祂所弯曲的，谁能弄直呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ECC 7:14"
+                },
+                "亨通的日子要喜乐；遭患难的日子要思想。上帝使这两样并列，为要使人不能查出自己以后会怎样。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ECC 7:15"
+                },
+                "在我虚空的日子里，这一切我都见过：有义人在自己的义中灭亡，也有恶人在自己的恶行中长寿。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ECC 7:16"
+                },
+                "不要过分公义，也不要使自己过分有智慧。你何必毁灭自己呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ECC 7:17"
+                },
+                "不要过分邪恶，也不要愚昧。你何必未到时候就死呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "ECC 7:18"
+                },
+                "你抓住这个是好的；也不要从那个缩回你的手，因为敬畏上帝的人必脱离这一切。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "ECC 7:19"
+                },
+                "智慧使智慧人有力量，胜过城中十个掌权者。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "ECC 7:20"
+                },
+                "世上确实没有一个义人只行善而不犯罪。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "ECC 7:21"
+                },
+                "你也不要把人所说的一切话都放在心上，免得听见你的仆人咒骂你；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "ECC 7:22"
+                },
+                "因为你自己的心知道，你自己也曾多次同样咒骂别人。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "23",
+                    "sid": "ECC 7:23"
+                },
+                "这一切我都用智慧试验过。我说：“我要有智慧”；智慧却离我很远。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "24",
+                    "sid": "ECC 7:24"
+                },
+                "现有的事离人遥远，又极其深奥。谁能查明呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "25",
+                    "sid": "ECC 7:25"
+                },
+                "我转而专心要认识、考察、寻求智慧和事物的道理，并要知道邪恶是愚蠢，愚昧是疯狂。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "26",
+                    "sid": "ECC 7:26"
+                },
+                "我发现有一种女人比死更苦：她的心是网罗和陷阱，她的手是锁链。讨上帝喜悦的人必逃脱她；犯罪的人却要被她缠住。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "27",
+                    "sid": "ECC 7:27"
+                },
+                "“看哪，我发现了这个，”传道者说，“我一件接着一件考察，为要找到解释，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "28",
+                    "sid": "ECC 7:28"
+                },
+                "这是我心仍在寻求、却没有找到的。我在一千个男子中找到一个，却在所有这些人中没有找到一个女子。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "29",
+                    "sid": "ECC 7:29"
+                },
+                "看哪，我只发现这一件事：上帝造人原是正直的；他们却寻求许多巧计。”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "8",
+            "sid": "ECC 8"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 8:1"
+                },
+                "谁像智慧人呢？谁知道事情的解释呢？人的智慧使他的脸发光，也改变他脸上的刚硬。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 8:2"
+                },
+                "我说：“要遵守王的命令！”这是因向上帝所起的誓。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 8:3"
+                },
+                "不要急躁离开他面前；不要固执行恶事，因为凡他所喜悦的，他都行。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 8:4"
+                },
+                "因为王的话有至高权柄。谁能对他说：“你在做什么？”  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 8:5"
+                },
+                "遵守命令的人必不遭祸患；智慧人的心必知道时候和方法。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 8:6"
+                },
+                "因为各样事务都有时候和方法，虽然人的苦难重压在他身上。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 8:7"
+                },
+                "他不知道将来会发生什么；因为事情将如何，谁能告诉他呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 8:8"
+                },
+                "没有人有权柄掌管灵，使灵留住；也没有人有权柄掌管死期。战争中没有免役；邪恶也不能救那些行邪恶的人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 8:9"
+                },
+                "这一切我都看见了，并且专心思想日光之下所做的一切事。有时候，这人辖制那人，使他受害。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 8:10"
+                },
+                "于是我看见恶人被埋葬。事实上，他们也曾从圣所出来。他们离去，在他们行这事的城中被人遗忘。这也是虚空。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ECC 8:11"
+                },
+                "因为对恶行的判决没有迅速执行，所以世人的心就充满定意去行恶。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ECC 8:12"
+                },
+                "虽然罪人作恶一百次，又延长年日，但我确知，敬畏上帝、在祂面前存敬畏的人必得好处。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ECC 8:13"
+                },
+                "恶人却不得好处；他的日子也不能像影子一样延长，因为他不敬畏上帝。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ECC 8:14"
+                },
+                "地上有一件虚空的事：义人遭遇的，竟像恶人的行为所该得的；又有恶人遭遇的，竟像义人的行为所该得的。我说，这也是虚空。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ECC 8:15"
+                },
+                "于是我称赞欢乐，因为在日光之下，人没有比吃、喝、快乐更好的事；这会在他的劳碌中陪伴他，贯穿上帝赐给他在日光之下的一生。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ECC 8:16"
+                },
+                "我专心要认识智慧，又要察看地上所做的事务（甚至有人昼夜眼睛不得睡眠），  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ECC 8:17"
+                },
+                "我就看明上帝一切的作为：人无法测透日光之下所做的事；不论人怎样劳碌寻求，仍然测不透。即使智慧人以为自己能领会，也不能测透。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "9",
+            "sid": "ECC 9"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 9:1"
+                },
+                "我把这一切都放在心上，甚至要查明这一切：义人、智慧人和他们的作为，都在上帝手中；无论是爱是恨，人都不知道；一切都在他们前面。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 9:2"
+                },
+                "万事临到众人都是一样的。义人和恶人遭遇同一个结局；好人、洁净的人、不洁净的人，献祭的人和不献祭的人，也都一样。好人怎样，罪人也怎样；起誓的人怎样，惧怕起誓的人也怎样。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 9:3"
+                },
+                "在日光之下所做的一切事中，有一件祸患，就是众人遭遇同一个结局。并且世人的心充满邪恶；他们活着的时候，心里有狂妄，之后就归到死人那里。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 9:4"
+                },
+                "凡与一切活人相连的，就有希望；因为活着的狗胜过死了的狮子。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 9:5"
+                },
+                "活着的人知道自己必死；死人却什么都不知道，也不再有赏报，因为他们的记忆被遗忘了。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 9:6"
+                },
+                "他们的爱、他们的恨、他们的嫉妒，早已消灭；在日光之下所做的一切事上，他们永远不再有份。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 9:7"
+                },
+                "你只管去，欢欢喜喜吃你的饼，心中快乐喝你的酒；因为上帝已经悦纳你的作为。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 9:8"
+                },
+                "你的衣服要常常洁白，你头上也不要缺少膏油。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 9:9"
+                },
+                "在你虚空的一生中，就是祂在日光之下赐给你的虚空岁月中，要与你所爱的妻子快乐度日；因为这是你在生命中，在日光之下劳碌所得的份。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 9:10"
+                },
+                "凡你的手所找到要做的事，都要尽力去做；因为在你将要去的阴间，",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "9:10 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "阴间是死人所在之处。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "没有工作，没有计划，没有知识，也没有智慧。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ECC 9:11"
+                },
+                "我又转念，看见日光之下：赛跑不一定归给快跑的人，战争不一定归给强壮的人，粮食不一定归给智慧人，财富不一定归给聪明人，恩宠也不一定归给有才能的人；因为时间和际遇临到他们众人。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ECC 9:12"
+                },
+                "人也不知道自己的时候。鱼被恶网捕住，鸟被网罗捉住，世人也照样在祸患的时候陷入网罗；这祸患忽然临到他们身上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ECC 9:13"
+                },
+                "我也在日光之下看见这样的智慧，我看为重大。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ECC 9:14"
+                },
+                "有一座小城，城里的人很少；有一位大王来攻击它，围困它，又筑起高大的攻城工事来攻击它。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ECC 9:15"
+                },
+                "城中有一个贫穷的智慧人，他用自己的智慧拯救了那城；可是没有人记念那个贫穷人。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ECC 9:16"
+                },
+                "于是我说：“智慧胜过力量。”然而贫穷人的智慧被藐视，他的话也无人听从。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ECC 9:17"
+                },
+                "智慧人的话在安静中被听见，胜过在愚昧人中掌权者的喊叫。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "ECC 9:18"
+                },
+                "智慧胜过打仗的兵器；但一个罪人能败坏许多美善。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "10",
+            "sid": "ECC 10"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 10:1"
+                },
+                "死苍蝇使调香人的香膏发出臭气；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "一点愚昧也能胜过智慧和尊荣。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 10:2"
+                },
+                "智慧人的心在右边，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "愚昧人的心却在左边。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 10:3"
+                },
+                "愚昧人走在路上时，心智也缺乏，还向众人显明自己是愚昧人。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 10:4"
+                },
+                "掌权者的怒气若向你发作，不要离开你的本位；因为温和能平息重大的过失。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 10:5"
+                },
+                "我见日光之下有一件祸患，好像是出于掌权者的错误：  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 10:6"
+                },
+                "愚昧被安置在极尊贵的地位，富人却坐在卑微之处。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 10:7"
+                },
+                "我见过仆人骑马，王子却像仆人一样在地上行走。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 10:8"
+                },
+                "挖坑的，可能掉在坑里；拆墙的，可能被蛇咬。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 10:9"
+                },
+                "凿石的，可能被石头所伤；劈木的，可能因木头而遇险。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 10:10"
+                },
+                "斧头若钝了，人不磨利斧刃，就必须多用力气；但技巧能带来成功。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ECC 10:11"
+                },
+                "蛇若在被施咒制伏之前咬人，那么施咒者的舌头就毫无益处。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ECC 10:12"
+                },
+                "智慧人口中的话带着恩惠，愚昧人却被自己的嘴唇吞灭。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ECC 10:13"
+                },
+                "他口中言语的开端是愚昧；他谈话的结尾是邪恶的狂妄。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ECC 10:14"
+                },
+                "愚昧人还多说话。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "人不知道将来会怎样；在他以后要发生的事，谁能告诉他呢？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ECC 10:15"
+                },
+                "愚昧人的劳碌使他们人人疲乏；因为他连怎样进城都不知道。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ECC 10:16"
+                },
+                "土地啊，你的王若是孩童，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的首领若在早晨宴乐，你就有祸了！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ECC 10:17"
+                },
+                "土地啊，你的王若是贵族之子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的首领若按时进食，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "是为得力，不是为醉酒，你就有福了！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "ECC 10:18"
+                },
+                "因懒惰，屋顶塌陷；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因双手闲懒，房屋漏雨。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "ECC 10:19"
+                },
+                "筵席是为欢笑而设，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "酒能使生命欢畅；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "钱能应付万事。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "ECC 10:20"
+                },
+                "不可咒诅王，即使在你的意念中也不可；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也不可在卧室里咒诅富人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为空中的鸟可能传扬你的声音，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "有翅膀的也可能述说这事。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "11",
+            "sid": "ECC 11"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 11:1"
+                },
+                "要把你的饼撒在水面上；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为过了许多日子，你必找回它。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 11:2"
+                },
+                "要分给七个人，是的，甚至分给八个人；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为你不知道地上会有什么灾祸。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 11:3"
+                },
+                "云若充满雨水，就倾倒在地上；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "树若倒向南，或倒向北，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "树倒在哪里，就停在哪里。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 11:4"
+                },
+                "观察风向的，必不撒种；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "注视云彩的，必不收割。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 11:5"
+                },
+                "你不知道风的道路，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也不知道怀孕妇人腹中骨头怎样长成；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "同样，你也不知道那行万事之上帝的作为。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 11:6"
+                },
+                "早晨要撒你的种，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "晚上也不要缩手；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为你不知道哪一样会亨通，是这个还是那个，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "或者两样都一样好。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 11:7"
+                },
+                "光实在甘甜，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "眼睛看见太阳也是令人愉快的事。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 11:8"
+                },
+                "是的，人若活多年，就当在这些年日中欢喜；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "但他要记得黑暗的日子，因为那些日子必多。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "凡将来的都是虚空。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 11:9"
+                },
+                "年轻人哪，你在年少时要欢喜，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在青春的日子，让你的心使你快乐；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "行你心所行的道路，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "看你眼所看的；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "但要知道，为这一切事，上帝必带你进入审判。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 11:10"
+                },
+                "所以，要从你心中除去忧愁，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从你肉体除去邪恶；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为青春和人生的黎明都是虚空。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "12",
+            "sid": "ECC 12"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ECC 12:1"
+                },
+                "你也要在年轻的日子记念你的创造主，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "趁着困苦的日子还没有来到，年岁还没有临近，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "那时你会说：“我对这些年日毫无喜乐”；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ECC 12:2"
+                },
+                "趁着日头、光明、月亮和星辰还没有变暗，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "雨后云彩还没有再回来；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ECC 12:3"
+                },
+                "到那日，看守房屋的必发颤，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "强壮的人必弯腰，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "推磨的因稀少就停工，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从窗户往外看的都昏暗；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ECC 12:4"
+                },
+                "街上的门必关闭；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "推磨的声音低微，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "人一听见鸟声就起来，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "歌唱的女子都衰微；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ECC 12:5"
+                },
+                "是的，人必惧怕高处，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "路上也有惊吓；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "杏树开花，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "蚱蜢成为重担，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "欲望也衰退；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为人走向他永远的家，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "哀哭的人在街上往来；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ECC 12:6"
+                },
+                "趁着银绳还没有断裂，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "金碗还没有破碎，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "瓶子还没有在泉旁破裂，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "轮子还没有在井边破坏；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ECC 12:7"
+                },
+                "尘土仍归于地，和原来一样；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "灵仍归于赐灵的上帝。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ECC 12:8"
+                },
+                "传道者说：“虚空的虚空，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "凡事都是虚空！”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ECC 12:9"
+                },
+                "再者，传道者因有智慧，仍将知识教导百姓。是的，他揣摩、查考，并整理了许多箴言。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ECC 12:10"
+                },
+                "传道者寻求可喜悦的话，以及正直写下的真理之言。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ECC 12:11"
+                },
+                "智慧人的话好像刺棍；众会之师的话又像钉稳的钉子，都是由一位牧者所赐。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ECC 12:12"
+                },
+                "此外，我儿，你要受劝戒：著书多，没有穷尽；读书多，使肉体疲乏。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ECC 12:13"
+                },
+                "事情的结论就是这样，一切都已听见了：要敬畏上帝，谨守祂的诫命；因为这是人的全部本分。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ECC 12:14"
+                },
+                "因为上帝必审判各样行为，连一切隐藏的事，无论是善是恶，都必审问。   "
+            ]
+        }
+    ]
+}

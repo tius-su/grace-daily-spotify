@@ -1,0 +1,3943 @@
+{
+    "type": "USJ",
+    "version": "3.1",
+    "content": [
+        {
+            "type": "book",
+            "marker": "id",
+            "code": "AMO",
+            "content": []
+        },
+        {
+            "type": "para",
+            "marker": "ide",
+            "content": [
+                " UTF-8\n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "h",
+            "content": [
+                "阿摩司 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc1",
+            "content": [
+                "阿摩司书 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc2",
+            "content": [
+                "阿摩司 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc3",
+            "content": [
+                "摩 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt2",
+            "content": [
+                "\n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt1",
+            "content": [
+                "阿摩司书  \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "1",
+            "sid": "AMO 1"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "AMO 1:1"
+                },
+                "这是阿摩司的话；他是提哥亚牧人中的一员，在犹大王乌西雅的日子，以色列王约阿施的儿子耶罗波安的日子，在地震前两年，他论以色列所见的。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "AMO 1:2"
+                },
+                "他说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“耶和华",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:2 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "当英文以全大写字母写作“LORD”或“GOD”时，是上帝专有名（希伯来文“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "יהוה"
+                                    ]
+                                },
+                                "”，通常读作 Yahweh）的译法。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "必从锡安吼叫，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从耶路撒冷发声；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "牧人的草场必悲哀，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "迦密的山顶必枯干。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "AMO 1:3"
+                },
+                "耶和华如此说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“因大马士革三番四次地犯罪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必不撤回对它的惩罚，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为他们用铁打谷器碾压基列；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "AMO 1:4"
+                },
+                "所以我必降火在哈薛家中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "吞灭便哈达的宫殿。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "AMO 1:5"
+                },
+                "我必折断大马士革的门闩，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从亚文谷剪除居民，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从伊甸家剪除执掌权杖的人；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "亚兰的百姓必被掳到吉珥，”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "这是耶和华说的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "AMO 1:6"
+                },
+                "耶和华如此说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“因迦萨三番四次地犯罪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必不撤回对它的惩罚，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为他们掳走了整个群体，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "把他们交给以东；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "AMO 1:7"
+                },
+                "所以我必降火在迦萨的城墙上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "吞灭它的宫殿。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "AMO 1:8"
+                },
+                "我必从亚实突剪除居民，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从亚实基伦剪除执掌权杖的人；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我必转手攻击以革伦；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "非利士人的余民必灭亡，”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "这是主",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:8 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "译作“主”的词是“Adonai”。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "耶和华说的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "AMO 1:9"
+                },
+                "耶和华如此说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“因推罗三番四次地犯罪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必不撤回对它的惩罚；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为他们把整个群体交给以东，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又不记念弟兄之约；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "AMO 1:10"
+                },
+                "所以我必降火在推罗的城墙上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "吞灭它的宫殿。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "AMO 1:11"
+                },
+                "耶和华如此说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“因以东三番四次地犯罪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必不撤回对他的惩罚，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为他用刀追赶自己的弟兄，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "抛弃一切怜悯，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他的怒气不断发作，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "永远怀着烈怒；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "AMO 1:12"
+                },
+                "所以我必降火在提幔，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "吞灭波斯拉的宫殿。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "AMO 1:13"
+                },
+                "耶和华如此说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“因亚扪人三番四次地犯罪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必不撤回对他们的惩罚，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为他们剖开基列的孕妇，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "为要扩张自己的疆界。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "AMO 1:14"
+                },
+                "所以我必在拉巴的城墙内点火，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "吞灭它的宫殿，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在争战的日子伴随着呐喊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在旋风的日子伴随着暴风；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "AMO 1:15"
+                },
+                "他们的王必被掳去，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他和他的首领都一同被掳，”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "这是耶和华说的。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "2",
+            "sid": "AMO 2"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "AMO 2:1"
+                },
+                "耶和华如此说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“摩押三番四次地犯罪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必不撤回对它的惩罚，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为它把以东王的骸骨烧成石灰；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "AMO 2:2"
+                },
+                "所以我要降火在摩押，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "火必吞灭基略的宫殿；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "摩押必在喧嚷、呐喊和号角声中死亡；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "AMO 2:3"
+                },
+                "我要从它中间剪除审判官，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又要把它所有的首领和他一同杀死，”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "耶和华说。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "AMO 2:4"
+                },
+                "耶和华如此说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“犹大三番四次地犯罪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必不撤回对它的惩罚，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为他们弃绝了耶和华的律法，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "没有遵守祂的条例，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们的谎言使他们走入歧途，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "正如他们祖先所随从的；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "AMO 2:5"
+                },
+                "所以我要降火在犹大，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "火必吞灭耶路撒冷的宫殿。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "AMO 2:6"
+                },
+                "耶和华如此说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“以色列三番四次地犯罪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必不撤回对它的惩罚，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为他们为银子出卖义人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "为一双鞋出卖穷乏人；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "AMO 2:7"
+                },
+                "他们把贫穷人的头践踏在地上的尘土中，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又使受欺压的人得不到公正。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "父子二人与同一个少女同寝，以亵渎我的圣名。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "AMO 2:8"
+                },
+                "他们在各祭坛旁躺卧在拿来作抵押的衣服上。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在他们上帝",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "2:8 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "译作“上帝”的希伯来词是“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "אֱלֹהִ֑ים"
+                                    ]
+                                },
+                                "”（Elohim）。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "的殿里，他们喝受罚之人的酒。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "AMO 2:9"
+                },
+                "然而，我曾在他们面前毁灭亚摩利人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他的身量如香柏树那样高，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他像橡树那样强壮；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "然而，我毁灭了他上面的果子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也毁灭了他下面的根。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "AMO 2:10"
+                },
+                "我也曾把你们从埃及地领上来，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在旷野引导你们四十年，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使你们得亚摩利人的土地为业。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "AMO 2:11"
+                },
+                "我从你们的儿子中兴起一些人作先知，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又从你们的青年中兴起一些人作拿细耳人。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "以色列人哪，这不是事实吗？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶和华说。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "AMO 2:12"
+                },
+                "“可是你们给拿细耳人酒喝，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又吩咐先知说：‘不可说预言！’   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "AMO 2:13"
+                },
+                "看哪，",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "2:13 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "“看哪”来自“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "הִנֵּה"
+                                    ]
+                                },
+                                "”，意思是看、留意、观察、观看或凝视，常用作感叹词。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "我要在你们所在之处压垮你们，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "如同满载禾捆的车压过一样。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "AMO 2:14"
+                },
+                "快跑的必无路可逃；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "强壮的不能使自己的力量坚固；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "勇士不能救自己。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "AMO 2:15"
+                },
+                "拿弓的站立不住；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "脚步快的不能逃脱；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "骑马的不能救自己。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "AMO 2:16"
+                },
+                "勇士中胆量大的，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "到那日也必赤身逃跑，”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "耶和华说。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "3",
+            "sid": "AMO 3"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "AMO 3:1"
+                },
+                "以色列人哪，要听耶和华攻击你们所说的这话，就是攻击我从埃及地领上来的全家所说的：   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "AMO 3:2"
+                },
+                "“地上万族中，我只拣选了你们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因此，我必因你们一切的罪惩罚你们。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "AMO 3:3"
+                },
+                "二人若没有约定，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "岂能同行呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "AMO 3:4"
+                },
+                "狮子若没有猎物，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "岂会在丛林中吼叫呢？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "少壮狮子若一无所获，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "岂会从洞中发声呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "AMO 3:5"
+                },
+                "若没有人为鸟设下网罗，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "鸟岂能落在地上的陷阱里呢？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "若没有捕到什么，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "网罗岂会从地上弹起呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "AMO 3:6"
+                },
+                "城中若吹响警号，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "百姓岂不惧怕呢？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "灾祸若临到一座城，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "岂不是耶和华行的吗？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "AMO 3:7"
+                },
+                "主耶和华若不先把祂的秘密启示给祂的仆人众先知，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "就必不做什么。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "AMO 3:8"
+                },
+                "狮子已经吼叫，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "谁能不惧怕呢？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "主耶和华已经发话，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "谁能不说预言呢？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "AMO 3:9"
+                },
+                "你们要在亚实突的宫殿中宣告，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也要在埃及地的宫殿中宣告，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "说：“你们要聚集在撒玛利亚的山上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "看看城中有何等的骚乱，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们中间有何等的欺压。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "AMO 3:10"
+                },
+                "耶和华说：“他们实在不知道行正直，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "就是在他们宫殿中积存抢夺之物和掳掠之物的人。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "AMO 3:11"
+                },
+                "因此主耶和华这样说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“必有敌人蹂躏这地；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他必拆毁你的堡垒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你的城堡必被抢掠。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "AMO 3:12"
+                },
+                "耶和华这样说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“牧人怎样从狮子口中抢回两条腿，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "或一片耳朵，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "那些坐在撒玛利亚榻角上、  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "坐在床上丝绸靠垫上的以色列人，也必这样被抢救出来。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "AMO 3:13"
+                },
+                "主耶和华，万军之上帝说：“你们要听，并要指证雅各家。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "AMO 3:14"
+                },
+                "因为我追讨以色列罪过的日子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也必追讨伯特利的祭坛；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祭坛的角必被砍下，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "掉在地上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "AMO 3:15"
+                },
+                "我要击打过冬的房屋和避暑的房屋；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "象牙的房屋必灭没，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "大房屋都必终结。”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "耶和华说。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "4",
+            "sid": "AMO 4"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "AMO 4:1"
+                },
+                "你们这些巴珊的母牛啊，要听这话！你们在撒玛利亚山上，欺压贫寒人，压碎穷乏人，又对自己的丈夫说：“拿酒来给我们喝！”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "AMO 4:2"
+                },
+                "主耶和华指着自己的圣洁起誓：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“看哪，日子将临到你们；人必用钩子把你们带走，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "用鱼钩把你们剩下的人带走。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "AMO 4:3"
+                },
+                "你们各人必从城墙的破口出去，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "一直往前；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们必把自己投到哈门。”这是耶和华说的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "AMO 4:4"
+                },
+                "“你们到伯特利去犯罪吧；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "到吉甲去，多多犯罪吧。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "每天早晨献上你们的祭物，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "每三天献上你们的十分之一；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "AMO 4:5"
+                },
+                "用有酵之物献感谢祭，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "宣告甘心祭，并夸耀它们；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为以色列子民哪，这是你们所喜爱的。”这是主耶和华说的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "AMO 4:6"
+                },
+                "“我也使你们在所有城中牙齿洁净，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在各处缺粮；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "然而你们还没有归向我。”这是耶和华说的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "AMO 4:7"
+                },
+                "“在离收割还有三个月的时候，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我也不降雨给你们；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我使雨降在这城，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "却不降在那城。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "这块田得了雨，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "那块没有下雨的田就枯干了。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "AMO 4:8"
+                },
+                "于是两三座城的人踉跄地到一座城去喝水，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "却喝不够；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "然而你们还没有归向我。”这是耶和华说的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "AMO 4:9"
+                },
+                "“我多次用枯萎病和霉病击打你们的园子和葡萄园，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "群蝗吞吃了你们的无花果树和橄榄树；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "然而你们还没有归向我。”这是耶和华说的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "AMO 4:10"
+                },
+                "“我在你们中间降下瘟疫，像我在埃及所行的一样。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我用刀杀戮你们的青年人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又掳走你们的马。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我使你们营中的臭气充满你们的鼻孔，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "然而你们还没有归向我。”这是耶和华说的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "AMO 4:11"
+                },
+                "“我倾覆了你们中的一些人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "正如上帝倾覆所多玛和蛾摩拉一样，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们就像从火中抽出来的一根燃烧的柴；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "然而你们还没有归向我。”这是耶和华说的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "AMO 4:12"
+                },
+                "“因此，以色列啊，我必这样待你；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因我必这样待你，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "以色列啊，预备迎见你的上帝吧！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "AMO 4:13"
+                },
+                "因为看哪，祂塑造群山，创造风，把祂的意念指示人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使清晨成为黑暗，踏在地的高处；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶和华，万军之上帝，是祂的名。”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "5",
+            "sid": "AMO 5"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "AMO 5:1"
+                },
+                "以色列家啊，要听我为你们所作的这首哀歌：   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "AMO 5:2"
+                },
+                "“处女以色列已经跌倒；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她不再起来。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "她被弃倒在自己的土地上；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "没有人扶她起来。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "AMO 5:3"
+                },
+                "因为主耶和华这样说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“出一千人的城，只剩一百；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "出一百人的，只剩十个给以色列家。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "AMO 5:4"
+                },
+                "因为耶和华对以色列家这样说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“你们要寻求我，就必存活；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "AMO 5:5"
+                },
+                "但不要寻求伯特利，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也不要进入吉甲，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不要往别是巴去；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "因为吉甲必定被掳，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "伯特利必归于无有。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "AMO 5:6"
+                },
+                "要寻求耶和华，就必存活，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "免得祂在约瑟家如火发出，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "火就吞灭，在伯特利无人扑灭。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "AMO 5:7"
+                },
+                "你们这些把公平变为茵陈、  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "把公义丢弃在地的人啊！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "AMO 5:8"
+                },
+                "要寻求那造昴星和参星，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使死荫变为清晨，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又使白昼因黑夜而昏暗的；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂召唤海水，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "将水倾倒在地面上，耶和华是祂的名；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "AMO 5:9"
+                },
+                "祂使毁灭突临强者，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "以致毁灭临到堡垒。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "AMO 5:10"
+                },
+                "他们恨恶在城门口责备人的人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也厌恶说正直话的人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "AMO 5:11"
+                },
+                "因此，因为你们践踏贫穷人，又向他索取麦子的赋税，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们建造了凿石的房屋，却不得住在其中。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "你们栽种了美好的葡萄园，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "却不得喝其中的酒。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "AMO 5:12"
+                },
+                "因为我知道你们的过犯何等多，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们的罪何等大——  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们苦待义人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "收受贿赂，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在法庭上拒绝穷乏人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "AMO 5:13"
+                },
+                "因此，在这样的时代，通达人保持沉默，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为这是邪恶的时代。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "AMO 5:14"
+                },
+                "要寻求善，不要寻求恶，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使你们可以存活；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "这样，耶和华，万军之上帝，就必与你们同在，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "正如你们所说的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "AMO 5:15"
+                },
+                "要恨恶邪恶，喜爱良善，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在法庭上建立公平。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "或者耶和华，万军之上帝，必向约瑟的余民施恩。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "AMO 5:16"
+                },
+                "因此，耶和华，万军之上帝，主这样说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“一切宽阔的街道上都必有哀号。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "人在各街巷都必说：『哀哉！哀哉！』  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们必叫农夫来哀哭，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "叫善作哀歌的人来号啕。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "AMO 5:17"
+                },
+                "各葡萄园中都必有哀号，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为我要从你们中间经过，”耶和华说。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "AMO 5:18"
+                },
+                "“那些渴望耶和华日子的人有祸了！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们为什么切望耶和华的日子呢？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "那日是黑暗，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不是光明。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "AMO 5:19"
+                },
+                "就像人逃避狮子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "却遇见熊；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "或者进了屋子，手靠在墙上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "却被蛇咬。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "AMO 5:20"
+                },
+                "耶和华的日子岂不是黑暗，不是光明吗？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "岂不是极其幽暗，毫无光辉吗？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "AMO 5:21"
+                },
+                "我恨恶、厌弃你们的节期，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也不能容忍你们的严肃会。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "AMO 5:22"
+                },
+                "即使你们向我献燔祭和素祭，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我也不悦纳；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "你们用肥畜献的平安祭，我也不看顾。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "23",
+                    "sid": "AMO 5:23"
+                },
+                "把你们歌唱的喧声从我面前除掉！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我不听你们琴的乐声。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "24",
+                    "sid": "AMO 5:24"
+                },
+                "惟愿公平如江河滚滚，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "公义如强劲的水流。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "25",
+                    "sid": "AMO 5:25"
+                },
+                "“以色列家啊，你们在旷野四十年，曾把祭牲和供物献给我吗？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "26",
+                    "sid": "AMO 5:26"
+                },
+                "你们还抬着你们王的帐幕和你们偶像的龛，就是你们神的星，是你们为自己所造的。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "27",
+                    "sid": "AMO 5:27"
+                },
+                "因此，我必使你们被掳到大马士革以外，”耶和华说，祂的名是万军之上帝。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "6",
+            "sid": "AMO 6"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "AMO 6:1"
+                },
+                "那些在锡安安逸的人有祸了，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "那些在撒玛利亚山上自以为安全的人有祸了；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们是列国之首中的显贵，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "以色列家都来归向他们！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "AMO 6:2"
+                },
+                "你们要去甲尼察看；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从那里往大哈马去；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "再下到非利士人的迦特去。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "它们比这些国更好吗？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "它们的疆界比你们的疆界更大吗？   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "AMO 6:3"
+                },
+                "你们这些把灾祸之日推远、  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又使暴力之座临近的人有祸了；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "AMO 6:4"
+                },
+                "你们躺在象牙床上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "伸展在自己的榻上，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "吃羊群中的羔羊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "和圈中的牛犊；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "AMO 6:5"
+                },
+                "你们弹拨琴弦，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "像大卫一样为自己发明乐器；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "AMO 6:6"
+                },
+                "你们用大碗喝酒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "用上好的油膏抹自己，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "却不为约瑟的苦难忧伤。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "AMO 6:7"
+                },
+                "因此，他们现在必在最先被掳的人中被掳去。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "宴乐和悠闲躺卧都必终止。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "AMO 6:8"
+                },
+                "“主耶和华指着自己起誓，”万军之上帝耶和华说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“我憎恶雅各的骄傲，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "厌恶他的堡垒。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因此，我必把这城和其中所有的一切都交出去。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "AMO 6:9"
+                },
+                "那时，若有十个人留在一所房子里，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们都必死亡。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "AMO 6:10"
+                },
+                "“当一个人的亲属，就是焚烧他的人，抬着他，要把尸体从屋里带出来，又问屋内深处的人：『还有人在你那里吗？』那人说：『没有。』他就说：『安静！我们确实不可提耶和华的名。』   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "AMO 6:11"
+                },
+                "“因为，看哪，耶和华一发命令，大房屋就被砸成碎块，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "小房屋也被砸成碎片。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "AMO 6:12"
+                },
+                "马岂能在岩石峭壁上奔跑？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "人岂能在那里用牛耕地？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "但你们却把公正变为毒药，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "把公义的果子变为苦味；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "AMO 6:13"
+                },
+                "你们因虚无之物欢喜，说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "『我们不是凭自己的力量为自己取得了角吗？』   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "AMO 6:14"
+                },
+                "因为，看哪，以色列家啊，我必兴起一国来攻击你们，”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "万军之上帝耶和华说；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“他们必从哈马口直到亚拉巴溪压迫你们。”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "7",
+            "sid": "AMO 7"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "AMO 7:1"
+                },
+                "主耶和华这样指示我：看哪，祂在晚季草开始生长的时候造了蝗虫；看哪，那是在王收割之后长出的晚季草。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "AMO 7:2"
+                },
+                "蝗虫吃尽了那地的青草以后，我就说：“主耶和华啊，求你赦免！雅各怎能站立得住呢？因为他微小。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "AMO 7:3"
+                },
+                "耶和华为这事改变心意。耶和华说：“这事必不发生。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "AMO 7:4"
+                },
+                "主耶和华这样指示我：看哪，主耶和华召火来施行审判；火烧干了大深渊，几乎吞灭那地。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "AMO 7:5"
+                },
+                "于是我说：“主耶和华啊，求你止息！雅各怎能站立得住呢？因为他微小。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "AMO 7:6"
+                },
+                "耶和华为这事改变心意。主耶和华说：“这事也必不发生。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "AMO 7:7"
+                },
+                "祂这样指示我：看哪，主站在一道按准绳砌成的墙旁，手里拿着准绳。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "AMO 7:8"
+                },
+                "耶和华对我说：“阿摩司，你看见什么？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "我说：“一条准绳。”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "主就说：“看哪，我要把准绳放在我子民以色列中间；我不再放过他们了。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "AMO 7:9"
+                },
+                "以撒的丘坛必荒凉，以色列的圣所必被毁坏；我必持刀起来攻击耶罗波安家。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "AMO 7:10"
+                },
+                "伯特利的祭司亚玛谢派人到以色列王耶罗波安那里，说：“阿摩司在以色列家中图谋背叛你；这地承受不了他一切的话。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "AMO 7:11"
+                },
+                "因为阿摩司说：‘耶罗波安必死在刀下，以色列必定被掳，离开自己的土地。’”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "AMO 7:12"
+                },
+                "亚玛谢又对阿摩司说：“你这先见哪，去吧，逃往犹大地，在那里吃饭，在那里说预言；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "AMO 7:13"
+                },
+                "却不要再在伯特利说预言，因为这里是王的圣所，是王室的殿！”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "AMO 7:14"
+                },
+                "阿摩司回答亚玛谢说：“我本不是先知，也不是先知的儿子；我是牧人，又是培植桑无花果的人。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "AMO 7:15"
+                },
+                "耶和华从跟随羊群的事上把我取来，耶和华对我说：‘去，向我的子民以色列说预言。’  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "AMO 7:16"
+                },
+                "现在你要听耶和华的话：‘你说：不要说预言攻击以色列，也不要宣讲攻击以撒家。’  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "AMO 7:17"
+                },
+                "所以耶和华这样说：‘你的妻子必在城中为妓；你的儿女必倒在刀下；你的土地必用准绳分割；你自己必死在不洁净之地；以色列必定被掳，离开自己的土地。’”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "8",
+            "sid": "AMO 8"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "AMO 8:1"
+                },
+                "主耶和华这样指示我：看哪，有一筐夏果。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "AMO 8:2"
+                },
+                "祂说：“阿摩司，你看见什么？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "我说：“一筐夏果。”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "耶和华对我说：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“我子民以色列的结局已经到了。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必不再放过他们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "AMO 8:3"
+                },
+                "到那日，圣殿的诗歌必变为哀号，”主耶和华说。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“尸首必多；在各处，人必默默把它们抛出。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "AMO 8:4"
+                },
+                "你们这些想吞吃贫寒人、  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使地上困苦人灭绝的，要听这话！   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "AMO 8:5"
+                },
+                "你们说：‘月朔几时过去，好让我们卖粮？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "安息日几时过去，好让我们摆出麦子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "把伊法",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "8:5 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "1伊法约为22升，或约为2/3蒲式耳。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "变小，把舍客勒",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "8:5 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "普通舍客勒约为10克，或约为0.35盎司。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "变大，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "用诡诈的天平行欺骗；   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "AMO 8:6"
+                },
+                "好用银子买贫寒人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "用一双鞋买困苦人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又把麦子的糠秕卖出去？’”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "AMO 8:7"
+                },
+                "耶和华指着雅各的骄傲起誓：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“我必永远不忘他们的一切行为。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "AMO 8:8"
+                },
+                "地岂不因此震动吗？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "住在其中的岂不都悲哀吗？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "是的，全地必像大河涨起；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "必翻腾，又像埃及河退落。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "AMO 8:9"
+                },
+                "到那日，”主耶和华说，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“我必使太阳在正午落下，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在晴朗的白昼使大地黑暗。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "AMO 8:10"
+                },
+                "我必使你们的节期变为哀恸，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使你们所有的歌曲变为哀歌；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我必使你们全身披上麻布，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使每个头都剃光。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我必使这景况如同为独生子哀恸，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "其结局如同痛苦的日子。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "AMO 8:11"
+                },
+                "看哪，日子将到，”主耶和华说，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "“我必使饥荒临到这地，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "不是缺饼的饥荒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也不是缺水的干渴，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "而是听不到耶和华话语的饥荒。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "AMO 8:12"
+                },
+                "他们必从这海漂流到那海，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从北方直到东方；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们必来回奔跑，寻求耶和华的话，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "却寻不见。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "AMO 8:13"
+                },
+                "到那日，美貌的处女  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "和少年男子都必因干渴昏倒。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "AMO 8:14"
+                },
+                "那些指着撒玛利亚的罪起誓的，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "说：‘但哪，指着你的神永生起誓，’  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又说：‘指着别是巴的道路永生起誓，’  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们必跌倒，永不再起来。”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "9",
+            "sid": "AMO 9"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "AMO 9:1"
+                },
+                "我看见主站在祭坛旁边；祂说：“击打柱头，使门槛震动。把它们打碎，砸在众人的头上。剩下的人，我必用刀杀死；他们中没有一个能逃走，没有一个能逃脱。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "AMO 9:2"
+                },
+                "他们即使挖入阴间，",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "9:2 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "阴间是死人所在的地方。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                " 我的手也必从那里抓住他们；他们即使爬上天，我也必从那里把他们拉下来。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "AMO 9:3"
+                },
+                "他们即使藏在迦密山顶，我也必搜寻，把他们从那里捉出来；他们即使从我眼前藏在海底，我也必在那里命令蛇，蛇必咬他们。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "AMO 9:4"
+                },
+                "他们即使被掳到仇敌面前，我也必在那里命令刀剑，刀剑必杀他们。我要定睛在他们身上，降祸不降福。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "AMO 9:5"
+                },
+                "因为主万军之耶和华",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "9:5 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "当译作全大写的“LORD”或“GOD”时，它是上帝专有名（希伯来文“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "יהוה"
+                                    ]
+                                },
+                                "”，通常发音为雅威）的翻译。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                " 一触摸地，地就消融；凡住在地上的都必哀哭。全地必像大河涨起，又像埃及的河退落。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "AMO 9:6"
+                },
+                "祂在天上建造祂的楼阁，在地上奠定祂的穹隆；祂召唤海水，把水倾倒在地面上——耶和华是祂的名。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "AMO 9:7"
+                },
+                "耶和华说：“以色列人哪，你们在我看来，岂不像古实人的儿女吗？我岂不是曾把以色列从埃及地领上来，也把非利士人从迦斐托、亚兰人从吉珥领上来吗？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "AMO 9:8"
+                },
+                "看哪，主耶和华的眼目察看这犯罪的国；我必将它从地面上毁灭，只是我必不把雅各家全然毁灭。”耶和华说。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "AMO 9:9"
+                },
+                "“因为看哪，我要发命令，把以色列家筛在列国中，好像用筛子筛谷物一样；然而连最小的一粒也不会落在地上。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "AMO 9:10"
+                },
+                "我民中凡说‘灾祸必追不上我们，也不会遇见我们’的罪人，都必死在刀下。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "AMO 9:11"
+                },
+                "到那日，我必使已经倒塌的大卫帐幕重新立起，堵住它的破口；我必使它的废墟重新立起，建造它如古时一样，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "AMO 9:12"
+                },
+                "使他们可以拥有以东所剩余的，以及所有称为我名下的列国。”行这事的耶和华说。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "AMO 9:13"
+                },
+                "耶和华说：“看哪，日子将到，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耕地的必追上收割的，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "踹葡萄的必追上撒种的；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "众山要滴下甜酒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "众岭都要流淌。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "AMO 9:14"
+                },
+                "我要使我民以色列从被掳中归回；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们要重建荒废的城邑，并住在其中；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们要栽种葡萄园，喝其中所出的酒。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他们也要建造园子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "吃其中的果子。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "AMO 9:15"
+                },
+                "我要把他们栽植在他们的地上；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们不再从我所赐给他们的地上被拔出来。”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶和华你的上帝说。   "
+            ]
+        }
+    ]
+}

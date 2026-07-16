@@ -1,0 +1,92 @@
+{
+  "Perjanjian Lama": {
+    "Taurat (Pentateukh)": [
+      "GEN",
+      "EXO",
+      "LEV",
+      "NUM",
+      "DEU"
+    ],
+    "Sejarah": [
+      "JOS",
+      "JDG",
+      "RUT",
+      "1SA",
+      "2SA",
+      "1KI",
+      "2KI",
+      "1CH",
+      "2CH",
+      "EZR",
+      "NEH",
+      "EST"
+    ],
+    "Puisi & Hikmat": [
+      "JOB",
+      "PSA",
+      "PRO",
+      "ECC",
+      "SNG"
+    ],
+    "Nabi-Nabi Besar": [
+      "ISA",
+      "JER",
+      "LAM",
+      "EZE",
+      "DAN"
+    ],
+    "Nabi-Nabi Kecil": [
+      "HOS",
+      "JOL",
+      "AMO",
+      "OBA",
+      "JON",
+      "MIC",
+      "NAM",
+      "HAB",
+      "ZEP",
+      "HAG",
+      "ZEC",
+      "MAL"
+    ]
+  },
+  "Perjanjian Baru": {
+    "Injil": [
+      "MAT",
+      "MRK",
+      "LUK",
+      "JOH"
+    ],
+    "Sejarah Jemaat": [
+      "ACT"
+    ],
+    "Surat-Surat Paulus": [
+      "ROM",
+      "1CO",
+      "2CO",
+      "GAL",
+      "EPH",
+      "PHP",
+      "COL",
+      "1TH",
+      "2TH",
+      "1TI",
+      "2TI",
+      "TIT",
+      "PHM"
+    ],
+    "Surat-Surat Umum": [
+      "HEB",
+      "JAS",
+      "1PE",
+      "2PE",
+      "1JO",
+      "2JO",
+      "3JO",
+      "JUD"
+    ],
+    "Nubuat / Apokalypsis": [
+      "REV"
+    ]
+  }
+}

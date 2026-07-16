@@ -1,4 +1,4 @@
-import { getAdminAuth, getAdminDb } from "@/lib/server/firebase-admin";
+import { getAdminAuth, getAdminDb, withDbTimeout } from "@/lib/server/firebase-admin";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -35,12 +35,15 @@ export async function GET(request: Request) {
     if (adminDb) {
       try {
         const userRef = adminDb.collection("users").doc(decoded.uid);
-        const [userDoc, adminDoc, activitiesSnap, notesSnap] = await Promise.all([
-          userRef.get(),
-          adminDb.collection("admin_users").doc(decoded.uid).get(),
-          userRef.collection("activities").orderBy("createdAt", "desc").limit(100).get(),
-          userRef.collection("bible_plan_notes").orderBy("updatedAt", "desc").limit(100).get(),
-        ]);
+        const [userDoc, adminDoc, activitiesSnap, notesSnap] = await withDbTimeout(
+          Promise.all([
+            userRef.get(),
+            adminDb.collection("admin_users").doc(decoded.uid).get(),
+            userRef.collection("activities").orderBy("createdAt", "desc").limit(100).get(),
+            userRef.collection("bible_plan_notes").orderBy("updatedAt", "desc").limit(100).get(),
+          ]),
+          2000
+        );
 
         if (userDoc.exists) profile = userDoc.data();
         if (adminDoc.exists) isAdminDoc = true;

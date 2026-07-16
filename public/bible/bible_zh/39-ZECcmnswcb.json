@@ -1,0 +1,3351 @@
+{
+    "type": "USJ",
+    "version": "3.1",
+    "content": [
+        {
+            "type": "book",
+            "marker": "id",
+            "code": "ZEC",
+            "content": []
+        },
+        {
+            "type": "para",
+            "marker": "ide",
+            "content": [
+                " UTF-8\n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "h",
+            "content": [
+                "撒迦利亚书 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc1",
+            "content": [
+                "撒迦利亚书 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc2",
+            "content": [
+                "撒迦利亚书 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "toc3",
+            "content": [
+                "亚 \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt2",
+            "content": [
+                "撒迦利亚  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "mt1",
+            "content": [
+                "书  \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "1",
+            "sid": "ZEC 1"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 1:1"
+                },
+                "大流士第二年八月，耶和华",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:1 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "英文以全大写“LORD”或“GOD”出现时，是上帝专有圣名（希伯来文“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "יהוה"
+                                    ]
+                                },
+                                "”，通常读作 Yahweh）的译法。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "的话临到易多的孙子、比利家的儿子先知撒迦利亚，说：  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 1:2"
+                },
+                "“耶和华曾极其恼怒你们的祖先。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 1:3"
+                },
+                "所以你要告诉他们，万军之耶和华这样说：‘你们要归向我，’万军之耶和华说，‘我就归向你们，’万军之耶和华说。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 1:4"
+                },
+                "不要像你们的祖先；从前的先知曾向他们宣告说：万军之耶和华这样说：‘现在要离开你们的恶道和恶行而归回；’他们却不听，也不侧耳听我，耶和华说。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 1:5"
+                },
+                "你们的祖先在哪里呢？那些先知能永远活着吗？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 1:6"
+                },
+                "但是我吩咐我仆人众先知所传的我的话和我的律例，岂不是追上了你们的祖先吗？  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "“于是他们悔改，说：‘万军之耶和华怎样定意要照我们的道路和作为对待我们，祂也照样待了我们。’”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 1:7"
+                },
+                "大流士第二年十一月，就是细罢特月二十四日，耶和华的话临到易多的孙子、比利家的儿子先知撒迦利亚，说：  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 1:8"
+                },
+                "“我夜间看见异象；看哪，",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "1:8 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "“看哪”译自“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "הִנֵּה"
+                                    ]
+                                },
+                                "”，意思是看、注意、观察、看见或凝视，常用作感叹词。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "有一个人骑着红马，站在洼地中的桃金娘树中间；在他后面有红色、棕色和白色的马。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 1:9"
+                },
+                "我问：‘我主啊，这些是什么？’”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "那与我说话的天使对我说：“我要指示你这些是什么。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 1:10"
+                },
+                "那站在桃金娘树中间的人回答说：“这些是耶和华差遣在地上往来巡行的。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 1:11"
+                },
+                "他们向站在桃金娘树中间的耶和华的使者报告说：“我们已经在地上往来巡行；看哪，全地都安歇平静。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ZEC 1:12"
+                },
+                "于是耶和华的使者回答说：“万军之耶和华啊，你恼怒耶路撒冷和犹大的城邑已经七十年了；你不怜悯他们，还要到几时呢？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ZEC 1:13"
+                },
+                "耶和华就用美善、安慰的话回答那与我说话的天使。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ZEC 1:14"
+                },
+                "于是那与我说话的天使对我说：“你要宣告说：‘万军之耶和华这样说：“我为耶路撒冷和锡安大发热心。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ZEC 1:15"
+                },
+                "我极其恼怒那些安逸的列国；因为我不过稍微恼怒，他们却加重了灾祸。”  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ZEC 1:16"
+                },
+                "所以耶和华这样说：“我已经带着怜悯归回耶路撒冷。我的殿必在其中建造，”万军之耶和华说，“准绳必拉在耶路撒冷之上。”’   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ZEC 1:17"
+                },
+                "“你还要宣告说：‘万军之耶和华这样说：“我的城邑必再次满溢繁荣；耶和华必再次安慰锡安，也必再次拣选耶路撒冷。”’”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "ZEC 1:18"
+                },
+                "我举目观看，看哪，有四个角。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "ZEC 1:19"
+                },
+                "我问那与我说话的天使：“这些是什么？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "他回答我说：“这些就是驱散犹大、以色列和耶路撒冷的角。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "ZEC 1:20"
+                },
+                "耶和华又指给我看四个工匠。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "ZEC 1:21"
+                },
+                "我问：“这些人来做什么？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "他说：“这些就是驱散犹大的角，使人不能抬头；但这些工匠来，是要使它们惊惧，打掉那些列国的角，就是举起角攻击犹大地、要驱散它的列国之角。”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "2",
+            "sid": "ZEC 2"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 2:1"
+                },
+                "我举目观看，看哪，有一个人手里拿着量绳。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 2:2"
+                },
+                "我问他说：“你要往哪里去？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "他对我说：“去量耶路撒冷，看它的宽度和长度。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 2:3"
+                },
+                "看哪，那与我说话的天使出去，又有另一位天使出去迎见他，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 2:4"
+                },
+                "对他说：“你跑去告诉这个年轻人说：‘耶路撒冷必像没有城墙的村庄有人居住，因为其中的人和牲畜众多。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 2:5"
+                },
+                "耶和华说：我必作她四围的火墙，也必作她中间的荣耀。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 2:6"
+                },
+                "耶和华说：来吧！来吧！要从北方之地逃走；因为我曾把你们分散，如天空的四方之风。这是耶和华说的。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 2:7"
+                },
+                "锡安哪，来吧！与巴比伦女子同住的啊，要逃脱。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 2:8"
+                },
+                "万军之耶和华这样说：为了荣耀，祂差遣我到掳掠你们的列国那里；因为触碰你们的，就是触碰祂眼中的瞳人。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 2:9"
+                },
+                "看哪，我必向他们挥动我的手，他们就必成为服侍他们之人的掠物；你们就知道是万军之耶和华差遣了我。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 2:10"
+                },
+                "锡安的女儿啊，要歌唱欢喜！因为看哪，我来了，必住在你中间。这是耶和华说的。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 2:11"
+                },
+                "到那日，许多国家必归附耶和华，成为我的子民；我必住在你中间，你就知道是万军之耶和华差遣了我到你那里。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ZEC 2:12"
+                },
+                "耶和华必在圣地承受犹大作祂的产业，又必再次拣选耶路撒冷。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ZEC 2:13"
+                },
+                "凡有血肉的，都要在耶和华面前静默；因为祂已经从祂的圣所居所起来了！”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "3",
+            "sid": "ZEC 3"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 3:1"
+                },
+                "他又让我看见大祭司约书亚站在耶和华的使者面前，撒但站在他的右边作他的对头。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 3:2"
+                },
+                "耶和华对撒但说：“撒但，愿耶和华斥责你！是的，拣选耶路撒冷的耶和华斥责你！这不是从火中抽出来的一根燃烧的柴吗？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 3:3"
+                },
+                "那时约书亚穿着污秽的衣服，站在那使者面前。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 3:4"
+                },
+                "使者回应，对站在他面前的人说：“把他身上污秽的衣服脱下来。”又对约书亚说：“看哪，我已经使你的罪孽离开你，我要给你穿上华美的衣服。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 3:5"
+                },
+                "我说：“让他们把洁净的头巾戴在他头上。”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "于是他们把洁净的头巾戴在他头上，又给他穿上衣服；耶和华的使者站在旁边。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 3:6"
+                },
+                "耶和华的使者郑重地向约书亚作证说：  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 3:7"
+                },
+                "“万军之耶和华这样说：‘你若行在我的道路中，若遵守我的吩咐，你也必治理我的殿，也必看守我的院宇；我还要使你在这些站立侍奉的人中间，有进到我面前的通路。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 3:8"
+                },
+                "大祭司约书亚啊，现在你要听，你和坐在你面前的同伴都要听，因为他们是作预兆的人；看哪，我要使我的仆人——那枝子——出来。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 3:9"
+                },
+                "看哪，我摆在约书亚面前的石头：在这一块石头上有七只眼；看哪，我要雕刻它的铭文，’万军之耶和华说，‘并且我要在一日之内除去那地的罪孽。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 3:10"
+                },
+                "到那日，’万军之耶和华说，‘你们各人必邀请邻舍坐在葡萄树下和无花果树下。’”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "4",
+            "sid": "ZEC 4"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 4:1"
+                },
+                "那与我说话的天使又来唤醒我，好像人从睡梦中被唤醒一样。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 4:2"
+                },
+                "他对我说：“你看见什么？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "我说：“我看见了，看哪，有一个全金的灯台，顶上有一个油碗，灯台上有七盏灯；顶上的每盏灯都有七根管子；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 4:3"
+                },
+                "旁边有两棵橄榄树，一棵在油碗的右边，另一棵在油碗的左边。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 4:4"
+                },
+                "我回答那与我说话的天使说：“我主啊，这些是什么？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 4:5"
+                },
+                "那与我说话的天使回答我：“你不知道这些是什么吗？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "我说：“我主啊，不知道。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 4:6"
+                },
+                "于是他回答我说：“这是耶和华给所罗巴伯的话，说：‘不是倚靠权势，也不是倚靠能力，而是倚靠我的灵，’万军之耶和华说。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 4:7"
+                },
+                "大山哪，你算什么？在所罗巴伯面前，你必成为平原；他必搬出顶石，人要呼喊说：‘愿恩典，恩典临到它！’”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 4:8"
+                },
+                "耶和华的话又临到我，说：  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 4:9"
+                },
+                "“所罗巴伯的手已经立了这殿的根基；他的手也必完成这工；你就知道万军之耶和华差遣我到你们这里来。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 4:10"
+                },
+                "谁藐视这小事的日子呢？这七个必欢喜，也必看见所罗巴伯手中的准绳。这些是耶和华的眼睛，遍察全地。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 4:11"
+                },
+                "于是我问他说：“灯台右边和左边的这两棵橄榄树是什么？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ZEC 4:12"
+                },
+                "我第二次问他说：“在两个金嘴旁边、从自己流出金油的这两根橄榄枝是什么？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ZEC 4:13"
+                },
+                "他回答我：“你不知道这些是什么吗？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "我说：“我主啊，不知道。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ZEC 4:14"
+                },
+                "他说：“这是两个受膏者，侍立在全地之主",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "4:14 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "译作“主”的词是“Adonai”。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "旁边。”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "5",
+            "sid": "ZEC 5"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 5:1"
+                },
+                "我又举目观看，看哪，有一卷飞行的书卷。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 5:2"
+                },
+                "他对我说：“你看见什么？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "我回答：“我看见一卷飞行的书卷，长二十肘，",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "5:2 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "一肘是人手臂从中指尖到肘部的长度，约18英寸或46厘米。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "宽十肘。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 5:3"
+                },
+                "他对我说：“这是发出到全地表面的咒诅；凡偷窃的，都要按这书卷这一面的内容被除灭；凡起假誓的，都要按这书卷那一面的内容被除灭。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 5:4"
+                },
+                "我要使它发出，”万军之耶和华说，“它必进入偷窃者的家，也进入指着我的名起假誓者的家；它必留在他家中，把房屋连木料带石头都毁灭。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 5:5"
+                },
+                "与我说话的天使出来，对我说：“现在举目观看，看看这出现的是什么。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 5:6"
+                },
+                "我说：“这是什么？”  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                "他说：“这是出现的以法量器",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "5:6 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "一以法是容量单位，约22升、5.8美制加仑，或约三分之二蒲式耳。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "。”他又说：“这就是他们在全地的样子——  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 5:7"
+                },
+                "看哪，一个重一他连得",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "5:7 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "一他连得约30公斤或66磅。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "的铅盖被掀起来——有一个女人坐在以法量器",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "5:7 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "一以法约22升，或约三分之二蒲式耳。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "中。”  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 5:8"
+                },
+                "他说：“这是邪恶。”他就把她推入以法量器中，又把那铅重物扔在量器的口上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 5:9"
+                },
+                "我又举目观看，看哪，有两个女人出来，风在她们的翅膀中。她们的翅膀像鹳鸟的翅膀，她们把以法量器举起来，悬在天地之间。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 5:10"
+                },
+                "我就问与我说话的天使：“她们要把以法量器带到哪里去？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 5:11"
+                },
+                "他对我说：“要到示拿地去，为她建造一座房屋。房屋预备好了，她就必被安置在那里，在自己的地方。”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "6",
+            "sid": "ZEC 6"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 6:1"
+                },
+                "我又举目观看，看哪，有四辆战车从两座山中间出来；那两座山是铜山。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 6:2"
+                },
+                "第一辆战车套着红马，第二辆战车套着黑马，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 6:3"
+                },
+                "第三辆战车套着白马，第四辆战车套着有斑点的马，都是强壮的马。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 6:4"
+                },
+                "于是我问那与我说话的天使：“我主啊，这些是什么？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 6:5"
+                },
+                "天使回答我说：“这些是天上的四风，是从侍立在全地之主面前出来的。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 6:6"
+                },
+                "套着黑马的那辆车往北方之地出去；白马也跟着它们出去；有斑点的马往南方之地出去。”  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 6:7"
+                },
+                "那些强壮的马出去，急切要在地上来回巡行。他说：“你们要走遍全地！”于是它们就在地上来回巡行。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 6:8"
+                },
+                "然后他呼唤我，对我说：“看哪，那些往北方之地去的，已经使我的灵在北方之地得了安息。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 6:9"
+                },
+                "耶和华的话临到我，说：  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 6:10"
+                },
+                "“你要从被掳归来的人那里取，就是从希勒代、多比雅、耶大雅那里取；当天你要去西番雅的儿子约西亚家，他们是从巴比伦来的。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 6:11"
+                },
+                "你要取银子和金子，做冠冕，戴在约萨答的儿子、大祭司约书亚的头上；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ZEC 6:12"
+                },
+                "并要对他说：‘万军之耶和华这样说：“看哪，那名为枝子的人！他必从自己的地方长起来，并且他必建造耶和华的殿。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ZEC 6:13"
+                },
+                "他必建造耶和华的殿。他必承受荣耀，坐在自己的宝座上掌权。他必在自己的宝座上作祭司。和平的谋议必在二者之间。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ZEC 6:14"
+                },
+                "这冠冕要归希连、多比雅、耶大雅和西番雅的儿子亨，作为耶和华殿中的纪念。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ZEC 6:15"
+                },
+                "远方的人必来建造耶和华的殿；你们就知道万军之耶和华差遣我到你们这里来。如果你们殷勤听从耶和华你们上帝的声音，这事就必成就。”’”",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "6:15 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "译作“上帝”的希伯来词是“",
+                                {
+                                    "type": "char",
+                                    "marker": "wh",
+                                    "content": [
+                                        "אֱלֹהִ֑ים"
+                                    ]
+                                },
+                                "”（Elohim）。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "7",
+            "sid": "ZEC 7"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 7:1"
+                },
+                "大流士王第四年，九月，就是基斯流月的第四日，耶和华的话临到撒迦利亚。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 7:2"
+                },
+                "伯特利的人派沙利色、利坚·米勒和他们的人去恳求耶和华施恩，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 7:3"
+                },
+                "并去对万军之耶和华殿中的祭司和先知说：“我是否还要在五月哭泣、禁戒自己，像我这些年来所做的一样呢？”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 7:4"
+                },
+                "万军之耶和华的话临到我说：  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 7:5"
+                },
+                "“你要对这地所有的百姓和祭司说：‘这七十年来，你们在五月和七月禁食哀哭，真是为我禁食，真是为我吗？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 7:6"
+                },
+                "你们吃、你们喝的时候，不是为自己吃、为自己喝吗？  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 7:7"
+                },
+                "当耶路撒冷有人居住并且繁荣，周围的城镇、南地和低地也有人居住的时候，耶和华藉从前的先知所宣告的，不正是这些话吗？’”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 7:8"
+                },
+                "耶和华的话临到撒迦利亚说：  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 7:9"
+                },
+                "“万军之耶和华曾这样说：‘你们要施行真实的审判，各人要以恩慈和怜悯待自己的弟兄。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 7:10"
+                },
+                "不可欺压寡妇、孤儿、寄居者和穷人；你们谁也不可在心里图谋恶事陷害自己的弟兄。’  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 7:11"
+                },
+                "但他们不肯听从，转过肩背，塞住耳朵，不愿听见。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ZEC 7:12"
+                },
+                "是的，他们使自己的心硬如火石，免得听见律法，以及万军之耶和华藉祂的灵、藉从前的先知所传的话。因此，万军之耶和华有大忿怒临到。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ZEC 7:13"
+                },
+                "事情就这样发生了：正如祂呼唤，他们不肯听从；照样，他们呼求，我也不听，”万军之耶和华说；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ZEC 7:14"
+                },
+                "“我却要用旋风把他们驱散到他们不认识的万国中。这样，他们离去以后，这地就荒凉了，以致无人经过，也无人返回；因为他们使可喜悦之地变为荒凉。”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "8",
+            "sid": "ZEC 8"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 8:1"
+                },
+                "万军之耶和华的话临到我。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 8:2"
+                },
+                "万军之耶和华如此说：“我为锡安大发热心，并以极大的烈怒为她发热心。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 8:3"
+                },
+                "耶和华如此说：“我已经回到锡安，要住在耶路撒冷中间。耶路撒冷必称为‘真理之城’；万军之耶和华的山必称为‘圣山’。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 8:4"
+                },
+                "万军之耶和华如此说：“年老的男女必再次住在耶路撒冷的街上；各人因年纪老迈，手中都拿着拐杖。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 8:5"
+                },
+                "城中的街道必满了男孩女孩，在街上玩耍。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 8:6"
+                },
+                "万军之耶和华如此说：“在那些日子，这事若在这百姓余民眼中看为希奇，难道在我眼中也看为希奇吗？”万军之耶和华说。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 8:7"
+                },
+                "万军之耶和华如此说：“看哪，我要从东方之地和西方之地拯救我的百姓。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 8:8"
+                },
+                "我要带他们来，他们必住在耶路撒冷中间。他们要作我的子民，我要作他们的上帝，都在真实和公义中。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 8:9"
+                },
+                "万军之耶和华如此说：“你们这些在这日子听见众先知口中这些话的人，手要刚强；这些先知是在万军之耶和华殿的根基奠定、就是圣殿要建造的日子说话的。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 8:10"
+                },
+                "因为在那些日子以前，人没有工价，牲畜也没有工价；因敌人的缘故，出入的人也不得平安；因为我使众人各自与邻舍相敌。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 8:11"
+                },
+                "但如今，我待这百姓的余民，必不像从前的日子那样，”万军之耶和华说。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ZEC 8:12"
+                },
+                "“因为必有平安的种子；葡萄树必结果子，土地必出土产，诸天必降甘露。我必使这百姓的余民承受这一切。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ZEC 8:13"
+                },
+                "犹大家和以色列家啊，从前你们在列国中怎样成了咒诅，照样，我要拯救你们，你们也必成为祝福。不要惧怕。你们的手要刚强。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ZEC 8:14"
+                },
+                "因为万军之耶和华如此说：“你们列祖惹我发怒的时候，我怎样定意降灾给你们，”万军之耶和华说，“并且我没有后悔，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ZEC 8:15"
+                },
+                "照样，在这些日子，我也再次定意善待耶路撒冷和犹大家。不要惧怕。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ZEC 8:16"
+                },
+                "你们所当行的是这些事：各人要对邻舍说真实话；在你们的城门口，要施行真实与和平的审判；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ZEC 8:17"
+                },
+                "你们谁都不可在心里图谋恶事陷害邻舍，也不可喜爱虚假的誓言；因为这一切都是我所恨恶的，”耶和华说。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "ZEC 8:18"
+                },
+                "万军之耶和华的话临到我。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "ZEC 8:19"
+                },
+                "万军之耶和华如此说：“四月、五月、七月、十月的禁食，必成为犹大家的喜乐、欢欣和愉快的节期。因此，你们要爱真实与和平。”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "ZEC 8:20"
+                },
+                "万军之耶和华如此说：“还必有许多民族和许多城的居民前来。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "ZEC 8:21"
+                },
+                "这城的居民必到那城去，说：‘我们要快去恳求耶和华的恩惠，寻求万军之耶和华。我也要去。’  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "22",
+                    "sid": "ZEC 8:22"
+                },
+                "是的，许多民族和强大的国家必来到耶路撒冷，寻求万军之耶和华，恳求耶和华的恩惠。”  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "23",
+                    "sid": "ZEC 8:23"
+                },
+                "万军之耶和华如此说：“在那些日子，列国各语言中必有十个人抓住一个犹太人的衣襟，说：‘我们要与你们同去，因为我们听说上帝与你们同在。’”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "9",
+            "sid": "ZEC 9"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 9:1"
+                },
+                "一个启示。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "耶和华的话临到哈得拉地，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "并停留在大马士革——  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "因为人类的眼目，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "和以色列众支派的眼目，都仰望耶和华——   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 9:2"
+                },
+                "也临到与它接壤的哈马，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "以及推罗和西顿，因为他们非常有智慧。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 9:3"
+                },
+                "推罗为自己建造堡垒，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "堆积银子如尘土，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "堆积精金如街上的泥土。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 9:4"
+                },
+                "看哪，主必剥夺她，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂必击打她在海上的权势；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "她必被火吞灭。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 9:5"
+                },
+                "亚实基伦看见，就必惧怕；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "迦萨也必看见，就痛苦扭动；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "以革伦也如此，因为她的指望必落空；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "迦萨的王必灭亡，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "亚实基伦必无人居住。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 9:6"
+                },
+                "外族人必住在亚实突；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必剪除非利士人的骄傲。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 9:7"
+                },
+                "我必从他的口中除去他的血，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从他的牙齿之间除去他可憎之物；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他也必成为余民，归于我们的上帝；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他必像犹大中的首领，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "以革伦也必如耶布斯人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 9:8"
+                },
+                "我要在我的家四围安营，防备军队，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "使无人往来经过；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "欺压者必不再从他们中间经过；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为如今我亲眼看见了。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 9:9"
+                },
+                "锡安的女儿啊，要大大欢喜！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶路撒冷的女儿啊，要欢呼！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "看哪，你的王来到你这里！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂是公义的，并且带着救恩；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂谦卑，骑着驴，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "就是骑着驴驹，母驴的崽子。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 9:10"
+                },
+                "我必从以法莲剪除战车，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从耶路撒冷剪除战马。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "争战的弓也必被剪除；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂必向列国宣讲和平。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "祂的统治必从海直到海，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从大河直到地极。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 9:11"
+                },
+                "至于你，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因你立约的血，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我已将你的囚徒从无水的坑中释放出来。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ZEC 9:12"
+                },
+                "有盼望的囚徒啊，要回到保障去！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "就在今天，我宣告：我必加倍归还给你。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ZEC 9:13"
+                },
+                "因为看哪，我为自己弯犹大如弓，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "已把以法莲搭在弓上。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "锡安哪，我要激起你的众子，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "去攻击希腊的众子；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我要使你像勇士的刀剑。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ZEC 9:14"
+                },
+                "耶和华必显现在他们上方。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂的箭必如闪电射出。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "主耶和华必吹响号角，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "必乘南方的旋风而行。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ZEC 9:15"
+                },
+                "万军之耶和华必保护他们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们必毁灭敌人，并用甩石胜过他们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他们必喝，并喧嚷，如同喝了酒。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们必被充满，像碗一样，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "又像祭坛的角一样。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ZEC 9:16"
+                },
+                "耶和华他们的上帝在那日必拯救他们，如同拯救祂子民的羊群；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为他们像冠冕上的宝石，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "高举在祂的地上。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ZEC 9:17"
+                },
+                "祂的良善何等大，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂的荣美何等大！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "五谷必使青年男子兴盛，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "新酒必使童女兴旺。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "10",
+            "sid": "ZEC 10"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 10:1"
+                },
+                "你们要向耶和华求春雨，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "耶和华造出雷雨云，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "祂赐给各人阵雨，使田间有植物。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 10:2"
+                },
+                "因为特拉芬",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "10:2 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "特拉芬是家中的偶像，可能与家庭财产的继承权有关。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "说了虚妄的话，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "占卜的人看见的是谎言；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们讲述虚假的梦。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他们徒然安慰人。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因此，众人像羊一样各行其路。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们受欺压，因为没有牧人。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 10:3"
+                },
+                "“我的怒气向牧人发作，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必惩罚公山羊，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为万军之耶和华眷顾了祂的羊群，就是犹大家，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "必使他们成为祂在战场上威严的战马。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 10:4"
+                },
+                "房角石必从他而出，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "帐棚的橛子必从他而出，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "战弓必从他而出，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "一切掌权者也都从他而出。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 10:5"
+                },
+                "他们必像勇士，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "在战斗中践踏泥泞的街道。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他们必争战，因为耶和华与他们同在。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "骑马的人必惊惶蒙羞。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 10:6"
+                },
+                "“我必坚固犹大家，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "也必拯救约瑟家。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我必使他们归回，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为我怜悯他们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他们必像我从未丢弃他们一样，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为我是耶和华他们的上帝，我必应允他们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 10:7"
+                },
+                "以法莲必像勇士，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们的心必欢喜，好像喝了酒一样。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "是的，他们的儿女必看见并欢喜。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们的心必因耶和华快乐。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 10:8"
+                },
+                "我要向他们发信号，并聚集他们，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为我已经救赎了他们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们必增多，像从前一样。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 10:9"
+                },
+                "我必把他们撒播在列族中。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们在远方之地必记念我。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们必与儿女一同存活，并且归回。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 10:10"
+                },
+                "我也必再把他们从埃及地带出来，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "从亚述聚集他们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "我必带他们进入基列地和黎巴嫩；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "那里必容纳不下他们。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 10:11"
+                },
+                "祂必经过苦难之海，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "击打海中的波浪，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "尼罗河所有的深处都必干涸；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "亚述的骄傲必被降卑，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "埃及的权杖必离去。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ZEC 10:12"
+                },
+                "我必在耶和华里坚固他们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们必奉祂的名往来行走。”这是耶和华说的。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "11",
+            "sid": "ZEC 11"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 11:1"
+                },
+                "黎巴嫩哪，打开你的门，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "好让火吞噬你的香柏树。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 11:2"
+                },
+                "柏树啊，要哀号，因为香柏树倒下了，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "那些壮丽的树木已经毁坏。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "巴珊的橡树啊，要哀号，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为坚固的森林已经倒下。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 11:3"
+                },
+                "听啊，牧人的哀号声！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为他们的荣耀已经毁坏——听啊，少壮狮子的咆哮声！  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "因为约旦的骄傲已经荒废。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 11:4"
+                },
+                "耶和华我的上帝说：“你要牧养那将被宰杀的羊群。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 11:5"
+                },
+                "买它们的人宰杀它们，却不受惩罚；卖它们的人说：‘耶和华当受称颂，因为我富足了。’它们自己的牧人也不怜惜它们。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 11:6"
+                },
+                "耶和华说：‘我必不再怜惜这地的居民。看哪，我要把各人交在他邻舍手中和他王手中。他们必击打这地，我也不从他们手中解救他们。’”   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 11:7"
+                },
+                "于是我牧养那将被宰杀的羊群，尤其是羊群中受压迫的。我为自己拿了两根杖，一根我称为“恩惠”，另一根我称为“联合”；我就牧养羊群。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 11:8"
+                },
+                "一个月之内，我除灭了那三个牧人；因为我的心厌烦他们，他们的心也憎恶我。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 11:9"
+                },
+                "于是我说：“我不牧养你们了。要死的，就让它死；要被剪除的，就让它被剪除；剩下的，就让它们彼此吃对方的肉。”  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 11:10"
+                },
+                "我拿起我的杖“恩惠”，把它折断，为要废弃我与万民所立的约。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 11:11"
+                },
+                "那一天，这约就废弃了；这样，羊群中那些听从我的穷苦人就知道这是耶和华的话。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ZEC 11:12"
+                },
+                "我对他们说：“如果你们看为好，就给我工价；若不然，就留着吧。”于是他们称了三十块银子作为我的工价。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ZEC 11:13"
+                },
+                "耶和华对我说：“把它丢给陶匠吧——这就是他们给我估定的那美好的价钱！”我拿了那三十块银子，把它们丢给耶和华殿中的陶匠。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ZEC 11:14"
+                },
+                "然后我折断另一根杖“联合”，为要废弃犹大和以色列之间的弟兄情谊。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ZEC 11:15"
+                },
+                "耶和华对我说：“你还要再为自己拿愚昧牧人的器具。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ZEC 11:16"
+                },
+                "因为看哪，我要在这地兴起一个牧人；他不看顾那些被剪除的，不寻找那些分散的，不医治受伤的，也不喂养健壮的；却要吃肥羊的肉，撕裂它们的蹄子。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ZEC 11:17"
+                },
+                "祸哉，那离弃羊群的无用牧人！刀必击打他的膀臂和右眼。他的膀臂必完全枯干，他的右眼必全然昏暗！”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "12",
+            "sid": "ZEC 12"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 12:1"
+                },
+                "耶和华关于以色列的话语的启示：铺张诸天、奠定大地根基、又在人体内塑造人的灵的耶和华说：  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 12:2"
+                },
+                "“看哪，我要使耶路撒冷成为使周围万民摇晃的杯；在围攻耶路撒冷的时候，这也必临到犹大。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 12:3"
+                },
+                "到那日，我必使耶路撒冷成为万民的重石；凡要搬动它的，必受重伤。地上的列国都必聚集起来攻击它。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 12:4"
+                },
+                "到那日，”耶和华说，“我必使每一匹马惊恐，使骑马的人疯狂；我必睁眼看顾犹大家，并使万民的每一匹马眼瞎。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 12:5"
+                },
+                "犹大的首领必在心里说：‘耶路撒冷的居民，靠着万军之耶和华——他们的上帝，是我的力量。’   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 12:6"
+                },
+                "到那日，我必使犹大的首领像木柴中的火盆，又像禾捆中的火把；他们必向右向左吞灭周围所有的民。耶路撒冷仍必住在自己的地方，就是耶路撒冷。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 12:7"
+                },
+                "耶和华也必先拯救犹大的帐棚，免得大卫家的荣耀和耶路撒冷居民的荣耀高过犹大。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 12:8"
+                },
+                "到那日，耶和华必保护耶路撒冷的居民；他们中间软弱的，到那日必像大卫；大卫家必像上帝，像在他们前面的耶和华的使者。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 12:9"
+                },
+                "到那日，我必设法毁灭一切来攻击耶路撒冷的列国。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 12:10"
+                },
+                "“我必将恩典和恳求的灵浇灌在大卫家和耶路撒冷的居民身上。他们必仰望我",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "12:10 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "在“我”之后，希伯来文有两个字母“阿勒夫、塔夫”（希伯来字母表的第一个和最后一个字母），不是作为一个词，而是作为语法标记。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "，就是他们所刺透的；他们必为他哀哭，如人为独生子哀哭；又必为他痛苦悲伤，如人为长子痛苦悲伤。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 12:11"
+                },
+                "到那日，耶路撒冷必有大大的哀哭，如米吉多谷哈达临门的哀哭。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ZEC 12:12"
+                },
+                "全地必哀哭，各家各族分别哀哭：大卫家的家族分别哀哭，他们的妻子也分别哀哭；拿单家的家族分别哀哭，他们的妻子也分别哀哭；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ZEC 12:13"
+                },
+                "利未家的家族分别哀哭，他们的妻子也分别哀哭；示每人的家族分别哀哭，他们的妻子也分别哀哭；  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ZEC 12:14"
+                },
+                "其余所有的家族，各家各族分别哀哭，他们的妻子也分别哀哭。   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "13",
+            "sid": "ZEC 13"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 13:1"
+                },
+                "“到那日，必有一个泉源为大卫家和耶路撒冷的居民开启，为要洗除罪和污秽。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 13:2"
+                },
+                "万军之耶和华说：到那日，我必从这地剪除偶像的名，使它们不再被记念；我也必使先知和污秽的灵离开这地。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 13:3"
+                },
+                "若有人仍旧说预言，生他的父母就要对他说：‘你必须死，因为你奉耶和华的名说谎。’他预言的时候，生他的父母要刺透他。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 13:4"
+                },
+                "到那日，先知各人在说预言时，必因自己的异象羞愧；他们不再穿毛衣来欺骗人，  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 13:5"
+                },
+                "却要说：‘我不是先知，我是耕地的人；因为我从幼年起就被作了奴仆。’  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 13:6"
+                },
+                "有人要问他说：‘你两臂之间这些伤痕是什么？’他必回答：‘是在我朋友家中受的伤。’   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "b"
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 13:7"
+                },
+                "“刀剑啊，醒起，攻击我的牧人，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "攻击那与我亲近的人。”万军之耶和华说。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "“击打牧人，羊就分散；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我必转手攻击那些弱小的。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 13:8"
+                },
+                "耶和华说：“全地必有这样的事：  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "其中三分之二必被剪除而死亡；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "三分之一却要存留在其中。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 13:9"
+                },
+                "我必使这三分之一经过火，  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "熬炼他们，如同熬炼银子；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "试炼他们，如同试炼金子。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q1",
+            "content": [
+                "他们必求告我的名，我必应允他们。  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "我要说：‘这是我的子民’；  \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "q2",
+            "content": [
+                "他们也要说：‘耶和华是我的上帝。’”   \n"
+            ]
+        },
+        {
+            "type": "chapter",
+            "marker": "c",
+            "number": "14",
+            "sid": "ZEC 14"
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "1",
+                    "sid": "ZEC 14:1"
+                },
+                "看哪，耶和华的日子将到，你的掠物必在你中间被瓜分。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "2",
+                    "sid": "ZEC 14:2"
+                },
+                "因为我必聚集万国与耶路撒冷争战；城必被攻取，房屋被抢掠，妇女被污辱。城的一半必被掳去，剩下的民却不从城中被剪除。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "3",
+                    "sid": "ZEC 14:3"
+                },
+                "那时，耶和华必出去，与那些国争战，好像祂在争战的日子争战一样。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "4",
+                    "sid": "ZEC 14:4"
+                },
+                "那日，祂的脚必站在橄榄山上，就是耶路撒冷东面的山；橄榄山必从东到西裂成两半，形成极大的谷。山的一半必向北移动，一半必向南移动。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "5",
+                    "sid": "ZEC 14:5"
+                },
+                "你们要从我众山的谷中逃跑，因为这山谷必延伸到亚萨。是的，你们要逃跑，就像在犹大王乌西雅的日子，你们因地震而逃跑一样。耶和华我的上帝必降临，众圣者都与你同来。",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "14:5 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "七十士译本作“与他同来”，而非“与你同来”。"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "6",
+                    "sid": "ZEC 14:6"
+                },
+                "那日必没有光、寒冷或霜冻。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "7",
+                    "sid": "ZEC 14:7"
+                },
+                "那将是独特的一日，是耶和华所知道的；既不是白昼，也不是黑夜；但到傍晚的时候，必有光。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "8",
+                    "sid": "ZEC 14:8"
+                },
+                "那日，必有活水从耶路撒冷流出，一半流向东海，一半流向西海；夏天冬天都必如此。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "9",
+                    "sid": "ZEC 14:9"
+                },
+                "耶和华必作全地的王。那日，耶和华必为独一，祂的名也必为独一。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "10",
+                    "sid": "ZEC 14:10"
+                },
+                "全地必变得像亚拉巴，从迦巴直到耶路撒冷南方的临门；耶路撒冷必被高举，仍住在本处，从便雅悯门到第一门的地方，又到角门，并从哈楠业楼直到王的酒榨。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "11",
+                    "sid": "ZEC 14:11"
+                },
+                "人必居住其中，不再有咒诅；耶路撒冷必安然居住。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "12",
+                    "sid": "ZEC 14:12"
+                },
+                "耶和华要用这灾病击打所有与耶路撒冷争战的众民：他们站立的时候，肉必消烂，眼睛必在眼眶中消烂，舌头必在口中消烂。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "13",
+                    "sid": "ZEC 14:13"
+                },
+                "那日，耶和华所降的大恐慌必临到他们中间；他们各人必抓住邻舍的手，他的手必举起来攻击邻舍的手。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "14",
+                    "sid": "ZEC 14:14"
+                },
+                "犹大也必在耶路撒冷争战；周围列国的财富都必被聚集起来：金、银、衣服，多得不可胜数。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "15",
+                    "sid": "ZEC 14:15"
+                },
+                "同样的灾病也必临到那些营中的马、骡、骆驼、驴和一切牲畜。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "16",
+                    "sid": "ZEC 14:16"
+                },
+                "所有来攻击耶路撒冷的列国中剩下的人，必年年上来敬拜大君王万军之耶和华，并守住棚节。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "17",
+                    "sid": "ZEC 14:17"
+                },
+                "地上万族中，凡不上耶路撒冷敬拜大君王万军之耶和华的，必没有雨降在他们身上。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "18",
+                    "sid": "ZEC 14:18"
+                },
+                "如果埃及族不上来，也不前来，雨也必不降在他们身上。耶和华必用这灾病击打那些不上来守住棚节的列国。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "19",
+                    "sid": "ZEC 14:19"
+                },
+                "这就是埃及的惩罚，也是所有不上来守住棚节的列国的惩罚。   \n"
+            ]
+        },
+        {
+            "type": "para",
+            "marker": "p",
+            "content": [
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "20",
+                    "sid": "ZEC 14:20"
+                },
+                "那日，马的铃铛上必刻着：“归耶和华为圣”；耶和华殿中的锅必像祭坛前的碗一样。  \n",
+                {
+                    "type": "verse",
+                    "marker": "v",
+                    "number": "21",
+                    "sid": "ZEC 14:21"
+                },
+                "是的，耶路撒冷和犹大的一切锅都必归万军之耶和华为圣；所有献祭的人都必来取这些锅，用它们煮祭肉。那日，在万军之耶和华的殿中必不再有迦南人",
+                {
+                    "type": "note",
+                    "marker": "f",
+                    "content": [
+                        " ",
+                        {
+                            "type": "char",
+                            "marker": "fr",
+                            "content": [
+                                "14:21 "
+                            ]
+                        },
+                        {
+                            "type": "char",
+                            "marker": "ft",
+                            "content": [
+                                "或译：商人"
+                            ]
+                        }
+                    ],
+                    "caller": "+"
+                },
+                "。   "
+            ]
+        }
+    ]
+}

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Grace Daily Mini App",
   description:
     "Portal Rohani & Pendalaman Alkitab — Renungan harian, Ensiklopedia Alkitab, dan komunitas Kristen.",
-  manifest: "/manifest.json",
+  manifest: "/miniapp-manifest.json", // ✨ UBAH DI SINI (Arahkan langsung ke manifest miniapp)
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",

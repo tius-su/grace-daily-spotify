@@ -27,3 +27,38 @@ a,
 button {
   text-underline-offset: 4px;
 }
+
+/* Style for Rich Text Content in Blog Posts */
+.rich-text-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #334155;
+}
+
+.rich-text-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #14213d;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: Georgia, serif;
+}
+
+.rich-text-content strong {
+  font-weight: 700;
+  color: #14213d;
+}
+
+.rich-text-content blockquote {
+  border-left: 4px solid #2a6f6f;
+  padding-left: 1.25rem;
+  font-style: italic;
+  color: #52606d;
+  background-color: #fffdf8;
+  margin: 1.5rem 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0 8px 8px 0;
+}
+

@@ -5,12 +5,8 @@
       "schedule": "0 22 * * *"
     },
     {
-      "path": "/api/cron/daily-devotion",
-      "schedule": "0 8 * * *"
-    },
-    {
       "path": "/api/cron/generate-blog",
-      "schedule": "0 22 * * *"
+      "schedule": "0 21 * * *"
     },
     {
       "path": "/api/cron/generate-encyclopedia",
@@ -23,44 +19,15 @@
   ],
   "rewrites": [
     {
-      "source": "/manifest.json",
+      "source": "/api/media/public",
       "has": [
         {
-          "type": "host",
-          "value": "app.gracedaily.my.id"
+          "type": "query",
+          "key": "key",
+          "value": "(?<folder>encyclopedia-banners/.*)\\.png"
         }
       ],
-      "destination": "/miniapp-manifest.json"
-    },
-    {
-      "source": "/manifest.webmanifest",
-      "has": [
-        {
-          "type": "host",
-          "value": "app.gracedaily.my.id"
-        }
-      ],
-      "destination": "/miniapp-manifest.json"
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "app.gracedaily.my.id"
-        }
-      ],
-      "destination": "/telegram-miniapp"
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "app.gracedaily.my.id"
-        }
-      ],
-      "destination": "/telegram-miniapp/:path*"
+      "destination": "/api/media/public?key=%{folder}.webp"
     }
   ]
 }

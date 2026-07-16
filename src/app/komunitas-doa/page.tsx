@@ -5,7 +5,7 @@ import { FormEvent, useState, useEffect } from "react";
 import { auth, db } from "@/lib/firebase";
 import { onAuthStateChanged, type User } from "firebase/auth";
 import { collection, query, orderBy, getDocs, addDoc, serverTimestamp, Timestamp, deleteDoc, setDoc, doc } from "firebase/firestore";
-import { shareToWhatsApp, printPdf } from "@/lib/share";
+import { shareToWhatsApp, downloadPdf } from "@/lib/share";
 
 type PrayerRequest = {
   id: string;
@@ -265,7 +265,7 @@ export default function PrayerCommunityPage() {
                     Share WA
                   </button>
                   <button
-                    onClick={() => printPdf(`Pokok Doa: ${request.name} (${request.category})`, request.content)}
+                    onClick={() => downloadPdf(`Pokok Doa: ${request.name} (${request.category})`, request.content)}
                     className="rounded-md border border-[#dfd8ca] px-4 py-2 font-semibold text-[#14213d] hover:bg-[#f7f4ee] transition"
                   >
                     PDF

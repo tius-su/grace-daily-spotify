@@ -1,0 +1,602 @@
+[
+  {
+    "Kamus": "Yhvh ",
+    "arti": "יהוה adalah nama aslinya tetapi banyak terjemahan bahasa Inggris menerjemahkannya menjadi \"TUHAN\" dalam huruf kapital semua"
+  },
+  {
+    "Kamus": "Rifat ",
+    "arti": "Dalam CH : bahasa Ibraninya adalah דִּיפַת [diyfat] Diphath tetapi bahasa Yunaninya tetap Ριφαθ Riphath"
+  },
+  {
+    "Kamus": "Dodanim ",
+    "arti": "Greek contains scribal error mistaking ד (d) for ר (r) in the Hebrew. Dalam CH :, bahasa Ibraninya adalah רוֹדָנִֽים Rodanim."
+  },
+  {
+    "Kamus": "Rama ",
+    "arti": "Dieja Raama dalam CH :"
+  },
+  {
+    "Kamus": "Lud ",
+    "arti": "Edit: singularisasi bentuk jamak berdasarkan CH :"
+  },
+  {
+    "Kamus": "Anam ",
+    "arti": "Edit: singularisasi bentuk jamak berdasarkan CH :"
+  },
+  {
+    "Kamus": "Lehab ",
+    "arti": "Edit: singularisasi bentuk jamak berdasarkan CH :"
+  },
+  {
+    "Kamus": "Naftuh ",
+    "arti": "Edit: singularisasi bentuk jamak berdasarkan CH :"
+  },
+  {
+    "Kamus": "Jalur ",
+    "arti": "Edit: singularisasi bentuk jamak berdasarkan CH :"
+  },
+  {
+    "Kamus": "Kasluh ",
+    "arti": "Edit: singularisasi bentuk jamak berdasarkan CH :"
+  },
+  {
+    "Kamus": "Kaftor ",
+    "arti": "Edit: singularisasi bentuk jamak berdasarkan CH :"
+  },
+  {
+    "Kamus": "Jebus ",
+    "arti": "Sunting: singularkan bentuk jamak"
+  },
+  {
+    "Kamus": "Cinta ",
+    "arti": "Sunting: singularkan bentuk jamak"
+  },
+  {
+    "Kamus": "Girgash ",
+    "arti": "Sunting: singularkan bentuk jamak"
+  },
+  {
+    "Kamus": "Hiv ",
+    "arti": "Sunting: singularkan bentuk jamak"
+  },
+  {
+    "Kamus": "Tabut ",
+    "arti": "Sunting: singularkan bentuk jamak"
+  },
+  {
+    "Kamus": "Ini ",
+    "arti": "Sunting: singularkan bentuk jamak"
+  },
+  {
+    "Kamus": "Arvad ",
+    "arti": "Sunting: singularkan bentuk jamak"
+  },
+  {
+    "Kamus": "Zemar ",
+    "arti": "Sunting: singularkan bentuk jamak"
+  },
+  {
+    "Kamus": "Hamat ",
+    "arti": "Sunting: singularkan bentuk jamak"
+  },
+  {
+    "Kamus": "Eber ",
+    "arti": "Bahasa Inggris terkadang Heber"
+  },
+  {
+    "Kamus": "Arpachshad ",
+    "arti": "Bahasa Inggris terkadang Arphaxad"
+  },
+  {
+    "Kamus": "Hancurkan ",
+    "arti": "Dalam CH :, Kamus Ibrani מֶשֶׁךְ (meshekh) Mesekh lebih mirip dengan bahasa Yunani di KEJADIAN :.  CH : hilang dari Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Obal ",
+    "arti": "Nama ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs. Dalam ayat paralel di CH :, bahasa Ibraninya adalah עֵיבָל (Eybal) Ebal. Bahasa Yunani dari CH : tidak ada."
+  },
+  {
+    "Kamus": "Yhvh  ",
+    "arti": "Judul ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Abram ",
+    "arti": "Abraham adalah orang pertama yang dipanggil “Hamba-Ku”.  Lainnya termasuk Musa, Daud, dan Mesias."
+  },
+  {
+    "Kamus": "Zefo ",
+    "arti": "Dalam CH :, bahasa Ibraninya adalah צְפִי (tsəfiy - Zephi) sedangkan bahasa Yunani Rahlfs tetap Σωφαρ (Sōphar)."
+  },
+  {
+    "Kamus": "Amalek ",
+    "arti": "יִמַּח שְׁמוֹ"
+  },
+  {
+    "Kamus": "Hemam ",
+    "arti": "Dalam CH :, bahasa Ibraninya adalah הוֹמָם (homam - Homam) dan bahasa Yunani Rahlfs tetap Αιμαν (Aiman)."
+  },
+  {
+    "Kamus": "Alvan ",
+    "arti": "Dalam CH :, bahasa Ibraninya adalah עַלְיָן (aləyan - Alian) dan bahasa Yunani Rahlfs adalah Γωλαμ (Golam)."
+  },
+  {
+    "Kamus": "Shefo ",
+    "arti": "Dalam CH :, bahasa Ibraninya adalah שְׁפִי (shəfiy) Shephi dan bahasa Yunani Rahlfs adalah Σωβ (Hiks) Hiks."
+  },
+  {
+    "Kamus": "Hemdan ",
+    "arti": "Dalam CH :, bahasa Ibraninya adalah חַמְרָן (chaməran) Hamran dan bahasa Yunani dari Rahlfs adalah Εμερων (Emerōn)."
+  },
+  {
+    "Kamus": "Akan ",
+    "arti": "Dalam CH :, bahasa Ibraninya adalah יַעֲקָן (yaaqan) Jaakan dan bahasa Yunani Rahlfs adalah Ιωκαν (Iōkan)."
+  },
+  {
+    "Kamus": "Hadar ",
+    "arti": "Dalam CH :, bahasa Ibraninya adalah הֲדַ֔ד (hadad) Hadad, dalam Rahlfs (CH :) bahasa Yunaninya adalah Αδαδ (Adad)."
+  },
+  {
+    "Kamus": "Alva ",
+    "arti": "Dalam CH :, bahasa Ibraninya memiliki עַלְיָה (aləyah) kemungkinan kesalahan penulisan yang membingungkan י (y) dan ו (v). Bahasa Yunani Rahlfs dari CH : cocok dengan GEN :."
+  },
+  {
+    "Kamus": "Selah ",
+    "arti": "keturunan Shelan (BIL :)"
+  },
+  {
+    "Kamus": "Perez ",
+    "arti": "orang Perezi (BIL :)"
+  },
+  {
+    "Kamus": "Zerah ",
+    "arti": "Orang Zerah (BIL. :)"
+  },
+  {
+    "Kamus": "Yhvh ",
+    "arti": "contoh pertama dari \"El\" dengan sendirinya"
+  },
+  {
+    "Kamus": "Hanok ",
+    "arti": "orang Hanokhi (BIL. :)"
+  },
+  {
+    "Kamus": "Palu ",
+    "arti": "Paluit (BIL. :)"
+  },
+  {
+    "Kamus": "Hezron ",
+    "arti": "Hezronit- הַֽחֶצְרוֹנִ֑י (Bil :) vs Hezronit- הַֽחֶצְרֹנִ֑י (Bil :)"
+  },
+  {
+    "Kamus": "Karmi ",
+    "arti": "kaum Karmit (BIL :)"
+  },
+  {
+    "Kamus": "Yakhin ",
+    "arti": "keturunan Yakhin (BIL :)"
+  },
+  {
+    "Kamus": "Shaul ",
+    "arti": "Kaum Shaul (BILANG :)"
+  },
+  {
+    "Kamus": "Gerson ",
+    "arti": "keturunan Gerson (BIL :)"
+  },
+  {
+    "Kamus": "Kohat ",
+    "arti": "keturunan Kohat (BIL :)"
+  },
+  {
+    "Kamus": "Merari ",
+    "arti": "orang Merari (BIL :)"
+  },
+  {
+    "Kamus": "Hezron ",
+    "arti": "Hezronit- הַֽחֶצְרֹנִ֑י (Bil :) vs Hezronit- הַֽחֶצְרוֹנִ֑י (Bil :)"
+  },
+  {
+    "Kamus": "Hamul ",
+    "arti": "orang Hamulit (BIL. :)"
+  },
+  {
+    "Kamus": "Tola ",
+    "arti": "orang Tola (BIL :)"
+  },
+  {
+    "Kamus": "Puvvah ",
+    "arti": "orang Puni (BIL :)"
+  },
+  {
+    "Kamus": "Shimron ",
+    "arti": "keturunan Simron (BIL :)"
+  },
+  {
+    "Kamus": "Melayani ",
+    "arti": "orang Sered (BIL :)"
+  },
+  {
+    "Kamus": "Elon ",
+    "arti": "keturunan Elon (BIL :)"
+  },
+  {
+    "Kamus": "Yahleel ",
+    "arti": "kaum Yahlee (BIL :)"
+  },
+  {
+    "Kamus": "Hagi ",
+    "arti": "orang Hagit (BIL :)"
+  },
+  {
+    "Kamus": "Shuni ",
+    "arti": "orang Suni (BIL :)"
+  },
+  {
+    "Kamus": "Eri ",
+    "arti": "Erit (BIL. :)"
+  },
+  {
+    "Kamus": "Arodi ",
+    "arti": "Bangsa Arod (BIL. :)"
+  },
+  {
+    "Kamus": "Areli ",
+    "arti": "Arelite (BIL :)"
+  },
+  {
+    "Kamus": "Imnah ",
+    "arti": "Orang-orang Imnit (BIL :)"
+  },
+  {
+    "Kamus": "Ishvi ",
+    "arti": "kaum Ishwi (BIL :)"
+  },
+  {
+    "Kamus": "Beria ",
+    "arti": "suku Beri (BIL :)"
+  },
+  {
+    "Kamus": "Ibrani ",
+    "arti": "Orang Heber (BIL. :)"
+  },
+  {
+    "Kamus": "Malchiel ",
+    "arti": "kaum Malkiel (BIL :)"
+  },
+  {
+    "Kamus": "Yahzeel ",
+    "arti": "keturunan Yahzeel (BIL :)"
+  },
+  {
+    "Kamus": "Guni ",
+    "arti": "orang Gun (BIL :)"
+  },
+  {
+    "Kamus": "Jezer ",
+    "arti": "orang Yezer (BIL :)"
+  },
+  {
+    "Kamus": "Shilem ",
+    "arti": "orang Syilem (BIL :)"
+  },
+  {
+    "Kamus": "Yhvh ",
+    "arti": "Judul ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Yhvh ",
+    "arti": "Judul ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Yhvh ",
+    "arti": "Judul ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Firaun Tokoh",
+    "arti": "Firaun Eksodus"
+  },
+  {
+    "Kamus": "Libya ",
+    "arti": "orang Libni (BIL :)"
+  },
+  {
+    "Kamus": "Hebron ",
+    "arti": "orang Hebron (BIL :)"
+  },
+  {
+    "Kamus": "Mahli ",
+    "arti": "Mahlite (BILANG :)"
+  },
+  {
+    "Kamus": "Musi ",
+    "arti": "Orang Mushi (BIL. :)"
+  },
+  {
+    "Kamus": "Korah ",
+    "arti": "keturunan Korah (BIL :)"
+  },
+  {
+    "Kamus": "Mishael ",
+    "arti": "Nama ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Yosua ",
+    "arti": "Nama Musa untuk Hosea (BIL. :)"
+  },
+  {
+    "Kamus": "Ulangan ",
+    "arti": "Bahasa Yunani mengandung kesalahan penyalinan yang salah mengira ד (d) dengan ר (r) dalam bahasa Ibrani"
+  },
+  {
+    "Kamus": "Musa ",
+    "arti": "Musa adalah orang kedua yang disebut “Hamba-Ku”. Yang lainnya termasuk Abraham, Daud, dan Mesias."
+  },
+  {
+    "Kamus": "Kaleb ",
+    "arti": "Caleb adalah orang ketiga yang disebut “Pelayanku”.  Lainnya termasuk Abraham, Musa, Daud, dan Mesias."
+  },
+  {
+    "Kamus": "Jemuel ",
+    "arti": "Korupsi dalam bahasa Ibrani (karena bahasa Yunani cocok dengan י -> נ yang rusak)? Dalam GEN : dan EXO : ini adalah Jemuel. kaum Nemuel (BIL :)"
+  },
+  {
+    "Kamus": "Zohar ",
+    "arti": "Korupsi dalam bahasa Ibrani?  Transposisi זחר (Kejadian :) menjadi זרח (Bil :)? Kamus Yunaninya mengikuti NUM . Zerahites (Bil :)"
+  },
+  {
+    "Kamus": "Zifion ",
+    "arti": "Korupsi dalam bahasa Ibrani? BILANG : dalam Septuaginta karya Rahlf.  Zefonit (BIL. :)"
+  },
+  {
+    "Kamus": "Ezbon ",
+    "arti": "Korupsi dalam bahasa Ibrani? BILANG : dalam Septuaginta karya Rahlf. Orang Ozn (BIL. :)"
+  },
+  {
+    "Kamus": "Puvvah ",
+    "arti": "Variasi ejaan bahasa Inggris (mengapa transliterasi Kej : memiliki dua huruf \"v\"?)"
+  },
+  {
+    "Kamus": "Pekerjaan ",
+    "arti": "Nama lengkap Iob dari Kej :? Kaum Yashubit (BIL :) BIL : dalam Septuaginta karya Rahlf."
+  },
+  {
+    "Kamus": "Gilead ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :. orang Gilead (BILANG :)"
+  },
+  {
+    "Kamus": "Iezer ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :. orang Iezer (BIL :)"
+  },
+  {
+    "Kamus": "Helek ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :. orang Helek (BIL :)"
+  },
+  {
+    "Kamus": "Asriel ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :.  Bangsa Asrielit (BILANG :)"
+  },
+  {
+    "Kamus": "Sikhem ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :.  orang Sikhem (BIL :)"
+  },
+  {
+    "Kamus": "Shemida ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :.  keturunan Semida (BIL :)"
+  },
+  {
+    "Kamus": "Hefer ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :.  orang Hefer (BIL :)"
+  },
+  {
+    "Kamus": "Zelafehad ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :."
+  },
+  {
+    "Kamus": "Mahlah ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :."
+  },
+  {
+    "Kamus": "Nuh ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :."
+  },
+  {
+    "Kamus": "Hoglah ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :."
+  },
+  {
+    "Kamus": "Milka ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :."
+  },
+  {
+    "Kamus": "Tirza ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :."
+  },
+  {
+    "Kamus": "Sutelah ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :.  orang Sutelah (BIL :)"
+  },
+  {
+    "Kamus": "Bekher ",
+    "arti": "keturunan Becher (BIL :). Nama ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Tahan ",
+    "arti": "Kemungkinan transposisi huruf dalam bahasa Yunani vs Ibrani.  Ayat Rahlfs Septuaginta yang setara adalah NUM :.  orang Tahan (BIL :)"
+  },
+  {
+    "Kamus": "Eran ",
+    "arti": "Bahasa Yunani mengandung kesalahan penyalinan yang salah mengira ד (d) dengan ר (r) dalam bahasa Ibrani.  Ayat Rahlfs Septuaginta yang setara adalah NUM :.  orang Eran (BIL :)"
+  },
+  {
+    "Kamus": "Ehi ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :.  bani Ahiram (BIL :)"
+  },
+  {
+    "Kamus": "Muppim ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :.  bani Sufam (BIL :)"
+  },
+  {
+    "Kamus": "Huppim ",
+    "arti": "bani Hufa (BIL :). Nama ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Husim ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah NUM :.  bani Suham (BIL :)"
+  },
+  {
+    "Kamus": "Bukti ",
+    "arti": "seorang raja Midian"
+  },
+  {
+    "Kamus": "Rekem ",
+    "arti": "seorang raja Midian"
+  },
+  {
+    "Kamus": "Zur ",
+    "arti": "seorang raja Midian"
+  },
+  {
+    "Kamus": "Sakit ",
+    "arti": "seorang raja Midian"
+  },
+  {
+    "Kamus": "Reba ",
+    "arti": "seorang raja Midian"
+  },
+  {
+    "Kamus": "Ahihud ",
+    "arti": "Bahasa Yunani mengandung kesalahan penyalinan yang salah mengira ד (d) dengan ר (r) dalam bahasa Ibrani."
+  },
+  {
+    "Kamus": "Yhvh ",
+    "arti": "label ini hanya digunakan  kali dalam Kitab Suci (JOS :, :; MIC :; ZEC :, :; PSA :)"
+  },
+  {
+    "Kamus": "Kapten Pasukan Tuhan ",
+    "arti": "label ini hanya digunakan dalam JOS :-"
+  },
+  {
+    "Kamus": "Zabdi ",
+    "arti": "Bahasa Yunani mengandung kesalahan penyalinan yang salah mengira ד (d) dengan ר (r) dalam bahasa Ibrani."
+  },
+  {
+    "Kamus": "Raja Betel ",
+    "arti": "Nama ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Raja Afek ",
+    "arti": "Kemungkinan penulisan nama Afek dan Lasharon menjadi satu nama dalam bahasa Yunani?"
+  },
+  {
+    "Kamus": "Raja Lasharon ",
+    "arti": "Kemungkinan penulisan nama Afek dan Lasharon menjadi satu nama dalam bahasa Yunani?"
+  },
+  {
+    "Kamus": "Raja Megido ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah Yosua :"
+  },
+  {
+    "Kamus": "Raja Kedesh ",
+    "arti": "Ayat Rahlfs Septuaginta yang setara adalah Yosua :"
+  },
+  {
+    "Kamus": "Ibrani ",
+    "arti": "Label Yunani adalah istilah umum dan bukan nama"
+  },
+  {
+    "Kamus": "Gideon ",
+    "arti": "Nama ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Dodo ",
+    "arti": "Nama ini tidak ada dalam bagian yang setara dalam Septuaginta karya Rahlfs tetapi anehnya ada istilah umum untuk \"saudara laki-laki ayah\"."
+  },
+  {
+    "Kamus": "Yhvh ",
+    "arti": "Bahasa Yunani Rahlfs tidak memiliki Kamus benda untuk \"hakim\" tetapi memiliki Kamus kerja κρίναι (krínai- menghakimi)."
+  },
+  {
+    "Kamus": "Manasye ",
+    "arti": "Label Ibraninya adalah Manasye tetapi label Yunaninya adalah Musa (walaupun \"beberapa teks kuno bertuliskan Musa\"- catatan NAS)"
+  },
+  {
+    "Kamus": "Zuf ",
+    "arti": "Nama ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Nol ",
+    "arti": "Bahasa Yunani mengandung kesalahan penyalinan yang salah mengira ד (d) dengan ר (r) dalam bahasa Ibrani."
+  },
+  {
+    "Kamus": "Barak ",
+    "arti": "Bahasa Ibrani mempunyai \"Bedan\" (nama panggilan?) tetapi bahasa Yunani dan Syria sama-sama mengandung \"Barak\".  Mungkinkah ada kesalahan penyalinan yang membingungkan בּדנ dengan בּרכ ketika menyalin bagian bahasa Ibrani?"
+  },
+  {
+    "Kamus": "Adriel ",
+    "arti": "Nama ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Ahimelekh ",
+    "arti": "Ayat yang setara dengan BHS dan Rahlfs Septuaginta adalah SA :"
+  },
+  {
+    "Kamus": "Doeg ",
+    "arti": "Ayat yang setara dengan BHS dan Rahlfs Septuaginta adalah SA :"
+  },
+  {
+    "Kamus": "Akhis ",
+    "arti": "Ayat yang setara dengan BHS dan Rahlfs Septuaginta adalah SA :"
+  },
+  {
+    "Kamus": "Akhis ",
+    "arti": "Ayat yang setara dengan BHS dan Rahlfs Septuaginta adalah SA :"
+  },
+  {
+    "Kamus": "Saulus ",
+    "arti": "Daud sering menggunakan sebutan ini untuk raja Saul.  Ayat Rahlfs Septuaginta yang setara adalah SA :"
+  },
+  {
+    "Kamus": "Ishvi ",
+    "arti": "SA : mengatakan Saul mati bersama ketiga putranya.  Tiga anak laki-laki disebutkan dalam SA : tetapi tidak termasuk Abinadab jadi ini pasti nama lain untuk Ishvi (nama panggilan?). Juga dalam CH :."
+  },
+  {
+    "Kamus": "Daud  ",
+    "arti": "David adalah orang keempat yang disebut \"Hamba-Ku\".  Yang lainnya termasuk Abraham, Musa, Kaleb, dan Mesias."
+  },
+  {
+    "Kamus": "Ahyo ",
+    "arti": "Bahasa Yunani memiliki \"Oza dan saudara-saudaranya anak-anak Aminadab\" tanpa menyebut nama Ahio (terjemahan Brenton)."
+  },
+  {
+    "Kamus": "Yoram ",
+    "arti": "Hadoram dalam CHR :"
+  },
+  {
+    "Kamus": "Amihud Tokoh",
+    "arti": "Beberapa teks Ibrani mengandung עַמִּיחוּר, amiychur, mungkin kesalahan penyalinan yang salah mengira ד (d) dengan ר (r) dalam bahasa Ibrani?"
+  },
+  {
+    "Kamus": "Yoseb-Bassyebeth ",
+    "arti": "Nama ini berhubungan dengan pembunuhan delapan ratus orang sekaligus (SA :)"
+  },
+  {
+    "Kamus": "Dodo ",
+    "arti": "Nama ini tidak ada dalam bagian yang setara dalam Septuaginta karya Rahlfs tetapi anehnya ada istilah umum untuk \"saudara laki-laki ayah\"."
+  },
+  {
+    "Kamus": "Jaare-Oregim ",
+    "arti": "dari Betlehem"
+  },
+  {
+    "Kamus": "Sibbecai ",
+    "arti": "Nama ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  },
+  {
+    "Kamus": "Sharar ",
+    "arti": "Bahasa Yunani mengandung kesalahan penyalinan yang salah mengira ד (d) dengan ר (r) dalam bahasa Ibrani."
+  },
+  {
+    "Kamus": "Bani ",
+    "arti": "Nama ini tidak terdapat pada bagian padanannya dalam Septuaginta karya Rahlfs."
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "ad_client": "ca-pub-0000000000000000",
+  "ad_slot": "1234567890",
+  "position": "top",
+  "targets": {
+    "landing": true,
+    "renungan": true,
+    "artikel": true,
+    "ensiklopedia": true,
+    "other": false
+  },
+  "landingSection": "header",
+  "intensity": "medium",
+  "isEnabled": true
+}

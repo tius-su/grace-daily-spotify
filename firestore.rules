@@ -10,7 +10,10 @@ service cloud.firestore {
       return signedIn()
         && (
           exists(/databases/$(database)/documents/admin_users/$(request.auth.uid))
-          || get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "admin"
+          || (
+            exists(/databases/$(database)/documents/users/$(request.auth.uid))
+            && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "admin"
+          )
           || (
             exists(/databases/$(database)/documents/settings/app)
             && request.auth.token.email in get(/databases/$(database)/documents/settings/app).data.adminEmails
@@ -25,6 +28,26 @@ service cloud.firestore {
     match /bible_verses/{verseId} {
       allow read: if true;
       allow write: if isAdmin();
+    }
+
+    match /bible_ai_pages/{pageId} {
+      allow read: if resource.data.status == "published" || isAdmin();
+      allow create: if signedIn()
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.content.size() <= 20000
+        && request.resource.data.verseText.size() <= 2000;
+      allow update, delete: if isAdmin()
+        || (signedIn() && resource.data.userId == request.auth.uid);
+    }
+
+    match /share_pages/{pageId} {
+      allow read: if resource.data.status == "published" || isAdmin();
+      allow create: if signedIn()
+        && request.resource.data.userId == request.auth.uid
+        && request.resource.data.title.size() <= 160
+        && request.resource.data.content.size() <= 30000;
+      allow update, delete: if isAdmin()
+        || (signedIn() && resource.data.userId == request.auth.uid);
     }
 
     match /daily_devotions/{devotionId} {
@@ -149,6 +172,85 @@ service cloud.firestore {
     match /admin_users/{adminId} {
       allow read: if owns(adminId) || isAdmin();
       allow write: if isAdmin();
+    }
+
+    match /reading_plans/{planId} {
+      allow read, create, update, delete: if signedIn();
+    }
+
+    match /daily_readings/{readingId} {
+      allow read, create, update, delete: if signedIn();
+    }
+
+    match /reading_groups/{groupId} {
+      allow read, create, update, delete: if signedIn();
+    }
+
+    match /reading_group_members/{memberId} {
+      allow read, create, update, delete: if signedIn();
+    }
+
+    match /spiritual_journal/{journalId} {
+      allow read, create, update, delete: if signedIn();
+    }
+
+    match /prayer_wall/{prayerId} {
+      allow read: if true;
+      allow create: if signedIn()
+        && request.resource.data.name.size() <= 50
+        && request.resource.data.request.size() <= 1000
+        && request.resource.data.email.size() <= 100
+        && request.resource.data.userId == request.auth.uid;
+      allow update: if signedIn();
+      allow delete: if signedIn() && (resource.data.userId == request.auth.uid || isAdmin());
+    }
+
+    match /user_reviews/{reviewId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /ensiklopedia_corrections/{correctionId} {
+      allow create: if true;
+      allow read, update, delete: if isAdmin();
+    }
+
+    match /ensiklopedia_cache/{cacheId} {
+      allow read: if resource.data.status == "published" || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    match /cron_logs/{logId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+
+    match /backup_logs/{logId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+
+    match /monitoring/{docId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+
+    match /fcm_tokens/{tokenId} {
+      allow get: if true;
+      allow list: if isAdmin();
+      allow create, update, delete: if true;
+    }
+
+    match /emailSubscribers/{subscriberId} {
+      allow get: if true;
+      allow list: if isAdmin();
+      allow write: if true;
+    }
+
+    match /pushSubscribers/{subscriberId} {
+      allow get: if true;
+      allow list: if isAdmin();
+      allow write: if true;
     }
   }
 }

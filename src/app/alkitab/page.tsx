@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BibleExplorer } from "@/app/components/BibleExplorer";
 import { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Alkitab Online",
@@ -30,7 +31,9 @@ export default function BiblePage() {
           </Link>
         </div>
       </header>
-      <BibleExplorer />
+      <Suspense fallback={<div className="p-8 text-center text-[#ffd166] text-sm animate-pulse">Memuat Penjelajah Alkitab...</div>}>
+        <BibleExplorer />
+      </Suspense>
     </main>
   );
 }

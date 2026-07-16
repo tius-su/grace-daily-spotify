@@ -1,35 +1,40 @@
 import { initializeApp, cert } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
-import { existsSync, readFileSync } from "fs";
-import path from "path";
+import { readFileSync } from "fs";
 
-const keyPath = path.join(process.cwd(), "scripts", "serviceAccountKey.json");
-if (!existsSync(keyPath)) {
-  console.error("serviceAccountKey.json not found!");
-  process.exit(1);
-}
-
-const serviceAccount = JSON.parse(readFileSync(keyPath, "utf8"));
-
-initializeApp({
-  credential: cert(serviceAccount),
-});
-
+initializeApp({ credential: cert(JSON.parse(readFileSync("scripts/serviceAccountKey.json", "utf8"))) });
 const db = getFirestore();
 
 async function run() {
-  console.log("Fetching blog_posts...");
-  const snapshot = await db.collection("blog_posts").get();
-  console.log(`Found ${snapshot.size} articles:`);
+  const snapshot = await db.collection("ensiklopedia_cache").get();
+  console.log("Total documents in ensiklopedia_cache:", snapshot.size);
+  
+  const stats = {};
+  let statusCounts = {};
+  let sampleDoc = null;
+
   snapshot.forEach(doc => {
     const data = doc.data();
-    console.log(`- ID: ${doc.id}`);
-    console.log(`  Title: ${data.title}`);
-    console.log(`  Category: ${data.category}`);
-    console.log(`  Status: ${data.status}`);
-    console.log(`  CreatedAt: ${data.createdAt ? (data.createdAt.toDate ? data.createdAt.toDate().toISOString() : data.createdAt) : 'none'}`);
-    console.log("---");
+    if (!sampleDoc) sampleDoc = data;
+    const cat = data.kategori || "unknown";
+    stats[cat] = (stats[cat] || 0) + 1;
+    const status = data.status || "no_status";
+    statusCounts[status] = (statusCounts[status] || 0) + 1;
   });
+
+  console.log("Categories stats:", stats);
+  console.log("Status fields stats:", statusCounts);
+  console.log("Sample Document Keys:", Object.keys(sampleDoc || {}));
+  if (sampleDoc) {
+    console.log("Sample Document fields:", {
+      title: sampleDoc.title,
+      kategori: sampleDoc.kategori,
+      slug: sampleDoc.slug,
+      keyword: sampleDoc.keyword,
+      status: sampleDoc.status,
+      updatedAt: sampleDoc.updatedAt
+    });
+  }
 }
 
 run().catch(console.error);

@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getLatestDevotion, generateDailyImage } from "@/lib/server/daily-devotion";
 import { getAdminDb } from "@/lib/server/firebase-admin";
+import { resolveDailyHeroImage } from "@/lib/daily-hero-images";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 export async function POST(request: NextRequest) {
   try {
@@ -34,53 +36,55 @@ export async function GET(request: NextRequest) {
     }
 
     // Jika client meminta devotionId yang berbeda dari renungan terbaru,
-    // kembalikan null — jangan tampilkan gambar renungan lama/kemarin.
-    if (requestedDevotionId && requestedDevotionId !== devotion.id) {
-      return NextResponse.json({ url: null });
-    }
+    // kembalikan gambar renungan terbaru dengan flag bahwa ID sudah berubah
+    // (agar client bisa refresh devotion data sekalian)
+    const idMismatch = requestedDevotionId && requestedDevotionId !== devotion.id;
 
     const db = getAdminDb();
 
     if (db) {
-      // Selalu re-fetch dari Firestore untuk mendapatkan illustrationUrl terbaru
-      // (tidak pakai prop devotion.illustrationUrl yang mungkin sudah stale)
+      // Selalu re-fetch dari Firestore untuk mendapatkan imageUrl terbaru.
       const docSnap = await db.collection("daily_devotions").doc(devotion.id).get();
       if (docSnap.exists) {
         const data = docSnap.data();
-        if (data?.illustrationUrl) {
-          return responseWithCache(data.illustrationUrl);
+        const savedImageUrl = resolveDailyHeroImage(data?.imageUrl, data?.illustrationUrl);
+        if (savedImageUrl) {
+          return responseWithNoCache({ url: savedImageUrl, latestId: devotion.id, idMismatch: Boolean(idMismatch) });
         }
       }
     }
 
-    // Gambar belum ada — generate baru
+    // Gambar belum ada: pilih URL statis R2, tanpa AI image generation.
     const imageUrl = await generateDailyImage(devotion.id, devotion.verseRef, devotion.verseText);
 
-    // Simpan ke Firestore untuk di-cache
+    // Simpan field baru untuk renungan saat ini tanpa menyentuh dokumen lama lain.
     if (db) {
       try {
         await db.collection("daily_devotions").doc(devotion.id).set(
-          { illustrationUrl: imageUrl },
+          { imageUrl },
           { merge: true }
         );
       } catch (e) {
-        console.error("Failed to save illustrationUrl to Firestore:", e);
+        console.error("Failed to save imageUrl to Firestore:", e);
       }
     }
 
-    return responseWithCache(imageUrl);
+    return responseWithNoCache({ url: resolveDailyHeroImage(imageUrl), latestId: devotion.id, idMismatch: Boolean(idMismatch) });
   } catch (error: any) {
     console.error("Daily image endpoint error:", error);
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
 
-function responseWithCache(url: string) {
-  return new NextResponse(JSON.stringify({ url }), {
+function responseWithNoCache(data: object) {
+  return new NextResponse(JSON.stringify(data), {
     headers: {
       "Content-Type": "application/json",
-      "Cache-Control": "no-store, max-age=0, must-revalidate",
+      // Aggressive no-cache headers for mobile browsers
+      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "Pragma": "no-cache",
+      "Expires": "0",
+      "Surrogate-Control": "no-store",
     },
   });
 }
-

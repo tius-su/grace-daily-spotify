@@ -2,11 +2,23 @@
   {
     "AllowedOrigins": [
       "http://localhost:3000",
-      "https://your-vercel-domain.vercel.app"
+      "http://localhost:3001",
+      "https://app.gracedaily.my.id",
+      "https://www.gracedaily.my.id"
     ],
-    "AllowedMethods": ["GET", "PUT", "POST", "DELETE", "HEAD"],
-    "AllowedHeaders": ["*"],
-    "ExposeHeaders": ["ETag"],
+    "AllowedMethods": [
+      "GET",
+      "HEAD"
+    ],
+    "AllowedHeaders": [
+      "*"
+    ],
+    "ExposeHeaders": [
+      "ETag",
+      "Content-Type",
+      "Content-Length",
+      "Cache-Control"
+    ],
     "MaxAgeSeconds": 3600
   }
 ]

@@ -1,17 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import { FormEvent, useState, useEffect } from "react";
+import { FormEvent, useState, useEffect, useMemo } from "react";
+import ReactMarkdown from "react-markdown";
 import { auth, db } from "@/lib/firebase";
 import { onAuthStateChanged, type User } from "firebase/auth";
 import { collection, query, orderBy, getDocs, addDoc, serverTimestamp, Timestamp, deleteDoc, setDoc, doc } from "firebase/firestore";
-import { shareToWhatsApp, printPdf } from "@/lib/share";
+import { shareToWhatsApp, downloadPdf } from "@/lib/share";
+import { toggleAudio } from "@/lib/audio";
 
 type JournalEntry = {
   id: string;
   title: string;
   mood: string;
   content: string;
+  sharePageUrl?: string;
   createdAt?: Timestamp | null;
 };
 
@@ -29,6 +32,73 @@ export default function JournalPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [moodFilter, setMoodFilter] = useState("Semua");
   const [editingEntryId, setEditingEntryId] = useState<string | null>(null);
+  const [playingEntryId, setPlayingEntryId] = useState<string | null>(null);
+
+  const [insightLoading, setInsightLoading] = useState(false);
+  const [insightContent, setInsightContent] = useState("");
+  const [insightError, setInsightError] = useState("");
+
+  const moodStats = useMemo(() => {
+    const last7 = entries.slice(0, 7);
+    const counts: Record<string, number> = { Tenang: 0, Bersyukur: 0, Cemas: 0, Lelah: 0, Berharap: 0 };
+    last7.forEach(e => {
+      if (counts[e.mood] !== undefined) {
+        counts[e.mood]++;
+      }
+    });
+    const total = last7.length || 1;
+    return Object.keys(counts).map(m => ({
+      name: m,
+      count: counts[m],
+      percentage: Math.round((counts[m] / total) * 100),
+    }));
+  }, [entries]);
+
+  async function handleGetAiInsights() {
+    if (entries.length === 0) {
+      alert("Silakan tulis minimal satu entri jurnal untuk dianalisis.");
+      return;
+    }
+    setInsightLoading(true);
+    setInsightContent("");
+    setInsightError("");
+
+    try {
+      const token = await user?.getIdToken().catch(() => null);
+      if (!token) {
+        setInsightError("Silakan login terlebih dahulu.");
+        setInsightLoading(false);
+        return;
+      }
+
+      const journalContext = entries.slice(0, 7).map((e, idx) => 
+        `Entri ${idx + 1} (Mood: ${e.mood}):\nJudul: ${e.title}\nIsi: ${e.content}`
+      ).join("\n\n---\n\n");
+
+      const response = await fetch("/api/ai", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          mode: "journal-insights",
+          prompt: journalContext,
+        }),
+      });
+
+      const data = await response.json();
+      if (response.ok && data.answer) {
+        setInsightContent(data.answer);
+      } else {
+        setInsightError("server sibuk");
+      }
+    } catch (e) {
+      setInsightError("server sibuk");
+    } finally {
+      setInsightLoading(false);
+    }
+  }
 
   useEffect(() => {
     if (!auth) {
@@ -131,6 +201,46 @@ export default function JournalPage() {
     }
   }
 
+  async function ensureJournalPage(entry: JournalEntry) {
+    if (entry.sharePageUrl) {
+      window.open(entry.sharePageUrl, "_blank", "noopener,noreferrer");
+      return;
+    }
+
+    if (!user || !db) {
+      alert("Silakan login untuk membuat halaman jurnal.");
+      return;
+    }
+
+    try {
+      const token = await user.getIdToken().catch(() => null);
+      const pageResponse = await fetch("/api/share-page", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        },
+        body: JSON.stringify({
+          type: "Jurnal Spiritual",
+          title: `Jurnal: ${entry.title}`,
+          subtitle: `Mood: ${entry.mood}`,
+          content: entry.content,
+          sourceId: entry.id,
+        }),
+      });
+      const pageData = await pageResponse.json();
+      if (!pageResponse.ok || !pageData.url) {
+        throw new Error(pageData.error || "Gagal membuat halaman jurnal.");
+      }
+
+      await setDoc(doc(db, "users", user.uid, "journals", entry.id), { sharePageUrl: pageData.url }, { merge: true });
+      setEntries((prev) => prev.map((item) => item.id === entry.id ? { ...item, sharePageUrl: pageData.url } : item));
+      window.open(pageData.url, "_blank", "noopener,noreferrer");
+    } catch (err: any) {
+      alert(err.message || "Gagal membuat halaman jurnal.");
+    }
+  }
+
   const displayedEntries = entries.filter((entry) => {
     const matchesSearch =
       entry.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -218,7 +328,90 @@ export default function JournalPage() {
                 </div>
               </form>
 
-              <div className="grid gap-3 h-fit">
+              <div className="grid gap-4 h-fit">
+                {/* Jurnal Insights & Mood Analytics Panel */}
+                <div className="rounded-lg border border-[#dfd8ca] bg-white p-5 shadow-sm space-y-5">
+                  <div className="border-b border-[#dfd8ca] pb-3">
+                    <h3 className="text-lg font-semibold text-[#14213d] flex items-center gap-2">
+                      📊 Insights & Mood Analytics
+                    </h3>
+                    <p className="text-xs text-[#52606d] mt-1">Analisis suasana hati dan perkembangan spiritual berdasarkan 7 entri jurnal terakhir.</p>
+                  </div>
+
+                  {/* Mood Stats bars */}
+                  <div className="space-y-3">
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-[#2a6f6f]">Sebaran Suasana Hati (Mood)</h4>
+                    {entries.length === 0 ? (
+                      <p className="text-xs text-[#52606d] italic">Belum ada jurnal untuk dianalisis.</p>
+                    ) : (
+                      <div className="grid gap-2">
+                        {moodStats.map((stat) => (
+                          <div key={stat.name} className="flex items-center justify-between text-sm gap-4">
+                            <span className="w-20 font-medium text-xs text-[#1f2933]">{stat.name}</span>
+                            <div className="flex-1 bg-[#dfd8ca]/40 rounded-full h-2 relative">
+                              <div className="bg-[#2a6f6f] h-2 rounded-full transition-all duration-300" style={{ width: `${stat.percentage}%` }}></div>
+                            </div>
+                            <span className="w-10 text-right text-xs font-semibold text-[#52606d]">{stat.percentage}%</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* AI Refleksi Button & Container */}
+                  <div className="pt-2 border-t border-[#dfd8ca]/60">
+                    <button
+                      type="button"
+                      onClick={handleGetAiInsights}
+                      disabled={insightLoading || entries.length === 0}
+                      className="w-full rounded-md bg-[#d97706] hover:bg-[#b45309] text-white py-2 px-4 text-xs font-bold transition disabled:opacity-50 flex items-center justify-center gap-2 cursor-pointer"
+                    >
+                      {insightLoading ? (
+                        <>
+                          <svg className="animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                          <span>Menganalisis Jurnal Anda...</span>
+                        </>
+                      ) : (
+                        <>
+                          <span>🌟 Dapatkan Analisis Rohani AI</span>
+                        </>
+                      )}
+                    </button>
+
+                    {/* AI Output Result */}
+                    {insightContent && (
+                      <div className="mt-4 p-4 rounded-lg bg-[#f7f4ee] border border-[#dfd8ca] animate-in fade-in duration-300">
+                        <div className="flex justify-between items-center mb-2">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-[#d97706]">Hasil Refleksi Rohani AI</span>
+                          <button
+                            onClick={() => setInsightContent("")}
+                            className="text-xs text-[#52606d] hover:text-[#1f2933] cursor-pointer bg-transparent border-none outline-none"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                        <div className="prose prose-sm max-w-none text-[#52606d] leading-relaxed text-xs">
+                          <ReactMarkdown
+                            components={{
+                              h1: ({ ...props }) => <strong {...props} className="block mt-2 text-sm text-[#14213d]" />,
+                              h2: ({ ...props }) => <strong {...props} className="block mt-2 text-xs text-[#14213d]" />,
+                              h3: ({ ...props }) => <strong {...props} className="block mt-2 text-xs text-[#14213d]" />,
+                            }}
+                          >
+                            {insightContent}
+                          </ReactMarkdown>
+                        </div>
+                      </div>
+                    )}
+
+                    {insightError && (
+                      <div className="mt-4 p-3 rounded-lg bg-red-50 border border-red-200 text-red-700 text-xs font-semibold text-center">
+                        {insightError}
+                      </div>
+                    )}
+                  </div>
+                </div>
+
                 {/* Search & Filter Section */}
                 <div className="rounded-lg border border-[#dfd8ca] bg-white p-4 shadow-sm flex flex-col sm:flex-row gap-3">
                   <input
@@ -267,10 +460,26 @@ export default function JournalPage() {
                         Share WA
                       </button>
                       <button
-                        onClick={() => printPdf(`Jurnal: ${entry.title}`, entry.content)}
+                        onClick={() => ensureJournalPage(entry)}
+                        className="text-sm font-semibold text-[#2a6f6f] hover:text-[#1a4a4a]"
+                      >
+                        Buka Halaman
+                      </button>
+                      <button
+                        onClick={() => downloadPdf(`Jurnal: ${entry.title}`, entry.content)}
                         className="text-sm font-semibold text-[#2a6f6f] hover:text-[#1a4a4a]"
                       >
                         Cetak PDF
+                      </button>
+                      <button
+                        onClick={() => {
+                          toggleAudio(entry.content, playingEntryId === entry.id, (isPlaying) => {
+                            setPlayingEntryId(isPlaying ? entry.id : null);
+                          });
+                        }}
+                        className="text-sm font-semibold text-[#d97706] hover:text-[#b45309]"
+                      >
+                        {playingEntryId === entry.id ? "Stop Audio" : "Dengarkan"}
                       </button>
                       
                       <div className="ml-auto flex gap-2">
@@ -298,4 +507,3 @@ export default function JournalPage() {
     </main>
   );
 }
-
