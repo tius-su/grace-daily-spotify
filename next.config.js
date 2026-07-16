@@ -140,6 +140,23 @@ const nextConfig = {
       "https://*.rtmark.net",
     ].join(" ");
 
+    const workerSrc = [
+      "'self'",
+      "blob:",
+      "https://3nbf4.com",
+      "https://*.3nbf4.com",
+      "https://quge5.com",
+      "https://*.quge5.com",
+      "https://auqot.com",
+      "https://*.auqot.com",
+      "https://ekhay.com",
+      "https://*.ekhay.com",
+      "https://b3mny.com",
+      "https://*.b3mny.com",
+      "https://rtmark.net",
+      "https://*.rtmark.net",
+    ].join(" ");
+
     const csp = [
       "default-src 'self'",
       "img-src 'self' data: blob: https://*.gracedaily.my.id https://gracedaily.my.id https://*.r2.dev https://*.googleapis.com https://lh3.googleusercontent.com https://img.youtube.com https://pagead2.googlesyndication.com https://*.paypalobjects.com http: https:",
@@ -147,6 +164,7 @@ const nextConfig = {
       "style-src 'self' 'unsafe-inline'",
       `connect-src ${connectSrc}`,
       `frame-src ${frameSrc}`,
+      `worker-src ${workerSrc}`,
       "font-src https: data:",
       "frame-ancestors 'self' https://web.telegram.org https://*.telegram.org https://*.gracedaily.my.id https://gracedaily.my.id",
     ].join("; ");
@@ -170,6 +188,10 @@ const nextConfig = {
           {
             key: "Cross-Origin-Opener-Policy",
             value: "same-origin-allow-popups",
+          },
+          {
+            key: "Permissions-Policy",
+            value: "bluetooth=*, camera=(), microphone=(), geolocation=()",
           },
         ],
       },
