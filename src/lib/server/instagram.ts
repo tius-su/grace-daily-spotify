@@ -3,8 +3,9 @@
  * Publishes content to Instagram Business accounts linked to Facebook Pages
  */
 
-const FB_PAGE_ID = process.env.FACEBOOK_PAGE_ID;
-const FB_PAGE_ACCESS_TOKEN = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+const FB_PAGE_ID = process.env.FACEBOOK_PAGE_ID || process.env.GRACE_DAILY_PAGE_ID;
+const FB_PAGE_ACCESS_TOKEN = process.env.FACEBOOK_PAGE_ACCESS_TOKEN || process.env.GRACE_DAILY_PAGE_TOKEN;
+const FB_INSTAGRAM_ID = process.env.FACEBOOK_INSTAGRAM_ID || process.env.GRACE_DAILY_INSTAGRAM_ID;
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://www.gracedaily.my.id";
 
 export interface InstagramPostResult {
@@ -64,8 +65,8 @@ export async function postToInstagram({
   const absoluteImageUrl = imageUrl.startsWith("/") ? `${APP_URL}${imageUrl}` : imageUrl;
 
   try {
-    // 1. Get the linked Instagram Account ID
-    const igAccountId = await getInstagramBusinessAccountId(FB_PAGE_ID, FB_PAGE_ACCESS_TOKEN);
+    // 1. Get the linked Instagram Account ID (check env first, then fall back to dynamic resolution)
+    const igAccountId = FB_INSTAGRAM_ID || await getInstagramBusinessAccountId(FB_PAGE_ID, FB_PAGE_ACCESS_TOKEN);
     if (!igAccountId) {
       return { success: false, error: "No connected Instagram account found on Facebook Page" };
     }

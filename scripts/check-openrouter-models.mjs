@@ -5,7 +5,7 @@ const envPath = path.join(process.cwd(), ".env.local");
 let orKey = "";
 if (fs.existsSync(envPath)) {
   const envContent = fs.readFileSync(envPath, "utf8");
-  const match = envContent.match(/^DEEPSEEK_API_KEY=(.*)$/m);
+  const match = envContent.match(/^OPENROUTER_API_KEY_BACKUP2=(.*)$/m);
   if (match) {
     orKey = match[1].trim();
   }

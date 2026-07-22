@@ -24,6 +24,21 @@ type DevotionPageClientProps = {
   };
 };
 
+const colorNames: Record<string, Record<string, string>> = {
+  'auto-stabilo': { id: "Auto Rotasi 🔄", en: "Auto Rotate 🔄", zh: "自动轮换 🔄" },
+  'neon-yellow': { id: "Kuning Stabilo 🟡", en: "Neon Yellow 🟡", zh: "荧光黄 🟡" },
+  'neon-green': { id: "Hijau Stabilo 🟢", en: "Neon Green 🟢", zh: "荧光绿 🟢" },
+  'neon-pink': { id: "Pink Stabilo 🌸", en: "Neon Pink 🌸", zh: "荧光粉 🌸" },
+  'neon-orange': { id: "Oranye Stabilo 🟠", en: "Neon Orange 🟠", zh: "荧光橙 🟠" },
+  'neon-cyan': { id: "Biru/Sian Stabilo 🌐", en: "Neon Cyan 🌐", zh: "荧光青 🌐" },
+  'neon-lime': { id: "Lemon Stabilo 🍋", en: "Neon Lime 🍋", zh: "荧光柠绿 🍋" },
+  'neon-purple': { id: "Ungu Stabilo 🍇", en: "Neon Purple 🍇", zh: "荧光紫 🍇" },
+  'white': { id: "Putih ⚪", en: "White ⚪", zh: "白色 ⚪" },
+  'facebook-blue': { id: "Biru Facebook 🔵", en: "Facebook Blue 🔵", zh: "脸书蓝 🔵" },
+  'moss-green': { id: "Hijau Lumut 🌲", en: "Moss Green 🌲", zh: "苔藓绿 🌲" },
+  'spotify-green': { id: "Hijau Spotify 🟢", en: "Spotify Green 🟢", zh: "声田绿 🟢" }
+};
+
 export default function DevotionPageClient({ devotion }: DevotionPageClientProps) {
   const { language, t } = useLanguage();
   const [theme, setTheme] = useState("light");
@@ -108,10 +123,23 @@ export default function DevotionPageClient({ devotion }: DevotionPageClientProps
     setTheme(saved);
   }, []);
 
-  const bannerUrl = (language !== "id")
-    ? `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(`${activeDevotion.verseRef} - "${activeDevotion.verseText.substring(0, 100)}${activeDevotion.verseText.length > 100 ? "..." : ""}"`)}&icon=logo&bg=green`
-    : (activeDevotion.bannerUrl || `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(`${activeDevotion.verseRef} - "${activeDevotion.verseText.substring(0, 100)}${activeDevotion.verseText.length > 100 ? "..." : ""}"`)}&icon=logo&bg=green`);
-  const verticalBannerUrl = `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(`${activeDevotion.verseRef} - "${activeDevotion.verseText.substring(0, 100)}${activeDevotion.verseText.length > 100 ? "..." : ""}"`)}&icon=logo&bg=green&format=vertical`;
+  const [selectedBg, setSelectedBg] = useState("auto-stabilo");
+  const [dateBuster, setDateBuster] = useState("");
+
+  useEffect(() => {
+    setDateBuster(new Date().toISOString().split('T')[0]);
+  }, []);
+
+  const descForUrl = `${activeDevotion.verseRef} - "${activeDevotion.verseText.substring(0, 100)}${activeDevotion.verseText.length > 100 ? "..." : ""}"`;
+
+  const bannerUrl = (selectedBg === "original" && activeDevotion.bannerUrl)
+    ? activeDevotion.bannerUrl
+    : `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(descForUrl)}&icon=logo&bg=${selectedBg}${dateBuster ? `&d=${dateBuster}` : ""}`;
+
+  const verticalBannerUrl = (selectedBg === "original" && activeDevotion.bannerUrl)
+    ? `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(descForUrl)}&icon=logo&bg=auto-stabilo&format=vertical${dateBuster ? `&d=${dateBuster}` : ""}`
+    : `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(descForUrl)}&icon=logo&bg=${selectedBg}&format=vertical${dateBuster ? `&d=${dateBuster}` : ""}`;
+
   const heroImageUrl = resolveDailyHeroImage(activeDevotion.imageUrl, activeDevotion.illustrationUrl);
 
   // Stop audio on unmount & set share URL on mount
@@ -267,6 +295,106 @@ export default function DevotionPageClient({ devotion }: DevotionPageClientProps
                   </svg>
                   <span className="hidden sm:inline">{language === "zh" ? "分享" : language === "en" ? "Share" : "Bagikan"}</span>
                 </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Banner & PDF Color Customizer */}
+          <div className={`mt-2 mb-6 p-4 rounded-2xl border flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all shadow-sm ${
+            isDark 
+              ? "border-slate-800 bg-slate-900/40 text-slate-200" 
+              : "border-[#dfd8ca] bg-white text-[#1f2933]"
+          }`}>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+                {language === "zh" ? "海报与 PDF 背景颜色" : language === "en" ? "Banner & PDF Background Color" : "Warna Background Banner & PDF"}
+              </span>
+              <span className="text-sm font-bold flex items-center gap-1.5">
+                {selectedBg === "original" ? (
+                  <>🖼️ {language === "zh" ? "原始设计" : language === "en" ? "Original Design" : "Desain Asli"}</>
+                ) : (
+                  <>🎨 {colorNames[selectedBg]?.[language] || selectedBg}</>
+                )}
+              </span>
+            </div>
+            
+            <div className="flex flex-wrap items-center gap-2">
+              {/* Original Banner Button if available */}
+              {activeDevotion.bannerUrl && (
+                <button
+                  type="button"
+                  onClick={() => setSelectedBg("original")}
+                  className={`relative flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-bold transition-all border ${
+                    selectedBg === "original"
+                      ? isDark 
+                        ? "border-cyan-400 bg-cyan-950 text-cyan-300 ring-2 ring-cyan-500" 
+                        : "border-[#2a6f6f] bg-[#e9f5db] text-[#14213d] ring-2 ring-[#2a6f6f]"
+                      : isDark
+                        ? "border-slate-800 bg-slate-900 hover:border-slate-700"
+                        : "border-slate-200 bg-slate-50 hover:bg-slate-100"
+                  }`}
+                  title={language === "zh" ? "原始设计" : language === "en" ? "Original Design" : "Desain Asli"}
+                >
+                  🖼️ <span className="text-[10px] uppercase font-bold">Original</span>
+                </button>
+              )}
+
+              {/* Auto Rotate Button */}
+              <button
+                type="button"
+                onClick={() => setSelectedBg("auto-stabilo")}
+                className={`relative flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-bold transition-all border ${
+                  selectedBg === "auto-stabilo"
+                    ? isDark 
+                      ? "border-cyan-400 bg-cyan-950 text-cyan-300 ring-2 ring-cyan-500" 
+                      : "border-[#2a6f6f] bg-[#e9f5db] text-[#14213d] ring-2 ring-[#2a6f6f]"
+                    : isDark
+                      ? "border-slate-800 bg-slate-900 hover:border-slate-700"
+                      : "border-slate-200 bg-slate-50 hover:bg-slate-100"
+                }`}
+                title={language === "zh" ? "自动每日更换" : language === "en" ? "Auto Rotate Daily" : "Ganti Otomatis Harian"}
+              >
+                🔄 <span className="text-[10px] uppercase font-bold">Auto</span>
+              </button>
+
+              {/* 7 neon/stabilo colors circles + 4 new colors */}
+              <div className="h-6 w-px bg-slate-300 dark:bg-slate-700 mx-1" />
+
+              <div className="flex flex-wrap items-center gap-2">
+                {[
+                  { id: "neon-yellow", hex: "#FFFF00", name: "Yellow" },
+                  { id: "neon-green", hex: "#39FF14", name: "Green" },
+                  { id: "neon-pink", hex: "#FF8AD8", name: "Pink" },
+                  { id: "neon-orange", hex: "#FFAD33", name: "Orange" },
+                  { id: "neon-cyan", hex: "#00FFFF", name: "Cyan" },
+                  { id: "neon-lime", hex: "#CCFF00", name: "Lime" },
+                  { id: "neon-purple", hex: "#E2B3FF", name: "Purple" },
+                  { id: "white", hex: "#FFFFFF", name: "White" },
+                  { id: "facebook-blue", hex: "#1877F2", name: "Facebook Blue" },
+                  { id: "moss-green", hex: "#3D5446", name: "Moss Green" },
+                  { id: "spotify-green", hex: "#1DB954", name: "Spotify Green" }
+                ].map((color) => {
+                  const isActive = selectedBg === color.id;
+                  const dotColor = (color.id === "white") ? "bg-black" : (color.id === "facebook-blue" || color.id === "moss-green") ? "bg-white" : "bg-black";
+                  return (
+                    <button
+                      key={color.id}
+                      type="button"
+                      onClick={() => setSelectedBg(color.id)}
+                      style={{ backgroundColor: color.hex }}
+                      className={`w-6 h-6 rounded-full transition-all duration-200 transform hover:scale-125 focus:outline-none cursor-pointer flex items-center justify-center border border-black/20 ${
+                        isActive
+                          ? "ring-2 ring-offset-2 ring-cyan-500 dark:ring-offset-slate-950 scale-110"
+                          : "opacity-80 hover:opacity-100"
+                      }`}
+                      title={colorNames[color.id]?.[language] || color.name}
+                    >
+                      {isActive && (
+                        <div className={`w-1.5 h-1.5 rounded-full ${dotColor}`} />
+                      )}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>

@@ -51,6 +51,8 @@ export async function POST(request: Request) {
         verseRef: devotion.verseRef,
         verseText: devotion.verseText,
         body: devotion.body,
+        imageUrl: devotion.imageUrl,
+        bannerUrl: devotion.bannerUrl,
       }).catch(err => ({ success: false, error: err.message }));
 
       const igPromise = bannerUrl
@@ -96,9 +98,16 @@ export async function POST(request: Request) {
         success: overallSuccess,
       });
 
+      // Update document status in Firestore to completed to prevent cron job from double-sharing
+      await db.collection("daily_devotions").doc(id).update({
+        socialsShareStatus: "completed",
+        socialsShareResults: shareResults,
+        sharedAt: new Date(),
+      });
+
       return NextResponse.json({
         success: true,
-        message: "Devotion shared to social media and reported to Telegram",
+        message: "Devotion shared to social media, database updated, and reported to Telegram",
         results: shareResults,
       });
 
@@ -124,6 +133,7 @@ export async function POST(request: Request) {
         title: article.title,
         excerpt: article.excerpt,
         category: article.category,
+        imageUrl: bannerUrl,
       }).catch(err => ({ success: false, error: err.message }));
 
       const igPromise = bannerUrl
@@ -167,9 +177,16 @@ export async function POST(request: Request) {
         success: overallSuccess,
       });
 
+      // Update document status in Firestore to completed to prevent cron job from double-sharing
+      await db.collection("blog_posts").doc(id).update({
+        socialsShareStatus: "completed",
+        socialsShareResults: shareResults,
+        sharedAt: new Date(),
+      });
+
       return NextResponse.json({
         success: true,
-        message: "Article shared to social media and reported to Telegram",
+        message: "Article shared to social media, database updated, and reported to Telegram",
         results: shareResults,
       });
     }

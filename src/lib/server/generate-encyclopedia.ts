@@ -311,8 +311,8 @@ const AI_PROVIDERS: AIProviderConfig[] = [
   {
     name: "openai",
     keys: [
-      process.env.OPENAI_API_KEY || "",
-      process.env.OPENAI_API_KEY_BACKUP || "",
+      process.env.OPENROUTER_API_KEY_BACKUP || "",
+      process.env.OPENROUTER_API_KEY_BACKUP_BACKUP || "",
     ].filter(Boolean) as string[],
     endpoint: "https://api.openai.com/v1/chat/completions",
     model: process.env.OPENAI_MODEL || "gpt-4o-mini",
@@ -335,7 +335,7 @@ const AI_PROVIDERS: AIProviderConfig[] = [
     keys: [
       process.env.OPENROUTER_API_KEY || "",
       process.env.OPENROUTER_API_KEY_BACKUP || "",
-      process.env.DEEPSEEK_API_KEY?.startsWith("sk-or-") ? process.env.DEEPSEEK_API_KEY : "",
+      process.env.OPENROUTER_API_KEY_BACKUP2?.startsWith("sk-or-") ? process.env.OPENROUTER_API_KEY_BACKUP2 : "",
     ].filter(Boolean) as string[],
     endpoint: "https://openrouter.ai/api/v1/chat/completions",
     model: process.env.OPENROUTER_MODEL || "google/gemini-2.5-flash",
@@ -349,8 +349,8 @@ const AI_PROVIDERS: AIProviderConfig[] = [
   {
     name: "deepseek",
     keys: [
-      process.env.DEEPSEEK_API_KEY?.startsWith("sk-") && !process.env.DEEPSEEK_API_KEY?.startsWith("sk-or-") ? process.env.DEEPSEEK_API_KEY : "",
-      process.env.DEEPSEEK_API_KEY_BACKUP || "",
+      process.env.OPENROUTER_API_KEY_BACKUP2?.startsWith("sk-") && !process.env.OPENROUTER_API_KEY_BACKUP2?.startsWith("sk-or-") ? process.env.OPENROUTER_API_KEY_BACKUP2 : "",
+      process.env.OPENROUTER_API_KEY_BACKUP2_BACKUP || "",
     ].filter(Boolean) as string[],
     endpoint: "https://api.deepseek.com/chat/completions",
     model: process.env.DEEPSEEK_MODEL || "deepseek-chat",

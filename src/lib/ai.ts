@@ -62,21 +62,21 @@ function getApiKeysForProvider(provider: "deepseek" | "openai" | "groq" | "openr
     if (process.env.OPENROUTER_API_KEY_SECOND_BACKUP) keys.push(process.env.OPENROUTER_API_KEY_SECOND_BACKUP);
     if (process.env.OPENROUTER_API_KEY_BACKUP2) keys.push(process.env.OPENROUTER_API_KEY_BACKUP2);
     if (process.env.OPENROUTER_API_KEY_BACKUP3) keys.push(process.env.OPENROUTER_API_KEY_BACKUP3);
-    if (process.env.DEEPSEEK_API_KEY && process.env.DEEPSEEK_API_KEY.startsWith("sk-or-")) {
-      keys.push(process.env.DEEPSEEK_API_KEY);
+    if (process.env.OPENROUTER_API_KEY_BACKUP2 && process.env.OPENROUTER_API_KEY_BACKUP2.startsWith("sk-or-")) {
+      keys.push(process.env.OPENROUTER_API_KEY_BACKUP2);
     }
   } else if (provider === "deepseek") {
-    if (process.env.DEEPSEEK_API_KEY && !process.env.DEEPSEEK_API_KEY.startsWith("sk-or-")) {
-      keys.push(process.env.DEEPSEEK_API_KEY);
+    if (process.env.OPENROUTER_API_KEY_BACKUP2 && !process.env.OPENROUTER_API_KEY_BACKUP2.startsWith("sk-or-")) {
+      keys.push(process.env.OPENROUTER_API_KEY_BACKUP2);
     }
-    if (process.env.DEEPSEEK_API_KEY_BACKUP) keys.push(process.env.DEEPSEEK_API_KEY_BACKUP);
+    if (process.env.OPENROUTER_API_KEY_BACKUP2_BACKUP) keys.push(process.env.OPENROUTER_API_KEY_BACKUP2_BACKUP);
   } else if (provider === "groq") {
     if (process.env.GROQ_API_KEY) keys.push(process.env.GROQ_API_KEY);
     if (process.env.GROQ_API_KEY_BACKUP) keys.push(process.env.GROQ_API_KEY_BACKUP);
     if (process.env.GROQ_API_KEY_BACKUP2) keys.push(process.env.GROQ_API_KEY_BACKUP2);
   } else if (provider === "openai") {
-    if (process.env.OPENAI_API_KEY) keys.push(process.env.OPENAI_API_KEY);
-    if (process.env.OPENAI_API_KEY_BACKUP) keys.push(process.env.OPENAI_API_KEY_BACKUP);
+    if (process.env.OPENROUTER_API_KEY_BACKUP) keys.push(process.env.OPENROUTER_API_KEY_BACKUP);
+    if (process.env.OPENROUTER_API_KEY_BACKUP_BACKUP) keys.push(process.env.OPENROUTER_API_KEY_BACKUP_BACKUP);
   } else if (provider === "nvidia") {
     if (process.env.NVIDIA_API_KEY) keys.push(process.env.NVIDIA_API_KEY);
     if (process.env.NVIDIA_API_KEY_BACKUP) keys.push(process.env.NVIDIA_API_KEY_BACKUP);
@@ -90,8 +90,8 @@ function configuredProviders(): AiProvider[] {
   const preferredRaw = process.env.AI_PROVIDER?.toLowerCase() as AiProvider | undefined;
   const providers: AiProvider[] = [];
 
-  // Jika DEEPSEEK_API_KEY pakai prefix sk-or- (OpenRouter), remap preferred ke openrouter
-  const deepseekKey = process.env.DEEPSEEK_API_KEY || "";
+  // Jika OPENROUTER_API_KEY_BACKUP2 pakai prefix sk-or- (OpenRouter), remap preferred ke openrouter
+  const deepseekKey = process.env.OPENROUTER_API_KEY_BACKUP2 || "";
   const deepseekIsOpenRouter = deepseekKey.startsWith("sk-or-");
 
   const preferred: AiProvider | undefined =
@@ -111,8 +111,8 @@ function configuredProviders(): AiProvider[] {
     }
     if (prov === "deepseek") {
       return !!(
-        (process.env.DEEPSEEK_API_KEY && !deepseekIsOpenRouter) ||
-        process.env.DEEPSEEK_API_KEY_BACKUP
+        (process.env.OPENROUTER_API_KEY_BACKUP2 && !deepseekIsOpenRouter) ||
+        process.env.OPENROUTER_API_KEY_BACKUP2_BACKUP
       );
     }
     if (prov === "groq") {
@@ -123,7 +123,7 @@ function configuredProviders(): AiProvider[] {
       );
     }
     if (prov === "openai") {
-      return !!(process.env.OPENAI_API_KEY || process.env.OPENAI_API_KEY_BACKUP);
+      return !!(process.env.OPENROUTER_API_KEY_BACKUP || process.env.OPENROUTER_API_KEY_BACKUP_BACKUP);
     }
     if (prov === "nvidia") {
       return !!(process.env.NVIDIA_API_KEY || process.env.NVIDIA_API_KEY_BACKUP);

@@ -377,10 +377,10 @@ export default {
     }
 
     // OpenAI API
-    if (env.OPENAI_API_KEY) {
+    if (env.OPENROUTER_API_KEY_BACKUP) {
       providersQueue.push({
         provider: "openai",
-        key: env.OPENAI_API_KEY,
+        key: env.OPENROUTER_API_KEY_BACKUP,
         model: env.OPENAI_MODEL || "gpt-4o-mini",
       });
     }
@@ -455,7 +455,7 @@ export default {
           bibleContext,
           createdAt: new Date().toISOString(),
         });
-        
+
         await env.R2_BUCKET.put(fileKey, contentStr, {
           httpMetadata: {
             contentType: "application/json",

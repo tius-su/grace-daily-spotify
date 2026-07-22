@@ -521,7 +521,7 @@ export default function TelegramMiniApp() {
     if (/^\d{4}-\d{2}-\d{2}$/.test(id)) {
       const existing = devotions.find(d => d.dateId === id || d.id === id || d.id.startsWith(`golden-${id}`));
       if (existing) r2Paths.push(`devotions/${existing.id}.json`);
-      for (const suffix of ["05", "15", "00", "10", "20"]) {
+      for (const suffix of ["05"]) {
         r2Paths.push(`devotions/golden-${id}-${suffix}.json`);
       }
       r2Paths.push(`devotions/${id}.json`);

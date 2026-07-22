@@ -54,13 +54,13 @@ export function AiConsole() {
         prompt: language === "zh"
           ? "根据约翰福音 3:16 撰写一篇每日灵修。包含标题、经文、反思、应用和祷告。"
           : language === "en"
-          ? "Create a daily devotional from John 3:16. Include a title, verse, reflection, application, and prayer."
-          : "Buat renungan harian dari Yohanes 3:16. Sertakan judul, ayat, refleksi, aplikasi, dan doa.",
+            ? "Create a daily devotional from John 3:16. Include a title, verse, reflection, application, and prayer."
+            : "Buat renungan harian dari Yohanes 3:16. Sertakan judul, ayat, refleksi, aplikasi, dan doa.",
         placeholder: language === "zh"
           ? "输入经文或灵修主题，例如：诗篇 23 关于神的同在。"
           : language === "en"
-          ? "Type a verse or devotional theme, e.g.: Psalm 23 about God's presence."
-          : "Tulis ayat atau tema renungan, contoh: Mazmur 23 tentang penyertaan Tuhan.",
+            ? "Type a verse or devotional theme, e.g.: Psalm 23 about God's presence."
+            : "Tulis ayat atau tema renungan, contoh: Mazmur 23 tentang penyertaan Tuhan.",
       },
       {
         mode: "devotional_pdf" as AiMode,
@@ -68,13 +68,13 @@ export function AiConsole() {
         prompt: language === "zh"
           ? "编写一份以“在基督里的盼望”为主题的 7 天 PDF 灵修材料。包含开篇页、每日核心经文、灵修内容、反思问题、笔记空间、祷告以及家庭/小组讨论指南。"
           : language === "en"
-          ? "Compile a 7-day PDF devotional on hope in Christ. Include an opening page, main verse for each day, devotional reflection, discussion questions, notes space, prayer, and family/cell group discussion guide."
-          : "Susun bahan PDF devotional 7 hari bertema pengharapan dalam Kristus. Sertakan halaman pembuka, ayat utama tiap hari, renungan, pertanyaan refleksi, ruang catatan, doa, dan panduan diskusi keluarga/komsel.",
+            ? "Compile a 7-day PDF devotional on hope in Christ. Include an opening page, main verse for each day, devotional reflection, discussion questions, notes space, prayer, and family/cell group discussion guide."
+            : "Susun bahan PDF devotional 7 hari bertema pengharapan dalam Kristus. Sertakan halaman pembuka, ayat utama tiap hari, renungan, pertanyaan refleksi, ruang catatan, doa, dan panduan diskusi keluarga/komsel.",
         placeholder: language === "zh"
           ? "输入 PDF 灵修材料的主题、时长、受众和具体需求。"
           : language === "en"
-          ? "Type theme, duration, audience, and PDF devotional needs."
-          : "Tulis tema, durasi, audiens, dan kebutuhan bahan PDF devotional.",
+            ? "Type theme, duration, audience, and PDF devotional needs."
+            : "Tulis tema, durasi, audiens, dan kebutuhan bahan PDF devotional.",
       },
       {
         mode: "pastor" as AiMode,
@@ -82,13 +82,13 @@ export function AiConsole() {
         prompt: language === "zh"
           ? "我发现很难静下心来祷告，感觉与神有些疏远。请以牧者心肠并基于圣经给予我回应。"
           : language === "en"
-          ? "I am finding it hard to pray and feel distant from God. Please respond pastorally and biblically."
-          : "Saya sedang sulit berdoa dan merasa jauh dari Tuhan. Tolong jawab secara pastoral dan alkitabiah.",
+            ? "I am finding it hard to pray and feel distant from God. Please respond pastorally and biblically."
+            : "Saya sedang sulit berdoa dan merasa jauh dari Tuhan. Tolong jawab secara pastoral dan alkitabiah.",
         placeholder: language === "zh"
           ? "写下您想要探讨的属灵问题或信仰挣扎。"
           : language === "en"
-          ? "Write a spiritual question or struggle you'd like to discuss."
-          : "Tulis pertanyaan rohani atau pergumulan yang ingin didiskusikan.",
+            ? "Write a spiritual question or struggle you'd like to discuss."
+            : "Tulis pertanyaan rohani atau pergumulan yang ingin didiskusikan.",
       },
       {
         mode: "bible-study" as AiMode,
@@ -96,13 +96,13 @@ export function AiConsole() {
         prompt: language === "zh"
           ? "帮助我理解罗马书 8:28 的背景、核心主题以及讨论问题。"
           : language === "en"
-          ? "Help me understand Romans 8:28 with context, key themes, and discussion questions."
-          : "Bantu saya memahami Roma 8:28 dengan konteks, tema utama, dan pertanyaan diskusi.",
+            ? "Help me understand Romans 8:28 with context, key themes, and discussion questions."
+            : "Bantu saya memahami Roma 8:28 dengan konteks, tema utama, dan pertanyaan diskusi.",
         placeholder: language === "zh"
           ? "输入您要研读的圣经经文引用或主题。"
           : language === "en"
-          ? "Enter a Bible verse reference or topic for study."
-          : "Masukkan referensi ayat atau topik studi Alkitab.",
+            ? "Enter a Bible verse reference or topic for study."
+            : "Masukkan referensi ayat atau topik studi Alkitab.",
       },
       {
         mode: "prayer" as AiMode,
@@ -110,13 +110,13 @@ export function AiConsole() {
         prompt: language === "zh"
           ? "为正在经历焦虑但渴望信靠神的人写一篇简短的祷告词。"
           : language === "en"
-          ? "Write a short prayer for someone experiencing anxiety who wants to trust God."
-          : "Buatkan doa singkat untuk orang yang sedang cemas tetapi ingin percaya kepada Tuhan.",
+            ? "Write a short prayer for someone experiencing anxiety who wants to trust God."
+            : "Buatkan doa singkat untuk orang yang sedang cemas tetapi ingin percaya kepada Tuhan.",
         placeholder: language === "zh"
           ? "写下祷告的需求，例如：家庭、工作、健康、饶恕。"
           : language === "en"
-          ? "Write prayer needs, e.g.: family, work, health, forgiveness."
-          : "Tulis kebutuhan doa, contoh: keluarga, pekerjaan, kesehatan, pengampunan.",
+            ? "Write prayer needs, e.g.: family, work, health, forgiveness."
+            : "Tulis kebutuhan doa, contoh: keluarga, pekerjaan, kesehatan, pengampunan.",
       },
       {
         mode: "song_recommendation" as AiMode,
@@ -124,13 +124,13 @@ export function AiConsole() {
         prompt: language === "zh"
           ? "推荐一些关于信心与盼望、适合个人灵修的敬拜赞美歌曲。"
           : language === "en"
-          ? "Recommend worship songs about faith and hope suitable for quiet time."
-          : "Rekomendasikan lagu penyembahan tentang iman dan pengharapan yang cocok untuk saat teduh.",
+            ? "Recommend worship songs about faith and hope suitable for quiet time."
+            : "Rekomendasikan lagu penyembahan tentang iman dan pengharapan yang cocok untuk saat teduh.",
         placeholder: language === "zh"
           ? "写下您的心情或想要寻找的歌曲主题。"
           : language === "en"
-          ? "Mention your mood or the song topic you're looking for."
-          : "Sebutkan suasana hati atau topik lagu yang ingin dicari.",
+            ? "Mention your mood or the song topic you're looking for."
+            : "Sebutkan suasana hati atau topik lagu yang ingin dicari.",
       },
       {
         mode: "sermon_guide" as AiMode,
@@ -138,13 +138,13 @@ export function AiConsole() {
         prompt: language === "zh"
           ? "制作一份关于‘饶恕伤害我们的人’的完整讲道/小组指南。包含核心经文、至少8节支持经文、文本背景、大主旨、4点大纲、深入剖析、在家庭/职场/教会中的实际案例、3个日常生活中的比喻、讨论问题、实际应用、回应呼召以及结束祷告。"
           : language === "en"
-          ? "Create a comprehensive sermon/cell group guide on forgiving those who hurt us. Include main verse, at least 8 supporting verses, text background, big idea, 4-point outline, deep explanation, real case examples in family/work/church, 3 life illustrations, discussion questions, practical application, altar call response, and closing prayer."
-          : "Buat panduan khotbah/komsel lengkap tentang mengampuni orang yang melukai kita. Sertakan ayat utama, minimal 8 ayat pendukung, latar belakang teks, ide besar, outline 4 poin, penjabaran mendalam, contoh kasus nyata di keluarga/pekerjaan/gereja, 3 ilustrasi kehidupan sehari-hari, pertanyaan diskusi, aplikasi praktis, ajakan respons, dan doa penutup.",
+            ? "Create a comprehensive sermon/cell group guide on forgiving those who hurt us. Include main verse, at least 8 supporting verses, text background, big idea, 4-point outline, deep explanation, real case examples in family/work/church, 3 life illustrations, discussion questions, practical application, altar call response, and closing prayer."
+            : "Buat panduan khotbah/komsel lengkap tentang mengampuni orang yang melukai kita. Sertakan ayat utama, minimal 8 ayat pendukung, latar belakang teks, ide besar, outline 4 poin, penjabaran mendalam, contoh kasus nyata di keluarga/pekerjaan/gereja, 3 ilustrasi kehidupan sehari-hari, pertanyaan diskusi, aplikasi praktis, ajakan respons, dan doa penutup.",
         placeholder: language === "zh"
           ? "写下您将要讨论的主题、经文、受众或服事需求。"
           : language === "en"
-          ? "Write theme, passage, audience, or ministry needs to be discussed."
-          : "Tulis tema, perikop, audiens, atau kebutuhan pelayanan yang akan dibahas.",
+            ? "Write theme, passage, audience, or ministry needs to be discussed."
+            : "Tulis tema, perikop, audiens, atau kebutuhan pelayanan yang akan dibahas.",
       },
       {
         mode: "counseling" as AiMode,
@@ -152,13 +152,13 @@ export function AiConsole() {
         prompt: language === "zh"
           ? "我感到心里非常疲惫。请给予我安全且具建设性的属灵反思步骤。"
           : language === "en"
-          ? "I feel mentally exhausted. Provide safe and constructive spiritual reflection steps."
-          : "Saya merasa lelah secara batin. Berikan langkah refleksi rohani yang aman dan membangun.",
+            ? "I feel mentally exhausted. Provide safe and constructive spiritual reflection steps."
+            : "Saya merasa lelah secara batin. Berikan langkah refleksi rohani yang aman dan membangun.",
         placeholder: language === "zh"
           ? "简要描述您的情况，请避免输入敏感个人信息。"
           : language === "en"
-          ? "Briefly tell your situation. Avoid sensitive personal data."
-          : "Ceritakan situasi secara singkat. Hindari data pribadi yang sensitif.",
+            ? "Briefly tell your situation. Avoid sensitive personal data."
+            : "Ceritakan situasi secara singkat. Hindari data pribadi yang sensitif.",
       },
     ];
   }, [t, language]);
@@ -168,7 +168,7 @@ export function AiConsole() {
     () => tools.find((tool) => tool.mode === mode) ?? tools[0],
     [mode, tools],
   );
-  
+
   const [prompt, setPrompt] = useState("");
   const [answer, setAnswer] = useState("");
   const [answerPageUrl, setAnswerPageUrl] = useState("");
@@ -216,7 +216,7 @@ export function AiConsole() {
           isGuest = true;
         } else {
           const allModes = tools.map((t) => t.mode);
-          setUserAllowedModes(allModes); 
+          setUserAllowedModes(allModes);
           setCanExportPdf(true);
           setIsAdminUser(false);
           setAiQuota(0);
@@ -225,10 +225,10 @@ export function AiConsole() {
           return;
         }
       }
-      
+
       try {
         if (!db) return;
-        
+
         const q = query(collection(db, "ai_requests"), where("userId", "==", activeUserId));
         const snap = await getDocs(q);
         const historyData = snap.docs.map(d => ({ id: d.id, ...d.data() } as any));
@@ -242,7 +242,7 @@ export function AiConsole() {
         if (userDoc.exists()) {
           const userData = userDoc.data();
           setStreak(userData.streakCount || 0);
-          
+
           if (userData.role === "admin") {
             const allModes = tools.map((t) => t.mode);
             setUserAllowedModes(allModes);
@@ -358,8 +358,8 @@ export function AiConsole() {
     if (!user && mode !== "devotional") {
       setStatus(
         language === "zh" ? "请登录或免费注册以使用此 AI 功能。" :
-        language === "en" ? "Please sign in or register for free to use this AI feature." :
-        "Silakan login atau daftar gratis untuk menggunakan fitur AI ini."
+          language === "en" ? "Please sign in or register for free to use this AI feature." :
+            "Silakan login atau daftar gratis untuk menggunakan fitur AI ini."
       );
       return;
     }
@@ -403,7 +403,7 @@ export function AiConsole() {
     setAnswer(data.answer ?? "");
     setStatus(
       data.provider === "demo"
-        ? (language === "zh" ? "演示模式已激活。请填写 DEEPSEEK_API_KEY 以获取实时回复。" : language === "en" ? "Demo mode active. Fill DEEPSEEK_API_KEY for live answers." : "Mode demo aktif. Isi DEEPSEEK_API_KEY untuk jawaban live.")
+        ? (language === "zh" ? "演示模式已激活。请填写 OPENROUTER_API_KEY_BACKUP2 以获取实时回复。" : language === "en" ? "Demo mode active. Fill OPENROUTER_API_KEY_BACKUP2 for live answers." : "Mode demo aktif. Isi OPENROUTER_API_KEY_BACKUP2 untuk jawaban live.")
         : (language === "zh" ? "回答完毕。" : language === "en" ? "Answer completed." : "Jawaban selesai."),
     );
 
@@ -443,23 +443,23 @@ export function AiConsole() {
           const userRef = doc(db, "users", activeUserId);
           const uDoc = await getDoc(userRef);
           const today = new Date().toLocaleDateString("en-CA"); // YYYY-MM-DD
-          
+
           if (uDoc.exists()) {
             const uData = uDoc.data();
             const lastDate = uData.lastDevotionDate || "";
             let currentStreak = uData.streakCount || 0;
-            
+
             if (lastDate !== today) {
               const yesterday = new Date();
               yesterday.setDate(yesterday.getDate() - 1);
               const yesterdayStr = yesterday.toLocaleDateString("en-CA");
-              
+
               if (lastDate === yesterdayStr) {
                 currentStreak += 1;
               } else {
                 currentStreak = 1;
               }
-              
+
               await updateDoc(userRef, {
                 streakCount: currentStreak,
                 lastDevotionDate: today
@@ -567,22 +567,21 @@ export function AiConsole() {
               <h2 className="text-xl font-semibold text-[#14213d]">{t("ai.select_mode")}</h2>
               <div className="mt-4 grid gap-2">
                 {visibleTools.map((tool) => (
-                <button
-                  key={tool.mode}
-                  type="button"
-                  onClick={() => changeMode(tool.mode)}
-                  className={`rounded-md border px-4 py-3 text-left font-semibold ${
-                    mode === tool.mode
-                      ? "border-[#2a6f6f] bg-[#e9f5db] text-[#14213d]"
-                      : "border-[#dfd8ca] bg-white text-[#334155]"
-                  }`}
-                >
-                  {tool.label}
-                </button>
-              ))}
+                  <button
+                    key={tool.mode}
+                    type="button"
+                    onClick={() => changeMode(tool.mode)}
+                    className={`rounded-md border px-4 py-3 text-left font-semibold ${mode === tool.mode
+                        ? "border-[#2a6f6f] bg-[#e9f5db] text-[#14213d]"
+                        : "border-[#dfd8ca] bg-white text-[#334155]"
+                      }`}
+                  >
+                    {tool.label}
+                  </button>
+                ))}
               </div>
             </div>
-            
+
             {user && streak > 0 && (
               <div className="mt-auto pt-5 border-t border-[#dfd8ca]">
                 <div className="rounded-md bg-[#fff4e6] p-4 text-center shadow-sm">
@@ -665,7 +664,7 @@ export function AiConsole() {
                             className="mt-3 inline-flex items-center gap-2 rounded-full bg-[#ff0000] px-4 py-2 text-sm font-bold text-white no-underline shadow-sm transition hover:bg-[#cc0000]"
                           >
                             <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                             </svg>
                             {props.children || "Buka di YouTube"}
                           </a>
@@ -840,7 +839,7 @@ export function AiConsole() {
                             </div>
                           </div>
                           <div className="mt-4 flex flex-wrap gap-4 border-t border-[#dfd8ca] pt-4">
-                            <button 
+                            <button
                               onClick={() => shareToWhatsApp(`Grace Daily | ${h.mode}`, `*Topik:*\n_${h.prompt}_\n\n*Jawaban:*\n${h.answer}`)}
                               className="text-sm font-semibold text-[#2a6f6f] hover:text-[#1a4a4a] cursor-pointer"
                             >
@@ -852,13 +851,13 @@ export function AiConsole() {
                             >
                               {t("ai.open_history_page")}
                             </button>
-                            <button 
+                            <button
                               onClick={() => downloadPdf(`Grace Daily | ${h.mode}`, `<p><strong>Topik:</strong> ${h.prompt}</p><br/>${h.answer}`)}
                               className="text-sm font-semibold text-[#2a6f6f] hover:text-[#1a4a4a] cursor-pointer"
                             >
                               {t("ai.print_history")}
                             </button>
-                            <button 
+                            <button
                               onClick={() => {
                                 toggleAudio(h.answer, playingId === h.id, (isPlaying) => {
                                   setPlayingId(isPlaying ? h.id : null);

@@ -121,17 +121,17 @@ function parseJSONContent(content: string) {
   if (cleaned.startsWith("```")) {
     cleaned = cleaned.replace(/^```(json)?/i, "").replace(/```$/, "").trim();
   }
-  
+
   try {
     return JSON.parse(cleaned);
   } catch (e) {
     console.error("Failed to parse JSON directly. Content was:", cleaned);
-    
+
     // Fallback regex parsing
     const titleMatch = cleaned.match(/"title"\s*:\s*"([^"]+)"/);
     const excerptMatch = cleaned.match(/"excerpt"\s*:\s*"([^"]+)"/);
     const bodyMatch = cleaned.match(/"body"\s*:\s*"([\s\S]+?)"\s*\n*\s*\}/);
-    
+
     if (titleMatch && bodyMatch) {
       return {
         title: titleMatch[1],
@@ -139,7 +139,7 @@ function parseJSONContent(content: string) {
         body: bodyMatch[1].replace(/\\"/g, '"').replace(/\\n/g, '\n'),
       };
     }
-    
+
     throw new Error("Could not parse AI output as JSON.");
   }
 }
@@ -183,7 +183,7 @@ Kembalikan HANYA string JSON tersebut. Jangan ada penjelasan pembuka atau penutu
     },
     {
       name: "openai",
-      keys: [process.env.OPENAI_API_KEY, process.env.OPENAI_API_KEY_BACKUP].filter(Boolean) as string[],
+      keys: [process.env.OPENROUTER_API_KEY_BACKUP, process.env.OPENROUTER_API_KEY_BACKUP_BACKUP].filter(Boolean) as string[],
       endpoint: "https://api.openai.com/v1/chat/completions",
       model: process.env.OPENAI_MODEL || "gpt-4o-mini",
       headers: (key: string) => ({
@@ -205,7 +205,7 @@ Kembalikan HANYA string JSON tersebut. Jangan ada penjelasan pembuka atau penutu
         process.env.OPENROUTER_API_KEY_BACKUP,
         process.env.OPENROUTER_API_KEY_BACKUP2,
         process.env.OPENROUTER_API_KEY_BACKUP3,
-        process.env.DEEPSEEK_API_KEY && process.env.DEEPSEEK_API_KEY.startsWith("sk-or-") ? process.env.DEEPSEEK_API_KEY : null
+        process.env.OPENROUTER_API_KEY_BACKUP2 && process.env.OPENROUTER_API_KEY_BACKUP2.startsWith("sk-or-") ? process.env.OPENROUTER_API_KEY_BACKUP2 : null
       ].filter(Boolean) as string[],
       endpoint: "https://openrouter.ai/api/v1/chat/completions",
       model: process.env.OPENROUTER_MODEL || "google/gemini-2.5-flash",
@@ -219,8 +219,8 @@ Kembalikan HANYA string JSON tersebut. Jangan ada penjelasan pembuka atau penutu
     {
       name: "deepseek",
       keys: [
-        process.env.DEEPSEEK_API_KEY && !process.env.DEEPSEEK_API_KEY.startsWith("sk-or-") ? process.env.DEEPSEEK_API_KEY : null,
-        process.env.DEEPSEEK_API_KEY_BACKUP
+        process.env.OPENROUTER_API_KEY_BACKUP2 && !process.env.OPENROUTER_API_KEY_BACKUP2.startsWith("sk-or-") ? process.env.OPENROUTER_API_KEY_BACKUP2 : null,
+        process.env.OPENROUTER_API_KEY_BACKUP2_BACKUP
       ].filter(Boolean) as string[],
       endpoint: "https://api.deepseek.com/chat/completions",
       model: process.env.DEEPSEEK_MODEL || "deepseek-chat",
@@ -446,7 +446,7 @@ async function handleRequest(request: Request) {
   const querySecret = url.searchParams.get("secret") || url.searchParams.get("cron_secret");
   const force = url.searchParams.get("force") === "true";
   const userAgent = request.headers.get("user-agent") || "";
-  
+
   // Log auth attempt for debugging (remove in production if needed)
   console.log(`[generate-blog] Auth attempt — UA: ${userAgent.substring(0, 80)}, hasSecret: ${Boolean(cronSecret)}, querySecret: ${Boolean(querySecret)}, authHeader: ${authHeader.substring(0, 20)}`);
 

@@ -18,6 +18,21 @@ type Devotion = {
   bannerUrl?: string;
 };
 
+const colorNames: Record<string, Record<string, string>> = {
+  'auto-stabilo': { id: "Auto Rotasi 🔄", en: "Auto Rotate 🔄", zh: "自动轮换 🔄" },
+  'neon-yellow': { id: "Kuning Stabilo 🟡", en: "Neon Yellow 🟡", zh: "荧光黄 🟡" },
+  'neon-green': { id: "Hijau Stabilo 🟢", en: "Neon Green 🟢", zh: "荧光绿 🟢" },
+  'neon-pink': { id: "Pink Stabilo 🌸", en: "Neon Pink 🌸", zh: "荧光粉 🌸" },
+  'neon-orange': { id: "Oranye Stabilo 🟠", en: "Neon Orange 🟠", zh: "荧光橙 🟠" },
+  'neon-cyan': { id: "Biru/Sian Stabilo 🌐", en: "Neon Cyan 🌐", zh: "荧光青 🌐" },
+  'neon-lime': { id: "Lemon Stabilo 🍋", en: "Neon Lime 🍋", zh: "荧光柠绿 🍋" },
+  'neon-purple': { id: "Ungu Stabilo 🍇", en: "Neon Purple 🍇", zh: "荧光紫 🍇" },
+  'white': { id: "Putih ⚪", en: "White ⚪", zh: "白色 ⚪" },
+  'facebook-blue': { id: "Biru Facebook 🔵", en: "Facebook Blue 🔵", zh: "脸书蓝 🔵" },
+  'moss-green': { id: "Hijau Lumut 🌲", en: "Moss Green 🌲", zh: "苔藓绿 🌲" },
+  'spotify-green': { id: "Hijau Spotify 🟢", en: "Spotify Green 🟢", zh: "声田绿 🟢" }
+};
+
 export function DevotionCard({ devotion }: { devotion: Devotion }) {
   const { language } = useLanguage();
   const [isExpanded, setIsExpanded] = useState(false);
@@ -95,11 +110,23 @@ export function DevotionCard({ devotion }: { devotion: Devotion }) {
   }, [language, devotion]);
 
 
+  const [selectedBg, setSelectedBg] = useState("auto-stabilo");
+  const [dateBuster, setDateBuster] = useState("");
+
+  useEffect(() => {
+    setDateBuster(new Date().toISOString().split('T')[0]);
+  }, []);
+
   const initialHeroImage = resolveDailyHeroImage(activeDevotion.imageUrl, activeDevotion.illustrationUrl);
-  const bannerUrl = (language !== "id")
-    ? `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(`${activeDevotion.verseRef} - "${activeDevotion.verseText.substring(0, 100)}${activeDevotion.verseText.length > 100 ? "..." : ""}"`)}&icon=logo&bg=sage`
-    : (activeDevotion.bannerUrl || `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(`${activeDevotion.verseRef} - "${activeDevotion.verseText.substring(0, 100)}${activeDevotion.verseText.length > 100 ? "..." : ""}"`)}&icon=logo&bg=sage`);
-  const verticalBannerUrl = `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(`${activeDevotion.verseRef} - "${activeDevotion.verseText.substring(0, 100)}${activeDevotion.verseText.length > 100 ? "..." : ""}"`)}&icon=logo&bg=sage&format=vertical`;
+  const descForUrl = `${activeDevotion.verseRef} - "${activeDevotion.verseText.substring(0, 100)}${activeDevotion.verseText.length > 100 ? "..." : ""}"`;
+
+  const bannerUrl = (selectedBg === "original" && activeDevotion.bannerUrl)
+    ? activeDevotion.bannerUrl
+    : `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(descForUrl)}&icon=logo&bg=${selectedBg}${dateBuster ? `&d=${dateBuster}` : ""}`;
+
+  const verticalBannerUrl = (selectedBg === "original" && activeDevotion.bannerUrl)
+    ? `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(descForUrl)}&icon=logo&bg=auto-stabilo&format=vertical${dateBuster ? `&d=${dateBuster}` : ""}`
+    : `/api/admin/generate-image?title=${encodeURIComponent(activeDevotion.title)}&description=${encodeURIComponent(descForUrl)}&icon=logo&bg=${selectedBg}&format=vertical${dateBuster ? `&d=${dateBuster}` : ""}`;
 
   useEffect(() => {
     // Selalu fetch ulang dari API berdasarkan devotion.id
@@ -256,6 +283,91 @@ export function DevotionCard({ devotion }: { devotion: Devotion }) {
                 {activeDevotion.prayer.split("\n").map((para, i) => (
                   <p key={i}>&ldquo;{para}&rdquo;</p>
                 ))}
+              </div>
+            </div>
+          )}
+          {isExpanded && (
+            <div className="mt-5 pt-4 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-white/95">
+              <div className="flex flex-col gap-0.5">
+                <span className="text-[10px] font-semibold uppercase tracking-wider text-white/50">
+                  {language === "zh" ? "海报与 PDF 背景颜色" : language === "en" ? "Banner & PDF Background Color" : "Warna Background Banner & PDF"}
+                </span>
+                <span className="text-sm font-bold flex items-center gap-1.5">
+                  {selectedBg === "original" ? (
+                    <>🖼️ {language === "zh" ? "原始设计" : language === "en" ? "Original Design" : "Desain Asli"}</>
+                  ) : (
+                    <>🎨 {colorNames[selectedBg]?.[language] || selectedBg}</>
+                  )}
+                </span>
+              </div>
+              
+              <div className="flex flex-wrap items-center gap-2">
+                {activeDevotion.bannerUrl && (
+                  <button
+                    type="button"
+                    onClick={() => setSelectedBg("original")}
+                    className={`relative flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-bold transition-all border cursor-pointer ${
+                      selectedBg === "original"
+                        ? "border-[#ffd166] bg-[#ffd166]/20 text-[#ffd166] ring-1 ring-[#ffd166]"
+                        : "border-white/10 bg-white/5 hover:bg-white/10 text-white/80"
+                    }`}
+                    title={language === "zh" ? "原始设计" : language === "en" ? "Original Design" : "Desain Asli"}
+                  >
+                    🖼️ <span className="text-[9px] uppercase font-bold">Original</span>
+                  </button>
+                )}
+
+                <button
+                  type="button"
+                  onClick={() => setSelectedBg("auto-stabilo")}
+                  className={`relative flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-bold transition-all border cursor-pointer ${
+                    selectedBg === "auto-stabilo"
+                      ? "border-[#ffd166] bg-[#ffd166]/20 text-[#ffd166] ring-1 ring-[#ffd166]"
+                      : "border-white/10 bg-white/5 hover:bg-white/10 text-white/80"
+                  }`}
+                  title={language === "zh" ? "自动每日更换" : language === "en" ? "Auto Rotate Daily" : "Ganti Otomatis Harian"}
+                >
+                  🔄 <span className="text-[9px] uppercase font-bold">Auto</span>
+                </button>
+
+                <div className="h-5 w-px bg-white/15 mx-1" />
+
+                <div className="flex flex-wrap items-center gap-1.5">
+                  {[
+                    { id: "neon-yellow", hex: "#FFFF00", name: "Yellow" },
+                    { id: "neon-green", hex: "#39FF14", name: "Green" },
+                    { id: "neon-pink", hex: "#FF8AD8", name: "Pink" },
+                    { id: "neon-orange", hex: "#FFAD33", name: "Orange" },
+                    { id: "neon-cyan", hex: "#00FFFF", name: "Cyan" },
+                    { id: "neon-lime", hex: "#CCFF00", name: "Lime" },
+                    { id: "neon-purple", hex: "#E2B3FF", name: "Purple" },
+                    { id: "white", hex: "#FFFFFF", name: "White" },
+                    { id: "facebook-blue", hex: "#1877F2", name: "Facebook Blue" },
+                    { id: "moss-green", hex: "#3D5446", name: "Moss Green" },
+                    { id: "spotify-green", hex: "#1DB954", name: "Spotify Green" }
+                  ].map((color) => {
+                    const isActive = selectedBg === color.id;
+                    const dotColor = (color.id === "white") ? "bg-black" : (color.id === "facebook-blue" || color.id === "moss-green") ? "bg-white" : "bg-black";
+                    return (
+                      <button
+                        key={color.id}
+                        type="button"
+                        onClick={() => setSelectedBg(color.id)}
+                        style={{ backgroundColor: color.hex }}
+                        className={`w-5 h-5 rounded-full transition-all duration-200 transform hover:scale-125 focus:outline-none cursor-pointer flex items-center justify-center border border-black/25 ${
+                          isActive
+                            ? "ring-2 ring-offset-2 ring-offset-slate-900 ring-[#ffd166] scale-110"
+                            : "opacity-80 hover:opacity-100"
+                        }`}
+                        title={colorNames[color.id]?.[language] || color.name}
+                      >
+                        {isActive && (
+                          <div className={`w-1.5 h-1.5 rounded-full ${dotColor}`} />
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           )}

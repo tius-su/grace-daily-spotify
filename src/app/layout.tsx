@@ -5,6 +5,7 @@ import Script from "next/script";
 import { PwaRegister } from "@/app/components/PwaRegister";
 import { Header } from "@/app/components/Header";
 import { PushNotificationManager } from "@/app/components/PushNotificationManager";
+import { GraceDailyChatbot } from "@/app/components/GraceDailyChatbot";
 import { MonetagScript } from "@/app/components/MonetagScript";
 import { getDocWithFallback } from "@/lib/server/db-fallback";
 import { LanguageProvider } from "@/lib/i18n";
@@ -262,6 +263,7 @@ export default async function RootLayout({
           {children}
           <PwaRegister />
           <PushNotificationManager />
+          <GraceDailyChatbot />
         </LanguageProvider>
       </body>
     </html>

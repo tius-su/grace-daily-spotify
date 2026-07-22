@@ -3,8 +3,8 @@
  * Posts new devotions and articles to Facebook Page automatically via Graph API
  */
 
-const FB_PAGE_ID = process.env.FACEBOOK_PAGE_ID;
-const FB_PAGE_ACCESS_TOKEN = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+const FB_PAGE_ID = process.env.FACEBOOK_PAGE_ID || process.env.GRACE_DAILY_PAGE_ID;
+const FB_PAGE_ACCESS_TOKEN = process.env.FACEBOOK_PAGE_ACCESS_TOKEN || process.env.GRACE_DAILY_PAGE_TOKEN;
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://www.gracedaily.my.id";
 
 // ============================================================================
@@ -17,9 +17,10 @@ export interface FacebookPostResult {
   error?: string;
 }
 
-interface FacebookFeedPost {
+interface FacebookPostParams {
   message: string;
   link?: string;
+  imageUrl?: string;
 }
 
 // ============================================================================
@@ -27,13 +28,65 @@ interface FacebookFeedPost {
 // ============================================================================
 
 /**
- * Post a message to the Facebook Page feed using the Graph API.
- * Uses feed endpoint with link for rich preview (Open Graph thumbnail).
+ * Post a message to the Facebook Page using the Graph API.
+ * If an imageUrl is provided, uploads as a photo post to `/photos` with the message as a caption.
+ * Otherwise, posts a standard feed preview to `/feed`.
  */
-async function postToFacebookPage(params: FacebookFeedPost): Promise<FacebookPostResult> {
-  // Facebook auto-posting has been disabled as requested by the user
-  console.warn("[Facebook] Auto-posting is disabled.");
-  return { success: false, error: "Dinonaktifkan" };
+async function postToFacebookPage(params: FacebookPostParams): Promise<FacebookPostResult> {
+  if (!FB_PAGE_ID || !FB_PAGE_ACCESS_TOKEN) {
+    console.warn("[Facebook] FB_PAGE_ID or FB_PAGE_ACCESS_TOKEN not configured. Skipping Facebook post.");
+    return { success: false, error: "Missing Facebook configuration" };
+  }
+
+  try {
+    const isPhotoPost = !!params.imageUrl;
+    const endpoint = isPhotoPost 
+      ? `https://graph.facebook.com/v19.0/${FB_PAGE_ID}/photos` 
+      : `https://graph.facebook.com/v19.0/${FB_PAGE_ID}/feed`;
+
+    console.log(`[Facebook] Posting to Page (${isPhotoPost ? 'Photo' : 'Feed'}): ${FB_PAGE_ID}`);
+    
+    // Ensure absolute image URL
+    const absoluteImageUrl = params.imageUrl 
+      ? (params.imageUrl.startsWith("/") ? `${APP_URL}${params.imageUrl}` : params.imageUrl)
+      : undefined;
+
+    const requestBody = isPhotoPost 
+      ? {
+          url: absoluteImageUrl,
+          caption: params.message + (params.link ? `\n\nBaca selengkapnya: ${params.link}` : ""),
+          access_token: FB_PAGE_ACCESS_TOKEN,
+        }
+      : {
+          message: params.message,
+          link: params.link,
+          access_token: FB_PAGE_ACCESS_TOKEN,
+        };
+
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(requestBody),
+    });
+
+    const data = await response.json();
+    if (!response.ok) {
+      const errMsg = data?.error?.message || `HTTP ${response.status}`;
+      console.error("[Facebook] Post error:", errMsg);
+      return { success: false, error: errMsg };
+    }
+
+    const id = data?.id || data?.post_id;
+    if (id) {
+      console.log("[Facebook] Post published successfully! ID:", id);
+      return { success: true, postId: id };
+    }
+
+    return { success: false, error: "Unexpected response from Facebook API" };
+  } catch (error: any) {
+    console.error("[Facebook] Failed to publish post:", error.message);
+    return { success: false, error: error.message || "Unknown error" };
+  }
 }
 
 // ============================================================================
@@ -50,6 +103,8 @@ export async function postDevotionToFacebook(devotion: {
   verseRef?: string;
   verseText?: string;
   body?: string;
+  imageUrl?: string;
+  bannerUrl?: string;
 }): Promise<FacebookPostResult> {
   const title = devotion.title || "Renungan Harian";
   const verseRef = devotion.verseRef ? `📖 ${devotion.verseRef}` : "";
@@ -67,6 +122,7 @@ export async function postDevotionToFacebook(devotion: {
     : "";
 
   const devotionUrl = `${APP_URL}/renungan/${devotion.id}`;
+  const displayImage = devotion.bannerUrl || devotion.imageUrl;
 
   const message = [
     `🌅 Renungan Harian — ${title}`,
@@ -85,7 +141,7 @@ export async function postDevotionToFacebook(devotion: {
     .replace(/\n{3,}/g, "\n\n")
     .trim();
 
-  return postToFacebookPage({ message, link: devotionUrl });
+  return postToFacebookPage({ message, link: devotionUrl, imageUrl: displayImage });
 }
 
 // ============================================================================
@@ -101,6 +157,7 @@ export async function postArticleToFacebook(article: {
   title?: string;
   excerpt?: string;
   category?: string;
+  imageUrl?: string;
 }): Promise<FacebookPostResult> {
   const title = article.title || "Artikel Baru";
   const excerpt = article.excerpt
@@ -125,7 +182,7 @@ export async function postArticleToFacebook(article: {
     .replace(/\n{3,}/g, "\n\n")
     .trim();
 
-  return postToFacebookPage({ message, link: articleUrl });
+  return postToFacebookPage({ message, link: articleUrl, imageUrl: article.imageUrl });
 }
 
 // ============================================================================
@@ -133,5 +190,5 @@ export async function postArticleToFacebook(article: {
 // ============================================================================
 
 export function isFacebookConfigured(): boolean {
-  return false;
+  return !!(FB_PAGE_ID && FB_PAGE_ACCESS_TOKEN);
 }

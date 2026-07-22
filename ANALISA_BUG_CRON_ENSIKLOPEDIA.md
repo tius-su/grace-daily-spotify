@@ -147,7 +147,7 @@ User request: **Mistral sebelum NVIDIA**
 
 **Current .env.local:**
 ```
-DEEPSEEK_API_KEY=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
+OPENROUTER_API_KEY_BACKUP2=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
 GROQ_API_KEY=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
 OPENROUTER_API_KEY=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
 MISTRAL_API_KEY=vhJPbXMMGgG1QIw3VNDNBShOM3mTkqGG
@@ -156,7 +156,7 @@ NVIDIA_API_KEY=nvapi-tuKtgCfb0MvKqSi6tlftFuoReT-2lzsVRNKos073thkXdsDgCAWm1zXvcYC
 
 **Problem:**
 - `OPENROUTER_API_KEY` sebenarnya adalah DeepSeek key (format `sk-or-v1-`)
-- `DEEPSEEK_API_KEY` juga format OpenRouter (`sk-or-v1-`)
+- `OPENROUTER_API_KEY_BACKUP2` juga format OpenRouter (`sk-or-v1-`)
 - Tidak ada Mistral provider di providersOrder
 - NVIDIA ada di priority terakhir
 

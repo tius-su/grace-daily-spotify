@@ -13,10 +13,10 @@ export async function GET(request: Request) {
     if (!adminAuth || !db) throw new Error("Firebase admin not initialized");
 
     const decoded = await adminAuth.verifyIdToken(token);
-    
+
     // Check if user exists in admin_users collection
     const adminDoc = await db.collection("admin_users").doc(decoded.uid).get();
-    
+
     if (!adminDoc.exists) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
@@ -28,10 +28,10 @@ export async function GET(request: Request) {
       { name: "GROQ_API_KEY_BACKUP", configured: !!process.env.GROQ_API_KEY_BACKUP },
       { name: "OPENROUTER_API_KEY", configured: !!process.env.OPENROUTER_API_KEY },
       { name: "OPENROUTER_API_KEY_BACKUP", configured: !!process.env.OPENROUTER_API_KEY_BACKUP },
-      { name: "DEEPSEEK_API_KEY (used as OpenRouter primary if sk-or)", configured: !!process.env.DEEPSEEK_API_KEY },
+      { name: "OPENROUTER_API_KEY_BACKUP2 (used as OpenRouter primary if sk-or)", configured: !!process.env.OPENROUTER_API_KEY_BACKUP2 },
 
       { name: "NVIDIA_API_KEY", configured: !!process.env.NVIDIA_API_KEY },
-      { name: "OPENAI_API_KEY", configured: !!process.env.OPENAI_API_KEY },
+      { name: "OPENROUTER_API_KEY_BACKUP", configured: !!process.env.OPENROUTER_API_KEY_BACKUP },
       { name: "GEMINI_API_KEY", configured: !!process.env.GEMINI_API_KEY },
     ];
 

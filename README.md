@@ -47,4 +47,4 @@ npm run seed:bible -- --limit-books=1 --limit-chapters=1
 
 ## AI
 
-Fitur AI memakai endpoint `/api/ai`. Isi salah satu dari `DEEPSEEK_API_KEY`, `GEMINI_API_KEY`, atau `OPENAI_API_KEY` agar jawaban live aktif. `AI_PROVIDER` boleh diisi `deepseek`, `gemini`, atau `openai` untuk memilih prioritas; jika kosong, app memakai key yang tersedia dan fallback ke provider berikutnya. Tanpa key, app berjalan dalam mode demo.
+Fitur AI memakai endpoint `/api/ai`. Isi salah satu dari `OPENROUTER_API_KEY_BACKUP2`, `GEMINI_API_KEY`, atau `OPENAI_API_KEY` agar jawaban live aktif. `AI_PROVIDER` boleh diisi `deepseek`, `gemini`, atau `openai` untuk memilih prioritas; jika kosong, app memakai key yang tersedia dan fallback ke provider berikutnya. Tanpa key, app berjalan dalam mode demo.

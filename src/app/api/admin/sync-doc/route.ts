@@ -160,7 +160,7 @@ export async function POST(request: Request) {
                   const m = String(checkDate.getMonth() + 1).padStart(2, '0');
                   const d = String(checkDate.getDate()).padStart(2, '0');
                   
-                  const slots = [`golden-${y}-${m}-${d}-15`, `golden-${y}-${m}-${d}-05`];
+                  const slots = [`golden-${y}-${m}-${d}-05`];
                   for (const slotId of slots) {
                     if (slotId !== id) {
                       try {

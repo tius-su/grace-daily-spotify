@@ -1243,9 +1243,8 @@ function uniqueDevotionTitle(title: string, verseRef: string, dateId: string, ex
     return baseTitle;
   }
 
-  const slot = dateId.endsWith("-15") ? "Sore" : "Pagi";
-  const datePart = dateId.replace(/^golden-/, "").replace(/-(05|15)$/, "");
-  return `${baseTitle} (${slot} ${datePart})`;
+  const datePart = dateId.replace(/^golden-/, "").replace(/-(05)$/, "");
+  return `${baseTitle} (${datePart})`;
 }
 
 async function downloadRenunganFromR2(): Promise<any[] | null> {
@@ -1253,7 +1252,7 @@ async function downloadRenunganFromR2(): Promise<any[] | null> {
   try {
     const { GetObjectCommand } = await import("@aws-sdk/client-s3");
     const zlib = await import("zlib");
-    
+
     const command = new GetObjectCommand({
       Bucket: r2BucketName,
       Key: "backup/renungan.json",
@@ -1569,7 +1568,18 @@ function parseAiDevotion(id: string, verseRef: string, verseText: string, answer
 
 // Helper: deteksi apakah konten renungan adalah placeholder demo/gagal
 function isDemoContent(data: Partial<DailyDevotion>): boolean {
-  const DEMO_MARKERS = ["Mode demo aktif", "DEEPSEEK_API_KEY", "GEMINI_API_KEY", "OPENAI_API_KEY"];
+  const DEMO_MARKERS = [
+    "Mode demo aktif",
+    "OPENROUTER_API_KEY_BACKUP2",
+    "GEMINI_API_KEY",
+    "OPENROUTER_API_KEY_BACKUP",
+    "DEEPSEEK_API_KEY",
+    "OPENAI_API_KEY",
+    "GROQ_API_KEY",
+    "OPENROUTER_API_KEY",
+    "API key AI yang valid",
+    "Hubungkan kunci API",
+  ];
   const checkStr = (s?: string): boolean => !!s && DEMO_MARKERS.some((m) => s.includes(m));
   return Boolean(
     data.provider === "demo" ||
@@ -1592,14 +1602,14 @@ export async function getLatestDevotion(): Promise<DailyDevotion> {
       if (r2DataStr) {
         const parsed = JSON.parse(r2DataStr);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          // Sort descending by dateId/id and skip demo content
+          // Sort descending by dateId/id and skip demo content and legacy afternoon -15 slots
           const validList = [...parsed]
             .sort((a: any, b: any) => {
               const dateA = a.dateId || a.id || "";
               const dateB = b.dateId || b.id || "";
               return dateB.localeCompare(dateA);
             })
-            .filter((d: any) => !isDemoContent(d));
+            .filter((d: any) => !isDemoContent(d) && !(String(d.id || d.dateId || "").endsWith("-15")));
 
           const matched = validList.find((d: any) => d.id === dateId) ?? validList[0];
 
@@ -1668,7 +1678,7 @@ export async function getLatestDevotion(): Promise<DailyDevotion> {
         if (!snapshot.empty) {
           const docs = [...snapshot.docs]
             .sort((a, b) => devotionSortTime(b.data()) - devotionSortTime(a.data()))
-            .filter((d) => !isDemoContent(d.data()));
+            .filter((d) => !isDemoContent(d.data()) && !d.id.endsWith("-15"));
           if (docs.length > 0) doc = docs[0];
         }
       }
@@ -1689,7 +1699,7 @@ export async function getLatestDevotion(): Promise<DailyDevotion> {
       if (!fallbackSnapshot.empty) {
         const docs = [...fallbackSnapshot.docs]
           .sort((a, b) => devotionSortTime(b.data()) - devotionSortTime(a.data()))
-          .filter((d) => !isDemoContent(d.data()));
+          .filter((d) => !isDemoContent(d.data()) && !d.id.endsWith("-15"));
         if (docs.length > 0) doc = docs[0];
       }
     }
@@ -1736,11 +1746,7 @@ export async function generateDailyDevotion(date = new Date(), options: { force?
 
   if (existing.exists && !options.force) {
     const existingData = existing.data() as Partial<DailyDevotion>;
-    const isDemo = existingData.provider === "demo" || 
-                   existingData.status === "demo" || 
-                   !existingData.title || 
-                   existingData.title.includes("Mode demo aktif") ||
-                   (existingData.body && existingData.body.includes("Mode demo aktif"));
+    const isDemo = isDemoContent(existingData);
 
     if (!isDemo) {
       const imageUpdates = await ensureDevotionImages(db, dateId, existingData);
@@ -1897,6 +1903,14 @@ export async function getDevotionById(id: string): Promise<DailyDevotion | null>
   const db = getAdminDb();
   let data: any = null;
 
+  // Normalize legacy/afternoon slot IDs (e.g. golden-2026-07-21-15) to standard morning slot golden-YYYY-MM-DD-05
+  let targetId = id;
+  if (/^golden-\d{4}-\d{2}-\d{2}-(?!05)\d{2}$/.test(id)) {
+    targetId = id.replace(/-\d{2}$/, "-05");
+  } else if (/^\d{4}-\d{2}-\d{2}$/.test(id)) {
+    targetId = `golden-${id}-05`;
+  }
+
   // Check storage-config first (handles isBot automatically)
   try {
     const { getActiveStorageConfig, getStorageSource } = await import("@/lib/server/storage-config");
@@ -1908,10 +1922,10 @@ export async function getDevotionById(id: string): Promise<DailyDevotion | null>
         const { downloadFromR2 } = await import("@/lib/server/backup-r2-service");
         // Try to fetch individual file from R2 first
         try {
-          const docStr = await downloadFromR2(`devotions/${id}.json`);
+          const docStr = await downloadFromR2(`devotions/${targetId}.json`);
           if (docStr) {
             data = JSON.parse(docStr);
-            console.log(`[getDevotionById] Loaded devotion ${id} from Cloudflare R2 individual file`);
+            console.log(`[getDevotionById] Loaded devotion ${targetId} from Cloudflare R2 individual file`);
           }
         } catch {
           // Ignore and fallback to bulk index download
@@ -1922,16 +1936,16 @@ export async function getDevotionById(id: string): Promise<DailyDevotion | null>
           if (r2DataStr) {
             const parsed = JSON.parse(r2DataStr);
             if (Array.isArray(parsed)) {
-              const matched = parsed.find((d: any) => d.id === id || d.dateId === id);
+              const matched = parsed.find((d: any) => d.id === targetId || d.dateId === targetId || d.id === id || d.dateId === id);
               if (matched) {
                 data = matched;
-                console.log(`[getDevotionById] Loaded devotion ${id} from Cloudflare R2 backup bulk file`);
+                console.log(`[getDevotionById] Loaded devotion ${matched.id} from Cloudflare R2 backup bulk file`);
               }
             }
           }
         }
       } catch (r2Err) {
-        console.error(`[getDevotionById] Failed to load devotion ${id} from R2 first:`, r2Err);
+        console.error(`[getDevotionById] Failed to load devotion ${targetId} from R2 first:`, r2Err);
       }
     }
   } catch (err) {
@@ -1940,23 +1954,23 @@ export async function getDevotionById(id: string): Promise<DailyDevotion | null>
 
   if (!data && db) {
     try {
-      const docSnap = await withDbTimeout(db.collection("daily_devotions").doc(id).get(), 2000);
+      const docSnap = await withDbTimeout(db.collection("daily_devotions").doc(targetId).get(), 2000);
       if (docSnap.exists) {
         data = docSnap.data();
       }
     } catch (error) {
-      console.error(`Gagal mengambil renungan dengan ID ${id} via Admin SDK:`, error);
+      console.error(`Gagal mengambil renungan dengan ID ${targetId} via Admin SDK:`, error);
     }
   }
 
   if (!data) {
     try {
-      const restDoc = await fetchDocFromRest("daily_devotions", id);
+      const restDoc = await fetchDocFromRest("daily_devotions", targetId);
       if (restDoc) {
         data = restDoc;
       }
     } catch (error) {
-      console.error(`Gagal mengambil renungan dengan ID ${id} via REST:`, error);
+      console.error(`Gagal mengambil renungan dengan ID ${targetId} via REST:`, error);
     }
   }
 
@@ -1968,21 +1982,21 @@ export async function getDevotionById(id: string): Promise<DailyDevotion | null>
       if (r2DataStr) {
         const parsed = JSON.parse(r2DataStr);
         if (Array.isArray(parsed)) {
-          const matched = parsed.find((d: any) => d.id === id || d.dateId === id);
+          const matched = parsed.find((d: any) => d.id === targetId || d.dateId === targetId || d.id === id || d.dateId === id);
           if (matched) {
             data = matched;
-            console.log(`[getDevotionById] Loaded devotion ${id} from Cloudflare R2 backup fallback`);
+            console.log(`[getDevotionById] Loaded devotion ${matched.id} from Cloudflare R2 backup fallback`);
           }
         }
       }
     } catch (r2Err) {
-      console.error(`[getDevotionById] Failed to load devotion ${id} from R2 fallback:`, r2Err);
+      console.error(`[getDevotionById] Failed to load devotion ${targetId} from R2 fallback:`, r2Err);
     }
   }
 
   if (data) {
     return {
-      id,
+      id: targetId,
       title: cleanMarkdownAndLabels(data.title ?? "Renungan Hari Ini"),
       verseRef: cleanMarkdownAndLabels(data.verseRef ?? `${dailyVerse.book} ${dailyVerse.chapter}:${dailyVerse.verse}`),
       verseText: cleanMarkdownAndLabels(data.verseText ?? dailyVerse.text),
@@ -1996,8 +2010,8 @@ export async function getDevotionById(id: string): Promise<DailyDevotion | null>
     };
   }
 
-  if (id.startsWith("golden-")) {
-    return await getFallbackDevotionWithAi(id);
+  if (targetId.startsWith("golden-")) {
+    return await getFallbackDevotionWithAi(targetId);
   }
 
   return null;

@@ -83,17 +83,11 @@ function parseDevotionDate(dateId: string, language: string) {
   const dateObj = new Date(year, month - 1, day);
   const dayOfWeek = daysOfWeek[dateObj.getDay()] || "";
 
-  const timeLabel = hour === 5
-    ? (language === "zh" ? "早上" : language === "en" ? "Morning" : "Pagi")
-    : hour === 15
-    ? (language === "zh" ? "下午" : language === "en" ? "Afternoon" : "Sore")
-    : `${hour.toString().padStart(2, '0')}:00`;
-
   const formattedDate = language === "zh"
-    ? `${yearStr}年${monthName}${day}日 (${timeLabel})`
+    ? `${yearStr}年${monthName}${day}日`
     : language === "en"
-    ? `${dayOfWeek ? dayOfWeek + ", " : ""}${monthName} ${day}, ${yearStr} (${timeLabel})`
-    : `${dayOfWeek ? dayOfWeek + ", " : ""}${day} ${monthName} ${yearStr} (${timeLabel})`;
+    ? `${dayOfWeek ? dayOfWeek + ", " : ""}${monthName} ${day}, ${yearStr}`
+    : `${dayOfWeek ? dayOfWeek + ", " : ""}${day} ${monthName} ${yearStr}`;
 
   return {
     year,

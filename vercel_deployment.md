@@ -106,7 +106,7 @@ Anda wajib mengisi variabel berikut pada panel **Settings > Environment Variable
 ### 5. Integrasi API Kecerdasan Buatan (AI Gateway)
 | Variabel Lingkungan | Deskripsi / Contoh Nilai |
 | :--- | :--- |
-| `DEEPSEEK_API_KEY` | API Key dari DeepSeek AI atau provider router Anda |
+| `OPENROUTER_API_KEY_BACKUP2` | API Key dari DeepSeek AI atau provider router Anda |
 | `GROQ_API_KEY` | API Key dari Groq Cloud |
 | `GROQ_MODEL` | Model AI Groq yang dipakai (contoh: `llama-3.3-70b-versatile`) |
 

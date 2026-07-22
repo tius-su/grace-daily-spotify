@@ -73,6 +73,8 @@ export async function GET(request: Request) {
         verseRef: data.verseRef,
         verseText: data.verseText,
         body: data.body,
+        imageUrl: data.imageUrl,
+        bannerUrl: data.bannerUrl,
       }).catch(err => ({ success: false, error: err.message }));
 
       const igPromise = bannerUrl
@@ -158,6 +160,7 @@ export async function GET(request: Request) {
         title: data.title,
         excerpt: data.excerpt,
         category: data.category,
+        imageUrl: bannerUrl,
       }).catch(err => ({ success: false, error: err.message }));
 
       const igPromise = bannerUrl
