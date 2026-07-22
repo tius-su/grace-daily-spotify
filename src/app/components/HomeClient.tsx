@@ -27,7 +27,8 @@ const landingTranslations = {
     heroBtnAsk: "Tanya Pendeta",
     heroBtnAbout: "Tentang Kami",
     heroBtnTelegramMiniApp: "App Grace Daily",
-    heroWaDesc: "Dapatkan renungan dan artikel terbaru setiap hari langsung di WhatsApp & Telegram.",
+    heroBtnSpotify: "Spotify Podcast",
+    heroWaDesc: "Dapatkan renungan dan artikel terbaru setiap hari langsung di WhatsApp, Telegram, & Spotify Podcast.",
     
     demoTitle: "Layanan Bimbingan Rohani",
     demoUserLabel: "Kamu",
@@ -119,7 +120,8 @@ const landingTranslations = {
     heroBtnAsk: "Ask Pastor",
     heroBtnAbout: "About Us",
     heroBtnTelegramMiniApp: "Grace Daily App",
-    heroWaDesc: "Get the latest devotions and articles daily directly on WhatsApp & Telegram.",
+    heroBtnSpotify: "Spotify Podcast",
+    heroWaDesc: "Get the latest devotions and articles daily directly on WhatsApp, Telegram, & Spotify.",
 
     demoTitle: "Spiritual Guidance Service",
     demoUserLabel: "You",
@@ -211,7 +213,8 @@ const landingTranslations = {
     heroBtnAsk: "问牧师",
     heroBtnAbout: "关于我们",
     heroBtnTelegramMiniApp: "Grace Daily 应用",
-    heroWaDesc: "每天直接在 WhatsApp 和 Telegram 上接收最新的灵修和文章。",
+    heroBtnSpotify: "Spotify 播客",
+    heroWaDesc: "每天直接在 WhatsApp、Telegram 和 Spotify 播客上接收最新的灵修和文章。",
 
     demoTitle: "属灵辅导服务",
     demoUserLabel: "你",
@@ -723,17 +726,28 @@ export function HomeClient({ serverData }: HomeClientProps) {
                 </Link>
               </div>
               <div className="flex flex-col gap-3 items-start mt-2">
-                <div className="flex flex-col gap-3 sm:flex-row sm:items-center w-full sm:w-auto">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:flex-wrap w-full sm:w-auto">
                   <WhatsAppChannelButton variant="primary" size="md" sourcePage="home_hero" className="w-full sm:w-auto" />
                   <Link
                     href="/telegram-miniapp"
-                    className="inline-flex items-center justify-center font-sans tracking-wide active:scale-[0.98] transition-transform bg-gradient-to-r from-[#229ED9] to-[#24A1DE] hover:from-[#1d8ec4] hover:to-[#2094cc] text-white font-semibold shadow-md hover:shadow-lg transition-all duration-300 border border-transparent px-5 py-2.5 text-sm rounded-lg gap-2 w-full sm:w-auto"
+                    className="inline-flex items-center justify-center font-sans tracking-wide active:scale-[0.98] transition-transform bg-[#24A1DE] hover:bg-[#208ebe] text-white font-semibold shadow-md hover:shadow-lg transition-all duration-300 border border-transparent px-5 py-2.5 text-sm rounded-lg gap-2 w-full sm:w-auto"
                   >
                     <svg className="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-1-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.53-1.39.52-.46-.01-1.33-.26-1.98-.48-.8-.27-1.43-.42-1.37-.87.03-.23.35-.47.96-.71 3.76-1.64 6.27-2.72 7.54-3.25 3.58-1.48 4.32-1.74 4.81-1.75.11 0 .35.03.5.16.13.12.17.27.18.39-.01.07-.01.14-.02.21z"/>
                     </svg>
                     <span>{t.heroBtnTelegramMiniApp}</span>
                   </Link>
+                  <a
+                    href="https://open.spotify.com/show/033TJ6MdOOn5mIhWPv2Geo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center font-sans tracking-wide active:scale-[0.98] transition-transform bg-[#1DB954] hover:bg-[#1ed760] text-white font-semibold shadow-md hover:shadow-lg transition-all duration-300 border border-transparent px-5 py-2.5 text-sm rounded-lg gap-2 w-full sm:w-auto"
+                  >
+                    <svg className="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+                      <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.893-.982-.336.076-.67-.135-.746-.472-.076-.336.135-.67.472-.746 3.852-.879 7.144-.504 9.822 1.135.295.18.387.565.207.858zm1.225-2.72c-.228.37-.712.49-1.083.262-2.72-1.67-6.87-2.154-10.077-1.182-.413.125-.85-.107-.975-.52-.125-.413.107-.85.52-.975 3.667-1.11 8.232-.573 11.353 1.345.37.228.49.713.262 1.083zm.106-2.825C14.302 8.78 8.334 8.583 4.883 9.63c-.53.16-1.09-.14-1.25-.67-.16-.53.14-1.09.67-1.25 3.968-1.203 10.548-.973 14.73 1.51.48.28.64.9.36 1.38-.28.48-.9.64-1.38.36z"/>
+                    </svg>
+                    <span>{t.heroBtnSpotify || "Spotify Podcast"}</span>
+                  </a>
                 </div>
                 <span className="text-xs text-white/60 pl-1">{t.heroWaDesc}</span>
               </div>
