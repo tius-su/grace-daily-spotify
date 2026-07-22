@@ -1742,6 +1742,13 @@ export async function generateDailyDevotion(date = new Date(), options: { force?
   }
 
   const dateId = jakartaDateId(date);
+
+  // Foolproof Block: Block any slot that is not the morning slot (-05)
+  if (!dateId.endsWith("-05")) {
+    console.warn(`[generateDailyDevotion] Blocked generation for non-morning slot ID: ${dateId}`);
+    throw new Error(`Penerbitan renungan diblokir untuk slot ini (${dateId}). Hanya renungan pagi (-05) yang diperbolehkan.`);
+  }
+
   const existing = await db.collection("daily_devotions").doc(dateId).get();
 
   if (existing.exists && !options.force) {
