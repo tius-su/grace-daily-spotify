@@ -260,7 +260,8 @@ export async function GET() {
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:atom="http://www.w3.org/2005/Atom"
-  xmlns:media="http://search.yahoo.com/mrss/">
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>${xmlEscape(SITE_TITLE)}</title>
     <link>${xmlEscape(APP_URL)}</link>
@@ -269,10 +270,11 @@ export async function GET() {
     <lastBuildDate>${lastBuildDate}</lastBuildDate>
     <ttl>60</ttl>
     <image>
-      <url>${xmlEscape(APP_URL)}/logo.png</url>
+      <url>${xmlEscape(APP_URL)}/logo-gd-spotify.png</url>
       <title>${xmlEscape(SITE_TITLE)}</title>
       <link>${xmlEscape(APP_URL)}</link>
     </image>
+    <itunes:image href="${xmlEscape(APP_URL)}/logo-gd-spotify.png" />
     <atom:link href="${xmlEscape(APP_URL)}/api/rss.xml" rel="self" type="application/rss+xml" />
     <copyright>© ${new Date().getFullYear()} Grace Daily. All rights reserved.</copyright>
     <managingEditor>renungan@gracedaily.my.id (Grace Daily)</managingEditor>
