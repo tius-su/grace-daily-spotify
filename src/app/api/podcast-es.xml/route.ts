@@ -19,19 +19,40 @@ export async function GET() {
 
   try {
     const feedUrl = `${R2_PUBLIC_URL}/podcasts/podcast-es.xml`;
-    const r2Response = await fetch(feedUrl, {
-      headers: { "Cache-Control": "no-cache" },
-      cache: "no-store",
-    });
+    let xml = "";
 
-    if (!r2Response.ok) {
+    try {
+      const r2Response = await fetch(feedUrl, {
+        headers: { "Cache-Control": "no-cache" },
+        cache: "no-store",
+      });
+      if (r2Response.ok) {
+        xml = await r2Response.text();
+      }
+    } catch (fetchErr) {
+      console.warn("[api/podcast-es.xml] Public HTTP fetch failed, falling back to S3 SDK...", fetchErr);
+    }
+
+    if (!xml) {
+      const { s3Client, R2_BUCKET_NAME } = await import("@/lib/server/r2");
+      const { GetObjectCommand } = await import("@aws-sdk/client-s3");
+      if (s3Client && R2_BUCKET_NAME) {
+        const command = new GetObjectCommand({
+          Bucket: R2_BUCKET_NAME,
+          Key: "podcasts/podcast-es.xml",
+        });
+        const res = await s3Client.send(command);
+        xml = (await res.Body?.transformToString()) || "";
+      }
+    }
+
+    if (!xml) {
       return new Response(
         "El feed de podcast en español aún no se ha generado. Por favor, intente después de las 6:00 WIB.",
         { status: 404, headers: { "Content-Type": "text/plain; charset=UTF-8" } }
       );
     }
 
-    let xml = await r2Response.text();
     xml = xml.replace(
       /<atom:link[^>]*>/g,
       `<atom:link href="${APP_URL}/api/podcast-es.xml" rel="self" type="application/rss+xml"/>`

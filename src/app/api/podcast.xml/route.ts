@@ -32,39 +32,51 @@ export async function GET() {
   }
 
   try {
-    // Fetch the latest podcast-id.xml from Cloudflare R2
     const feedUrl = `${R2_PUBLIC_URL}/podcasts/podcast-id.xml`;
-    const r2Response = await fetch(feedUrl, {
-      headers: { "Cache-Control": "no-cache" },
-      cache: "no-store",
-    });
+    let xml = "";
 
-    if (!r2Response.ok) {
-      // Try legacy podcast.xml as fallback
-      const legacyResponse = await fetch(`${R2_PUBLIC_URL}/podcasts/podcast.xml`, {
+    try {
+      const r2Response = await fetch(feedUrl, {
         headers: { "Cache-Control": "no-cache" },
         cache: "no-store",
       });
-      if (!legacyResponse.ok) {
-        return new Response("Podcast feed not yet generated. Please try again later.", {
-          status: 404,
-          headers: { "Content-Type": "text/plain" },
-        });
+      if (r2Response.ok) {
+        xml = await r2Response.text();
       }
-      const legacyXml = await legacyResponse.text();
-      // Rewrite self-link to gracedaily.my.id domain
-      const patchedXml = legacyXml.replace(
-        /https?:\/\/pub-[^/]+\.r2\.dev\/podcasts\//g,
-        `${R2_PUBLIC_URL}/podcasts/`
-      );
-      return new Response(patchedXml, {
-        status: 200,
-        headers: podcastHeaders("id-id"),
+    } catch (fetchErr) {
+      console.warn("[api/podcast.xml] Public HTTP fetch failed, falling back to S3 SDK...", fetchErr);
+    }
+
+    if (!xml) {
+      const { s3Client, R2_BUCKET_NAME } = await import("@/lib/server/r2");
+      const { GetObjectCommand } = await import("@aws-sdk/client-s3");
+      if (s3Client && R2_BUCKET_NAME) {
+        try {
+          const command = new GetObjectCommand({
+            Bucket: R2_BUCKET_NAME,
+            Key: "podcasts/podcast-id.xml",
+          });
+          const res = await s3Client.send(command);
+          xml = (await res.Body?.transformToString()) || "";
+        } catch {
+          // Try legacy podcast.xml as fallback
+          const legacyCommand = new GetObjectCommand({
+            Bucket: R2_BUCKET_NAME,
+            Key: "podcasts/podcast.xml",
+          });
+          const res = await s3Client.send(legacyCommand);
+          xml = (await res.Body?.transformToString()) || "";
+        }
+      }
+    }
+
+    if (!xml) {
+      return new Response("Podcast feed not yet generated. Please try again later.", {
+        status: 404,
+        headers: { "Content-Type": "text/plain" },
       });
     }
 
-    let xml = await r2Response.text();
-    // Patch atom:link self-reference to point to this domain
     xml = xml.replace(
       /<atom:link[^>]*>/g,
       `<atom:link href="${APP_URL}/api/podcast.xml" rel="self" type="application/rss+xml"/>`

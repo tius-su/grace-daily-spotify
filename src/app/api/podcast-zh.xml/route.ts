@@ -19,19 +19,41 @@ export async function GET() {
 
   try {
     const feedUrl = `${R2_PUBLIC_URL}/podcasts/podcast-zh.xml`;
-    const r2Response = await fetch(feedUrl, {
-      headers: { "Cache-Control": "no-cache" },
-      cache: "no-store",
-    });
+    let xml = "";
 
-    if (!r2Response.ok) {
-      return new Response(
-        "中文播客尚未生成。请在凌晨6点后重试。",
-        { status: 404, headers: { "Content-Type": "text/plain; charset=UTF-8" } }
-      );
+    try {
+      const r2Response = await fetch(feedUrl, {
+        headers: { "Cache-Control": "no-cache" },
+        cache: "no-store",
+      });
+      if (r2Response.ok) {
+        xml = await r2Response.text();
+      }
+    } catch (fetchErr) {
+      console.warn("[api/podcast-zh.xml] Public HTTP fetch failed, falling back to S3 SDK...", fetchErr);
     }
 
-    let xml = await r2Response.text();
+    if (!xml) {
+      // Fallback via S3 Client (bypasses R2 public domain / ISP blocking)
+      const { s3Client, R2_BUCKET_NAME } = await import("@/lib/server/r2");
+      const { GetObjectCommand } = await import("@aws-sdk/client-s3");
+      if (s3Client && R2_BUCKET_NAME) {
+        const command = new GetObjectCommand({
+          Bucket: R2_BUCKET_NAME,
+          Key: "podcasts/podcast-zh.xml",
+        });
+        const res = await s3Client.send(command);
+        xml = (await res.Body?.transformToString()) || "";
+      }
+    }
+
+    if (!xml) {
+      return new Response("中文播客尚未生成。请在凌晨6点后重试。", {
+        status: 404,
+        headers: { "Content-Type": "text/plain; charset=UTF-8" },
+      });
+    }
+
     xml = xml.replace(
       /<atom:link[^>]*>/g,
       `<atom:link href="${APP_URL}/api/podcast-zh.xml" rel="self" type="application/rss+xml"/>`
