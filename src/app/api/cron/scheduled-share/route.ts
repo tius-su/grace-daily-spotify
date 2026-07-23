@@ -47,6 +47,7 @@ export async function GET(request: Request) {
       .get();
 
     const devotionsToShare = devotionsSnap.docs.filter(doc => {
+      if (doc.id.endsWith("-15")) return false; // Block afternoon -15 slot devotions
       const data = doc.data();
       if (!data.scheduledShareAt) return false;
       const scheduledTime = data.scheduledShareAt.toDate ? data.scheduledShareAt.toDate() : new Date(data.scheduledShareAt);
