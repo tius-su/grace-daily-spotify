@@ -28,6 +28,22 @@
         }
       ],
       "destination": "/api/media/public?key=%{folder}.webp"
+    },
+    {
+      "source": "/podcast.xml",
+      "destination": "/api/podcast.xml"
+    },
+    {
+      "source": "/podcast-en.xml",
+      "destination": "/api/podcast-en.xml"
+    },
+    {
+      "source": "/podcast-zh.xml",
+      "destination": "/api/podcast-zh.xml"
+    },
+    {
+      "source": "/podcast-es.xml",
+      "destination": "/api/podcast-es.xml"
     }
   ]
 }
