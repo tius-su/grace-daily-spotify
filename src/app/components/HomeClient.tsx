@@ -17,6 +17,7 @@ import { RecommendationSection } from "@/app/components/RecommendationSection";
 import { WhatsAppChannelButton } from "@/app/components/WhatsAppChannelButton";
 import { AdSenseAd } from "@/app/components/AdSenseAd";
 import DonationCards from "@/app/components/DonationCards";
+import { PodcastDropdown } from "@/app/components/PodcastDropdown";
 
 const landingTranslations = {
   id: {
@@ -1024,7 +1025,8 @@ export function HomeClient({ serverData }: HomeClientProps) {
               </svg>
             </a>
           </div>
-          <div className="flex flex-wrap gap-6 text-sm text-[#52606d] order-2 sm:order-3 justify-center">
+          <div className="flex flex-wrap items-center gap-6 text-sm text-[#52606d] order-2 sm:order-3 justify-center">
+            <PodcastDropdown />
             <Link href="/tentang-kami" className="hover:text-[#2a6f6f] hover:underline">
               {language === "zh" ? "关于我们" : language === "en" ? "About Us" : "Tentang Kami"}
             </Link>
