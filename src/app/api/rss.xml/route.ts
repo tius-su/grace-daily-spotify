@@ -150,7 +150,7 @@ async function fetchDevotions(db: FirebaseFirestore.Firestore) {
 
     // Sort descending by dateId / id in-memory
     const sorted = devotions
-      .filter((d: any) => d.status === "published" && d.title)
+      .filter((d: any) => d.status === "published" && d.title && !String(d.id || d.dateId || "").endsWith("-15"))
       .sort((a: any, b: any) => {
         const idA = a.dateId || a.id || "";
         const idB = b.dateId || b.id || "";

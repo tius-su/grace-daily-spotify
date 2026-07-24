@@ -57,7 +57,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // 2. Fetch Devotions for Sitemap
   try {
     const devotions = await getCollectionWithFallback<any>("daily_devotions", "renungan.json");
-    const publishedDevotions = devotions.filter((d) => d.status === "published");
+    const publishedDevotions = devotions.filter((d) => d.status === "published" && !String(d.id || d.dateId || "").endsWith("-15"));
     publishedDevotions.forEach((data) => {
       const generatedAt = parseDate(data.generatedAt);
       const canonical = data.seo?.canonicalPath || `/renungan/${data.id}`;

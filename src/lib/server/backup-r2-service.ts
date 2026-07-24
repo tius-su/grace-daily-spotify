@@ -374,7 +374,9 @@ export async function runR2Backup(): Promise<BackupInfo> {
       const snap = await db.collection("daily_devotions").get();
       logFirestoreRead(snap.size || 1);
 
-      const docs = snap.docs.map(doc => ({ id: doc.id, ...doc.data() })) as any[];
+      const docs = snap.docs
+        .map(doc => ({ id: doc.id, ...doc.data() }))
+        .filter((doc: any) => !String(doc.id || doc.dateId || "").endsWith("-15")) as any[];
       
       // Upload bulk JSON (legacy)
       const { sizeBytes, gzipped } = await uploadToR2("renungan.json", JSON.stringify(docs));

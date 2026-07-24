@@ -1591,6 +1591,55 @@ function isDemoContent(data: Partial<DailyDevotion>): boolean {
   );
 }
 
+export async function autoCleanupSoreAndDemoDevotions(db?: Firestore | null) {
+  const adminDb = db || getAdminDb();
+  if (!adminDb) return;
+
+  try {
+    const snapshot = await adminDb.collection("daily_devotions").get();
+    const soreDocs = snapshot.docs.filter((doc) => {
+      const id = doc.id;
+      const data = doc.data() as Partial<DailyDevotion>;
+      const isSoreSlot = id.endsWith("-15");
+      const isDemo = isDemoContent(data);
+      return isSoreSlot || isDemo;
+    });
+
+    if (soreDocs.length > 0) {
+      console.log(`[autoCleanupSoreAndDemoDevotions] Auto-deleting ${soreDocs.length} invalid/afternoon/demo devotion(s) from Firestore`);
+      for (const doc of soreDocs) {
+        await adminDb.collection("daily_devotions").doc(doc.id).delete().catch((err) => {
+          console.error(`[autoCleanupSoreAndDemoDevotions] Failed to delete Firestore doc ${doc.id}:`, err);
+        });
+
+        try {
+          const { s3Client, R2_BUCKET_NAME } = await import("@/lib/server/r2");
+          const { DeleteObjectCommand } = await import("@aws-sdk/client-s3");
+          if (s3Client && R2_BUCKET_NAME) {
+            await s3Client.send(new DeleteObjectCommand({ Bucket: R2_BUCKET_NAME, Key: `devotions/${doc.id}.json` })).catch(() => {});
+            await s3Client.send(new DeleteObjectCommand({ Bucket: R2_BUCKET_NAME, Key: `devotions/${doc.id}_en.json` })).catch(() => {});
+            await s3Client.send(new DeleteObjectCommand({ Bucket: R2_BUCKET_NAME, Key: `devotions/${doc.id}_zh.json` })).catch(() => {});
+          }
+        } catch {}
+      }
+
+      // Rebuild R2 backup index
+      try {
+        const updatedSnap = await adminDb.collection("daily_devotions").get();
+        const updatedDocs = updatedSnap.docs
+          .map((doc) => ({ id: doc.id, ...doc.data() }))
+          .filter((doc: any) => !String(doc.id || doc.dateId || "").endsWith("-15") && !isDemoContent(doc));
+        const { uploadToR2Path } = await import("@/lib/server/backup-r2-service");
+        await uploadToR2Path("backup/renungan.json", JSON.stringify(updatedDocs));
+      } catch (rebuildErr) {
+        console.error("[autoCleanupSoreAndDemoDevotions] Failed to rebuild R2 renungan.json:", rebuildErr);
+      }
+    }
+  } catch (err) {
+    console.error("[autoCleanupSoreAndDemoDevotions] Error during auto cleanup:", err);
+  }
+}
+
 export async function getLatestDevotion(): Promise<DailyDevotion> {
   const db = getAdminDb();
   const dateId = jakartaDateId();
@@ -1748,6 +1797,11 @@ export async function generateDailyDevotion(date = new Date(), options: { force?
     console.warn(`[generateDailyDevotion] Blocked generation for non-morning slot ID: ${dateId}`);
     throw new Error(`Penerbitan renungan diblokir untuk slot ini (${dateId}). Hanya renungan pagi (-05) yang diperbolehkan.`);
   }
+
+  // Trigger background auto-cleanup for any residual afternoon (-15) or demo placeholder devotions
+  autoCleanupSoreAndDemoDevotions(db).catch((err) =>
+    console.error("[generateDailyDevotion] Auto-cleanup background error:", err)
+  );
 
   const existing = await db.collection("daily_devotions").doc(dateId).get();
 
