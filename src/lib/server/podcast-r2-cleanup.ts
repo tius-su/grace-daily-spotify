@@ -60,7 +60,7 @@ export async function runPodcastR2Cleanup(
     const keysToDelete: string[] = [];
 
     do {
-      const listCommand = new ListObjectsV2Command({
+      const listCommand: ListObjectsV2Command = new ListObjectsV2Command({
         Bucket: R2_BUCKET_NAME,
         Prefix: prefix,
         ContinuationToken: continuationToken,
