@@ -22,11 +22,11 @@ if (existsSync(parentEnvPath)) {
   dotenv.config();
 }
 
-const r2AccountId    = process.env.R2_ACCOUNT_ID;
-const r2AccessKeyId  = process.env.R2_ACCESS_KEY_ID;
-const r2SecretKey    = process.env.R2_SECRET_ACCESS_KEY;
-const r2BucketName   = process.env.R2_BUCKET_NAME;
-const r2PublicUrl    = (process.env.R2_PUBLIC_URL || process.env.NEXT_PUBLIC_R2_PUBLIC_URL || '').replace(/\/$/, '');
+const r2AccountId = process.env.R2_ACCOUNT_ID;
+const r2AccessKeyId = process.env.R2_ACCESS_KEY_ID;
+const r2SecretKey = process.env.R2_SECRET_ACCESS_KEY;
+const r2BucketName = process.env.R2_BUCKET_NAME;
+const r2PublicUrl = (process.env.R2_PUBLIC_URL || process.env.NEXT_PUBLIC_R2_PUBLIC_URL || '').replace(/\/$/, '');
 
 if (!r2AccountId || !r2AccessKeyId || !r2SecretKey || !r2BucketName || !r2PublicUrl) {
   console.error('❌ Missing Cloudflare R2 credentials in environment variables.');
@@ -233,11 +233,11 @@ function getWibPubDate(todayStr, hourWib = 5, minuteWib = 0) {
     timeZone: 'Asia/Jakarta', year: 'numeric', month: '2-digit', day: '2-digit',
   }).format(dateAsUtc).split('-'); // ['2026', '07', '23']
 
-  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const monthName = months[parseInt(jakartaParts[1]) - 1];
 
   // Result: "Thu, 23 Jul 2026 05:00:00 +0700"
-  return `${dayName}, ${jakartaParts[2]} ${monthName} ${jakartaParts[0]} ${String(hourWib).padStart(2,'0')}:${String(minuteWib).padStart(2,'0')}:00 +0700`;
+  return `${dayName}, ${jakartaParts[2]} ${monthName} ${jakartaParts[0]} ${String(hourWib).padStart(2, '0')}:${String(minuteWib).padStart(2, '0')}:00 +0700`;
 }
 
 /** Strip HTML/XML/SSML tags, markdown links, and URLs completely for clean TTS speech */
@@ -425,7 +425,7 @@ function buildSsml(text, langConfig, isDevotional) {
  */
 async function textToSpeech(text, langConfig, outputFilePath, isDevotional = true) {
   const voice = isDevotional ? langConfig.devotionVoice : langConfig.blogVoice;
-  
+
   // Format text into clear sentences with natural punctuation pauses, ensuring all tags/URLs are stripped
   const cleanText = cleanHtmlToText(text)
     .replace(/\n\n+/g, '... ')
@@ -443,7 +443,7 @@ async function textToSpeech(text, langConfig, outputFilePath, isDevotional = tru
   try {
     execSync(`ffmpeg -y -i "${rawPath}" -vn -c:a libmp3lame -ac 1 -b:a 32k -ar 24000 "${outputFilePath}"`, { stdio: 'ignore' });
     buffer = await fs.readFile(outputFilePath);
-    await fs.unlink(rawPath).catch(() => {});
+    await fs.unlink(rawPath).catch(() => { });
     console.log(`[TTS] ✅ Audio synthesized & compressed (MP3 Mono 32k 24kHz) — ${(buffer.length / 1024).toFixed(0)}KB, voice: ${voice}`);
   } catch (ffmpegErr) {
     // Fallback: use raw TTS output if FFmpeg is not available
@@ -611,24 +611,73 @@ async function run() {
 
   // ── Fetch source content from Firestore ──────────────────────────────────
   console.log('[Firestore] Fetching daily devotion from daily_devotions...');
-  let devotionDoc = await db.collection('daily_devotions').doc(todayStr).get();
-  let devData = devotionDoc.exists ? devotionDoc.data() : null;
+  let devData = null;
 
+  // 1. Direct doc ID lookups (golden-YYYY-MM-DD-05, golden-YYYY-MM-DD-00, YYYY-MM-DD)
+  const docCandidates = [`golden-${todayStr}-05`, `golden-${todayStr}-00`, todayStr];
+  for (const candidateId of docCandidates) {
+    try {
+      const docSnap = await db.collection('daily_devotions').doc(candidateId).get();
+      if (docSnap.exists) {
+        devData = docSnap.data();
+        console.log(`[Firestore] Devotion found via doc ID "${candidateId}"`);
+        break;
+      }
+    } catch (docErr) {
+      console.warn(`[Firestore] Direct lookup for ${candidateId} failed:`, docErr.message);
+    }
+  }
+
+  // 2. Query by dateId
   if (!devData) {
-    // Fallback: search by dateId starting with todayStr or contentDayKey
-    const devSnap = await db.collection('daily_devotions')
-      .where('status', '==', 'published')
-      .orderBy('generatedAt', 'desc')
-      .limit(10)
-      .get();
-    
-    if (!devSnap.empty) {
-      const match = devSnap.docs.find(d => {
-        const data = d.data();
-        const key = data.contentDayKey || data.dateId || d.id;
-        return key.includes(todayStr);
-      });
-      if (match) devData = match.data();
+    try {
+      const qSnap = await db.collection('daily_devotions')
+        .where('dateId', '==', todayStr)
+        .limit(1)
+        .get();
+      if (!qSnap.empty) {
+        devData = qSnap.docs[0].data();
+        console.log(`[Firestore] Devotion found via dateId query "${todayStr}"`);
+      }
+    } catch (qErr) {
+      console.warn('[Firestore] Query by dateId failed:', qErr.message);
+    }
+  }
+
+  // 3. Query by contentDayKey
+  if (!devData) {
+    try {
+      const qSnap = await db.collection('daily_devotions')
+        .where('contentDayKey', '==', todayStr)
+        .limit(1)
+        .get();
+      if (!qSnap.empty) {
+        devData = qSnap.docs[0].data();
+        console.log(`[Firestore] Devotion found via contentDayKey query "${todayStr}"`);
+      }
+    } catch (qErr) {
+      console.warn('[Firestore] Query by contentDayKey failed:', qErr.message);
+    }
+  }
+
+  // 4. Fallback scan without index dependency
+  if (!devData) {
+    try {
+      const devSnap = await db.collection('daily_devotions')
+        .orderBy('generatedAt', 'desc')
+        .limit(20)
+        .get();
+
+      if (!devSnap.empty) {
+        const match = devSnap.docs.find(d => {
+          const data = d.data();
+          const key = data.contentDayKey || data.dateId || d.id;
+          return key.includes(todayStr);
+        });
+        if (match) devData = match.data();
+      }
+    } catch (scanErr) {
+      console.warn('[Firestore] Scan fallback error:', scanErr.message);
     }
   }
 
@@ -639,12 +688,21 @@ async function run() {
   }
 
   console.log('[Firestore] Fetching blog post from blog_posts...');
-  const blogSnap = await db.collection('blog_posts')
-    .where('contentDayKey', '==', todayStr)
-    .limit(1)
-    .get();
-  const blogData = !blogSnap.empty ? blogSnap.docs[0].data() : null;
-  const blogDocId = !blogSnap.empty ? blogSnap.docs[0].id : null;
+  let blogData = null;
+  let blogDocId = null;
+  try {
+    const blogSnap = await db.collection('blog_posts')
+      .where('contentDayKey', '==', todayStr)
+      .limit(1)
+      .get();
+    if (!blogSnap.empty) {
+      blogData = blogSnap.docs[0].data();
+      blogDocId = blogSnap.docs[0].id;
+    }
+  } catch (blogErr) {
+    console.warn('[Firestore] Blog lookup failed:', blogErr.message);
+  }
+
   if (blogData) {
     console.log(`[Firestore] ✅ Blog found: "${blogData.title}"`);
   } else {
@@ -671,144 +729,162 @@ async function run() {
     const newItems = [];
     const formattedDate = getFormattedDate(lang.dateLocale);
 
-    // ── DEVOTION ──────────────────────────────────────────────────────
-    if (devData) {
+    // Rule for EN, ZH, ES: Max 60 devotion episodes to build initial collection.
+    // After 60 days/episodes, stop generating new audio MP3s for EN/ZH/ES.
+    let skipLanguageAudio = false;
+    if (lang.code !== 'id') {
       try {
-        console.log(`[${lang.code}] Preparing devotion content...`);
-
-        let title   = cleanHtmlToText(devData.title || 'Hari Ini');
-        let verseRef = devData.verseRef || '';
-        let verseText = cleanHtmlToText(devData.verseText || '');
-        let body    = cleanHtmlToText(devData.body || '');
-        let prayer  = cleanHtmlToText(devData.prayer || '');
-
-        if (lang.code !== 'id') {
-          console.log(`[${lang.code}] Translating devotion (title, verse, body, prayer)...`);
-          [title, verseText, body] = await Promise.all([
-            translateText(title, lang.code),
-            translateText(verseText, lang.code),
-            translateText(body, lang.code),
-          ]);
-          if (prayer) {
-            prayer = await translateText(prayer, lang.code);
-          }
-          console.log(`[${lang.code}] Translation complete.`);
+        const existingItems = await downloadPodcastIndex(lang.jsonFile);
+        const devotionEpisodeCount = existingItems.filter(i => i.id && i.id.startsWith('devotion-')).length;
+        if (devotionEpisodeCount >= 60) {
+          console.log(`[${lang.code}] ℹ️  Koleksi ${lang.name} sudah mencapai ${devotionEpisodeCount} episode (>= 60). Tidak membuat podcast MP3 baru.`);
+          skipLanguageAudio = true;
         }
-
-        const spokenText = lang.buildDevotionText(
-          formattedDate, title, verseRef, verseText, body, prayer
-        );
-
-        const audioFile = `devotion-${todayStr}-${lang.code}.mp3`;
-        const localPath = path.join(tempDir, audioFile);
-        const r2Key     = `podcasts/${audioFile}`;
-
-        console.log(`[${lang.code}] Synthesizing TTS — voice: ${lang.devotionVoice}...`);
-        const buffer = await textToSpeech(spokenText, lang, localPath, true);
-
-        console.log(`[${lang.code}] Uploading devotion audio to R2...`);
-        const audioUrl = await uploadToR2(localPath, r2Key, 'audio/mpeg');
-        console.log(`[${lang.code}] ✅ Uploaded: ${audioUrl}`);
-
-        const podTitle = {
-          id: `Renungan Harian: ${title}`,
-          en: `Daily Devotion: ${title}`,
-          zh: `每日灵修：${title}`,
-          es: `Devoción Diaria: ${title}`,
-        }[lang.code];
-
-        newItems.push({
-          id: `devotion-${todayStr}`,
-          title: podTitle,
-          description: verseRef
-            ? `${verseRef}. ${body.substring(0, 200)}...`
-            : body.substring(0, 250) + '...',
-          pubDate:   getWibPubDate(todayStr, 5, 0),
-          audioUrl,
-          audioSize: buffer.length,
-          audioKey:  r2Key,
-          duration:  estimateDuration(spokenText),
-          createdAt: new Date().toISOString(),
-          imageUrl:  devData.bannerUrl || devData.imageUrl || null,
-          lang: lang.code,
-        });
-
-        console.log(`[${lang.code}] ✅ Devotion item queued.`);
-      } catch (err) {
-        console.error(`[${lang.code}] ❌ Devotion failed:`, err.message);
-        langErrors.push(`Devotion: ${err.message}`);
-        globalErrors.push(`[${lang.code.toUpperCase()}] Devotion: ${err.message}`);
+      } catch (checkErr) {
+        console.warn(`[${lang.code}] Failed to check existing index for 60-day limit:`, checkErr.message);
       }
     }
 
-    // ── BLOG ARTICLE ──────────────────────────────────────────────────
-    if (blogData) {
-      try {
-        console.log(`[${lang.code}] Preparing blog content...`);
+    if (!skipLanguageAudio) {
+      // ── DEVOTION ──────────────────────────────────────────────────────
+      if (devData) {
+        try {
+          console.log(`[${lang.code}] Preparing devotion content...`);
 
-        let title   = cleanHtmlToText(blogData.title || 'Artikel Hari Ini');
-        let excerpt = cleanHtmlToText(blogData.excerpt || '');
-        let body    = cleanHtmlToText(blogData.body || '');
-        const author = blogData.authorName || 'Grace Daily';
+          let title = cleanHtmlToText(devData.title || 'Hari Ini');
+          let verseRef = devData.verseRef || '';
+          let verseText = cleanHtmlToText(devData.verseText || '');
+          let body = cleanHtmlToText(devData.body || '');
+          let prayer = cleanHtmlToText(devData.prayer || '');
 
-        if (lang.code !== 'id') {
-          console.log(`[${lang.code}] Translating blog article...`);
-          [title, body] = await Promise.all([
-            translateText(title, lang.code),
-            translateText(body, lang.code),
-          ]);
-          if (excerpt) excerpt = await translateText(excerpt, lang.code);
-          console.log(`[${lang.code}] Blog translation complete.`);
+          if (lang.code !== 'id') {
+            console.log(`[${lang.code}] Translating devotion (title, verse, body, prayer)...`);
+            [title, verseText, body] = await Promise.all([
+              translateText(title, lang.code),
+              translateText(verseText, lang.code),
+              translateText(body, lang.code),
+            ]);
+            if (prayer) {
+              prayer = await translateText(prayer, lang.code);
+            }
+            console.log(`[${lang.code}] Translation complete.`);
+          }
+
+          const spokenText = lang.buildDevotionText(
+            formattedDate, title, verseRef, verseText, body, prayer
+          );
+
+          const audioFile = `devotion-${todayStr}-${lang.code}.mp3`;
+          const localPath = path.join(tempDir, audioFile);
+          const r2Key = `podcasts/${audioFile}`;
+
+          console.log(`[${lang.code}] Synthesizing TTS — voice: ${lang.devotionVoice}...`);
+          const buffer = await textToSpeech(spokenText, lang, localPath, true);
+
+          console.log(`[${lang.code}] Uploading devotion audio to R2...`);
+          const audioUrl = await uploadToR2(localPath, r2Key, 'audio/mpeg');
+          console.log(`[${lang.code}] ✅ Uploaded: ${audioUrl}`);
+
+          const podTitle = {
+            id: `Renungan Harian: ${title}`,
+            en: `Daily Devotion: ${title}`,
+            zh: `每日灵修：${title}`,
+            es: `Devoción Diaria: ${title}`,
+          }[lang.code];
+
+          newItems.push({
+            id: `devotion-${todayStr}`,
+            title: podTitle,
+            description: verseRef
+              ? `${verseRef}. ${body.substring(0, 200)}...`
+              : body.substring(0, 250) + '...',
+            pubDate: getWibPubDate(todayStr, 5, 0),
+            audioUrl,
+            audioSize: buffer.length,
+            audioKey: r2Key,
+            duration: estimateDuration(spokenText),
+            createdAt: new Date().toISOString(),
+            imageUrl: devData.bannerUrl || devData.imageUrl || null,
+            lang: lang.code,
+          });
+
+          console.log(`[${lang.code}] ✅ Devotion item queued.`);
+        } catch (err) {
+          console.error(`[${lang.code}] ❌ Devotion failed:`, err.message);
+          langErrors.push(`Devotion: ${err.message}`);
+          globalErrors.push(`[${lang.code.toUpperCase()}] Devotion: ${err.message}`);
         }
+      }
 
-        const spokenText = lang.buildBlogText(
-          formattedDate, title, author, excerpt, body
-        );
+      // ── BLOG ARTICLE ──────────────────────────────────────────────────
+      if (blogData) {
+        try {
+          console.log(`[${lang.code}] Preparing blog content...`);
 
-        const audioFile = `blog-${todayStr}-${lang.code}.mp3`;
-        const localPath = path.join(tempDir, audioFile);
-        const r2Key     = `podcasts/${audioFile}`;
+          let title = cleanHtmlToText(blogData.title || 'Artikel Hari Ini');
+          let excerpt = cleanHtmlToText(blogData.excerpt || '');
+          let body = cleanHtmlToText(blogData.body || '');
+          const author = blogData.authorName || 'Grace Daily';
 
-        console.log(`[${lang.code}] Synthesizing TTS — voice: ${lang.blogVoice}...`);
-        const buffer = await textToSpeech(spokenText, lang, localPath, false);
+          if (lang.code !== 'id') {
+            console.log(`[${lang.code}] Translating blog article...`);
+            [title, body] = await Promise.all([
+              translateText(title, lang.code),
+              translateText(body, lang.code),
+            ]);
+            if (excerpt) excerpt = await translateText(excerpt, lang.code);
+            console.log(`[${lang.code}] Blog translation complete.`);
+          }
 
-        console.log(`[${lang.code}] Uploading blog audio to R2...`);
-        const audioUrl = await uploadToR2(localPath, r2Key, 'audio/mpeg');
-        console.log(`[${lang.code}] ✅ Uploaded: ${audioUrl}`);
+          const spokenText = lang.buildBlogText(
+            formattedDate, title, author, excerpt, body
+          );
 
-        const podTitle = {
-          id: `Artikel: ${title}`,
-          en: `Article: ${title}`,
-          zh: `文章：${title}`,
-          es: `Artículo: ${title}`,
-        }[lang.code];
+          const audioFile = `blog-${todayStr}-${lang.code}.mp3`;
+          const localPath = path.join(tempDir, audioFile);
+          const r2Key = `podcasts/${audioFile}`;
 
-        newItems.push({
-          id: `blog-${blogDocId}`,
-          title: podTitle,
-          description: (excerpt || body).substring(0, 250) + '...',
-          pubDate:   getWibPubDate(todayStr, 6, 0),
-          audioUrl,
-          audioSize: buffer.length,
-          audioKey:  r2Key,
-          duration:  estimateDuration(spokenText),
-          createdAt: new Date().toISOString(),
-          imageUrl:  blogData.imageUrl || null,
-          lang: lang.code,
-        });
+          console.log(`[${lang.code}] Synthesizing TTS — voice: ${lang.blogVoice}...`);
+          const buffer = await textToSpeech(spokenText, lang, localPath, false);
 
-        console.log(`[${lang.code}] ✅ Blog item queued.`);
-      } catch (err) {
-        console.error(`[${lang.code}] ❌ Blog failed:`, err.message);
-        langErrors.push(`Blog: ${err.message}`);
-        globalErrors.push(`[${lang.code.toUpperCase()}] Blog: ${err.message}`);
+          console.log(`[${lang.code}] Uploading blog audio to R2...`);
+          const audioUrl = await uploadToR2(localPath, r2Key, 'audio/mpeg');
+          console.log(`[${lang.code}] ✅ Uploaded: ${audioUrl}`);
+
+          const podTitle = {
+            id: `Artikel: ${title}`,
+            en: `Article: ${title}`,
+            zh: `文章：${title}`,
+            es: `Artículo: ${title}`,
+          }[lang.code];
+
+          newItems.push({
+            id: `blog-${blogDocId}`,
+            title: podTitle,
+            description: (excerpt || body).substring(0, 250) + '...',
+            pubDate: getWibPubDate(todayStr, 6, 0),
+            audioUrl,
+            audioSize: buffer.length,
+            audioKey: r2Key,
+            duration: estimateDuration(spokenText),
+            createdAt: new Date().toISOString(),
+            imageUrl: blogData.imageUrl || null,
+            lang: lang.code,
+          });
+
+          console.log(`[${lang.code}] ✅ Blog item queued.`);
+        } catch (err) {
+          console.error(`[${lang.code}] ❌ Blog failed:`, err.message);
+          langErrors.push(`Blog: ${err.message}`);
+          globalErrors.push(`[${lang.code.toUpperCase()}] Blog: ${err.message}`);
+        }
       }
     }
 
     langResults[lang.code] = { items: newItems, errors: langErrors };
 
     // ── Update RSS feed for this language ─────────────────────────────
-    if (newItems.length > 0) {
+    if (newItems.length > 0 || lang.code === 'id') {
       try {
         console.log(`[${lang.code}] Updating RSS feed...`);
         const existingItems = await downloadPodcastIndex(lang.jsonFile);
@@ -821,9 +897,25 @@ async function run() {
         // Sort by pubDate descending
         merged.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
-        // Retention: Keep ALL active episodes forever in RSS feed
-        const active = merged;
-        const expired = [];
+        let active = merged;
+        let expired = [];
+
+        if (lang.code === 'id') {
+          // Retention rule for Indonesian: Keep only last 300 days of podcast items
+          const cutoffTime = Date.now() - 300 * 24 * 60 * 60 * 1000;
+          active = merged.filter(item => {
+            const itemDate = new Date(item.pubDate).getTime();
+            return !isNaN(itemDate) ? itemDate >= cutoffTime : true;
+          });
+          expired = merged.filter(item => {
+            const itemDate = new Date(item.pubDate).getTime();
+            return !isNaN(itemDate) ? itemDate < cutoffTime : false;
+          });
+        } else {
+          // Keep all created episodes for EN, ZH, ES forever
+          active = merged;
+          expired = [];
+        }
 
         console.log(`[${lang.code}] Active: ${active.length}, Expired: ${expired.length}`);
 
@@ -832,28 +924,32 @@ async function run() {
           if (item.audioKey) {
             try {
               await s3.send(new DeleteObjectCommand({ Bucket: r2BucketName, Key: item.audioKey }));
-              console.log(`[${lang.code}] Deleted expired: ${item.audioKey}`);
+              console.log(`[${lang.code}] Deleted expired (>300 days): ${item.audioKey}`);
             } catch (delErr) {
               console.warn(`[${lang.code}] Could not delete ${item.audioKey}: ${delErr.message}`);
             }
           }
         }
 
-        // Upload updated JSON index
-        const indexJson = JSON.stringify(active, null, 2);
-        await uploadStringToR2(indexJson, `podcasts/${lang.jsonFile}`, 'application/json; charset=UTF-8');
-        console.log(`[${lang.code}] Index saved: podcasts/${lang.jsonFile}`);
+        if (newItems.length > 0 || expired.length > 0) {
+          // Upload updated JSON index
+          const indexJson = JSON.stringify(active, null, 2);
+          await uploadStringToR2(indexJson, `podcasts/${lang.jsonFile}`, 'application/json; charset=UTF-8');
+          console.log(`[${lang.code}] Index saved: podcasts/${lang.jsonFile}`);
 
-        // Upload RSS XML
-        const rssXml = generateRssXml(active, lang);
-        await uploadStringToR2(rssXml, `podcasts/${lang.feedFile}`, 'application/xml; charset=UTF-8');
-        console.log(`[${lang.code}] RSS feed saved: podcasts/${lang.feedFile} ✅`);
+          // Upload RSS XML
+          const rssXml = generateRssXml(active, lang);
+          await uploadStringToR2(rssXml, `podcasts/${lang.feedFile}`, 'application/xml; charset=UTF-8');
+          console.log(`[${lang.code}] RSS feed saved: podcasts/${lang.feedFile} ✅`);
 
-        // ID feed also updates legacy podcast.xml (backward compatibility for Spotify)
-        if (lang.code === 'id') {
-          await uploadStringToR2(rssXml, 'podcasts/podcast.xml', 'application/xml; charset=UTF-8');
-          await uploadStringToR2(indexJson, 'podcasts/podcast.json', 'application/json; charset=UTF-8');
-          console.log(`[ID] ✅ Legacy podcast.xml and podcast.json also updated.`);
+          // ID feed also updates legacy podcast.xml (backward compatibility for Spotify)
+          if (lang.code === 'id') {
+            await uploadStringToR2(rssXml, 'podcasts/podcast.xml', 'application/xml; charset=UTF-8');
+            await uploadStringToR2(indexJson, 'podcasts/podcast.json', 'application/json; charset=UTF-8');
+            console.log(`[ID] ✅ Legacy podcast.xml and podcast.json also updated.`);
+          }
+        } else {
+          console.log(`[${lang.code}] Index and feed are already up to date.`);
         }
 
       } catch (feedErr) {
@@ -917,7 +1013,7 @@ async function run() {
 run().catch(async err => {
   console.error('❌ Fatal error:', err);
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId   = process.env.TELEGRAM_CHAT_ID;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
   if (botToken && chatId) {
     await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
       method: 'POST',
@@ -927,7 +1023,7 @@ run().catch(async err => {
         text: `❌ <b>Fatal Podcast Generator Error</b>\n<code>${err.message}</code>`,
         parse_mode: 'HTML',
       }),
-    }).catch(() => {});
+    }).catch(() => { });
   }
   process.exit(1);
 });
