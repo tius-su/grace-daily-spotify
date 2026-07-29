@@ -1,7 +1,8 @@
 import { s3Client, R2_BUCKET_NAME } from "./r2";
-import { ListObjectsV2Command, DeleteObjectCommand, DeleteObjectsCommand } from "@aws-sdk/client-s3";
+import { ListObjectsV2Command, DeleteObjectsCommand } from "@aws-sdk/client-s3";
 
 export const RETENTION_DAYS = 300;
+const PERMANENT_LANGUAGE_SUFFIXES = ["-en", "-zh", "-es"];
 
 export interface CleanupResult {
   success: boolean;
@@ -28,9 +29,28 @@ function getObjectDate(key: string, lastModified?: Date): Date {
   return lastModified || new Date();
 }
 
+function isPodcastAudio(key: string): boolean {
+  const normalized = key.toLowerCase();
+  return normalized.endsWith(".mp3") || normalized.endsWith(".m4a") || normalized.endsWith(".wav");
+}
+
+function isIndonesianPodcastAudio(key: string): boolean {
+  const normalized = key.toLowerCase();
+  if (!isPodcastAudio(normalized)) return false;
+  return !PERMANENT_LANGUAGE_SUFFIXES.some((suffix) =>
+    normalized.endsWith(`${suffix}.mp3`) ||
+    normalized.endsWith(`${suffix}.m4a`) ||
+    normalized.endsWith(`${suffix}.wav`)
+  );
+}
+
 /**
- * Scans Cloudflare R2 bucket for podcast MP3 audio files under `podcasts/` prefix
- * and deletes any files older than 300 days (rolling 300-day window).
+ * Scans Cloudflare R2 bucket for Indonesian podcast audio files under
+ * `podcasts/` prefix and deletes any files older than 300 days.
+ *
+ * EN/ZH/ES podcast files are intentionally permanent: those languages only
+ * publish audio for their first 60-day collection, but their MP3 files remain
+ * in R2 and their RSS feeds continue serving the existing catalog.
  */
 export async function runPodcastR2Cleanup(
   prefix: string = "podcasts/",
@@ -73,10 +93,7 @@ export async function runPodcastR2Cleanup(
       for (const item of items) {
         if (!item.Key) continue;
 
-        // Skip RSS feed xml files if we only clean audio files, or check extension
-        const isMp3 = item.Key.toLowerCase().endsWith(".mp3") || item.Key.toLowerCase().endsWith(".m4a") || item.Key.toLowerCase().endsWith(".wav");
-        
-        if (isMp3) {
+        if (isIndonesianPodcastAudio(item.Key)) {
           const itemDate = getObjectDate(item.Key, item.LastModified);
           if (itemDate.getTime() < cutoffTime) {
             keysToDelete.push(item.Key);

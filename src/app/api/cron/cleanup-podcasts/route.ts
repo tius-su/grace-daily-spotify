@@ -7,15 +7,21 @@ function isAuthorized(request: Request) {
   const secret = process.env.CRON_SECRET;
   const authHeader = request.headers.get("authorization") || "";
   const customCronHeader = request.headers.get("x-cron-secret") || "";
+  const userAgent = request.headers.get("user-agent") || "";
 
   const url = new URL(request.url);
   const querySecret = url.searchParams.get("secret") || url.searchParams.get("cron_secret");
+
+  const isVercelCron =
+    request.headers.get("x-vercel-cron") === "1" ||
+    userAgent.toLowerCase().includes("vercel");
 
   if (!secret) {
     return true;
   }
 
   return (
+    isVercelCron ||
     authHeader === `Bearer ${secret}` ||
     querySecret === secret ||
     customCronHeader === secret

@@ -1,5 +1,5 @@
 import admin from 'firebase-admin';
-import { S3Client, PutObjectCommand, GetObjectCommand, DeleteObjectCommand } from '@aws-sdk/client-s3';
+import { S3Client, PutObjectCommand, GetObjectCommand, DeleteObjectCommand, HeadObjectCommand } from '@aws-sdk/client-s3';
 import { UniversalEdgeTTS } from 'edge-tts-universal';
 import { execSync } from 'child_process';
 import fs from 'fs/promises';
@@ -14,10 +14,23 @@ import dotenv from 'dotenv';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const parentEnvPath = path.join(__dirname, '../grace-daily/.env.local');
-if (existsSync(parentEnvPath)) {
-  dotenv.config({ path: parentEnvPath });
-  console.log(`[Env] Loaded from ${parentEnvPath}`);
+const envCandidates = [
+  path.join(__dirname, '../.env.local'),
+  path.join(__dirname, '../.env.vercel.local'),
+  path.join(process.cwd(), '.env.local'),
+  path.join(process.cwd(), '.env.vercel.local'),
+  path.join(__dirname, '../grace-daily/.env.local'),
+];
+
+const loadedEnvPaths = envCandidates.filter((candidate, index, all) =>
+  existsSync(candidate) && all.indexOf(candidate) === index
+);
+
+if (loadedEnvPaths.length > 0) {
+  for (const candidate of loadedEnvPaths) {
+    dotenv.config({ path: candidate });
+    console.log(`[Env] Loaded from ${candidate}`);
+  }
 } else {
   dotenv.config();
 }
@@ -159,18 +172,72 @@ const LANGUAGES = [
 // ─────────────────────────────────────────────────────────────────────────────
 // 3. FIREBASE & R2 INITIALIZATION
 // ─────────────────────────────────────────────────────────────────────────────
+function parseServiceAccountJson(raw) {
+  const candidates = [raw, raw.trim()];
+
+  const trimmed = raw.trim();
+  if (
+    (trimmed.startsWith('"') && trimmed.endsWith('"')) ||
+    (trimmed.startsWith("'") && trimmed.endsWith("'"))
+  ) {
+    candidates.push(trimmed.slice(1, -1));
+  }
+
+  for (const candidate of candidates) {
+    try {
+      const parsed = JSON.parse(candidate);
+      return typeof parsed === 'string' ? JSON.parse(parsed) : parsed;
+    } catch {
+      // Try the next representation.
+    }
+  }
+
+  for (const candidate of candidates) {
+    try {
+      const normalized = candidate.replace(
+        /"private_key"\s*:\s*"([\s\S]*?)"\s*,\s*"client_email"/,
+        (_match, privateKey) =>
+          `"private_key": "${privateKey.replace(/\r?\n/g, '\\n')}",\n  "client_email"`
+      );
+      const parsed = JSON.parse(normalized);
+      return typeof parsed === 'string' ? JSON.parse(parsed) : parsed;
+    } catch {
+      // Try the next normalized representation.
+    }
+  }
+
+  throw new Error('Unsupported service account JSON format.');
+}
+
 let serviceAccount;
 if (process.env.FIREBASE_SERVICE_ACCOUNT_JSON) {
   try {
-    serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_JSON);
+    serviceAccount = parseServiceAccountJson(process.env.FIREBASE_SERVICE_ACCOUNT_JSON);
     console.log('[Firebase] Initialized via FIREBASE_SERVICE_ACCOUNT_JSON env var.');
   } catch (e) {
     console.error('❌ FIREBASE_SERVICE_ACCOUNT_JSON is not valid JSON:', e.message);
     process.exit(1);
   }
+} else if (process.env.GOOGLE_APPLICATION_CREDENTIALS?.trim().startsWith('{')) {
+  try {
+    serviceAccount = parseServiceAccountJson(process.env.GOOGLE_APPLICATION_CREDENTIALS);
+    console.log('[Firebase] Initialized via GOOGLE_APPLICATION_CREDENTIALS JSON env var.');
+  } catch (e) {
+    console.error('❌ GOOGLE_APPLICATION_CREDENTIALS is not valid JSON:', e.message);
+    process.exit(1);
+  }
 } else {
-  const localPath = path.join(__dirname, '../service-account.json');
-  if (!existsSync(localPath)) {
+  const serviceAccountCandidates = [
+    process.env.GOOGLE_APPLICATION_CREDENTIALS
+      ? path.resolve(process.cwd(), process.env.GOOGLE_APPLICATION_CREDENTIALS)
+      : null,
+    path.join(__dirname, '../service-account.json'),
+    path.join(__dirname, 'service-account.json'),
+    path.join(process.cwd(), 'service-account.json'),
+    path.join(process.cwd(), 'scripts', 'serviceAccountKey.json'),
+  ].filter(Boolean);
+  const localPath = serviceAccountCandidates.find((candidate) => existsSync(candidate));
+  if (!localPath) {
     console.error('❌ Firebase credentials not found. Set FIREBASE_SERVICE_ACCOUNT_JSON or provide service-account.json.');
     process.exit(1);
   }
@@ -201,11 +268,48 @@ function getJakartaDateStr() {
 }
 
 /** Format date for TTS speech in given locale */
-function getFormattedDate(locale) {
+function getFormattedDate(locale, dateStr = getJakartaDateStr()) {
+  const [year, month, day] = dateStr.split('-').map(Number);
+  const date = new Date(Date.UTC(year, month - 1, day, 12, 0, 0));
   return new Intl.DateTimeFormat(locale, {
     timeZone: 'Asia/Jakarta',
     dateStyle: 'long',
-  }).format(new Date());
+  }).format(date);
+}
+
+function getCliValue(name) {
+  const prefix = `--${name}=`;
+  const inline = process.argv.find((arg) => arg.startsWith(prefix));
+  if (inline) return inline.slice(prefix.length);
+
+  const index = process.argv.indexOf(`--${name}`);
+  if (index >= 0 && process.argv[index + 1]) return process.argv[index + 1];
+
+  return null;
+}
+
+function getTargetDateStr() {
+  const date = getCliValue('date') || process.env.PODCAST_DATE || getJakartaDateStr();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    console.error(`❌ Invalid date "${date}". Use YYYY-MM-DD, e.g. --date=2026-07-28.`);
+    process.exit(1);
+  }
+  return date;
+}
+
+function getTargetLanguages() {
+  const raw = getCliValue('lang') || process.env.PODCAST_LANG || 'all';
+  if (raw === 'all') return LANGUAGES;
+
+  const requested = new Set(raw.split(',').map((lang) => lang.trim().toLowerCase()).filter(Boolean));
+  const selected = LANGUAGES.filter((lang) => requested.has(lang.code));
+
+  if (selected.length === 0) {
+    console.error(`❌ Invalid lang "${raw}". Use one or more of: id,en,zh,es.`);
+    process.exit(1);
+  }
+
+  return selected;
 }
 
 /**
@@ -480,6 +584,18 @@ async function uploadStringToR2(content, r2Key, contentType) {
   return `${r2PublicUrl}/${r2Key}`;
 }
 
+async function getR2ObjectSize(r2Key) {
+  try {
+    const response = await s3.send(new HeadObjectCommand({
+      Bucket: r2BucketName,
+      Key: r2Key,
+    }));
+    return response.ContentLength || 0;
+  } catch {
+    return null;
+  }
+}
+
 async function downloadPodcastIndex(jsonFile) {
   try {
     const response = await s3.send(new GetObjectCommand({
@@ -519,6 +635,8 @@ function generateRssXml(items, langConfig) {
   const coverUrl = `${r2PublicUrl}/podcasts/cover.jpg`;
   const year = new Date().getFullYear();
   const appUrl = 'https://www.gracedaily.my.id';
+  const selfPath = langConfig.code === 'id' ? '/api/podcast.xml' : `/api/podcast-${langConfig.code}.xml`;
+  const lastBuildDate = getWibPubDate(getJakartaDateStr(), 6, 0);
 
   const itemsXml = items.map(item => `
     <item>
@@ -536,7 +654,8 @@ function generateRssXml(items, langConfig) {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>${escapeXml(langConfig.channelTitle)}</title>
     <link>${appUrl}</link>
@@ -556,6 +675,8 @@ function generateRssXml(items, langConfig) {
       <itunes:category text="Christianity"/>
     </itunes:category>
     <itunes:explicit>false</itunes:explicit>
+    <atom:link href="${appUrl}${selfPath}" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>${lastBuildDate}</lastBuildDate>
     ${itemsXml}
   </channel>
 </rss>`;
@@ -597,11 +718,12 @@ async function sendTelegramMessage(text) {
 // 10. MAIN EXECUTION FLOW
 // ─────────────────────────────────────────────────────────────────────────────
 async function run() {
-  const todayStr = getJakartaDateStr();
+  const todayStr = getTargetDateStr();
+  const targetLanguages = getTargetLanguages();
   console.log('\n=========================================');
   console.log(`🎙️  Multilingual Podcast Generator`);
   console.log(`📅  Date (WIB): ${todayStr}`);
-  console.log(`🌐  Languages: ID | EN | ZH | ES`);
+  console.log(`🌐  Languages: ${targetLanguages.map((lang) => lang.code.toUpperCase()).join(' | ')}`);
   console.log('=========================================\n');
 
   await ensureCoverImage();
@@ -723,11 +845,11 @@ async function run() {
   const globalErrors = [];
 
   // ── Process each language ─────────────────────────────────────────────────
-  for (const lang of LANGUAGES) {
+  for (const lang of targetLanguages) {
     console.log(`\n── Processing: ${lang.name} (${lang.code.toUpperCase()}) ──`);
     const langErrors = [];
     const newItems = [];
-    const formattedDate = getFormattedDate(lang.dateLocale);
+    const formattedDate = getFormattedDate(lang.dateLocale, todayStr);
 
     // Rule for EN, ZH, ES: Max 60 devotion episodes to build initial collection.
     // After 60 days/episodes, stop generating new audio MP3s for EN/ZH/ES.
@@ -777,13 +899,21 @@ async function run() {
           const audioFile = `devotion-${todayStr}-${lang.code}.mp3`;
           const localPath = path.join(tempDir, audioFile);
           const r2Key = `podcasts/${audioFile}`;
+          const existingAudioSize = await getR2ObjectSize(r2Key);
 
-          console.log(`[${lang.code}] Synthesizing TTS — voice: ${lang.devotionVoice}...`);
-          const buffer = await textToSpeech(spokenText, lang, localPath, true);
+          let audioUrl = `${r2PublicUrl}/${r2Key}`;
+          let audioSize = existingAudioSize || 0;
+          if (existingAudioSize) {
+            console.log(`[${lang.code}] Existing devotion audio found in R2 — skipping TTS: ${r2Key}`);
+          } else {
+            console.log(`[${lang.code}] Synthesizing TTS — voice: ${lang.devotionVoice}...`);
+            const buffer = await textToSpeech(spokenText, lang, localPath, true);
 
-          console.log(`[${lang.code}] Uploading devotion audio to R2...`);
-          const audioUrl = await uploadToR2(localPath, r2Key, 'audio/mpeg');
-          console.log(`[${lang.code}] ✅ Uploaded: ${audioUrl}`);
+            console.log(`[${lang.code}] Uploading devotion audio to R2...`);
+            audioUrl = await uploadToR2(localPath, r2Key, 'audio/mpeg');
+            audioSize = buffer.length;
+            console.log(`[${lang.code}] ✅ Uploaded: ${audioUrl}`);
+          }
 
           const podTitle = {
             id: `Renungan Harian: ${title}`,
@@ -800,7 +930,7 @@ async function run() {
               : body.substring(0, 250) + '...',
             pubDate: getWibPubDate(todayStr, 5, 0),
             audioUrl,
-            audioSize: buffer.length,
+            audioSize,
             audioKey: r2Key,
             duration: estimateDuration(spokenText),
             createdAt: new Date().toISOString(),
@@ -843,13 +973,21 @@ async function run() {
           const audioFile = `blog-${todayStr}-${lang.code}.mp3`;
           const localPath = path.join(tempDir, audioFile);
           const r2Key = `podcasts/${audioFile}`;
+          const existingAudioSize = await getR2ObjectSize(r2Key);
 
-          console.log(`[${lang.code}] Synthesizing TTS — voice: ${lang.blogVoice}...`);
-          const buffer = await textToSpeech(spokenText, lang, localPath, false);
+          let audioUrl = `${r2PublicUrl}/${r2Key}`;
+          let audioSize = existingAudioSize || 0;
+          if (existingAudioSize) {
+            console.log(`[${lang.code}] Existing blog audio found in R2 — skipping TTS: ${r2Key}`);
+          } else {
+            console.log(`[${lang.code}] Synthesizing TTS — voice: ${lang.blogVoice}...`);
+            const buffer = await textToSpeech(spokenText, lang, localPath, false);
 
-          console.log(`[${lang.code}] Uploading blog audio to R2...`);
-          const audioUrl = await uploadToR2(localPath, r2Key, 'audio/mpeg');
-          console.log(`[${lang.code}] ✅ Uploaded: ${audioUrl}`);
+            console.log(`[${lang.code}] Uploading blog audio to R2...`);
+            audioUrl = await uploadToR2(localPath, r2Key, 'audio/mpeg');
+            audioSize = buffer.length;
+            console.log(`[${lang.code}] ✅ Uploaded: ${audioUrl}`);
+          }
 
           const podTitle = {
             id: `Artikel: ${title}`,
@@ -864,7 +1002,7 @@ async function run() {
             description: (excerpt || body).substring(0, 250) + '...',
             pubDate: getWibPubDate(todayStr, 6, 0),
             audioUrl,
-            audioSize: buffer.length,
+            audioSize,
             audioKey: r2Key,
             duration: estimateDuration(spokenText),
             createdAt: new Date().toISOString(),
