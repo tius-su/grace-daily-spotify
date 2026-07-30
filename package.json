@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "podcast": "node generate-podcast.js",
+    "youtube": "node generate-youtube.js",
     "review-bible": "node scripts/review-bible.mjs"
   },
   "dependencies": {
