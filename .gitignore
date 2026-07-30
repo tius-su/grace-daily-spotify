@@ -45,3 +45,6 @@ next-env.d.ts
 scripts/serviceAccountKey.json
 service-account.json
 
+# audio & temp
+*.mp3
+/temp/
