@@ -29,6 +29,7 @@
     "html2canvas": "^1.4.1",
     "jspdf": "^4.2.1",
     "next": "14.2.15",
+    "node-edge-tts": "^1.2.12",
     "nodemailer": "^8.0.9",
     "pdf-lib": "^1.17.1",
     "pino": "^10.3.1",

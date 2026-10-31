@@ -1,6 +1,6 @@
 import admin from 'firebase-admin';
 import { S3Client, PutObjectCommand, GetObjectCommand, DeleteObjectCommand, HeadObjectCommand } from '@aws-sdk/client-s3';
-import { UniversalEdgeTTS } from 'edge-tts-universal';
+import { EdgeTTS } from 'node-edge-tts';
 import { execSync } from 'child_process';
 import fs from 'fs/promises';
 import { existsSync } from 'fs';
@@ -538,13 +538,11 @@ async function textToSpeech(text, langConfig, outputFilePath, isDevotional = tru
     .replace(/\s+/g, ' ')
     .trim();
 
-  const tts = new UniversalEdgeTTS(cleanText, voice);
-  const result = await tts.synthesize();
-  let buffer = Buffer.from(await result.audio.arrayBuffer());
-
   // Optimize audio format if FFmpeg is available (MP3, Mono, 32 kbps, 24 kHz)
   const rawPath = outputFilePath + '.raw.mp3';
-  await fs.writeFile(rawPath, buffer);
+  const tts = new EdgeTTS({ voice });
+  await tts.ttsPromise(cleanText, rawPath);
+  let buffer;
   try {
     execSync(`ffmpeg -y -i "${rawPath}" -vn -c:a libmp3lame -ac 1 -b:a 32k -ar 24000 "${outputFilePath}"`, { stdio: 'ignore' });
     buffer = await fs.readFile(outputFilePath);
@@ -552,7 +550,8 @@ async function textToSpeech(text, langConfig, outputFilePath, isDevotional = tru
     console.log(`[TTS] ✅ Audio synthesized & compressed (MP3 Mono 32k 24kHz) — ${(buffer.length / 1024).toFixed(0)}KB, voice: ${voice}`);
   } catch (ffmpegErr) {
     // Fallback: use raw TTS output if FFmpeg is not available
-    await fs.rename(rawPath, outputFilePath).catch(() => fs.writeFile(outputFilePath, buffer));
+    await fs.rename(rawPath, outputFilePath).catch(() => {});
+    buffer = await fs.readFile(outputFilePath);
     console.log(`[TTS] ✅ Audio synthesized (Raw TTS) — ${(buffer.length / 1024).toFixed(0)}KB, voice: ${voice}`);
   }
 

@@ -2,7 +2,7 @@ import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
 import { S3Client, PutObjectCommand, GetObjectCommand, ListObjectsV2Command, DeleteObjectCommand } from '@aws-sdk/client-s3';
 import { google } from 'googleapis';
-import { UniversalEdgeTTS } from 'edge-tts-universal';
+import { EdgeTTS } from 'node-edge-tts';
 import { execSync } from 'child_process';
 import { existsSync, mkdirSync, writeFileSync, createReadStream, unlinkSync, readFileSync } from 'fs';
 import path from 'path';
@@ -663,9 +663,8 @@ async function main() {
       const tempTtsPath  = path.join(tempDir, `devotion-${dateStr}.mp3`);
 
       console.log('[Devotion] Synthesizing speech (id-ID-GadisNeural)...');
-      const tts = new UniversalEdgeTTS(cleanText, 'id-ID-GadisNeural');
-      const result = await tts.synthesize();
-      writeFileSync(tempTtsPath, Buffer.from(await result.audio.arrayBuffer()));
+      const tts = new EdgeTTS({ voice: 'id-ID-GadisNeural' });
+      await tts.ttsPromise(cleanText, tempTtsPath);
       console.log('[Devotion] Speech synthesis complete.');
 
       // Resolve background image (custom banner or fallback logo)
@@ -764,9 +763,8 @@ async function main() {
           const tempTtsPath = path.join(tempDir, `blog-${article.id}.mp3`);
 
           console.log('[Blog] Synthesizing speech (id-ID-ArdiNeural)...');
-          const tts = new UniversalEdgeTTS(cleanText, 'id-ID-ArdiNeural');
-          const result = await tts.synthesize();
-          writeFileSync(tempTtsPath, Buffer.from(await result.audio.arrayBuffer()));
+          const tts = new EdgeTTS({ voice: 'id-ID-ArdiNeural' });
+          await tts.ttsPromise(cleanText, tempTtsPath);
           console.log('[Blog] Speech synthesis complete.');
 
           let videoImagePath = localImagePath;
