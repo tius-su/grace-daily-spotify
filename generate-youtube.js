@@ -1,6 +1,6 @@
 import { initializeApp, cert } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
-import { S3Client, PutObjectCommand, ListObjectsV2Command, DeleteObjectCommand } from '@aws-sdk/client-s3';
+import { S3Client, PutObjectCommand, GetObjectCommand, ListObjectsV2Command, DeleteObjectCommand } from '@aws-sdk/client-s3';
 import { google } from 'googleapis';
 import { UniversalEdgeTTS } from 'edge-tts-universal';
 import { execSync } from 'child_process';
@@ -8,6 +8,7 @@ import { existsSync, mkdirSync, writeFileSync, createReadStream, unlinkSync, rea
 import path from 'path';
 import https from 'https';
 import { fileURLToPath } from 'url';
+import zlib from 'zlib';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -192,45 +193,171 @@ async function uploadToR2(localPath, key, contentType) {
   }));
 }
 
+async function downloadR2Json(r2Key) {
+  try {
+    const response = await s3.send(new GetObjectCommand({
+      Bucket: r2BucketName,
+      Key: r2Key,
+    }));
+    if (!response.Body) return null;
+    const buffer = Buffer.from(await response.Body.transformToByteArray());
+    if (response.ContentEncoding === 'gzip' || (buffer.length > 2 && buffer[0] === 0x1f && buffer[1] === 0x8b)) {
+      const decompressed = zlib.gunzipSync(buffer);
+      return JSON.parse(decompressed.toString('utf8'));
+    }
+    return JSON.parse(buffer.toString('utf8'));
+  } catch (err) {
+    return null;
+  }
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
-// 6. FIREBASE DATA FETCHERS
+// 6. FIREBASE & R2 DATA FETCHERS
 // ─────────────────────────────────────────────────────────────────────────────
 
 /**
- * FIX: Collection was 'devotions' — correct collection is 'daily_devotions'.
- * This was causing the YouTube generator to find no data every day.
+ * Robust devotion finder with Firestore candidates, queries, and Cloudflare R2 fallback.
  */
 async function fetchDevotion(dateStr) {
-  const docRef = db.collection('daily_devotions').doc(dateStr);
-  const doc = await docRef.get();
-  if (doc.exists) return doc.data();
-
-  // Fallback: search by dateId/contentDayKey
-  const snap = await db.collection('daily_devotions')
-    .where('status', '==', 'published')
-    .orderBy('generatedAt', 'desc')
-    .limit(10)
-    .get();
-
-  if (!snap.empty) {
-    const match = snap.docs.find(d => {
-      const data = d.data();
-      const key = data.contentDayKey || data.dateId || d.id;
-      return key.includes(dateStr);
-    });
-    if (match) return match.data();
+  // 1. Direct doc ID lookups (golden-YYYY-MM-DD-05, golden-YYYY-MM-DD-00, YYYY-MM-DD)
+  const docCandidates = [`golden-${dateStr}-05`, `golden-${dateStr}-00`, dateStr];
+  for (const candidateId of docCandidates) {
+    try {
+      const doc = await db.collection('daily_devotions').doc(candidateId).get();
+      if (doc.exists) {
+        console.log(`[Firestore] Devotion found via doc ID "${candidateId}"`);
+        return doc.data();
+      }
+    } catch (err) {
+      console.warn(`[Firestore] Direct lookup for ${candidateId} failed:`, err.message);
+    }
   }
+
+  // 2. Query by dateId
+  try {
+    const snap = await db.collection('daily_devotions')
+      .where('dateId', '==', dateStr)
+      .limit(1)
+      .get();
+    if (!snap.empty) {
+      console.log(`[Firestore] Devotion found via dateId "${dateStr}"`);
+      return snap.docs[0].data();
+    }
+  } catch (err) {
+    console.warn('[Firestore] Query by dateId failed:', err.message);
+  }
+
+  // 3. Query by contentDayKey
+  try {
+    const snap = await db.collection('daily_devotions')
+      .where('contentDayKey', '==', dateStr)
+      .limit(1)
+      .get();
+    if (!snap.empty) {
+      console.log(`[Firestore] Devotion found via contentDayKey "${dateStr}"`);
+      return snap.docs[0].data();
+    }
+  } catch (err) {
+    console.warn('[Firestore] Query by contentDayKey failed:', err.message);
+  }
+
+  // 4. Scan latest 20 devotions without composite index dependency
+  try {
+    const snap = await db.collection('daily_devotions')
+      .orderBy('generatedAt', 'desc')
+      .limit(20)
+      .get();
+    if (!snap.empty) {
+      const match = snap.docs.find(d => {
+        const data = d.data();
+        const key = data.contentDayKey || data.dateId || d.id;
+        return key.includes(dateStr);
+      });
+      if (match) {
+        console.log(`[Firestore] Devotion found via scan match: "${match.id}"`);
+        return match.data();
+      }
+    }
+  } catch (err) {
+    console.warn('[Firestore] Devotions scan failed:', err.message);
+  }
+
+  // 5. Cloudflare R2 Fallback
+  console.log(`[Firestore] ⚠️ No devotion found in Firestore for ${dateStr}. Trying Cloudflare R2 fallback...`);
+  const r2Candidates = [
+    `devotions/golden-${dateStr}-05.json`,
+    `devotions/golden-${dateStr}-00.json`,
+    `devotions/${dateStr}.json`,
+    `devotions/latest.json`
+  ];
+  for (const r2Key of r2Candidates) {
+    const item = await downloadR2Json(r2Key);
+    if (item && item.title) {
+      console.log(`[R2 Fallback] ✅ Devotion found via R2 "${r2Key}": "${item.title}"`);
+      return item;
+    }
+  }
+
+  try {
+    const bulkList = await downloadR2Json('backup/renungan.json');
+    if (Array.isArray(bulkList)) {
+      const match = bulkList.find(d => {
+        const key = String(d.contentDayKey || d.dateId || d.id || '');
+        return key.includes(dateStr);
+      });
+      if (match) {
+        console.log(`[R2 Fallback] ✅ Devotion found via R2 bulk renungan.json: "${match.title}"`);
+        return match;
+      }
+    }
+  } catch (e) {
+    console.warn('[R2 Fallback] Bulk renungan.json fetch failed:', e.message);
+  }
+
   return null;
 }
 
 async function fetchBlogPosts(dateStr) {
-  const snapshot = await db.collection('blog_posts')
-    .where('contentDayKey', '==', dateStr)
-    .where('status', '==', 'published')
-    .get();
-  if (snapshot.empty) return [];
-  const posts = [];
-  snapshot.forEach(doc => posts.push({ id: doc.id, ...doc.data() }));
+  let posts = [];
+  try {
+    const snapshot = await db.collection('blog_posts')
+      .where('contentDayKey', '==', dateStr)
+      .limit(5)
+      .get();
+    if (!snapshot.empty) {
+      snapshot.forEach(doc => {
+        const data = doc.data();
+        if (data.status === 'published' || !data.status) {
+          posts.push({ id: doc.id, ...data });
+        }
+      });
+    }
+  } catch (e) {
+    console.warn('[Firestore] fetchBlogPosts query failed:', e.message);
+  }
+
+  // Fallback via R2 if Firestore returned empty
+  if (posts.length === 0) {
+    try {
+      const articlesIndex = await downloadR2Json('articles/index.json');
+      if (Array.isArray(articlesIndex)) {
+        const matches = articlesIndex.filter(a => {
+          const key = String(a.contentDayKey || a.autoRunKey || a.createdAt || a.id || '');
+          return key.includes(dateStr);
+        });
+        for (const m of matches) {
+          const fullArticle = await downloadR2Json(`articles/${m.id}.json`) || m;
+          posts.push(fullArticle);
+        }
+        if (posts.length > 0) {
+          console.log(`[R2 Fallback] ✅ Found ${posts.length} blog post(s) via R2 articles`);
+        }
+      }
+    } catch (e) {
+      console.warn('[R2 Fallback] fetchBlogPosts via R2 failed:', e.message);
+    }
+  }
+
   return posts;
 }
 
@@ -481,9 +608,12 @@ async function cleanupOldVideos() {
 // 11. MAIN EXECUTION FLOW
 // ─────────────────────────────────────────────────────────────────────────────
 async function main() {
-  const targetDate = new Date();
+  const customDate = (process.env.PODCAST_DATE || '').trim();
+  const targetDate = customDate && /^\d{4}-\d{2}-\d{2}$/.test(customDate)
+    ? new Date(`${customDate}T12:00:00+07:00`)
+    : new Date();
   // FIX: formatDate() now uses Asia/Jakarta timezone
-  const dateStr     = formatDate(targetDate);
+  const dateStr     = customDate && /^\d{4}-\d{2}-\d{2}$/.test(customDate) ? customDate : formatDate(targetDate);
   const dateIndoStr = getIndonesianDateString(targetDate);
 
   console.log('\n=========================================');
@@ -499,10 +629,12 @@ async function main() {
   }
 
   // Load cover/logo image
-  const selfCoverPath    = path.join(assetsDir, 'default-cover.jpg');
-  const defaultCoverPath = path.join(__dirname, '../grace-daily/public/graced-logo.jpg');
+  const selfCoverPath     = path.join(assetsDir, 'default-cover.jpg');
+  const directLogoPath    = path.join(__dirname, 'Grace-Daily.jpg');
+  const defaultCoverPath  = path.join(__dirname, '../grace-daily/public/graced-logo.jpg');
   const fallbackCoverPath = path.join(__dirname, '../grace-daily/Grace-Daily.jpg');
   let localImagePath = existsSync(selfCoverPath) ? selfCoverPath
+    : existsSync(directLogoPath) ? directLogoPath
     : existsSync(defaultCoverPath) ? defaultCoverPath
     : existsSync(fallbackCoverPath) ? fallbackCoverPath
     : null;

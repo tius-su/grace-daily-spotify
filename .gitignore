@@ -47,4 +47,5 @@ service-account.json
 
 # audio & temp
 *.mp3
+!assets/*.mp3
 /temp/

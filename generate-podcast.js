@@ -7,6 +7,7 @@ import { existsSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+import zlib from 'zlib';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 1. ENVIRONMENT CONFIGURATION
@@ -596,6 +597,24 @@ async function getR2ObjectSize(r2Key) {
   }
 }
 
+async function downloadR2Json(r2Key) {
+  try {
+    const response = await s3.send(new GetObjectCommand({
+      Bucket: r2BucketName,
+      Key: r2Key,
+    }));
+    if (!response.Body) return null;
+    const buffer = Buffer.from(await response.Body.transformToByteArray());
+    if (response.ContentEncoding === 'gzip' || (buffer.length > 2 && buffer[0] === 0x1f && buffer[1] === 0x8b)) {
+      const decompressed = zlib.gunzipSync(buffer);
+      return JSON.parse(decompressed.toString('utf8'));
+    }
+    return JSON.parse(buffer.toString('utf8'));
+  } catch (err) {
+    return null;
+  }
+}
+
 async function downloadPodcastIndex(jsonFile) {
   try {
     const response = await s3.send(new GetObjectCommand({
@@ -806,7 +825,38 @@ async function run() {
   if (devData) {
     console.log(`[Firestore] ✅ Devotion found: "${devData.title}"`);
   } else {
-    console.log(`[Firestore] ⚠️  No devotion found for ${todayStr}`);
+    console.log(`[Firestore] ⚠️  No devotion found for ${todayStr}. Trying Cloudflare R2 fallback...`);
+    const r2Candidates = [
+      `devotions/golden-${todayStr}-05.json`,
+      `devotions/golden-${todayStr}-00.json`,
+      `devotions/${todayStr}.json`,
+      `devotions/latest.json`
+    ];
+    for (const r2Key of r2Candidates) {
+      const item = await downloadR2Json(r2Key);
+      if (item && item.title) {
+        devData = item;
+        console.log(`[R2 Fallback] ✅ Devotion found via R2 "${r2Key}": "${devData.title}"`);
+        break;
+      }
+    }
+    if (!devData) {
+      try {
+        const bulkList = await downloadR2Json('backup/renungan.json');
+        if (Array.isArray(bulkList)) {
+          const match = bulkList.find(d => {
+            const key = String(d.contentDayKey || d.dateId || d.id || '');
+            return key.includes(todayStr);
+          });
+          if (match) {
+            devData = match;
+            console.log(`[R2 Fallback] ✅ Devotion found via R2 bulk renungan.json: "${devData.title}"`);
+          }
+        }
+      } catch (e) {
+        console.warn('[R2 Fallback] Bulk renungan.json fetch failed:', e.message);
+      }
+    }
   }
 
   console.log('[Firestore] Fetching blog post from blog_posts...');
@@ -828,7 +878,24 @@ async function run() {
   if (blogData) {
     console.log(`[Firestore] ✅ Blog found: "${blogData.title}"`);
   } else {
-    console.log(`[Firestore] ⚠️  No blog post found for ${todayStr}`);
+    console.log(`[Firestore] ⚠️  No blog post found for ${todayStr}. Trying Cloudflare R2 fallback...`);
+    try {
+      const articlesIndex = await downloadR2Json('articles/index.json');
+      if (Array.isArray(articlesIndex)) {
+        const match = articlesIndex.find(a => {
+          const key = String(a.contentDayKey || a.autoRunKey || a.createdAt || a.id || '');
+          return key.includes(todayStr);
+        });
+        if (match) {
+          const fullArticle = await downloadR2Json(`articles/${match.id}.json`) || match;
+          blogData = fullArticle;
+          blogDocId = fullArticle.id || match.id;
+          console.log(`[R2 Fallback] ✅ Blog found via R2 articles/index.json: "${blogData.title}"`);
+        }
+      }
+    } catch (e) {
+      console.warn('[R2 Fallback] articles/index.json fetch failed:', e.message);
+    }
   }
 
   if (!devData && !blogData) {
