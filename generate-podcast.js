@@ -563,8 +563,17 @@ async function textToSpeech(text, langConfig, outputFilePath, isDevotional = tru
 
   // Optimize audio format if FFmpeg is available (MP3, Mono, 32 kbps, 24 kHz)
   const rawPath = outputFilePath + '.raw.mp3';
-  const tts = new EdgeTTS({ voice });
-  await tts.ttsPromise(cleanText, rawPath);
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const tts = new EdgeTTS({ voice, timeout: 120_000 });
+      await tts.ttsPromise(cleanText, rawPath);
+      break;
+    } catch (ttsErr) {
+      console.warn(`[TTS] ${voice} synthesis attempt ${attempt} failed: ${ttsErr.message}`);
+      if (attempt === 3) throw ttsErr;
+      await new Promise(r => setTimeout(r, 2000 * attempt));
+    }
+  }
   let buffer;
   try {
     execSync(`ffmpeg -y -i "${rawPath}" -vn -c:a libmp3lame -ac 1 -b:a 32k -ar 24000 "${outputFilePath}"`, { stdio: 'ignore' });

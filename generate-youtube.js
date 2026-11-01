@@ -695,6 +695,20 @@ async function cleanupOldVideos() {
 // ─────────────────────────────────────────────────────────────────────────────
 // 11. MAIN EXECUTION FLOW
 // ─────────────────────────────────────────────────────────────────────────────
+async function synthesizeTtsWithRetry(voice, text, outputPath, maxRetries = 3) {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const tts = new EdgeTTS({ voice, timeout: 120_000 });
+      await tts.ttsPromise(text, outputPath);
+      return;
+    } catch (err) {
+      console.warn(`[TTS] ${voice} synthesis attempt ${attempt} failed: ${err.message}`);
+      if (attempt === maxRetries) throw err;
+      await new Promise(r => setTimeout(r, 2000 * attempt));
+    }
+  }
+}
+
 async function main() {
   const customDate = (process.env.PODCAST_DATE || '').trim();
   const targetDate = customDate && /^\d{4}-\d{2}-\d{2}$/.test(customDate)
@@ -751,8 +765,7 @@ async function main() {
       const tempTtsPath  = path.join(tempDir, `devotion-${dateStr}.mp3`);
 
       console.log('[Devotion] Synthesizing speech (id-ID-GadisNeural)...');
-      const tts = new EdgeTTS({ voice: 'id-ID-GadisNeural' });
-      await tts.ttsPromise(cleanText, tempTtsPath);
+      await synthesizeTtsWithRetry('id-ID-GadisNeural', cleanText, tempTtsPath);
       console.log('[Devotion] Speech synthesis complete.');
 
       // Resolve background image (custom banner or fallback logo)
@@ -851,8 +864,7 @@ async function main() {
           const tempTtsPath = path.join(tempDir, `blog-${article.id}.mp3`);
 
           console.log('[Blog] Synthesizing speech (id-ID-ArdiNeural)...');
-          const tts = new EdgeTTS({ voice: 'id-ID-ArdiNeural' });
-          await tts.ttsPromise(cleanText, tempTtsPath);
+          await synthesizeTtsWithRetry('id-ID-ArdiNeural', cleanText, tempTtsPath);
           console.log('[Blog] Speech synthesis complete.');
 
           let videoImagePath = localImagePath;
