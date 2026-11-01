@@ -256,6 +256,15 @@ const s3 = new S3Client({
   credentials: { accessKeyId: r2AccessKeyId, secretAccessKey: r2SecretKey },
 });
 
+function isInvalidOrDemoDevotion(data) {
+  if (!data) return true;
+  if (!data.title || !data.body) return true;
+  const text = `${data.title} ${data.body}`;
+  return text.includes("Mode demo aktif") ||
+         text.includes("Tambahkan DEEPSEEK_API_KEY") ||
+         data.isDemoPlaceholder === true;
+}
+
 // ─────────────────────────────────────────────────────────────────────────────
 // 4. HELPERS
 // ─────────────────────────────────────────────────────────────────────────────
@@ -819,6 +828,11 @@ async function run() {
     } catch (scanErr) {
       console.warn('[Firestore] Scan fallback error:', scanErr.message);
     }
+  }
+
+  if (devData && isInvalidOrDemoDevotion(devData)) {
+    console.warn(`[Firestore] ⚠️ Devotion in Firestore is a demo/placeholder ("${devData.title}"). Ignoring and falling back to R2...`);
+    devData = null;
   }
 
   if (devData) {

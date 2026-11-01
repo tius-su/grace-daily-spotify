@@ -171,7 +171,11 @@ function cleanHtmlToText(html) {
 }
 
 async function downloadFileFromUrl(url, dest) {
-  const response = await fetch(url, {
+  if (!url) throw new Error("No URL provided to downloadFileFromUrl");
+  const appUrl = (process.env.NEXT_PUBLIC_APP_URL || 'https://www.gracedaily.my.id').replace(/\/$/, '');
+  const targetUrl = url.startsWith('http') ? url : `${appUrl}${url.startsWith('/') ? '' : '/'}${url}`;
+
+  const response = await fetch(targetUrl, {
     headers: {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     },
@@ -181,6 +185,15 @@ async function downloadFileFromUrl(url, dest) {
   }
   const buffer = Buffer.from(await response.arrayBuffer());
   writeFileSync(dest, buffer);
+}
+
+function isInvalidOrDemoDevotion(data) {
+  if (!data) return true;
+  if (!data.title || !data.body) return true;
+  const text = `${data.title} ${data.body}`;
+  return text.includes("Mode demo aktif") ||
+         text.includes("Tambahkan DEEPSEEK_API_KEY") ||
+         data.isDemoPlaceholder === true;
 }
 
 async function uploadToR2(localPath, key, contentType) {
@@ -225,8 +238,13 @@ async function fetchDevotion(dateStr) {
     try {
       const doc = await db.collection('daily_devotions').doc(candidateId).get();
       if (doc.exists) {
-        console.log(`[Firestore] Devotion found via doc ID "${candidateId}"`);
-        return doc.data();
+        const data = doc.data();
+        if (!isInvalidOrDemoDevotion(data)) {
+          console.log(`[Firestore] Devotion found via doc ID "${candidateId}"`);
+          return data;
+        } else {
+          console.warn(`[Firestore] Devotion "${candidateId}" is demo placeholder. Skipping...`);
+        }
       }
     } catch (err) {
       console.warn(`[Firestore] Direct lookup for ${candidateId} failed:`, err.message);
@@ -240,8 +258,11 @@ async function fetchDevotion(dateStr) {
       .limit(1)
       .get();
     if (!snap.empty) {
-      console.log(`[Firestore] Devotion found via dateId "${dateStr}"`);
-      return snap.docs[0].data();
+      const data = snap.docs[0].data();
+      if (!isInvalidOrDemoDevotion(data)) {
+        console.log(`[Firestore] Devotion found via dateId "${dateStr}"`);
+        return data;
+      }
     }
   } catch (err) {
     console.warn('[Firestore] Query by dateId failed:', err.message);
@@ -254,8 +275,11 @@ async function fetchDevotion(dateStr) {
       .limit(1)
       .get();
     if (!snap.empty) {
-      console.log(`[Firestore] Devotion found via contentDayKey "${dateStr}"`);
-      return snap.docs[0].data();
+      const data = snap.docs[0].data();
+      if (!isInvalidOrDemoDevotion(data)) {
+        console.log(`[Firestore] Devotion found via contentDayKey "${dateStr}"`);
+        return data;
+      }
     }
   } catch (err) {
     console.warn('[Firestore] Query by contentDayKey failed:', err.message);
@@ -271,7 +295,7 @@ async function fetchDevotion(dateStr) {
       const match = snap.docs.find(d => {
         const data = d.data();
         const key = data.contentDayKey || data.dateId || d.id;
-        return key.includes(dateStr);
+        return key.includes(dateStr) && !isInvalidOrDemoDevotion(data);
       });
       if (match) {
         console.log(`[Firestore] Devotion found via scan match: "${match.id}"`);
@@ -283,7 +307,7 @@ async function fetchDevotion(dateStr) {
   }
 
   // 5. Cloudflare R2 Fallback
-  console.log(`[Firestore] ⚠️ No devotion found in Firestore for ${dateStr}. Trying Cloudflare R2 fallback...`);
+  console.log(`[Firestore] ⚠️ No valid devotion found in Firestore for ${dateStr}. Trying Cloudflare R2 fallback...`);
   const r2Candidates = [
     `devotions/golden-${dateStr}-05.json`,
     `devotions/golden-${dateStr}-00.json`,
@@ -292,7 +316,7 @@ async function fetchDevotion(dateStr) {
   ];
   for (const r2Key of r2Candidates) {
     const item = await downloadR2Json(r2Key);
-    if (item && item.title) {
+    if (item && item.title && !isInvalidOrDemoDevotion(item)) {
       console.log(`[R2 Fallback] ✅ Devotion found via R2 "${r2Key}": "${item.title}"`);
       return item;
     }
@@ -303,7 +327,7 @@ async function fetchDevotion(dateStr) {
     if (Array.isArray(bulkList)) {
       const match = bulkList.find(d => {
         const key = String(d.contentDayKey || d.dateId || d.id || '');
-        return key.includes(dateStr);
+        return key.includes(dateStr) && !isInvalidOrDemoDevotion(d);
       });
       if (match) {
         console.log(`[R2 Fallback] ✅ Devotion found via R2 bulk renungan.json: "${match.title}"`);
