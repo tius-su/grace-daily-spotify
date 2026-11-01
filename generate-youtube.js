@@ -454,27 +454,45 @@ async function fetchBlogPosts(dateStr) {
 // ─────────────────────────────────────────────────────────────────────────────
 async function ensureBgMusic() {
   const bgMusicPath = path.join(assetsDir, 'bg-music.mp3');
-  if (existsSync(bgMusicPath)) return bgMusicPath;
-
-  console.log('[Assets] Downloading royalty-free background music...');
-  const musicUrl = 'https://incompetech.com/music/royalty-free/mp3-royaltyfree/Gymnopedie%20No%201.mp3';
-  try {
-    await downloadFileFromUrl(musicUrl, bgMusicPath);
-    console.log('[Assets] Background music downloaded successfully.');
-    return bgMusicPath;
-  } catch (e) {
-    console.error('⚠️ Failed to download background music:', e.message);
-    return null;
+  if (existsSync(bgMusicPath)) {
+    try {
+      const header = readFileSync(bgMusicPath, 'utf8').slice(0, 100);
+      if (!header.includes('<!DOCTYPE') && !header.includes('<html') && statSync(bgMusicPath).size > 1000) {
+        return bgMusicPath;
+      }
+      console.warn('⚠️ Existing bg-music.mp3 is corrupt/HTML. Removing it...');
+      await fs.unlink(bgMusicPath).catch(() => {});
+    } catch {}
   }
+  return null;
 }
 
 function mixAndCreateVideo(imagePath, ttsPath, bgMusicPath, outputPath) {
   try {
     console.log(`[FFmpeg] Building video: ${path.basename(outputPath)}`);
     execSync('ffmpeg -version', { stdio: 'ignore' });
-    const cmd = `ffmpeg -y -loop 1 -i "${imagePath}" -i "${ttsPath}" -i "${bgMusicPath}" ` +
-      `-filter_complex "[2:a]volume=0.15[bg];[1:a][bg]amix=inputs=2:duration=first[a]" ` +
-      `-map 0:v -map "[a]" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest "${outputPath}"`;
+
+    let hasBgMusic = false;
+    if (bgMusicPath && existsSync(bgMusicPath)) {
+      try {
+        const header = readFileSync(bgMusicPath, 'utf8').slice(0, 100);
+        if (!header.includes('<!DOCTYPE') && !header.includes('<html') && statSync(bgMusicPath).size > 1000) {
+          hasBgMusic = true;
+        }
+      } catch {}
+    }
+
+    let cmd;
+    if (hasBgMusic) {
+      cmd = `ffmpeg -y -loop 1 -i "${imagePath}" -i "${ttsPath}" -i "${bgMusicPath}" ` +
+        `-filter_complex "[2:a]volume=0.15[bg];[1:a][bg]amix=inputs=2:duration=first[a]" ` +
+        `-map 0:v -map "[a]" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest "${outputPath}"`;
+    } else {
+      console.log('[FFmpeg] Background music unavailable or disabled. Creating video with clean voice audio.');
+      cmd = `ffmpeg -y -loop 1 -i "${imagePath}" -i "${ttsPath}" ` +
+        `-c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest "${outputPath}"`;
+    }
+
     execSync(cmd, { stdio: 'inherit' });
     console.log(`[FFmpeg] ✅ Video created: ${path.basename(outputPath)}`);
     return true;
