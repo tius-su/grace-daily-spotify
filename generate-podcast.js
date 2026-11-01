@@ -174,9 +174,20 @@ const LANGUAGES = [
 // 3. FIREBASE & R2 INITIALIZATION
 // ─────────────────────────────────────────────────────────────────────────────
 function parseServiceAccountJson(raw) {
+  if (!raw) return null;
   const candidates = [raw, raw.trim()];
 
   const trimmed = raw.trim();
+  // Try base64 decoding if not starting with {
+  if (!trimmed.startsWith('{')) {
+    try {
+      const decoded = Buffer.from(trimmed, 'base64').toString('utf8');
+      if (decoded.trim().startsWith('{')) {
+        candidates.push(decoded, decoded.trim());
+      }
+    } catch {}
+  }
+
   if (
     (trimmed.startsWith('"') && trimmed.endsWith('"')) ||
     (trimmed.startsWith("'") && trimmed.endsWith("'"))
@@ -188,9 +199,7 @@ function parseServiceAccountJson(raw) {
     try {
       const parsed = JSON.parse(candidate);
       return typeof parsed === 'string' ? JSON.parse(parsed) : parsed;
-    } catch {
-      // Try the next representation.
-    }
+    } catch {}
   }
 
   for (const candidate of candidates) {
@@ -202,32 +211,24 @@ function parseServiceAccountJson(raw) {
       );
       const parsed = JSON.parse(normalized);
       return typeof parsed === 'string' ? JSON.parse(parsed) : parsed;
-    } catch {
-      // Try the next normalized representation.
-    }
+    } catch {}
   }
 
-  throw new Error('Unsupported service account JSON format.');
+  return null;
 }
 
-let serviceAccount;
+let serviceAccount = null;
 if (process.env.FIREBASE_SERVICE_ACCOUNT_JSON) {
-  try {
-    serviceAccount = parseServiceAccountJson(process.env.FIREBASE_SERVICE_ACCOUNT_JSON);
-    console.log('[Firebase] Initialized via FIREBASE_SERVICE_ACCOUNT_JSON env var.');
-  } catch (e) {
-    console.error('❌ FIREBASE_SERVICE_ACCOUNT_JSON is not valid JSON:', e.message);
-    process.exit(1);
-  }
-} else if (process.env.GOOGLE_APPLICATION_CREDENTIALS?.trim().startsWith('{')) {
-  try {
-    serviceAccount = parseServiceAccountJson(process.env.GOOGLE_APPLICATION_CREDENTIALS);
-    console.log('[Firebase] Initialized via GOOGLE_APPLICATION_CREDENTIALS JSON env var.');
-  } catch (e) {
-    console.error('❌ GOOGLE_APPLICATION_CREDENTIALS is not valid JSON:', e.message);
-    process.exit(1);
-  }
-} else {
+  serviceAccount = parseServiceAccountJson(process.env.FIREBASE_SERVICE_ACCOUNT_JSON);
+  if (serviceAccount) console.log('[Firebase] Initialized via FIREBASE_SERVICE_ACCOUNT_JSON env var.');
+}
+
+if (!serviceAccount && process.env.GOOGLE_APPLICATION_CREDENTIALS?.trim().startsWith('{')) {
+  serviceAccount = parseServiceAccountJson(process.env.GOOGLE_APPLICATION_CREDENTIALS);
+  if (serviceAccount) console.log('[Firebase] Initialized via GOOGLE_APPLICATION_CREDENTIALS JSON env var.');
+}
+
+if (!serviceAccount) {
   const serviceAccountCandidates = [
     process.env.GOOGLE_APPLICATION_CREDENTIALS
       ? path.resolve(process.cwd(), process.env.GOOGLE_APPLICATION_CREDENTIALS)
@@ -238,17 +239,30 @@ if (process.env.FIREBASE_SERVICE_ACCOUNT_JSON) {
     path.join(process.cwd(), 'scripts', 'serviceAccountKey.json'),
   ].filter(Boolean);
   const localPath = serviceAccountCandidates.find((candidate) => existsSync(candidate));
-  if (!localPath) {
-    console.error('❌ Firebase credentials not found. Set FIREBASE_SERVICE_ACCOUNT_JSON or provide service-account.json.');
-    process.exit(1);
+  if (localPath) {
+    try {
+      const fileData = await fs.readFile(localPath, 'utf8');
+      serviceAccount = JSON.parse(fileData);
+      console.log(`[Firebase] Initialized via local service-account.json`);
+    } catch (e) {
+      console.warn(`[Firebase] Failed to read ${localPath}:`, e.message);
+    }
   }
-  const fileData = await fs.readFile(localPath, 'utf8');
-  serviceAccount = JSON.parse(fileData);
-  console.log(`[Firebase] Initialized via local service-account.json`);
 }
 
-admin.initializeApp({ credential: admin.credential.cert(serviceAccount) });
-const db = admin.firestore();
+let db = null;
+if (serviceAccount) {
+  try {
+    admin.initializeApp({ credential: admin.credential.cert(serviceAccount) });
+    db = admin.firestore();
+    console.log('[Firebase] Firestore connected.');
+  } catch (err) {
+    console.warn('[Firebase] Initialization error, falling back to R2 storage:', err.message);
+    db = null;
+  }
+} else {
+  console.log('[Firebase] ℹ️ Service account not found or invalid format. Continuing in Cloudflare R2-only mode.');
+}
 
 const s3 = new S3Client({
   region: 'auto',
@@ -762,71 +776,73 @@ async function run() {
   console.log('[Firestore] Fetching daily devotion from daily_devotions...');
   let devData = null;
 
-  // 1. Direct doc ID lookups (golden-YYYY-MM-DD-05, golden-YYYY-MM-DD-00, YYYY-MM-DD)
-  const docCandidates = [`golden-${todayStr}-05`, `golden-${todayStr}-00`, todayStr];
-  for (const candidateId of docCandidates) {
-    try {
-      const docSnap = await db.collection('daily_devotions').doc(candidateId).get();
-      if (docSnap.exists) {
-        devData = docSnap.data();
-        console.log(`[Firestore] Devotion found via doc ID "${candidateId}"`);
-        break;
+  if (db) {
+    // 1. Direct doc ID lookups (golden-YYYY-MM-DD-05, golden-YYYY-MM-DD-00, YYYY-MM-DD)
+    const docCandidates = [`golden-${todayStr}-05`, `golden-${todayStr}-00`, todayStr];
+    for (const candidateId of docCandidates) {
+      try {
+        const docSnap = await db.collection('daily_devotions').doc(candidateId).get();
+        if (docSnap.exists) {
+          devData = docSnap.data();
+          console.log(`[Firestore] Devotion found via doc ID "${candidateId}"`);
+          break;
+        }
+      } catch (docErr) {
+        console.warn(`[Firestore] Direct lookup for ${candidateId} failed:`, docErr.message);
       }
-    } catch (docErr) {
-      console.warn(`[Firestore] Direct lookup for ${candidateId} failed:`, docErr.message);
     }
-  }
 
-  // 2. Query by dateId
-  if (!devData) {
-    try {
-      const qSnap = await db.collection('daily_devotions')
-        .where('dateId', '==', todayStr)
-        .limit(1)
-        .get();
-      if (!qSnap.empty) {
-        devData = qSnap.docs[0].data();
-        console.log(`[Firestore] Devotion found via dateId query "${todayStr}"`);
+    // 2. Query by dateId
+    if (!devData) {
+      try {
+        const qSnap = await db.collection('daily_devotions')
+          .where('dateId', '==', todayStr)
+          .limit(1)
+          .get();
+        if (!qSnap.empty) {
+          devData = qSnap.docs[0].data();
+          console.log(`[Firestore] Devotion found via dateId query "${todayStr}"`);
+        }
+      } catch (qErr) {
+        console.warn('[Firestore] Query by dateId failed:', qErr.message);
       }
-    } catch (qErr) {
-      console.warn('[Firestore] Query by dateId failed:', qErr.message);
     }
-  }
 
-  // 3. Query by contentDayKey
-  if (!devData) {
-    try {
-      const qSnap = await db.collection('daily_devotions')
-        .where('contentDayKey', '==', todayStr)
-        .limit(1)
-        .get();
-      if (!qSnap.empty) {
-        devData = qSnap.docs[0].data();
-        console.log(`[Firestore] Devotion found via contentDayKey query "${todayStr}"`);
+    // 3. Query by contentDayKey
+    if (!devData) {
+      try {
+        const qSnap = await db.collection('daily_devotions')
+          .where('contentDayKey', '==', todayStr)
+          .limit(1)
+          .get();
+        if (!qSnap.empty) {
+          devData = qSnap.docs[0].data();
+          console.log(`[Firestore] Devotion found via contentDayKey query "${todayStr}"`);
+        }
+      } catch (qErr) {
+        console.warn('[Firestore] Query by contentDayKey failed:', qErr.message);
       }
-    } catch (qErr) {
-      console.warn('[Firestore] Query by contentDayKey failed:', qErr.message);
     }
-  }
 
-  // 4. Fallback scan without index dependency
-  if (!devData) {
-    try {
-      const devSnap = await db.collection('daily_devotions')
-        .orderBy('generatedAt', 'desc')
-        .limit(20)
-        .get();
+    // 4. Fallback scan without index dependency
+    if (!devData) {
+      try {
+        const devSnap = await db.collection('daily_devotions')
+          .orderBy('generatedAt', 'desc')
+          .limit(20)
+          .get();
 
-      if (!devSnap.empty) {
-        const match = devSnap.docs.find(d => {
-          const data = d.data();
-          const key = data.contentDayKey || data.dateId || d.id;
-          return key.includes(todayStr);
-        });
-        if (match) devData = match.data();
+        if (!devSnap.empty) {
+          const match = devSnap.docs.find(d => {
+            const data = d.data();
+            const key = data.contentDayKey || data.dateId || d.id;
+            return key.includes(todayStr);
+          });
+          if (match) devData = match.data();
+        }
+      } catch (scanErr) {
+        console.warn('[Firestore] Scan fallback error:', scanErr.message);
       }
-    } catch (scanErr) {
-      console.warn('[Firestore] Scan fallback error:', scanErr.message);
     }
   }
 
@@ -872,20 +888,22 @@ async function run() {
     }
   }
 
-  console.log('[Firestore] Fetching blog post from blog_posts...');
   let blogData = null;
   let blogDocId = null;
-  try {
-    const blogSnap = await db.collection('blog_posts')
-      .where('contentDayKey', '==', todayStr)
-      .limit(1)
-      .get();
-    if (!blogSnap.empty) {
-      blogData = blogSnap.docs[0].data();
-      blogDocId = blogSnap.docs[0].id;
+  if (db) {
+    console.log('[Firestore] Fetching blog post from blog_posts...');
+    try {
+      const blogSnap = await db.collection('blog_posts')
+        .where('contentDayKey', '==', todayStr)
+        .limit(1)
+        .get();
+      if (!blogSnap.empty) {
+        blogData = blogSnap.docs[0].data();
+        blogDocId = blogSnap.docs[0].id;
+      }
+    } catch (blogErr) {
+      console.warn('[Firestore] Blog lookup failed:', blogErr.message);
     }
-  } catch (blogErr) {
-    console.warn('[Firestore] Blog lookup failed:', blogErr.message);
   }
 
   if (blogData) {
