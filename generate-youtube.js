@@ -9,6 +9,7 @@ import path from 'path';
 import https from 'https';
 import { fileURLToPath } from 'url';
 import zlib from 'zlib';
+import sharp from 'sharp';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -244,7 +245,22 @@ async function downloadFileFromUrl(url, dest) {
     throw new Error(`Download failed: HTTP ${response.status} ${response.statusText}`);
   }
   const buffer = Buffer.from(await response.arrayBuffer());
-  writeFileSync(dest, buffer);
+
+  // Check if buffer is SVG (or text/XML banner) and rasterize to 1080p PNG for FFmpeg
+  const head = buffer.subarray(0, 100).toString('utf8').trim();
+  if (head.startsWith('<?xml') || head.startsWith('<svg') || head.includes('<svg')) {
+    console.log('[Banner] Rasterizing SVG banner to 1920x1080 PNG...');
+    await sharp(buffer).resize(1920, 1080, { fit: 'cover' }).png().toFile(dest);
+    return;
+  }
+
+  // Ensure standard raster image (WebP, JPG, PNG) is valid 1080p
+  try {
+    await sharp(buffer).resize(1920, 1080, { fit: 'cover' }).jpeg({ quality: 92 }).toFile(dest);
+  } catch (err) {
+    // If sharp fails to parse, write raw buffer as fallback
+    writeFileSync(dest, buffer);
+  }
 }
 
 function isInvalidOrDemoDevotion(data) {
@@ -484,13 +500,13 @@ function mixAndCreateVideo(imagePath, ttsPath, bgMusicPath, outputPath) {
 
     let cmd;
     if (hasBgMusic) {
-      cmd = `ffmpeg -y -loop 1 -i "${imagePath}" -i "${ttsPath}" -i "${bgMusicPath}" ` +
+      cmd = `ffmpeg -nostdin -y -loop 1 -framerate 2 -i "${imagePath}" -i "${ttsPath}" -i "${bgMusicPath}" ` +
         `-filter_complex "[2:a]volume=0.15[bg];[1:a][bg]amix=inputs=2:duration=first[a]" ` +
-        `-map 0:v -map "[a]" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest "${outputPath}"`;
+        `-map 0:v -map "[a]" -c:v libx264 -preset ultrafast -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest "${outputPath}"`;
     } else {
       console.log('[FFmpeg] Background music unavailable or disabled. Creating video with clean voice audio.');
-      cmd = `ffmpeg -y -loop 1 -i "${imagePath}" -i "${ttsPath}" ` +
-        `-c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest "${outputPath}"`;
+      cmd = `ffmpeg -nostdin -y -loop 1 -framerate 2 -i "${imagePath}" -i "${ttsPath}" ` +
+        `-c:v libx264 -preset ultrafast -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest "${outputPath}"`;
     }
 
     execSync(cmd, { stdio: 'inherit' });

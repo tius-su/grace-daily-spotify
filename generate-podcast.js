@@ -457,8 +457,52 @@ function escapeXml(text) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// 5. TRANSLATION — Google Translate free API (same approach as /api/translate)
+// 5. TRANSLATION — Groq AI Primary with Google Translate Fallback
 // ─────────────────────────────────────────────────────────────────────────────
+async function _translateWithGroq(text, targetLangCode) {
+  const apiKey = process.env.GROQ_API_KEY;
+  if (!apiKey) throw new Error('GROQ_API_KEY not configured');
+
+  const langNames = {
+    en: 'English',
+    zh: 'Simplified Chinese (Mandarin)',
+    es: 'Spanish',
+  };
+  const targetLang = langNames[targetLangCode] || targetLangCode;
+
+  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      model: process.env.GROQ_MODEL || 'llama-3.3-70b-versatile',
+      messages: [
+        {
+          role: 'system',
+          content: `You are an expert biblical scholar and Christian devotional translator. Translate the following Indonesian devotional/blog text faithfully into natural, reverent ${targetLang}. Preserve all paragraphs, tone, and formatting. Output ONLY the translated text without commentary, intro, or markdown fences.`,
+        },
+        {
+          role: 'user',
+          content: text,
+        },
+      ],
+      temperature: 0.3,
+    }),
+  });
+
+  if (!res.ok) {
+    const errText = await res.text();
+    throw new Error(`Groq HTTP ${res.status}: ${errText}`);
+  }
+
+  const json = await res.json();
+  const output = json.choices?.[0]?.message?.content?.trim();
+  if (!output) throw new Error('Empty response from Groq');
+  return output;
+}
+
 async function _translateChunk(text, gtLang) {
   const encoded = encodeURIComponent(text.trim());
   const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=id&tl=${gtLang}&dt=t&q=${encoded}`;
@@ -470,17 +514,46 @@ async function _translateChunk(text, gtLang) {
   return data[0].map(chunk => chunk[0] ?? '').join('');
 }
 
+async function _translateChunkWithRetry(text, gtLang, maxRetries = 3) {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      return await _translateChunk(text, gtLang);
+    } catch (err) {
+      console.warn(`[Translate] Google Translate attempt ${attempt} failed: ${err.message}`);
+      if (attempt === maxRetries) throw err;
+      await new Promise(r => setTimeout(r, 1500 * attempt));
+    }
+  }
+}
+
 /**
  * Translate Indonesian text to target language.
- * Auto-chunks long texts (>3000 chars) to stay within API limits.
+ * Uses Groq AI as primary (theological accuracy & no 429 rate limits),
+ * with chunked Google Translate as automatic fallback.
  */
 async function translateText(text, targetLangCode) {
   if (!text || !text.trim() || targetLangCode === 'id') return text;
+
+  // 1. Try Groq AI first if GROQ_API_KEY is available
+  if (process.env.GROQ_API_KEY) {
+    try {
+      console.log(`[Translate] Translating to [${targetLangCode}] via Groq AI...`);
+      const aiResult = await _translateWithGroq(text, targetLangCode);
+      if (aiResult) {
+        console.log(`[Translate] ✅ Groq AI translation to [${targetLangCode}] succeeded.`);
+        return aiResult;
+      }
+    } catch (groqErr) {
+      console.warn(`[Translate] ⚠️ Groq AI failed (${groqErr.message}). Falling back to Google Translate...`);
+    }
+  }
+
+  // 2. Google Translate fallback
   const gtLang = targetLangCode === 'zh' ? 'zh-CN' : targetLangCode;
   const maxChunk = 3000;
 
   if (text.length <= maxChunk) {
-    return _translateChunk(text, gtLang);
+    return _translateChunkWithRetry(text, gtLang);
   }
 
   // Split by paragraph breaks for long content
@@ -499,8 +572,8 @@ async function translateText(text, targetLangCode) {
 
   const results = [];
   for (const chunk of chunks) {
-    results.push(await _translateChunk(chunk, gtLang));
-    await new Promise(r => setTimeout(r, 350)); // gentle rate limiting
+    results.push(await _translateChunkWithRetry(chunk, gtLang));
+    await new Promise(r => setTimeout(r, 600)); // gentle delay to prevent 429
   }
   return results.join('\n\n');
 }
