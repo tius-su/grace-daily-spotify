@@ -470,12 +470,8 @@ async function _translateWithGroq(text, targetLangCode) {
   };
   const targetLang = langNames[targetLangCode] || targetLangCode;
 
-  // Ensure valid Groq model. If env has OpenRouter format (e.g. 'openai/gpt-oss-120b')
-  // or legacy models, fallback to Groq's flagship translation model.
-  let model = (process.env.GROQ_MODEL || '').trim();
-  if (!model || model.includes('/') || model.includes('gpt-oss') || model.includes('mixtral') || model.includes('llama3-70b-8192')) {
-    model = 'llama-3.3-70b-versatile';
-  }
+  // Use user's primary Groq model (openai/gpt-oss-120b)
+  let model = (process.env.GROQ_MODEL || '').trim() || 'openai/gpt-oss-120b';
 
   const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
