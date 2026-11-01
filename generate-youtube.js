@@ -744,8 +744,7 @@ async function main() {
 
   const bgMusicFile = await ensureBgMusic();
   if (!bgMusicFile) {
-    await sendTelegramMessage('❌ <b>YouTube Generator Error</b>\nGagal mengunduh musik latar. Proses dihentikan.');
-    process.exit(1);
+    console.log('[Assets] Background music not available or disabled. Continuing with voice-only video.');
   }
 
   // Load cover/logo image
